@@ -8,7 +8,7 @@ This repository contains the resources necessary to populate and curate the mode
  * OtherTransformations: Legacy scripts to organize information about units.
  * UnitToRDF: Scripts designed to align unit labels provided by modelers (e.g., "m/day") to a semantic representation. 
  
-##Process to populate the model catalog.
+## Process to populate the model catalog.
 
 1) Execute CSVToRDF. Compile and run the Java project, which will create an initial version of the turtle file with all contents from the Data folder integrated and linked.
 
@@ -47,7 +47,7 @@ This repository contains the resources necessary to populate and curate the mode
  
  * Layout description files: We are in the process of generating layout description files which contain a data cube of how we expect an input/output dataset to be. For example, in case of CSVs, the position of the columns in the described file.
  
-##Future plans
+## Future plans
  
  * Automated CAG extraction: We plan to align our causal diagrams by extracting dependencies directly from the code. 
  
