@@ -1,0 +1,27 @@
+Output from translation:
+
+Changing variable label for FLDAS  SoilTemp100_200cm  from  land_surface~100-to-200cm-below_soil_water__temperature  to  land_surface~100-to-200cm-below_soil__temperature .
+Changing variable label for FLDAS  SoilTemp10_40cm_t  from  land_surface~10-to-40cm-below_soil_water__temperature  to  land_surface~10-to-40cm-below_soil__temperature .
+Changing variable label for FLDAS  SoilTemp40_100cm_  from  land_surface~40-to-100cm-below_soil_water__temperature  to  land_surface~40-to-100cm-below_soil__temperature .
+Changing variable label for FLDAS  Swnet_tavg  from  land_surface_air_radiation~shortwave~downward__energy_flux  to  land_surface_radiation~shortwave~downward__energy_flux .
+Changing variable label for ECON  land area  from  land_crop__allocated_area  to  land_crop__simulated_allocated_area .
+Changing variable label for ECON  obsyield  from  land_crop__mass-per-area_yield  to  land_crop__simulated_mass-per-area_yield .
+Changing variable label for ECON  production  from  crop__produced_mass  to  crop__simulated_produced_mass .
+Changing variable label for ECON  Nfert  from  crop_fertilizer~nitrogen__applied_mass-per-area_density  to  land_fertilizer~nitrogen__simulated_applied_mass-per-area_density .
+Changing variable label for PIHM  Time  from  model_simulation__time  to   .
+Changing variable label for PIHM    from  land_surface_water__infiltration_volume_flux  to  soil_surface_water__infiltration_volume_flux .
+Changing variable label for PIHM    from  land_surface_snow__volume-per-area_accumulation_density  to  land_surface_snow__time_integral_of_accumulation_volume_flux .
+Changing variable label for PIHM    from  channel~river_bed_water__volume-per-area_storage_density  to  channel~river_bed_water__volume-per-area_storage_capacity .
+Changing variable label for PIHM    from  soil_water__volume-per-area_interception_storage_density  to  soil_water__volume-per-area_interception_storage_capacity .
+Changing variable label for PIHM  Alpha  from  soil__van-genuchten_alpha_parameter  to  soil_water__van-genuchten_alpha_parameter .
+Changing variable label for PIHM  Beta  from  soil__van-genuchten_beta_parameter  to  soil_water__van-genuchten_beta_parameter .
+Changing variable label for PIHM  infD  from  soil_layer~top~infiltration__thickness  to  soil_layer~top__thickness .
+Changing variable label for PIHM  macD  from  macropores_below-land-surface__depth  to  soil_macropores_below-land-surface__depth .
+Changing variable label for PIHM  macKsatH  from  soil_macropores_water__vertical_hydraulic_conductivity  to  soil_water__saturated_hydraulic_conductivity .
+Changing variable label for PIHM  ThetaR  from  soil_water__residual_volume_fraction  to  soil__residual_porosity .
+Changing variable label for PIHM  hAreaF  from  soil_macropore_x-section~vertical__area_fraction  to  soil_macropores_x-section~vertical__area_fraction .
+Changing variable label for PIHM  infD  from    to  soil_layer~top__thickness .
+Changing variable label for PIHM  macKsatV  from    to  soil_macropores_water__vertical_hydraulic_conductivity .
+Changing variable label for PIHM  ThetaR  from  soil_water__residual_volume_fraction  to  soil__residual_porosity .
+Changing variable label for PIHM  KsatV  from  channel_bed_water__hydraulic_conductivity  to  soil_water__vertical_saturated_hydraulic_conductivity .
+Changing variable label for PIHM  Value  from  water_below-land-surface__depth  to   .

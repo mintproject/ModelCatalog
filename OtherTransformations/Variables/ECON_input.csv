@@ -1,0 +1,10 @@
+File,Short Name,Long Name,GSN,units,Default Value,Description,Minimum Accepted Value,Maximum Accepted Value
+calibdata.csv,xbar1,land allocation,land_crop__observed_allocated_area,ha,,land area by crop (observed),,
+calibdata.csv,xbar2,nitrogen fertilizer use,crop_fertilizer~nitrogen__observed_applied_mass,kg,,nitrogen fertilizer applications by crop (observed),,
+calibdata.csv,ybar,crop yields,land_crop__observed_mass-per-area_yield,kg/ha,,crop yields per unit land area (observed),,
+econdata.csv,p,crop prices,farmer_crop__received_price-per-mass,USD/kg,,crop prices received by farmer in USD,,
+econdata.csv,eta,supply elasticities,crop__supply_elasticity,unitless,,percent change in crop supply divided by percent change in crop price,,
+econdata.csv,c1,land cost,land_crop__production_cost-per-area,USD/ha,,costs of production per unit land area,,
+econdata.csv,c2,nitrogen fertilizer cost,fertilizer~nitrogen__usage-cost-per-applied-mass,USD/kg,,costs of fertilizer use per unit applied,,
+cyclesdata.csv,ybarN,yield elasticity,crop_fertilizer~nitrogen__yield_elasticity,unitless,,percent change in crop yield divided by percent change in nitrogen fertilizer use (from Cycles),,
+,,,,,,,,

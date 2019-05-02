@@ -1,0 +1,195 @@
+{
+  "head": {
+    "vars": [ "units" ]
+  } ,
+  "results": {
+    "bindings": [
+      {
+        "units": { "type": "literal" , "value": "C" }
+      } ,
+      {
+        "units": { "type": "literal" , "value": "mm" }
+      } ,
+      {
+        "units": { "type": "literal" , "value": "kg/ha" }
+      } ,
+      {
+        "units": { "type": "literal" , "value": "m3/m3" }
+      } ,
+      {
+        "units": { "type": "literal" , "value": "cm3/cm3" }
+      } ,
+      {
+        "units": { "type": "literal" , "value": "m/day" }
+      } ,
+      {
+        "units": { "type": "literal" , "value": "mm/day" }
+      } ,
+      {
+        "units": { "type": "literal" , "value": "mm/h" }
+      } ,
+      {
+        "units": { "type": "literal" , "value": "m" }
+      } ,
+      {
+        "units": { "type": "literal" , "value": "Mg/ha" }
+      } ,
+      {
+        "units": { "type": "literal" , "value": "m/d" }
+      } ,
+      {
+        "units": { "type": "literal" , "value": "kg" }
+      } ,
+      {
+        "units": { "type": "literal" , "value": "ha" }
+      } ,
+      {
+        "units": { "type": "literal" , "value": "Pa/Pa x 100" }
+      } ,
+      {
+        "units": { "type": "literal" , "value": "m/s" }
+      } ,
+      {
+        "units": { "type": "literal" , "value": "USD/kg" }
+      } ,
+      {
+        "units": { "type": "literal" , "value": "day" }
+      } ,
+      {
+        "units": { "type": "literal" , "value": "m/m" }
+      } ,
+      {
+        "units": { "type": "literal" , "value": "Mg/m3" }
+      } ,
+      {
+        "units": { "type": "literal" , "value": "MJ/m2/day" }
+      } ,
+      {
+        "units": { "type": "literal" , "value": "percent" }
+      } ,
+      {
+        "units": { "type": "literal" , "value": "kg/kg x 100" }
+      } ,
+      {
+        "units": { "type": "literal" , "value": "year" }
+      } ,
+      {
+        "units": { "type": "literal" , "value": "USD/ha" }
+      } ,
+      {
+        "units": { "type": "literal" , "value": "number/m2" }
+      } ,
+      {
+        "units": { "type": "literal" , "value": "MJ/m2.d" }
+      } ,
+      {
+        "units": { "type": "literal" , "value": "decimal degrees" }
+      } ,
+      {
+        "units": { "type": "literal" , "value": "cm" }
+      } ,
+      {
+        "units": { "type": "literal" , "value": "code" }
+      } ,
+      {
+        "units": { "type": "literal" , "value": "%" }
+      } ,
+      {
+        "units": { "type": "literal" , "value": "date" }
+      } ,
+      {
+        "units": { "type": "literal" , "value": "ppm" }
+      } ,
+      {
+        "units": { "type": "literal" , "value": "g/cm3" }
+      } ,
+      {
+        "units": { "type": "literal" , "value": "kg[N]/ha" }
+      } ,
+      {
+        "units": { "type": "literal" , "value": "g[C]/100g[soil]" }
+      } ,
+      {
+        "units": { "type": "literal" , "value": "cm/h" }
+      } ,
+      {
+        "units": { "type": "literal" , "value": "kg m-2 s-1" }
+      } ,
+      {
+        "units": { "type": "literal" , "value": "K" }
+      } ,
+      {
+        "units": { "type": "literal" , "value": "Mg C" }
+      } ,
+      {
+        "units": { "type": "literal" , "value": "W m-2" }
+      } ,
+      {
+        "units": { "type": "literal" , "value": "kg N/ha" }
+      } ,
+      {
+        "units": { "type": "literal" , "value": "kg N/yr" }
+      } ,
+      {
+        "units": { "type": "literal" , "value": "Mg C/year" }
+      } ,
+      {
+        "units": { "type": "literal" , "value": "g/kg" }
+      } ,
+      {
+        "units": { "type": "literal" , "value": "m2/m2" }
+      } ,
+      {
+        "units": { "type": "literal" , "value": "percentage / 100" }
+      } ,
+      {
+        "units": { "type": "literal" , "value": "day/m" }
+      } ,
+      {
+        "units": { "type": "literal" , "value": "day/m^(1/3)" }
+      } ,
+      {
+        "units": { "type": "literal" , "value": "deg K" }
+      } ,
+      {
+        "units": { "type": "literal" , "value": "Pa" }
+      } ,
+      {
+        "units": { "type": "literal" , "value": "YYYY-MM-DD" }
+      } ,
+      {
+        "units": { "type": "literal" , "value": "C-day" }
+      } ,
+      {
+        "units": { "type": "literal" , "value": "1/m" }
+      } ,
+      {
+        "units": { "type": "literal" , "value": "kg/kg" }
+      } ,
+      {
+        "units": { "type": "literal" , "value": "Mg/Mg" }
+      } ,
+      {
+        "units": { "type": "literal" , "value": "m^3 m-3" }
+      } ,
+      {
+        "units": { "type": "literal" , "value": "kg C" }
+      } ,
+      {
+        "units": { "type": "literal" , "value": "m3/day" }
+      } ,
+      {
+        "units": { "type": "literal" , "value": "YYYY" }
+      } ,
+      {
+        "units": { "type": "literal" , "value": "m s-1" }
+      } ,
+      {
+        "units": { "type": "literal" , "value": "Cs/Cx" }
+      } ,
+      {
+        "units": { "type": "literal" , "value": "degC" }
+      }
+    ]
+  }
+}

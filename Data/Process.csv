@@ -1,0 +1,26 @@
+https://w3id.org/mint/modelCatalog#Process,http://www.w3.org/2000/01/rdf-schema#label,https://w3id.org/mint/modelCatalog#influences
+precipitation,precipitation,runoff;infiltration
+solarradiation,solar radiation,transpiration;evaporation
+transpiration,transpiration,infiltration;runoff
+evaporation,evaporation,infiltration;runoff
+runoff,runoff,
+infiltration,infiltration,runoff
+crop_yield_elasticity,crop yield elasticity,land_use;fertilizer_use;crop_yield
+crop_prices,crop prices,land_use;fertilizer_use
+fertilizer_prices,fertilizer prices,land_use;fertilizer_use
+land_use,land use,fertilizer_use;crop_supply;crop_yield
+fertilizer_use,fertilizer use,land_use;crop_yield
+crop_supply,crop supply,
+crop_yield,crop yield,crop_supply
+cycles_precipitation,precipitation in cycles,cycles_transpiration
+cycles_solarradiation,solar radiation in cycles,cycles_transpiration;biomassgrowth
+management,management,biomassgrowth
+cycles_transpiration,transpiration in cycles,biomassgrowth;Nuptake
+biomassgrowth,biomass growth,cycles_transpiration;respiration;humification
+Nuptake,N uptake,Ntransport
+respiration,respiration,Nmineralizationandimmobalization
+humification,humification,Nmineralizationandimmobalization
+Ntransport,N transport,
+Nmineralizationandimmobalization,N mineralization and immobalization,Ntransport
+cycles_cropGrowth,Crop growth,cycles_grain_yield
+cycles_percolation,Percolation,cycles_no3_leaching;cycles_nh4_leaching;cycles_avg_nh4_leach;cycles_avg_no3_leach

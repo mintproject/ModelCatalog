@@ -1,0 +1,18 @@
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX mc: <https://w3id.org/mint/modelCatalog#>
+PREFIX dc: <http://purl.org/dc/terms/>
+
+SELECT distinct ?units where {
+	?a mc:usesUnit ?units
+}
+
+After the changes, it will be:
+
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX mc: <https://w3id.org/mint/modelCatalog#>
+PREFIX dc: <http://purl.org/dc/terms/>
+
+SELECT distinct ?units where {
+	?a mc:usesUnit ?u.
+    ?u rdfs:label ?units
+}

@@ -1,0 +1,13 @@
+https://w3id.org/mint/modelCatalog#TimeInterval,http://www.w3.org/2000/01/rdf-schema#label,http://purl.org/dc/terms/description,https://w3id.org/mint/modelCatalog#hasValue,https://w3id.org/mint/modelCatalog#usesUnit
+pihm_cfg_simple_TI,Simple PIHM time interval,Time interval used in the PIHM simple configuration,1,day
+pihm_cfg_simple2_TI,Simple PIHM time interval,Time interval used in the PIHM simple configuration with additional input variables,1,day
+cycles_cfg_simple_TI,Simple cycles time interval,Time interval used in the Cycles simple configuration,1,day
+kimetrica_land_use_cfg_simple_TI,Simple kimetrica time interval,Time interval used in the Kimetrica land use simple configuration,,
+economic_aggregate_crop_supply_TI,Simple economic time interval,Time interval used in the aggregate crop supply response model for the country of South Sudan configuration,1,year
+topoflow_cfg_simple_TI,Simple topoflow time interval,Time interval used in the TopoFlow with basic configuration,,
+dssat_cfg_simple_TI,Simple dssat time interval,Time interval used in the DSSAT simple configuration,,
+topoflow_cfg_fk_TI,Simple topoflow time interval,Time interval used in the TopoFlow with fake configuration to emulate PIHM,,
+dssat_cfg_fk_TI,Simple dssat time interval,Time interval used in the  DSSAT with fake configuration to emulate Cycles,,
+wgen_1.0.1_cfg_timeinterval,WGEN time interval,Time interval used in WGEN basic configuration,1,day
+climcomp_0.0.2_P_cfg_TI,ClimComp time interval,Time interval at which ClimComp outputs,1,year
+climcomp_0.0.2_T_cfg_TI,ClimComp time interval,Time interval at which ClimComp outputs,1,year

@@ -1,0 +1,136 @@
+https://w3id.org/mint/modelCatalog#DatasetSpecification,http://www.w3.org/2000/01/rdf-schema#label,http://purl.org/dc/terms/description,https://w3id.org/mint/modelCatalog#hasPresentation,https://w3id.org/mint/modelCatalog#hasFormat,https://w3id.org/mint/modelCatalog#hasDimensionality,http://www.w3.org/1999/02/22-rdf-syntax-ns#type
+cycles_reinit,cycles_reinit,Cycles reinit file,cycles_doy;cycles_rot_year;cycles_smc_l1;cycles_infiltration,reinit,0,https://w3id.org/wings/export/MINT#CyclesREINIT
+cycles_weather,cycles_weather,Cycles weather file,cycles_pp;cycles_tx;cycles_tn;cycles_sr;cycles_hx;cycles_hn;cycles_ws,weather,0,https://w3id.org/wings/export/MINT#CyclesWeather
+cycles_soil,cycles_soil,Cycles soil file,cycles_cn;cycles_slope;cycles_layer;cycles_dz;cycles_clay;cycles_silt;cycles_rv;cycles_bd;cycles_som;cycles_smc,soil,0,https://w3id.org/wings/export/MINT#CyclesSoil
+cycles_config,cycles_config,Cycles configuration file including crop names and percent fertilizer with subsidies to be used in the simulation,,txt,0,https://w3id.org/wings/export/MINT#CyclesConfig
+cycles_soilProfile,cycles_soilProfile,Cycles soil profile file,cycles_c_diff;cycles_final_c;cycles_humified_c2;cycles_init_c_mass;cycles_res_biomass_in;cycles_res_c_decomp;cycles_respired_c;cycles_root_biomass_in;cycles_root_c_decomp;cycles_year,dat,0,https://w3id.org/wings/export/MINT#CyclesAnnualSoilProfile
+cycles_somF,cycles_somF,Cycles annual SOM file,cycles_bulk_density;cycles_c_sat._ratio;cycles_soil_c;cycles_thickness;cycles_year,dat,0,https://w3id.org/wings/export/MINT#CyclesAnnualSOM
+cyles_crop,cyles_crop,Cycles crop output file,cycles_ag_biomass;cycles_ag_n;cycles_ag_n_concn;cycles_crop;cycles_cum._biomass;cycles_date;cycles_frac_intercep;cycles_n_added;cycles_n_fixation;cycles_n_stress;cycles_potential_tr;cycles_root_biomass;cycles_root_n;cycles_stage;cycles_thermal_time;cycles_total_n;cycles_water_stress,dat,0,https://w3id.org/wings/export/MINT#CyclesCropOutput
+cycles_nitrogen,cycles_nitrogen,Cycles Nitrogen file,cycles_date;cycles_immobilization;cycles_mineralization;cycles_n2o_from_denit;cycles_n2o_from_nitrif;cycles_net_mineraliz;cycles_nh4_leaching;cycles_nh4_nitrificat;cycles_nh4_volatiliz;cycles_no3_denitrif;cycles_no3_leaching;cycles_org_soil_n;cycles_prof_soil_nh4;cycles_prof_soil_no3,dat,0,https://w3id.org/wings/export/MINT#CyclesNitrogen
+cycles_season,cycles_season,Cycles Season file,cycles_actual_tr;cycles_ag_residue;cycles_crop;cycles_cum._n_stress;cycles_date;cycles_forage_n;cycles_forage_yield;cycles_grain_n;cycles_grain_yield;cycles_harvest_index;cycles_n_concn_forage;cycles_n_in_harvest;cycles_n_in_residue;cycles_potential_tr;cycles_root_biomass;cycles_root_n;cycles_soil_evapr;cycles_total_biomass;cycles_total_n,dat,0,https://w3id.org/wings/export/MINT#CyclesSeason
+cycles_summary,cycles_summary,Cycles summary file,cycles_avg_gross_n_min;cycles_avg_n_immob;cycles_avg_n2o_fr_deni;cycles_avg_n2o_fr_nit;cycles_avg_net_n_min;cycles_avg_nh3_volatil;cycles_avg_nh4_leach;cycles_avg_nh4_nitrif;cycles_avg_no3_denit;cycles_avg_no3_leach;cycles_avg_tot_n2o_emi;cycles_final_prof_c;cycles_humified_c;cycles_init_prof_c;cycles_produced_root;cycles_prof_c_diff;cycles_res_c_input;cycles_resp_res_c;cycles_resp_soil_c;cycles_retained_res;cycles_root_c_input;cycles_soil_c_chg/yr,dat,0,https://w3id.org/wings/export/MINT#CyclesSummary
+cycles_weatherOutput,cycles_weatherOutput,Cycles weather output file,cycles_avg_tmp;cycles_date;cycles_max_tmp;cycles_min_tmp;cycles_precipitation;cycles_reference_et,dat,0,https://w3id.org/wings/export/MINT#CyclesWeatherOutput
+cycles_water,cycles_water,Cycles water file,cycles_date;cycles_drainage;cycles_infiltration;cycles_irrigation;cycles_res_evap;cycles_plant_evap;cycles_runoff;cycles_snow_sub;cycles_soil_evap;cycles_transpiration;cycles_swc,dat,0,https://w3id.org/wings/export/MINT#CyclesWaterOutput
+cycles_seasonConfig,cycles_seasonConfig,Cycles season configuration file,,txt,0,https://w3id.org/wings/export/MINT#CyclesSeasonConfig
+,,,,,,
+cycles_cropname,cycles_cropname,Cycles crop name,,txt,0,https://w3id.org/wings/export/MINT#CyclesCropName
+cycles_percent_increase_fertilizer,cycles_percent_increase_fertilizer,Cycles increase in fertilizer,,txt,0,https://w3id.org/wings/export/MINT#CyclesPercentIncreaseFertilizer
+,,,,,,
+crop_yields,crop_yields,Crop yield,econ_ybarN,csv,1,https://w3id.org/wings/export/MINT#CropYield
+crop_yield_merged,crop_yield_merged,Crop yield merged,econ_ybarN,csv,0,https://w3id.org/wings/export/MINT#CropYield
+,,,,,,
+cycles_to_crop_cycles_season,cycles-season,Cycles Season file,cycles_actual_tr;cycles_ag_residue;cycles_crop;cycles_cum._n_stress;cycles_date;cycles_forage_n;cycles_forage_yield;cycles_grain_n;cycles_grain_yield;cycles_harvest_index;cycles_n_concn_forage;cycles_n_in_harvest;cycles_n_in_residue;cycles_potential_tr;cycles_root_biomass;cycles_root_n;cycles_soil_evapr;cycles_total_biomass;cycles_total_n,dat,1,https://w3id.org/wings/export/MINT#CyclesSeason
+cycles_to_crop_seasonConfig,cycles-seasonConfig,This file is an auxiliary means to simplify the execution of the workflow,,txt,1,https://w3id.org/wings/export/MINT#CyclesSeasonConfig
+cycles_to_crop_yield,crop-yield,File that contains the yield elasticities to fertilizer use that are derived from Cycles output,econ_ybarN,csv,0,https://w3id.org/wings/export/MINT#CropYield
+,,,,,,
+econ_calib,economic-calib,contains data on land planted to each crop and fertilizer use and observed yields. These data are used to calibrate the production function in the model.,econ_xbar1;econ_xbar2;econ_ybar,csv,0,https://w3id.org/wings/export/MINT#EconomicCalibData
+econ_sim,economic-sim,ontains the economic data used in the simulation analysis,econ_p;econ_eta;econ_c1;econ_c2,csv,0,https://w3id.org/wings/export/MINT#EconomicSimData
+econ_data,economic-data,contains data on observed prices for each crop and supply elasticities and the costs of production for each crop,econ_p;econ_eta;econ_c1;econ_c2,csv,0,https://w3id.org/wings/export/MINT#EconomicData
+econ_subsidies,economic-subsidies,File indicating the economic subsidies to use on each iteration of the model,,txt,0,https://w3id.org/wings/export/MINT#EconomicSubsidies
+econ_yield,crop-yield,Contains the yield elasticities to fertilizer use that are derived from Cycles output,econ_ybarN,csv,0,https://w3id.org/wings/export/MINT#CropYield
+econ_land_use,economic-land-use,Economic land use results,econ_fert_subsidy;econ_land_area;econ_obsyield;econ_production;econ_Nfert,txt,0,https://w3id.org/wings/export/MINT#EconomicLandUse
+,,,,,,
+economic_to_vis_land-use,economic-land-use,Economic land use results,econ_fert_subsidy;econ_land_area;econ_obsyield;econ_production;econ_Nfert,txt,1,https://w3id.org/wings/export/MINT#EconomicLandUse
+economic_to_vis_crop,economic-crop,Aggregated visualization of the results of the workflow,econ_fert_subsidy;econ_land_area;econ_production,csv,0,https://w3id.org/wings/export/MINT#EconomicCrop
+,,,,,,
+pihm_to_cycles_reinit_cropland,pihm-cropland,Cropland file,,txt,0,https://w3id.org/wings/export/MINT#PIHMCropland
+pihm_to_cycles_reinit_groundwater,pihm-groundwater,Groundwater file,pihm_gw,gw,0,https://w3id.org/wings/export/MINT#PIHMGroundwaterHead
+pihm_to_cycles_reinit_infiltration,pihm-infiltration,Infiltration file,pihm_infil,infil,0,https://w3id.org/wings/export/MINT#PIHMInfiltration
+pihm_to_cycles_reinit_reinit,cycles-reinit,Reinit file,cycles_doy;cycles_rot_year;cycles_smc_l1;cycles_infiltration,reinit,0,https://w3id.org/wings/export/MINT#CyclesREINIT
+,,,,,,
+pihm_forcing_to_cycles_weather_forc,pihm-forc,Force file as it was used by PIHM,pihm_Height;pihm_IsFactor;pihm_LAI;pihm_MF;pihm_PRCP;pihm_RH;pihm_RL;pihm_NER;pihm_SS;pihm_Time;pihm_TRMP;pihm_VP;pihm_WINF,forc,0,https://w3id.org/wings/export/MINT#PIHMForcing
+pihm_forcing_to_cycles_weather_att,pihm-att,PIHM Configuration file with index values of variables for timeseries,,att,0,https://w3id.org/wings/export/MINT#PIHMAttribute
+pihm_forcing_to_cycles_weather_cropland,pihm-cropland,Cropland file,,,0,https://w3id.org/wings/export/MINT#PIHMCropland
+pihm_forcing_to_cycles_weather_cycles-weather,cycles-weather,Cycles weather file,cycles_pp;cycles_tx;cycles_tn;cycles_sr;cycles_hx;cycles_hn;cycles_ws,weather,0,https://w3id.org/wings/export/MINT#CyclesWeather
+,,,,,,
+pihm_to_cycles_soil_cropland,pihm-cropland,Cropland file,,csv,0,https://w3id.org/wings/export/MINT#PIHMCropland
+pihm_to_cycles_soil_modelInfo,pihm-modelinfo,PIHM Model info file,pihm_Alpha;pihm_Beta;pihm_hAreaF;pihm_infD;pihm_KsatV;pihm_macKsatV;pihm_ThetaR;pihm_ThetaS,tar.gz,0,https://w3id.org/wings/export/MINT#PIHMModelInfo
+pihm_to_cycles_soil_gis_soil,pihm-gis-soil,GIS soil data,,soil,0,https://w3id.org/wings/export/MINT#PIHMGISSoil
+pihm_to_cycles_soil_soil,cycles-soil,Cycles soil file,cycles_cn;cycles_slope;cycles_layer;cycles_dz;cycles_clay;cycles_silt;cycles_rv;cycles_bd;cycles_som;cycles_smc,soil,0,https://w3id.org/wings/export/MINT#CyclesSoil
+,,,,,,
+pihm_cropland_modelInfo,pihm-modelinfo,PIHM model information,pihm_Alpha;pihm_Beta;pihm_hAreaF;pihm_infD;pihm_KsatV;pihm_macKsatV;pihm_ThetaR;pihm_ThetaS,tar.gz,0,https://w3id.org/wings/export/MINT#PIHMModelInfo
+pihm_cropland_o,pihm-cropland,Cropland file,,csv,0,https://w3id.org/wings/export/MINT#PIHMCropland
+,,,,,,
+pihm_att,pihm-att,PIHM attribute file with index values of variables for timeseries,,att,0,https://w3id.org/wings/export/MINT#PIHMAttribute
+pihm_forc,pihm-forc,PIHM forcing file with the majority of the relevant variables,pihm_Height;pihm_IsFactor;pihm_LAI;pihm_MF;pihm_PRCP;pihm_RH;pihm_RL;pihm_NER;pihm_SS;pihm_Time;pihm_TRMP;pihm_VP;pihm_WINF,forc,0,https://w3id.org/wings/export/MINT#PIHMForcing
+pihm_modelinfo,pihm-modelinfo,PIHM model information aggreagation file,pihm_Alpha;pihm_Beta;pihm_hAreaF;pihm_infD;pihm_KsatV;pihm_macKsatV;pihm_ThetaR;pihm_ThetaS,tar.gz,0,https://w3id.org/wings/export/MINT#PIHMModelInfo
+pihm_soil,pihm-soil,Soil parameters for the soil types,pihm_Alpha;pihm_Beta;pihm_hAreaF;pihm_infD;pihm_KsatV;pihm_macKsatV;pihm_ThetaR;pihm_ThetaS,soil,0,https://w3id.org/wings/export/MINT#PIHMSoil
+pihm_riv,pihm-riv,Spatial  geometry and material information of river segments,pihm_Bed;pihm_Cwr;pihm_Depth;pihm_KsatH;pihm_KsatVB;pihm_n;pi;m_Time;pihm_WT_Value;pihm_BC_Value,riv,0,https://w3id.org/wings/export/MINT#PIHMRiverSegments
+pihm_geol,pihm-geol,Geologic file,pihm_Alpha;pihm_Beta;pihm_ginfD;pihm_KsatV;pihm_macD;pihm_macKsatH;pihm_gThetaR;pihm_gThetaS;pihm_vAreaF,geol,0,https://w3id.org/wings/export/MINT#PIHMGeologic
+pihm_ibc,pihm-ibc,Boundary condition information for elements,pihm_Time;pihm_Neumann_BCValue;pihm_Dirichlet_BCValue,ibc,0,https://w3id.org/wings/export/MINT#PIHMBoundaryCondition
+pihm_lc,pihm-lc,Vegetation parameters of different land cover types,pihm_Albedo;pihm_LAImax;pihm_n;pihm_Rmin;pihm_Rs_ref;pihm_RzD;pihm_VegFrac,lc,0,https://w3id.org/wings/export/MINT#PIHMLandCover
+pihm_base,pihm-base,Base file,,tar.gz,0,https://w3id.org/wings/export/MINT#PIHMBase
+pihm_groundwater,pihm-groundwater,Groundwater file,pihm_gw,GW,0,https://w3id.org/wings/export/MINT#PIHMGroundwaterHead
+pihm_infiltration,pihm-infiltration,Infiltration file,pihm_infil,infil,0,https://w3id.org/wings/export/MINT#PIHMInfiltration
+pihm_snow,pihm-snow,Snow accumilation file,pihm_snowV,snow,0,https://w3id.org/wings/export/MINT#PIHMSnowAccumulation
+pihm_surf,pihm-surf,Surface water file,pihm_surfV,surf,0,https://w3id.org/wings/export/MINT#PIHMSurfaceWater
+pihm_unsat,pihm-unsat,Soil moisture file,pihm_unsatV,unsat,0,https://w3id.org/wings/export/MINT#PIHMSoilMoisture
+pihm_et0,pihm-et0,Evaporation canopy file,pihm_et0V,et0,0,https://w3id.org/wings/export/MINT#PIHMEvaporationCanopy
+pihm_et1,pihm-et1,Model fileTranspiration file,pihm_transpiration,et1,0,https://w3id.org/wings/export/MINT#PIHMTranspiration
+pihm_et2,pihm-et2,Evapotranspiration ground surface file,pihm_et2v,et2,0,https://w3id.org/wings/export/MINT#PIHMEvaporationGroundSurface
+pihm_rech,pihm-rech,Recharge Rate file,pihm_rechr,rech,0,https://w3id.org/wings/export/MINT#PIHMRechargeRate
+pihm_stage,pihm-stage,River stage file,pihm_stagev,stage,0,https://w3id.org/wings/export/MINT#PIHMRiverStage
+pihm_rbed,pihm-rbed,River bed storage file,pihm_rbedv,rbed,0,https://w3id.org/wings/export/MINT#PIHMRiverBedStorage
+pihm_rivFlx0,pihm-rivFlx0,lateral influs to the stream reach,pihm_rivFlx0v,rivFlx0,0,https://w3id.org/wings/export/MINT#PIHMRivFlx0
+pihm_rivFlx1,pihm-rivFlx1,Lateral outflow from stream reach,pihm_rivFlx1v,rivFlx1,0,https://w3id.org/wings/export/MINT#PIHMRivFlx1
+pihm_rivFlx2,pihm-rivFlx2,Surface flow to stream reach from left terrain,pihm_rivFlx2v,rivFlx2,0,https://w3id.org/wings/export/MINT#PIHMRivFlx2
+pihm_rivFlx3,pihm-rivFlx3,surface flow frow to stream reach from right terrain,pihm_rivFlx3v,rivFlx3,0,https://w3id.org/wings/export/MINT#PIHMRivFlx3
+pihm_rivFlx4,pihm-rivFlx4,Baseflow to stream reach from aquifer on the left,pihm_rivFlx4v,rivFlx4,0,https://w3id.org/wings/export/MINT#PIHMRivFlx4
+pihm_rivFlx5,pihm-rivFlx5,baseflow to stream reach from aquifer on the right,pihm_rivFlx5v,rivFlx5,0,https://w3id.org/wings/export/MINT#PIHMRivFlx5
+pihm_rivFlx6,pihm-rivFlx6,leakage between stream reach and river bed,pihm_rivFlx6v,rivFlx6,0,https://w3id.org/wings/export/MINT#PIHMRivFlx6
+pihm_rivFlx7,pihm-rivFlx7,subsurface flow to the river bed from left aquifer,pihm_rivFlx7v,rivFlx7,0,https://w3id.org/wings/export/MINT#PIHMRivFlx7
+pihm_rivFlx8,pihm-rivFlx8,subsurface flow to the river bed from right aquifer,pihm_rivFlx8v,rivFlx8,0,https://w3id.org/wings/export/MINT#PIHMRivFlx8
+pihm_rivFlx9,pihm-rivFlx9,lateral outflux to the bed beneath river,pihm_rivFlx9v,rivFlx9,0,https://w3id.org/wings/export/MINT#PIHMRivFlx9
+pihm_rivFlx10,pihm-rivFlx10,lateral influx to the bed beneath river,pihm_rivFlx10v,rivFlx10,0,https://w3id.org/wings/export/MINT#PIHMRivFlx10
+pihm_is,pihm-is,Interception storage file,pihm_isv,is,0,https://w3id.org/wings/export/MINT#PIHMInterceptionStorage
+,,,,,,
+pihm_flooding_surf,pihm-surf,Surface water file,pihm_surfV,surf,0,https://w3id.org/wings/export/MINT#PIHMSurfaceWater
+pihm_flooding_o,pihm-flooding,,flooding_surfv,txt,0,https://w3id.org/wings/export/MINT#PIHMFlooding
+,,,,,,
+fldas_to_PIHM_fldas_weather_data,fldas-weather-data,FLDAS weather data,fldas_Evap_tavg;fldas_LWdown_f_tavg;fldas_Lwnet_tavg;fldas_Psurf_f_tavg;fldas_Qair_f_tavg;fldas_Qg_tavg;fldas_Qh_tavg;fldas_Qle_tavg;fldas_Qs_tavg;fldas_Qsb_tavg;fldas_RadT_tavg;fldas_Rainf_f_tavg;fldas_SM01_Percentile;fldas_SWdown_f_tavg;fldas_SoilMoi00_10cm_ta;fldas_SoilMoi100_200cm_;fldas_SoilMoi10_40cm_ta;fldas_SoilMoi40_100cm_t;fldas_SoilTemp00_10cm_t;fldas_SoilTemp100_200cm;fldas_SoilTemp10_40cm_t;fldas_SoilTemp40_100cm_;fldas_Swnet_tavg;fldas_Tair_f_tavg;fldas_Wind_f_tavg,tar.gz,0,https://w3id.org/wings/export/MINT#FLDAS
+fldas_to_PIHM-gisdata,pihm-gisdata,Base file,,tar.gz,0,https://w3id.org/wings/export/MINT#PIHMGISData
+fldas_to_PIHM_force_file,pihm-forc,PIHM forcing file with the majority of the relevant variables,pihm_Height;pihm_IsFactor;pihm_LAI;pihm_MF;pihm_PRCP;pihm_RH;pihm_RL;pihm_NER;pihm_SS;pihm_Time;pihm_TRMP;pihm_VP;pihm_WINF,forc,0,https://w3id.org/wings/export/MINT#PIHMForcing
+,,,,,,
+wgen_daily,daily-weather,Input to the weather generator (daily),wgen_stationid;wgen_lon;wgen_lat;wgen_year;wgen_month;wgen_minT;wgen_maxT;wgen_cloudfraction;wgen_windspeed;wgen_wetdays;wgen_prcp,tar.gz,0,https://w3id.org/wings/export/MINT#FLDAS
+wgen_monthly,monthly-weather,Input to the weather generator (monthly),wgen_stationid;wgen_lon;wgen_lat;wgen_year;wgen_month;wgen_minT;wgen_maxT;wgen_cloudfraction;wgen_windspeed;wgen_wetdays;wgen_prcp,tar.gz,0,https://w3id.org/wings/export/MINT#FLDAS
+wgen_output,fldas-wgen,Output from the weather generator,wgen_stationid;wgen_year;wgen_month;wgen_day;wgen_minT;wgen_maxT;wgen_cloudfraction;wgen_windspeed;wgen_wetdays;wgen_prcp,tar.gz,0,https://w3id.org/wings/export/MINT#WGenWeather
+,,,,,,
+climcomp_FLDAS_P,weather,FLDAS weather data,fldas_Evap_tavg;fldas_LWdown_f_tavg;fldas_Lwnet_tavg;fldas_Psurf_f_tavg;fldas_Qair_f_tavg;fldas_Qg_tavg;fldas_Qh_tavg;fldas_Qle_tavg;fldas_Qs_tavg;fldas_Qsb_tavg;fldas_RadT_tavg;fldas_Rainf_f_tavg;fldas_SM01_Percentile;fldas_SWdown_f_tavg;fldas_SoilMoi00_10cm_ta;fldas_SoilMoi100_200cm_;fldas_SoilMoi10_40cm_ta;fldas_SoilMoi40_100cm_t;fldas_SoilTemp00_10cm_t;fldas_SoilTemp100_200cm;fldas_SoilTemp10_40cm_t;fldas_SoilTemp40_100cm_;fldas_Swnet_tavg;fldas_Tair_f_tavg;fldas_Wind_f_tavg,netcdf,0,https://w3id.org/wings/export/MINT#FLDAS
+climcomp_P_summary,summary,Precipitation output from climcomp,climcomp_P,csv,0,https://w3id.org/wings/export/MINT#ClimcompSummary
+climcomp_P_climatology,climatology,Precipitation output from climcomp,climcomp_P,csv,0,https://w3id.org/wings/export/MINT#ClimcompClimatology
+,,,,,,
+climcomp_FLDAS_T,weather,FLDAS weather data,fldas_Evap_tavg;fldas_LWdown_f_tavg;fldas_Lwnet_tavg;fldas_Psurf_f_tavg;fldas_Qair_f_tavg;fldas_Qg_tavg;fldas_Qh_tavg;fldas_Qle_tavg;fldas_Qs_tavg;fldas_Qsb_tavg;fldas_RadT_tavg;fldas_Rainf_f_tavg;fldas_SM01_Percentile;fldas_SWdown_f_tavg;fldas_SoilMoi00_10cm_ta;fldas_SoilMoi100_200cm_;fldas_SoilMoi10_40cm_ta;fldas_SoilMoi40_100cm_t;fldas_SoilTemp00_10cm_t;fldas_SoilTemp100_200cm;fldas_SoilTemp10_40cm_t;fldas_SoilTemp40_100cm_;fldas_Swnet_tavg;fldas_Tair_f_tavg;fldas_Wind_f_tavg,netcdf,0,https://w3id.org/wings/export/MINT#FLDAS
+climcomp_T_summary,summary,temperature output to climcomp,climcomp_T,csv,0,https://w3id.org/wings/export/MINT#ClimcompSummary
+limcomp_T_climatology,climatology,temperature output to climcomp,climcomp_T,csv,0,https://w3id.org/wings/export/MINT#ClimcompClimatology
+,,,,,,
+pihm_cropland_to_points_pihm-croplands,pihm-croplands,,,,0,https://w3id.org/wings/export/MINT#PIHMCropland
+pihm_cropland_to_points_pihm-cropland,pihm-cropland,,,,1,https://w3id.org/wings/export/MINT#PIHMCropland
+,,,,,,
+pihm_flooding_netcdf_pihm-modelInfo,pihm-modelinfo,PIHM Model info file,pihm_Alpha;pihm_Beta;pihm_hAreaF;pihm_infD;pihm_KsatV;pihm_macKsatV;pihm_ThetaR;pihm_ThetaS,tar.gz,0,https://w3id.org/wings/export/MINT#PIHMModelInfo
+pihm_flooding_netcdf_pihm_surf,pihm-surf,Surface water file,pihm_surfV,surf,0,https://w3id.org/wings/export/MINT#PIHMSurfaceWater
+pihm_flooding_netcdf_pihm-flooding-netcdf,pihm-flooding-netcdf,flooding results in netcdf,,tar.gz,0,https://w3id.org/wings/export/MINT#PIHMFloodingNetCDF
+,,,,,,
+,,,,,,
+DSSAT_simulationFile,DSSAT simulation file,,DSSAT_FAMN;DSSAT_FDATE;DSSAT_FDEP;DSSAT_XCRD;DSSAT_YCRD;DSSAT_ICBL;DSSAT_SH2O;DSSAT_SNH4;DSSAT_SNO3;DSSAT_CR;DSSAT_INGENO;DSSAT_PDATE;DSSAT_PLDP;DSSAT_PLRS;DSSAT_PPOP,x,0,https://w3id.org/wings/export/MINT#DSSAT_SIMULATION
+DSSAT_weatherFile,DSSAT weather file,,DSSAT_LAT;DSSAT_LONG;DSSAT_RAIN;DSSAT_SRAD;DSSAT_TAV;DSSAT_TMAX;DSSAT_TMIN;DSSAT_WSTA,wth,0,https://w3id.org/wings/export/DSSAT_WEATHER
+DSSAT_sol,DSSAT soil file,,DSSAT_SALB;DSSAT_SBDM;DSSAT_SDUL;DSSAT_SLB;DSSAT_SLCL;DSSAT_SLLL;DSSAT_SLOC;DSSAT_SLSI;DSSAT_SSAT;DSSAT_SSKS,sol,0,https://w3id.org/wings/export/MINT#Soil
+DSSAT_summary,DSSAT Summary file,,DSSAT_hwam;DSSAT_cwam,csv,0,https://w3id.org/wings/export/MINT#Summary
+,,,,,,
+topo_rain,Rain rate txt file,,Topo_p,txt,0,https://w3id.org/wings/export/MINT#TOPO_Rain
+topo_aggr_files,TopoFlow aggregated inputs,,,tar.gz,0,https://w3id.org/wings/export/MINT#TOPO_Aggregation
+topo_aggregatedOutput,TopoFlow aggregated outputs,,Topo_qs;Topo_albedo,tar.gz,0,https://w3id.org/wings/export/MINT#TOPO_Aggregation
+,,,,,,
+river_depth_estimation_remote_sensing_data,remote_sensing_data,,,tar.gz,0,https://w3id.org/wings/export/MINT#RemoteSensingData
+river_depth_estimation_river_depth_data,river_depth_data,,,tar.gz,0,https://w3id.org/wings/export/MINT#RiverDepth
+,,,,,,
+river_data,river_data,,,tar.gz,0,https://w3id.org/wings/export/MINT#RiverData
+remote_sensing_data,remote_sensing_data,,,tar.gz,0,https://w3id.org/wings/export/MINT#RemoteSensingData
+,,,,,,
+pihm_to_netcdf_model_info,pihm_model_info,PIHM Model info file,pihm_Alpha;pihm_Beta;pihm_hAreaF;pihm_infD;pihm_KsatV;pihm_macKsatV;pihm_ThetaR;pihm_ThetaS,tar.gz,0,https://w3id.org/wings/export/MINT#PIHMModelInfo
+pihm_to_netcdf_infil,pihm_infil,Infiltration file,pihm_infil,infil,0,https://w3id.org/wings/export/MINT#PIHMInfiltration
+pihm_to_netcdf_surf,pihm_surf,Surface water file,pihm_surfV,surf,0,https://w3id.org/wings/export/MINT#PIHMSurfaceWater
+pihm_to_netcdf_netcdf,pihm_netcdf,PIHM NetCDF file,pihm_Alpha;pihm_Beta;pihm_hAreaF;pihm_infD;pihm_KsatV;pihm_macKsatV;pihm_ThetaR;pihm_ThetaS;pihm_infil;pihm_surfV,tar.gz,0,https://w3id.org/wings/export/MINT#PIHMNetCDF
+,,,,,,
+cycles_outputs_season,cycles_season,Cycles Season file,cycles_actual_tr;cycles_ag_residue;cycles_crop;cycles_cum._n_stress;cycles_date;cycles_forage_n;cycles_forage_yield;cycles_grain_n;cycles_grain_yield;cycles_harvest_index;cycles_n_concn_forage;cycles_n_in_harvest;cycles_n_in_residue;cycles_potential_tr;cycles_root_biomass;cycles_root_n;cycles_soil_evapr;cycles_total_biomass;cycles_total_n,dat,0,https://w3id.org/wings/export/MINT#CyclesSeason
+cycles_outputs_weather,cycles_weatherOutput,Cycles weather output file,cycles_avg_tmp;cycles_date;cycles_max_tmp;cycles_min_tmp;cycles_precipitation;cycles_reference_et,dat,0,https://w3id.org/wings/export/MINT#CyclesWeatherOutput
+cycles_outputs_cycles_outputs,cycles_outputs,Aggregated season and weather file,cycles_actual_tr;cycles_ag_residue;cycles_crop;cycles_cum._n_stress;cycles_date;cycles_forage_n;cycles_forage_yield;cycles_grain_n;cycles_grain_yield;cycles_harvest_index;cycles_n_concn_forage;cycles_n_in_harvest;cycles_n_in_residue;cycles_potential_tr;cycles_root_biomass;cycles_root_n;cycles_soil_evapr;cycles_total_biomass;cycles_total_n;cycles_avg_tmp;cycles_date;cycles_max_tmp;cycles_min_tmp;cycles_precipitation;cycles_reference_et,tar.gz,0,https://w3id.org/wings/export/MINT#CyclesOutputs

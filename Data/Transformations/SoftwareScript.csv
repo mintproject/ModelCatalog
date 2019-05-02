@@ -1,0 +1,19 @@
+http://ontosoft.org/software#Software,http://www.w3.org/2000/01/rdf-schema#label,http://purl.org/dc/terms/description,http://ontosoft.org/software#hasSoftwareVersion,http://ontosoft.org/software#hasDomainKeywords,https://w3id.org/mint/modelCatalog#hasAssumption
+ldas2pihm,LDAS to PIHM script,Script designed to transform LDAS data into a format acceptable by PIHM,ldas2pihm_v1,Hydrology,
+pihm2cyclesReinit,PIHM to Cycles reinit script,Script designed to transform PIHM reinit results into Cycles,pihm2cyclesReinit_v1,Hydrology;Agriculture,
+forcingToCyclesWeather,PIHM to Cycles forcing script,Script designed to transform FORCING files to Cycles weather files,pihm_forcing_to_cycles_weather_v1,Hydrology;Agriculture,
+pihmToCyclesSoil,PIHM to Cycles soil script,Script designed to transform PIHM files to Cycles soil files,pihm_to_cycles_soil_v1,Hydrology;Agriculture,
+pihmCropland,PIHM cropland file,Script designed to prepare the cropland configuration,pihm_cropland_v1,Hydrology;Agriculture,
+pihmFlooding,PIHM flooding values script,Script for getting flooding values from PIHM,pihm_flooding_v1,Hydrology,
+ldasDataDownload,LDAS data download script,Script designed to retrieve and download data from LDAS,ldasdd_v1,,
+cycles2econ,Cycles to economic script,Cycles_to_econ calculates the yield elasticity under increased fertilizer uses from cycles for use in the aggregate crop supply response model,cycles2econ_v1,Agriculture;Economic,The model assumes a 10% increase in fertilizer use compared to the baseline cycles run.
+economicVis,Script to visualize the economic results,Script to visualize the economic results,economic_to_vis_v1,Economic,
+pihmCroplandToPoints,Script to transform cropland into points,,pihm_cropland_to_points_v1,Hydrology;Agriculture,
+pihmFloodingNetCDF,Script to transfrom flooding output into NetCDF,,pihm_flooding_netcdf_v1,Hydrology,
+pihmToNetCDF,pihm to NetCDF,Script to transform PIHM outputs into the NetCDF format,PIHM_to_netcdfv1,Hydrology,
+CyclesOutputs,Cycles outputs aggregator,Script to wrap up 2 cycles outputs in one,CyclesOutputsV1,Hydrology,
+,,,,,
+FLDAS2WGEN,FLDAS data to WGEN,Transforms FLDAS data for use with weather generator WGEN,FLDAS2WGEN_v1,Weather,Requires both monthly and daily data
+WGEN2FLDAS,WGEN output to FLDAS like format,Transforms the output of the weather generator wgen to FLDAS like data,WGEN2FLDAS_v1,Weather,
+RiverDepthEstimation,River depth remote sensing analysis,Remote sensing to calculate river depth,RiverDepthEstimation_V1,Hydrology,
+RiverDepthEstimationPreprocessing,River depth preprocessing,Preprocessing to prepare data for river depth calculation,RiverDepthEstimationPreprocessing_V1,Hydrology,

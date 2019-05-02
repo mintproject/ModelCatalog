@@ -1,0 +1,13 @@
+https://w3id.org/mint/modelCatalog#CAG,http://www.w3.org/2000/01/rdf-schema#label,https://w3id.org/mint/modelCatalog#hasPart
+pihm_cfg_simple_CAG,CAG for PIHM simple configuration,precipitation;solarradiation;transpiration;evaporation;runoff;infiltration
+pihm_cfg_simple2_CAG,CAG for PIHM simple configuration with additional input variables,precipitation;solarradiation;transpiration;evaporation;runoff;infiltration
+cycles_cfg_simple_CAG_process,CAG for Cycles simple configuration with processes,cycles_precipitation;cycles_solarradiation;management;cycles_transpiration;biomassgrowth;Nuptake;respiration;humification;Ntransport;Nmineralizationandimmobalization
+cycles_cfg_simple_CAG,CAG for Cycles with the most important variables in the model,cycles_cropGrowth;cycles_pp;cycles_tx;cycles_tn;cycles_sr;cycles_hx;cycles_hn;cycles_ws;cycles_grain_yield;cycles_swc;cycles_transpiration
+cycles_cfg_complex_CAG,CAG for Cycles representing a more complex version of the variables and processes of the model,cycles_cropGrowth;cycles_pp;cycles_tx;cycles_tn;cycles_sr;cycles_hx;cycles_hn;cycles_ws;cycles_grain_yield;cycles_swc;cycles_transpiration;cycles_n_stress;cycles_mineralization;cycles_net_mineraliz;cycles_soil_evapr;cycles_soil_evap;cycles_infiltration;cycles_cn;cycles_slope;cycles_layer;cycles_dz;cycles_clay;cycles_silt;cycles_rv;cycles_bd;cycles_som;cycles_smc;cycles_percolation
+kimetrica_land_use_cfg_simple_CAG,CAG for Kimetrica land use simple configuration,econ_obsyield;econ_land_area
+economic_aggregate_crop_supply_CAG_process,CAG for Economic model for aggregate crop supply response model processes for the country of South Sudan configuration,crop_yield_elasticity;crop_prices;fertilizer_prices;land_use;fertilizer_use;crop_supply;crop_yield
+economic_aggregate_crop_supply_CAG_variables,CAG for Economic model for aggregate crop supply response model variables for the country of South Sudan configuration,econ_xbar1;econ_xbar2;econ_ybar;econ_p;econ_c1;econ_c2;econ_ybarN;econ_land_area;econ_obsyield;econ_production;econ_eta
+topoflow_cfg_simple_CAG,CAG forTopoFlow with basic configuration,
+dssat_cfg_simple_CAG,CAG for DSSAT simple configuration with explicit outputs,
+topoflow_cfg_fk_CAG,CAG for TopoFlow with fake configuration to emulate PIHM,
+dssat_cfg_fk_CAG,CAG for DSSAT with fake configuration to emulate Cycles,

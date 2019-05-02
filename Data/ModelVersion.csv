@@ -1,0 +1,11 @@
+https://w3id.org/mint/modelCatalog#ModelVersion,http://www.w3.org/2000/01/rdf-schema#label,http://ontosoft.org/software#hasVersionId,https://w3id.org/mint/modelCatalog#hasConfiguration
+pihm_2.2,PIHM v2.2,2.2,pihm
+cycles_0.8.0_alpha,Cycles v0.8.0 alpha,0.8.0,cycles;cycles_multiple_points
+kimetrica_0.0,Kimetrica lv0.o0,0,kimetrica_land_use_cfg_simple
+EACS_2.0,EACS 2.0,2,economic
+topoflow_3.5,Topoflow v3.5,3.5,topoflow_cfg_simple
+DSSAT_4.7,DSSAT v4.7,4.7,DSSAT_cfg_simple
+modflow_nwt,Modflow NWT,nwt,modflow_nwt_cfg
+modflow_2005,Modflow 2005,2005,modflow_2005_cfg
+wgen_1.0.1,wgen v1.0.1,1.0.1,weather_generator
+ClimComp_0.0.2,climcompv0.0.2,0.0.2,clim_comp_P;clim_comp_T
