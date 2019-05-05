@@ -82,8 +82,6 @@ public class CSV2RDF {
                                 OntProperty p;
                                 //this is a hack because this prop is not on the ontology
                                 if(property.contains("https://w3id.org/mint/modelCatalog#hasCanonicalName")){ 
-    //                                    ||
-    //                                    property.contains("http://ontosoft.org/software#hasDocumentation")){
                                     p = (OntProperty) mcOntology.createDatatypeProperty(property);
                                 }
                                 else{
@@ -146,6 +144,8 @@ public class CSV2RDF {
                                                Individual userInstance = instances.createClass("http://www.geoscienceontology.org/svo/svu#Variable").
                                                        createIndividual(instance_URI+encode(rowValue));
                                                userInstance.addLabel(rowValue, null);
+                                               //assign the variable to target node.
+                                               ind.addProperty(p, userInstance);
                                            }
                                         }
                                         else{

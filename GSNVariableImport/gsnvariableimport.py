@@ -35,9 +35,10 @@ if __name__ == '__main__':
     sparql = SPARQLWrapper("http://endpoint.mint.isi.edu/ds/query")
     sparql.setQuery("""
     PREFIX mc: <https://w3id.org/mint/modelCatalog#>
+    PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
 
     SELECT distinct ?u where {
-        ?a mc:hasStandardVariable ?u.
+        ?a mc:hasStandardVariable ?un. ?un rdfs:label ?u
     }
     """)
 
