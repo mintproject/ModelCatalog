@@ -135,7 +135,8 @@ def add_dimension_mappings(store, mappings, mint):
 
 
 if __name__ == '__main__':
-    input_file = "preprocessing_approach.model.yml"
+    #input_file = "preprocessing_approach.model.yml"
+    input_file = "example/gold.model.yml"
 
     # Converting data to JSOM
     data = get_layout_data_as_Json(input_file)
@@ -156,7 +157,7 @@ if __name__ == '__main__':
 
         # adding location data based on resource format
         location_data = data['layout'][variable]
-        add_location_data(store, variable_uri, resource_format, location_data)
+        # add_location_data(store, variable_uri, resource_format, location_data)
 
     # Adding semantic relations as triples
     semantic_relations = data['semantic_model']['semantic_relations']
