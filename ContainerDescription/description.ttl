@@ -1,0 +1,286 @@
+@prefix ns1: <http://w3id.org/mint/instance/vocab#> .
+@prefix ns2: <http://w3id.org/mint/instance/wicus-stack:> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<http://w3id.org/mint/instance/resource/ImageLayer/ce038e96b80baabbbe8e0eb790b35830ff855da93ec99a866d91a3affbc6d3b851d6d4c96fd308155315fc8f535227125342b8466a665fbf44eb87bd350de277> ns1:ismodifiedBy <http://w3id.org/mint/instance/resource/PackageVersion/ca-certificates-20190108-r0> .
+
+<http://w3id.org/mint/instance/resource/ImageLayer/sha256%3A51d6d4c96fd308155315fc8f535227125342b8466a665fbf44eb87bd350de277> ns1:isLayerOf <http://w3id.org/mint/instance/resource/SoftwareImage/kcapd-publisher> ;
+    rdfs:type <http://w3id.org/mint/instance/resource/ImageLayer> .
+
+<http://w3id.org/mint/instance/resource/ImageLayer/sha256%3A6c40cc604d8e4c121adcb6b0bfe8bb038815c350980090e74aa5a6423f8f82c0> ns1:isLayerOf <http://w3id.org/mint/instance/resource/SoftwareImage/kcapd-publisher> ;
+    rdfs:type <http://w3id.org/mint/instance/resource/ImageLayer> .
+
+<http://w3id.org/mint/instance/resource/ImageLayer/sha256%3A70b760ca2416b51968ec173fb6c34569824eeaab96e571cacd637aa5eb7943c6> ns1:isLayerOf <http://w3id.org/mint/instance/resource/SoftwareImage/kcapd-publisher> ;
+    rdfs:type <http://w3id.org/mint/instance/resource/ImageLayer> .
+
+<http://w3id.org/mint/instance/resource/ImageLayer/sha256%3A8a955318d720525d257bdf5a8845356a3b0ffc797628a774e3cbbf162163e0c9> ns1:isLayerOf <http://w3id.org/mint/instance/resource/SoftwareImage/kcapd-publisher> ;
+    rdfs:type <http://w3id.org/mint/instance/resource/ImageLayer> .
+
+<http://w3id.org/mint/instance/resource/ImageLayer/sha256%3A945d978b4f197a284150a58bc63f99c562080d67d3eb5ba8b97945b194d58235> ns1:isLayerOf <http://w3id.org/mint/instance/resource/SoftwareImage/kcapd-publisher> ;
+    rdfs:type <http://w3id.org/mint/instance/resource/ImageLayer> .
+
+<http://w3id.org/mint/instance/resource/ImageLayer/sha256%3A96464951f390b55e760f1e9a187ac1ca70e84d13fc43808f02ebcaa4a65fcdca> ns1:isLayerOf <http://w3id.org/mint/instance/resource/SoftwareImage/kcapd-publisher> ;
+    rdfs:type <http://w3id.org/mint/instance/resource/ImageLayer> .
+
+<http://w3id.org/mint/instance/resource/SoftwarePackage/alpine-baselayout> a <http://w3id.org/mint/instance/resource/SoftwarePackage> ;
+    rdfs:label "alpine-baselayout" ;
+    ns1:hasVersion <http://w3id.org/mint/instance/resource/PackageVersion/alpine-baselayout-3.1.0-r3> ;
+    ns1:isPackageOf <http://w3id.org/mint/instance/resource/OperatingSystem/alpine-v3.9> ;
+    ns2:isDeploymentPlan <http://w3id.org/mint/instance/resource/DeploymentPlankcapd-publisher> .
+
+<http://w3id.org/mint/instance/resource/SoftwarePackage/alpine-keys> a <http://w3id.org/mint/instance/resource/SoftwarePackage> ;
+    rdfs:label "alpine-keys" ;
+    ns1:hasVersion <http://w3id.org/mint/instance/resource/PackageVersion/alpine-keys-2.1-r1> ;
+    ns1:isPackageOf <http://w3id.org/mint/instance/resource/OperatingSystem/alpine-v3.9> ;
+    ns2:isDeploymentPlan <http://w3id.org/mint/instance/resource/DeploymentPlankcapd-publisher> .
+
+<http://w3id.org/mint/instance/resource/SoftwarePackage/apk-tools> a <http://w3id.org/mint/instance/resource/SoftwarePackage> ;
+    rdfs:label "apk-tools" ;
+    ns1:hasVersion <http://w3id.org/mint/instance/resource/PackageVersion/apk-tools-2.10.3-r1> ;
+    ns1:isPackageOf <http://w3id.org/mint/instance/resource/OperatingSystem/alpine-v3.9> ;
+    ns2:isDeploymentPlan <http://w3id.org/mint/instance/resource/DeploymentPlankcapd-publisher> .
+
+<http://w3id.org/mint/instance/resource/SoftwarePackage/busybox> a <http://w3id.org/mint/instance/resource/SoftwarePackage> ;
+    rdfs:label "busybox" ;
+    ns1:hasVersion <http://w3id.org/mint/instance/resource/PackageVersion/busybox-1.29.3-r10> ;
+    ns1:isPackageOf <http://w3id.org/mint/instance/resource/OperatingSystem/alpine-v3.9> ;
+    ns2:isDeploymentPlan <http://w3id.org/mint/instance/resource/DeploymentPlankcapd-publisher> .
+
+<http://w3id.org/mint/instance/resource/SoftwarePackage/ca-certificates> a <http://w3id.org/mint/instance/resource/SoftwarePackage> ;
+    rdfs:label "ca-certificates" ;
+    ns1:hasVersion <http://w3id.org/mint/instance/resource/PackageVersion/ca-certificates-20190108-r0> ;
+    ns1:isPackageOf <http://w3id.org/mint/instance/resource/OperatingSystem/alpine-v3.9> ;
+    ns2:isDeploymentPlan <http://w3id.org/mint/instance/resource/DeploymentPlankcapd-publisher> .
+
+<http://w3id.org/mint/instance/resource/SoftwarePackage/ca-certificates-cacert> a <http://w3id.org/mint/instance/resource/SoftwarePackage> ;
+    rdfs:label "ca-certificates-cacert" ;
+    ns1:hasVersion <http://w3id.org/mint/instance/resource/PackageVersion/ca-certificates-cacert-20190108-r0> ;
+    ns1:isPackageOf <http://w3id.org/mint/instance/resource/OperatingSystem/alpine-v3.9> ;
+    ns2:isDeploymentPlan <http://w3id.org/mint/instance/resource/DeploymentPlankcapd-publisher> .
+
+<http://w3id.org/mint/instance/resource/SoftwarePackage/libc-utils> a <http://w3id.org/mint/instance/resource/SoftwarePackage> ;
+    rdfs:label "libc-utils" ;
+    ns1:hasVersion <http://w3id.org/mint/instance/resource/PackageVersion/libc-utils-0.7.1-r0> ;
+    ns1:isPackageOf <http://w3id.org/mint/instance/resource/OperatingSystem/alpine-v3.9> ;
+    ns2:isDeploymentPlan <http://w3id.org/mint/instance/resource/DeploymentPlankcapd-publisher> .
+
+<http://w3id.org/mint/instance/resource/SoftwarePackage/libcrypto1.1> a <http://w3id.org/mint/instance/resource/SoftwarePackage> ;
+    rdfs:label "libcrypto1.1" ;
+    ns1:hasVersion <http://w3id.org/mint/instance/resource/PackageVersion/libcrypto1.1-1.1.1a-r1> ;
+    ns1:isPackageOf <http://w3id.org/mint/instance/resource/OperatingSystem/alpine-v3.9> ;
+    ns2:isDeploymentPlan <http://w3id.org/mint/instance/resource/DeploymentPlankcapd-publisher> .
+
+<http://w3id.org/mint/instance/resource/SoftwarePackage/libssl1.1> a <http://w3id.org/mint/instance/resource/SoftwarePackage> ;
+    rdfs:label "libssl1.1" ;
+    ns1:hasVersion <http://w3id.org/mint/instance/resource/PackageVersion/libssl1.1-1.1.1a-r1> ;
+    ns1:isPackageOf <http://w3id.org/mint/instance/resource/OperatingSystem/alpine-v3.9> ;
+    ns2:isDeploymentPlan <http://w3id.org/mint/instance/resource/DeploymentPlankcapd-publisher> .
+
+<http://w3id.org/mint/instance/resource/SoftwarePackage/libtls-standalone> a <http://w3id.org/mint/instance/resource/SoftwarePackage> ;
+    rdfs:label "libtls-standalone" ;
+    ns1:hasVersion <http://w3id.org/mint/instance/resource/PackageVersion/libtls-standalone-2.7.4-r6> ;
+    ns1:isPackageOf <http://w3id.org/mint/instance/resource/OperatingSystem/alpine-v3.9> ;
+    ns2:isDeploymentPlan <http://w3id.org/mint/instance/resource/DeploymentPlankcapd-publisher> .
+
+<http://w3id.org/mint/instance/resource/SoftwarePackage/musl> a <http://w3id.org/mint/instance/resource/SoftwarePackage> ;
+    rdfs:label "musl" ;
+    ns1:hasVersion <http://w3id.org/mint/instance/resource/PackageVersion/musl-1.1.20-r3> ;
+    ns1:isPackageOf <http://w3id.org/mint/instance/resource/OperatingSystem/alpine-v3.9> ;
+    ns2:isDeploymentPlan <http://w3id.org/mint/instance/resource/DeploymentPlankcapd-publisher> .
+
+<http://w3id.org/mint/instance/resource/SoftwarePackage/musl-utils> a <http://w3id.org/mint/instance/resource/SoftwarePackage> ;
+    rdfs:label "musl-utils" ;
+    ns1:hasVersion <http://w3id.org/mint/instance/resource/PackageVersion/musl-utils-1.1.20-r3> ;
+    ns1:isPackageOf <http://w3id.org/mint/instance/resource/OperatingSystem/alpine-v3.9> ;
+    ns2:isDeploymentPlan <http://w3id.org/mint/instance/resource/DeploymentPlankcapd-publisher> .
+
+<http://w3id.org/mint/instance/resource/SoftwarePackage/scanelf> a <http://w3id.org/mint/instance/resource/SoftwarePackage> ;
+    rdfs:label "scanelf" ;
+    ns1:hasVersion <http://w3id.org/mint/instance/resource/PackageVersion/scanelf-1.2.3-r0> ;
+    ns1:isPackageOf <http://w3id.org/mint/instance/resource/OperatingSystem/alpine-v3.9> ;
+    ns2:isDeploymentPlan <http://w3id.org/mint/instance/resource/DeploymentPlankcapd-publisher> .
+
+<http://w3id.org/mint/instance/resource/SoftwarePackage/ssl_client> a <http://w3id.org/mint/instance/resource/SoftwarePackage> ;
+    rdfs:label "ssl_client" ;
+    ns1:hasVersion <http://w3id.org/mint/instance/resource/PackageVersion/ssl_client-1.29.3-r10> ;
+    ns1:isPackageOf <http://w3id.org/mint/instance/resource/OperatingSystem/alpine-v3.9> ;
+    ns2:isDeploymentPlan <http://w3id.org/mint/instance/resource/DeploymentPlankcapd-publisher> .
+
+<http://w3id.org/mint/instance/resource/SoftwarePackage/zlib> a <http://w3id.org/mint/instance/resource/SoftwarePackage> ;
+    rdfs:label "zlib" ;
+    ns1:hasVersion <http://w3id.org/mint/instance/resource/PackageVersion/zlib-1.2.11-r1> ;
+    ns1:isPackageOf <http://w3id.org/mint/instance/resource/OperatingSystem/alpine-v3.9> ;
+    ns2:isDeploymentPlan <http://w3id.org/mint/instance/resource/DeploymentPlankcapd-publisher> .
+
+<http://w3id.org/mint/instance/resource/PackageVersion/alpine-baselayout-3.1.0-r3> a <http://w3id.org/mint/instance/resource/PackageVersion> ;
+    rdfs:label "3.1.0-r3" ;
+    ns1:isInstalledOn <http://w3id.org/mint/instance/resource/SoftwareImage/kcapd-publisher> ;
+    ns1:isVersionOf <http://w3id.org/mint/instance/resource/SoftwarePackage/alpine-baselayout> ;
+    ns1:modifyLayer <http://w3id.org/mint/instance/resource/ImageLayer/ce038e96b80baabbbe8e0eb790b35830ff855da93ec99a866d91a3affbc6d3b86c40cc604d8e4c121adcb6b0bfe8bb038815c350980090e74aa5a6423f8f82c0> .
+
+<http://w3id.org/mint/instance/resource/PackageVersion/alpine-keys-2.1-r1> a <http://w3id.org/mint/instance/resource/PackageVersion> ;
+    rdfs:label "2.1-r1" ;
+    ns1:isInstalledOn <http://w3id.org/mint/instance/resource/SoftwareImage/kcapd-publisher> ;
+    ns1:isVersionOf <http://w3id.org/mint/instance/resource/SoftwarePackage/alpine-keys> ;
+    ns1:modifyLayer <http://w3id.org/mint/instance/resource/ImageLayer/ce038e96b80baabbbe8e0eb790b35830ff855da93ec99a866d91a3affbc6d3b86c40cc604d8e4c121adcb6b0bfe8bb038815c350980090e74aa5a6423f8f82c0> .
+
+<http://w3id.org/mint/instance/resource/PackageVersion/apk-tools-2.10.3-r1> a <http://w3id.org/mint/instance/resource/PackageVersion> ;
+    rdfs:label "2.10.3-r1" ;
+    ns1:isInstalledOn <http://w3id.org/mint/instance/resource/SoftwareImage/kcapd-publisher> ;
+    ns1:isVersionOf <http://w3id.org/mint/instance/resource/SoftwarePackage/apk-tools> ;
+    ns1:modifyLayer <http://w3id.org/mint/instance/resource/ImageLayer/ce038e96b80baabbbe8e0eb790b35830ff855da93ec99a866d91a3affbc6d3b86c40cc604d8e4c121adcb6b0bfe8bb038815c350980090e74aa5a6423f8f82c0> .
+
+<http://w3id.org/mint/instance/resource/PackageVersion/busybox-1.29.3-r10> a <http://w3id.org/mint/instance/resource/PackageVersion> ;
+    rdfs:label "1.29.3-r10" ;
+    ns1:isInstalledOn <http://w3id.org/mint/instance/resource/SoftwareImage/kcapd-publisher> ;
+    ns1:isVersionOf <http://w3id.org/mint/instance/resource/SoftwarePackage/busybox> ;
+    ns1:modifyLayer <http://w3id.org/mint/instance/resource/ImageLayer/ce038e96b80baabbbe8e0eb790b35830ff855da93ec99a866d91a3affbc6d3b86c40cc604d8e4c121adcb6b0bfe8bb038815c350980090e74aa5a6423f8f82c0> .
+
+<http://w3id.org/mint/instance/resource/PackageVersion/ca-certificates-20190108-r0> a <http://w3id.org/mint/instance/resource/PackageVersion> ;
+    rdfs:label "20190108-r0" ;
+    ns1:isInstalledOn <http://w3id.org/mint/instance/resource/SoftwareImage/kcapd-publisher> ;
+    ns1:isVersionOf <http://w3id.org/mint/instance/resource/SoftwarePackage/ca-certificates> ;
+    ns1:modifyLayer <http://w3id.org/mint/instance/resource/ImageLayer/ce038e96b80baabbbe8e0eb790b35830ff855da93ec99a866d91a3affbc6d3b851d6d4c96fd308155315fc8f535227125342b8466a665fbf44eb87bd350de277> .
+
+<http://w3id.org/mint/instance/resource/PackageVersion/ca-certificates-cacert-20190108-r0> a <http://w3id.org/mint/instance/resource/PackageVersion> ;
+    rdfs:label "20190108-r0" ;
+    ns1:isInstalledOn <http://w3id.org/mint/instance/resource/SoftwareImage/kcapd-publisher> ;
+    ns1:isVersionOf <http://w3id.org/mint/instance/resource/SoftwarePackage/ca-certificates-cacert> ;
+    ns1:modifyLayer <http://w3id.org/mint/instance/resource/ImageLayer/ce038e96b80baabbbe8e0eb790b35830ff855da93ec99a866d91a3affbc6d3b86c40cc604d8e4c121adcb6b0bfe8bb038815c350980090e74aa5a6423f8f82c0> .
+
+<http://w3id.org/mint/instance/resource/PackageVersion/libc-utils-0.7.1-r0> a <http://w3id.org/mint/instance/resource/PackageVersion> ;
+    rdfs:label "0.7.1-r0" ;
+    ns1:isInstalledOn <http://w3id.org/mint/instance/resource/SoftwareImage/kcapd-publisher> ;
+    ns1:isVersionOf <http://w3id.org/mint/instance/resource/SoftwarePackage/libc-utils> ;
+    ns1:modifyLayer <http://w3id.org/mint/instance/resource/ImageLayer/ce038e96b80baabbbe8e0eb790b35830ff855da93ec99a866d91a3affbc6d3b86c40cc604d8e4c121adcb6b0bfe8bb038815c350980090e74aa5a6423f8f82c0> .
+
+<http://w3id.org/mint/instance/resource/PackageVersion/libcrypto1.1-1.1.1a-r1> a <http://w3id.org/mint/instance/resource/PackageVersion> ;
+    rdfs:label "1.1.1a-r1" ;
+    ns1:isInstalledOn <http://w3id.org/mint/instance/resource/SoftwareImage/kcapd-publisher> ;
+    ns1:isVersionOf <http://w3id.org/mint/instance/resource/SoftwarePackage/libcrypto1.1> ;
+    ns1:modifyLayer <http://w3id.org/mint/instance/resource/ImageLayer/ce038e96b80baabbbe8e0eb790b35830ff855da93ec99a866d91a3affbc6d3b86c40cc604d8e4c121adcb6b0bfe8bb038815c350980090e74aa5a6423f8f82c0> .
+
+<http://w3id.org/mint/instance/resource/PackageVersion/libssl1.1-1.1.1a-r1> a <http://w3id.org/mint/instance/resource/PackageVersion> ;
+    rdfs:label "1.1.1a-r1" ;
+    ns1:isInstalledOn <http://w3id.org/mint/instance/resource/SoftwareImage/kcapd-publisher> ;
+    ns1:isVersionOf <http://w3id.org/mint/instance/resource/SoftwarePackage/libssl1.1> ;
+    ns1:modifyLayer <http://w3id.org/mint/instance/resource/ImageLayer/ce038e96b80baabbbe8e0eb790b35830ff855da93ec99a866d91a3affbc6d3b86c40cc604d8e4c121adcb6b0bfe8bb038815c350980090e74aa5a6423f8f82c0> .
+
+<http://w3id.org/mint/instance/resource/PackageVersion/libtls-standalone-2.7.4-r6> a <http://w3id.org/mint/instance/resource/PackageVersion> ;
+    rdfs:label "2.7.4-r6" ;
+    ns1:isInstalledOn <http://w3id.org/mint/instance/resource/SoftwareImage/kcapd-publisher> ;
+    ns1:isVersionOf <http://w3id.org/mint/instance/resource/SoftwarePackage/libtls-standalone> ;
+    ns1:modifyLayer <http://w3id.org/mint/instance/resource/ImageLayer/ce038e96b80baabbbe8e0eb790b35830ff855da93ec99a866d91a3affbc6d3b86c40cc604d8e4c121adcb6b0bfe8bb038815c350980090e74aa5a6423f8f82c0> .
+
+<http://w3id.org/mint/instance/resource/PackageVersion/musl-1.1.20-r3> a <http://w3id.org/mint/instance/resource/PackageVersion> ;
+    rdfs:label "1.1.20-r3" ;
+    ns1:isInstalledOn <http://w3id.org/mint/instance/resource/SoftwareImage/kcapd-publisher> ;
+    ns1:isVersionOf <http://w3id.org/mint/instance/resource/SoftwarePackage/musl> ;
+    ns1:modifyLayer <http://w3id.org/mint/instance/resource/ImageLayer/ce038e96b80baabbbe8e0eb790b35830ff855da93ec99a866d91a3affbc6d3b86c40cc604d8e4c121adcb6b0bfe8bb038815c350980090e74aa5a6423f8f82c0> .
+
+<http://w3id.org/mint/instance/resource/PackageVersion/musl-utils-1.1.20-r3> a <http://w3id.org/mint/instance/resource/PackageVersion> ;
+    rdfs:label "1.1.20-r3" ;
+    ns1:isInstalledOn <http://w3id.org/mint/instance/resource/SoftwareImage/kcapd-publisher> ;
+    ns1:isVersionOf <http://w3id.org/mint/instance/resource/SoftwarePackage/musl-utils> ;
+    ns1:modifyLayer <http://w3id.org/mint/instance/resource/ImageLayer/ce038e96b80baabbbe8e0eb790b35830ff855da93ec99a866d91a3affbc6d3b86c40cc604d8e4c121adcb6b0bfe8bb038815c350980090e74aa5a6423f8f82c0> .
+
+<http://w3id.org/mint/instance/resource/PackageVersion/scanelf-1.2.3-r0> a <http://w3id.org/mint/instance/resource/PackageVersion> ;
+    rdfs:label "1.2.3-r0" ;
+    ns1:isInstalledOn <http://w3id.org/mint/instance/resource/SoftwareImage/kcapd-publisher> ;
+    ns1:isVersionOf <http://w3id.org/mint/instance/resource/SoftwarePackage/scanelf> ;
+    ns1:modifyLayer <http://w3id.org/mint/instance/resource/ImageLayer/ce038e96b80baabbbe8e0eb790b35830ff855da93ec99a866d91a3affbc6d3b86c40cc604d8e4c121adcb6b0bfe8bb038815c350980090e74aa5a6423f8f82c0> .
+
+<http://w3id.org/mint/instance/resource/PackageVersion/ssl_client-1.29.3-r10> a <http://w3id.org/mint/instance/resource/PackageVersion> ;
+    rdfs:label "1.29.3-r10" ;
+    ns1:isInstalledOn <http://w3id.org/mint/instance/resource/SoftwareImage/kcapd-publisher> ;
+    ns1:isVersionOf <http://w3id.org/mint/instance/resource/SoftwarePackage/ssl_client> ;
+    ns1:modifyLayer <http://w3id.org/mint/instance/resource/ImageLayer/ce038e96b80baabbbe8e0eb790b35830ff855da93ec99a866d91a3affbc6d3b86c40cc604d8e4c121adcb6b0bfe8bb038815c350980090e74aa5a6423f8f82c0> .
+
+<http://w3id.org/mint/instance/resource/PackageVersion/zlib-1.2.11-r1> a <http://w3id.org/mint/instance/resource/PackageVersion> ;
+    rdfs:label "1.2.11-r1" ;
+    ns1:isInstalledOn <http://w3id.org/mint/instance/resource/SoftwareImage/kcapd-publisher> ;
+    ns1:isVersionOf <http://w3id.org/mint/instance/resource/SoftwarePackage/zlib> ;
+    ns1:modifyLayer <http://w3id.org/mint/instance/resource/ImageLayer/ce038e96b80baabbbe8e0eb790b35830ff855da93ec99a866d91a3affbc6d3b86c40cc604d8e4c121adcb6b0bfe8bb038815c350980090e74aa5a6423f8f82c0> .
+
+<http://w3id.org/mint/instance/resource/ImageLayer/ce038e96b80baabbbe8e0eb790b35830ff855da93ec99a866d91a3affbc6d3b86c40cc604d8e4c121adcb6b0bfe8bb038815c350980090e74aa5a6423f8f82c0> ns1:ismodifiedBy <http://w3id.org/mint/instance/resource/PackageVersion/alpine-baselayout-3.1.0-r3>,
+        <http://w3id.org/mint/instance/resource/PackageVersion/alpine-keys-2.1-r1>,
+        <http://w3id.org/mint/instance/resource/PackageVersion/apk-tools-2.10.3-r1>,
+        <http://w3id.org/mint/instance/resource/PackageVersion/busybox-1.29.3-r10>,
+        <http://w3id.org/mint/instance/resource/PackageVersion/ca-certificates-cacert-20190108-r0>,
+        <http://w3id.org/mint/instance/resource/PackageVersion/libc-utils-0.7.1-r0>,
+        <http://w3id.org/mint/instance/resource/PackageVersion/libcrypto1.1-1.1.1a-r1>,
+        <http://w3id.org/mint/instance/resource/PackageVersion/libssl1.1-1.1.1a-r1>,
+        <http://w3id.org/mint/instance/resource/PackageVersion/libtls-standalone-2.7.4-r6>,
+        <http://w3id.org/mint/instance/resource/PackageVersion/musl-1.1.20-r3>,
+        <http://w3id.org/mint/instance/resource/PackageVersion/musl-utils-1.1.20-r3>,
+        <http://w3id.org/mint/instance/resource/PackageVersion/scanelf-1.2.3-r0>,
+        <http://w3id.org/mint/instance/resource/PackageVersion/ssl_client-1.29.3-r10>,
+        <http://w3id.org/mint/instance/resource/PackageVersion/zlib-1.2.11-r1> .
+
+<http://w3id.org/mint/instance/resource/OperatingSystem/alpine-v3.9> a <http://w3id.org/mint/instance/resource/OperatingSystem> ;
+    ns1:hasPackages <http://w3id.org/mint/instance/resource/SoftwarePackage/alpine-baselayout>,
+        <http://w3id.org/mint/instance/resource/SoftwarePackage/alpine-keys>,
+        <http://w3id.org/mint/instance/resource/SoftwarePackage/apk-tools>,
+        <http://w3id.org/mint/instance/resource/SoftwarePackage/busybox>,
+        <http://w3id.org/mint/instance/resource/SoftwarePackage/ca-certificates>,
+        <http://w3id.org/mint/instance/resource/SoftwarePackage/ca-certificates-cacert>,
+        <http://w3id.org/mint/instance/resource/SoftwarePackage/libc-utils>,
+        <http://w3id.org/mint/instance/resource/SoftwarePackage/libcrypto1.1>,
+        <http://w3id.org/mint/instance/resource/SoftwarePackage/libssl1.1>,
+        <http://w3id.org/mint/instance/resource/SoftwarePackage/libtls-standalone>,
+        <http://w3id.org/mint/instance/resource/SoftwarePackage/musl>,
+        <http://w3id.org/mint/instance/resource/SoftwarePackage/musl-utils>,
+        <http://w3id.org/mint/instance/resource/SoftwarePackage/scanelf>,
+        <http://w3id.org/mint/instance/resource/SoftwarePackage/ssl_client>,
+        <http://w3id.org/mint/instance/resource/SoftwarePackage/zlib> .
+
+<http://w3id.org/mint/instance/resource/SoftwareImage/kcapd-publisher> a <http://w3id.org/mint/instance/resource/SoftwareImage> ;
+    rdfs:label "kcapd/publisher" ;
+    ns1:buildDate <http://w3id.org/mint/instance/> ;
+    ns1:composedBy <http://w3id.org/mint/instance/resource/ImageLayer/sha256%3A51d6d4c96fd308155315fc8f535227125342b8466a665fbf44eb87bd350de277>,
+        <http://w3id.org/mint/instance/resource/ImageLayer/sha256%3A6c40cc604d8e4c121adcb6b0bfe8bb038815c350980090e74aa5a6423f8f82c0>,
+        <http://w3id.org/mint/instance/resource/ImageLayer/sha256%3A70b760ca2416b51968ec173fb6c34569824eeaab96e571cacd637aa5eb7943c6>,
+        <http://w3id.org/mint/instance/resource/ImageLayer/sha256%3A8a955318d720525d257bdf5a8845356a3b0ffc797628a774e3cbbf162163e0c9>,
+        <http://w3id.org/mint/instance/resource/ImageLayer/sha256%3A945d978b4f197a284150a58bc63f99c562080d67d3eb5ba8b97945b194d58235>,
+        <http://w3id.org/mint/instance/resource/ImageLayer/sha256%3A96464951f390b55e760f1e9a187ac1ca70e84d13fc43808f02ebcaa4a65fcdca> ;
+    ns1:containsSoftware <http://w3id.org/mint/instance/resource/PackageVersion/alpine-baselayout-3.1.0-r3>,
+        <http://w3id.org/mint/instance/resource/PackageVersion/alpine-keys-2.1-r1>,
+        <http://w3id.org/mint/instance/resource/PackageVersion/apk-tools-2.10.3-r1>,
+        <http://w3id.org/mint/instance/resource/PackageVersion/busybox-1.29.3-r10>,
+        <http://w3id.org/mint/instance/resource/PackageVersion/ca-certificates-20190108-r0>,
+        <http://w3id.org/mint/instance/resource/PackageVersion/ca-certificates-cacert-20190108-r0>,
+        <http://w3id.org/mint/instance/resource/PackageVersion/libc-utils-0.7.1-r0>,
+        <http://w3id.org/mint/instance/resource/PackageVersion/libcrypto1.1-1.1.1a-r1>,
+        <http://w3id.org/mint/instance/resource/PackageVersion/libssl1.1-1.1.1a-r1>,
+        <http://w3id.org/mint/instance/resource/PackageVersion/libtls-standalone-2.7.4-r6>,
+        <http://w3id.org/mint/instance/resource/PackageVersion/musl-1.1.20-r3>,
+        <http://w3id.org/mint/instance/resource/PackageVersion/musl-utils-1.1.20-r3>,
+        <http://w3id.org/mint/instance/resource/PackageVersion/scanelf-1.2.3-r0>,
+        <http://w3id.org/mint/instance/resource/PackageVersion/ssl_client-1.29.3-r10>,
+        <http://w3id.org/mint/instance/resource/PackageVersion/zlib-1.2.11-r1> ;
+    ns1:description "" ;
+    ns1:dockerCmd "" ;
+    ns1:dockerCmdDebug "" ;
+    ns1:dockerCmdDevel "" ;
+    ns1:dockerCmdHelp "" ;
+    ns1:dockerCmdParams "" ;
+    ns1:dockerCmdTest "" ;
+    ns1:name "" ;
+    ns1:rktCmd "" ;
+    ns1:rktCmdDebug "" ;
+    ns1:rktCmdDevel "" ;
+    ns1:rktCmdHelp "" ;
+    ns1:rktCmdParams "" ;
+    ns1:rktCmdTest "" ;
+    ns1:schema-version "" ;
+    ns1:size 120578832 ;
+    ns1:url "" ;
+    ns1:usage "" ;
+    ns1:vcsRef "" ;
+    ns1:vcsUrl "" ;
+    ns1:vendor "" ;
+    ns1:version "" .
+
