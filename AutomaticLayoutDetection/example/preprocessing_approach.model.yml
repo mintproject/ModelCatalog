@@ -32,3 +32,4 @@ semantic_model:
      - mint:DeathRate:1--mint:when--mint:DateTime:1
   ontology_prefixes:
     mint: https://mint.isi.edu/
+
