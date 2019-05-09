@@ -123,6 +123,12 @@ def create_metric_hasPart_url(has_part):
 
     return url[:-1]
 
+def sort_lexo(metric_dimension):
+    words = metric_dimension.split()
+
+    # sort() will sort the strings.
+    words.sort()
+    return " ".join(words)
 
 def json_to_rdf(parsed_response, store, MINT, qudtp, ccut):
 
@@ -145,6 +151,7 @@ def json_to_rdf(parsed_response, store, MINT, qudtp, ccut):
     store.add((metric, qudtp.abbreviation, Literal(metric_abbreviation)))
     store.add((metric, RDFS.label, Literal(metric_abbreviation)))
     if metric_dimension != "":
+        metric_dimension = sort_lexo(metric_dimension)
         store.add((metric, ccut.hasDimension, Literal(metric_dimension)))
     store.add((metric, RDF.type, qudtp.Unit))
 
@@ -192,7 +199,10 @@ def json_to_rdf(parsed_response, store, MINT, qudtp, ccut):
         if "qudtp:symbol" in has_part[i]:
             store.add((has_part_url, qudtp.symbol, Literal(str(has_part[i]["qudtp:symbol"]))))
             #assumption: all unit parts have a symbol.
-            store.add((has_part_url, RDFS.label, Literal(str(has_part[i]["qudtp:symbol"]) +"^"+ exponent)))
+            if exponent == "1":
+                store.add((has_part_url, RDFS.label, Literal(str(has_part[i]["qudtp:symbol"]))))
+            else:
+                store.add((has_part_url, RDFS.label, Literal(str(has_part[i]["qudtp:symbol"]) +"^"+ exponent)))
 
     # print_turtle(store)
     # turtle_file = metric_url_suffix +".txt"
@@ -266,7 +276,6 @@ def add_wiki_pages(store, qudtp, owl):
             request = ""
             for res in results2["results"]["bindings"]:
                 description = unicodedata.normalize('NFKD', res['c']['value']).encode('ascii','ignore')
-                # print(description)
                 request += str(serial_number) + ": " + description.decode('utf-8') + "\n"
                 serial_number += 1
 
@@ -360,7 +369,7 @@ if __name__ == '__main__':
 
         list_dict =  data["results"]["bindings"]
         unit_list = list()
-        #print (list_dict)
+        # print list_dict
         for unit_dict in list_dict:
             unit_list.append(unit_dict["units"]["value"])
 
