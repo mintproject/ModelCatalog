@@ -1,4 +1,4 @@
-https://w3id.org/mint/modelCatalog#TimeInterval,http://www.w3.org/2000/01/rdf-schema#label,http://purl.org/dc/terms/description,https://w3id.org/mint/modelCatalog#hasValue,https://w3id.org/mint/modelCatalog#usesUnit
+https://w3id.org/okn/o/sdm#TimeInterval,http://www.w3.org/2000/01/rdf-schema#label,https://w3id.org/okn/o/sd#description,https://w3id.org/okn/o/sdm#hasValue,https://w3id.org/okn/o/sd#usesUnit
 pihm_cfg_simple_TI,Simple PIHM time interval,Time interval used in the PIHM simple configuration,1,day
 pihm_cfg_simple2_TI,Simple PIHM time interval,Time interval used in the PIHM simple configuration with additional input variables,1,day
 cycles_cfg_simple_TI,Simple cycles time interval,Time interval used in the Cycles simple configuration,1,day

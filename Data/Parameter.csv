@@ -1,4 +1,4 @@
-https://w3id.org/mint/modelCatalog#Parameter,http://www.w3.org/2000/01/rdf-schema#label,http://purl.org/dc/terms/description,https://w3id.org/mint/modelCatalog#hasDefaultValue,https://w3id.org/mint/modelCatalog#hasDataType,http://www.w3.org/1999/02/22-rdf-syntax-ns#type
+https://w3id.org/okn/o/sd#Parameter,http://www.w3.org/2000/01/rdf-schema#label,https://w3id.org/okn/o/sd#description,https://w3id.org/okn/o/sd#hasDefaultValue,https://w3id.org/okn/o/sd#hasDataType,http://www.w3.org/1999/02/22-rdf-syntax-ns#type
 pihm_flooding_threshold,flooding-threshold,,0.05,float,https://w3id.org/wings/export/MINT#FloodingThreshold
 wgen_flagP,flagP,flag P,Rainf_f_tavg,string,https://w3id.org/wings/export/MINT#FlagP
 wgen_min_lon,min_lon,minimum longitude,24.15235,float,https://w3id.org/wings/export/MINT#MinLongitude

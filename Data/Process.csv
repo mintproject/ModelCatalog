@@ -1,4 +1,4 @@
-https://w3id.org/mint/modelCatalog#Process,http://www.w3.org/2000/01/rdf-schema#label,https://w3id.org/mint/modelCatalog#influences
+https://w3id.org/okn/o/sdm#Process,http://www.w3.org/2000/01/rdf-schema#label,https://w3id.org/okn/o/sdm#influences
 precipitation,precipitation,runoff;infiltration
 solarradiation,solar radiation,transpiration;evaporation
 transpiration,transpiration,infiltration;runoff
