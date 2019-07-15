@@ -1,4 +1,4 @@
-https://w3id.org/okn/o/sdm#CAG,http://www.w3.org/2000/01/rdf-schema#label,https://w3id.org/okn/o/sdm#hasPart
+https://w3id.org/okn/o/sdm#CausalDiagram,http://www.w3.org/2000/01/rdf-schema#label,https://w3id.org/okn/o/sdm#hasPart
 pihm_cfg_simple_CAG,CAG for PIHM simple configuration,precipitation;solarradiation;transpiration;evaporation;runoff;infiltration
 pihm_cfg_simple2_CAG,CAG for PIHM simple configuration with additional input variables,precipitation;solarradiation;transpiration;evaporation;runoff;infiltration
 cycles_cfg_simple_CAG_process,CAG for Cycles simple configuration with processes,cycles_precipitation;cycles_solarradiation;management;cycles_transpiration;biomassgrowth;Nuptake;respiration;humification;Ntransport;Nmineralizationandimmobalization
