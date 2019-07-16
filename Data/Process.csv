@@ -24,3 +24,4 @@ Ntransport,N transport,
 Nmineralizationandimmobalization,N mineralization and immobalization,Ntransport
 cycles_cropGrowth,Crop growth,cycles_grain_yield
 cycles_percolation,Percolation,cycles_no3_leaching;cycles_nh4_leaching;cycles_avg_nh4_leach;cycles_avg_no3_leach
+constr_max_net_revenue,Constrained maximization of net revenue,
