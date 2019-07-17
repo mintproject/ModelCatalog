@@ -1,2 +1,28 @@
 https://w3id.org/okn/o/sd#Image,http://www.w3.org/2000/01/rdf-schema#label,https://w3id.org/okn/o/sd#description,http://www.w3.org/ns/prov#hadPrimarySource,http://www.w3.org/ns/prov#value
 pihm_sample_Pongo,Sample visualization of a flooding map for PIHM,Visualization of a flooding simulation on the Pongo Area in 2017 using a calibrated version of PIHM,https://w3id.org/okn/i/mint/PIHM,https://publisher.mint.isi.edu/VPDku/Animation_Flood.gif
+pihm_explanation_diagram,PIHM summary,A diagram explaining the processes on PIHM and its grid,http://www.pihm.psu.edu/pihm_home.html,http://www.pihm.psu.edu/pcs.png
+pihm_forrester,Forrester diagram of PIHM,A forrester diagram explaining PIHM's main processes and their interactions,http://www.pihm.psu.edu/pihm_home.html,http://www.pihm.psu.edu/images/pihm_kernel.jpg
+pihm_logo,Logo used for PIHM,Logo of the Penn State Integrated Hydrology Model (PIHM),http://www.pihm.psu.edu/pihm_home.html,http://www.pihm.psu.edu/applications/images/tonzi.png
+,,,,
+,,,,
+cycles_logo,,,,
+cycles_forrester,,,,
+cycles_screenshot1,,,,
+cycles_screenshot2,,,,
+,,,,
+modflow_2005,Modflow 2005 diagram,"A discretized hypothetical aquifer system. (Modified from McDonald and Harbaugh, 1988.)",https://www.usgs.gov/software/modflow-2005-usgs-three-dimensional-finite-difference-ground-water-model,https://prd-wret.s3-us-west-2.amazonaws.com/assets/palladium/production/s3fs-public/styles/side_image/public/thumbnails/image/modflow5-layers.jpg
+,,,,
+,,,,
+,,,,
+,,,,
+,,,,
+,,,,
+,,,,
+,,,,
+,,,,
+,,,,
+,,,,
+,,,,
+,,,,
+remote_sensing_output,Remote sensing analysis output,A visualization of the estimation for river bed growth using remote sensing data analysis,https://github.com/mintproject/EthiopiaDemo/tree/master/RemoteSensing,https://github.com/mintproject/EthiopiaDemo/raw/master/RemoteSensing/Box-1667-sec-2.gif
+remote_sensing_river_bed_variation,Remote sensing analysis river depth variation,A visualization of the estimation for river bed growth using remote sensing data analysis. The visualization shows river depth variation,https://github.com/mintproject/EthiopiaDemo/tree/master/RemoteSensing,http://umnlcc.cs.umn.edu/carto-test/
