@@ -1,2 +1,3 @@
-https://w3id.org/okn/o/sd#Organization,http://www.w3.org/2000/01/rdf-schema#label,https://w3id.org/okn/o/sd#name,https://w3id.org/okn/o/sd#website,https://w3id.org/okn/o/sd#identifier
-nsf,National Science Foundation,National Science Foundation,https://www.nsf.gov/,
+https://w3id.org/okn/o/sd#Organization,http://www.w3.org/2000/01/rdf-schema#label,https://w3id.org/okn/o/sd#name,https://w3id.org/okn/o/sd#website,https://w3id.org/okn/o/sd#identifier,
+nsf,National Science Foundation,National Science Foundation,https://www.nsf.gov/,,https://www.wikidata.org/wiki/Q304878
+darpa,Defense Advanced Research Projects Agency,Defense Advanced Research Projects Agency,https://www.darpa.mil/,,https://www.wikidata.org/wiki/Q207361
