@@ -1,11 +1,12 @@
 https://w3id.org/okn/o/sd#SoftwareVersion,http://www.w3.org/2000/01/rdf-schema#label,https://w3id.org/okn/o/sd#hasVersionId,https://w3id.org/okn/o/sd#hasConfiguration,https://w3id.org/okn/o/sd#description
-pihm_2.2,PIHM v2.2,2.2,pihm,
+pihm_2.2,PIHM v2.2,2.2,pihm-v2,
+pihm_v4,PIHM V4,4,pihm-v4,
 cycles_0.8.0_alpha,Cycles v0.8.0 alpha,0.8.0,cycles;cycles_multiple_points,
 kimetrica_0.0,Kimetrica lv0.o0,0,kimetrica_land_use_cfg_simple,
 EACS_2.0,EACS 2.0,2,economic,
 topoflow_3.5,Topoflow v3.5,3.5,topoflow_cfg_simple,
 DSSAT_4.7,DSSAT v4.7,4.7,DSSAT_cfg_simple,
 modflow_nwt,Modflow NWT,nwt,modflow_nwt_cfg,
-modflow_2005,Modflow 2005,2005,modflow_2005_cfg,
+modflow_2005,Modflow 2005,2005,modflow_2005_cfg,MODFLOW-2005 simulates steady and nonsteady flow in an irregularly shaped flow system in which aquifer layers can be confined or unconfined. Flow from external stresses such as flow to wells and areal recharge or evapotranspiration can be simulated (usgs.gov. 2019)
 wgen_1.0.1,wgen v1.0.1,1.0.1,weather_generator,
 ClimComp_0.0.2,climcompv0.0.2,0.0.2,clim_comp_P;clim_comp_T,

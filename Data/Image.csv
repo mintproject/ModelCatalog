@@ -11,17 +11,13 @@ cycles_screenshot2,Cycles tillage setup interface,Cycles allows the user to sele
 ,,,,
 modflow_2005,Modflow 2005 diagram,A discretized hypothetical aquifer system. (Modified from McDonald and Harbaugh. 1988.),https://www.usgs.gov/software/modflow-2005-usgs-three-dimensional-finite-difference-ground-water-model,https://prd-wret.s3-us-west-2.amazonaws.com/assets/palladium/production/s3fs-public/styles/side_image/public/thumbnails/image/modflow5-layers.jpg
 ,,,,
-hand_logo,,,,
-hand_explanation,,,,
-hand_explanation2,,,,
+hand_logo,HAND logo,HAND algorithm implmentation logo,https://www.hydroshare.org/resource/69f7d237675c4c73938481904358c789/,https://github.com/mintproject/ModelCatalog/raw/master/Data/Images/hand_logo.jpg
+hand_explanation,HAND algorithm explanation,HAND classes procedure,https://www.researchgate.net/publication/232042361_Height_Above_the_Nearest_Drainage_-_a_hydrologically_relevant_new_terrain_model,https://github.com/mintproject/ModelCatalog/raw/master/Data/Images/hand_classes_procedure.png
+hand_explanation2,HAND algorithm explanation,HAND model procedure,https://www.researchgate.net/publication/232042361_Height_Above_the_Nearest_Drainage_-_a_hydrologically_relevant_new_terrain_model,https://github.com/mintproject/ModelCatalog/raw/master/Data/Images/hand_model_procedure.png
+hand_sample_visualization,Sample HAND visualization,"A sample visualization of the HAND model - as described in ""Height Above the Nearest Drainage - a hydrologically relevant new terrain model""",https://www.researchgate.net/publication/232042361_Height_Above_the_Nearest_Drainage_-_a_hydrologically_relevant_new_terrain_model,https://github.com/mintproject/ModelCatalog/raw/master/Data/Images/hand_model_divided_rio_negro.png
 ,,,,
-,,,,
-,,,,
-,,,,
-,,,,
-,,,,
-,,,,
-,,,,
+eacs_explanation,Explanation of the EACS model,Diagram explaining the main interactions of processes and variables in the economic aggregate crop supply model,,
+eacs_forrester,Forrester diagram for EACS,Forrester diagram explaining the Economic Aggregate Crop Supply model main processes and their interactions,,
 ,,,,
 remote_sensing_output,Remote sensing analysis output,A visualization of the estimation for river bed growth using remote sensing data analysis,https://github.com/mintproject/EthiopiaDemo/tree/master/RemoteSensing,https://github.com/mintproject/EthiopiaDemo/raw/master/RemoteSensing/Box-1667-sec-2.gif
 remote_sensing_river_bed_variation,Remote sensing analysis river depth variation,A visualization of the estimation for river bed growth using remote sensing data analysis. The visualization shows river depth variation,https://github.com/mintproject/EthiopiaDemo/tree/master/RemoteSensing,http://umnlcc.cs.umn.edu/carto-test/

@@ -1,1 +1,2 @@
-https://w3id.org/okn/o/sd#Organization,http://www.w3.org/2000/01/rdf-schema#label,https://w3id.org/okn/o/sd#description,https://w3id.org/okn/o/sd#name,https://w3id.org/okn/o/sd#identifier
+https://w3id.org/okn/o/sd#Organization,http://www.w3.org/2000/01/rdf-schema#label,https://w3id.org/okn/o/sd#name,https://w3id.org/okn/o/sd#website,https://w3id.org/okn/o/sd#identifier
+nsf,National Science Foundation,National Science Foundation,https://www.nsf.gov/,
