@@ -1,4 +1,4 @@
-http://ontosoft.org/software#Software,http://www.w3.org/2000/01/rdf-schema#label,http://purl.org/dc/terms/description,http://ontosoft.org/software#hasSoftwareVersion,http://ontosoft.org/software#hasDomainKeywords,https://w3id.org/mint/modelCatalog#hasAssumption
+https://w3id.org/okn/o/sd#Software,http://www.w3.org/2000/01/rdf-schema#label,https://w3id.org/okn/o/sd#description,https://w3id.org/okn/o/sd#hasVersion,https://w3id.org/okn/o/sd#keywords,https://w3id.org/okn/o/sd#hasAssumption
 ldas2pihm,LDAS to PIHM script,Script designed to transform LDAS data into a format acceptable by PIHM,ldas2pihm_v1,Hydrology,
 pihm2cyclesReinit,PIHM to Cycles reinit script,Script designed to transform PIHM reinit results into Cycles,pihm2cyclesReinit_v1,Hydrology;Agriculture,
 forcingToCyclesWeather,PIHM to Cycles forcing script,Script designed to transform FORCING files to Cycles weather files,pihm_forcing_to_cycles_weather_v1,Hydrology;Agriculture,
