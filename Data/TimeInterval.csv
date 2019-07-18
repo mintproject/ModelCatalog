@@ -1,11 +1,11 @@
 https://w3id.org/okn/o/sdm#TimeInterval,http://www.w3.org/2000/01/rdf-schema#label,https://w3id.org/okn/o/sd#description,https://w3id.org/okn/o/sdm#hasValue,https://w3id.org/okn/o/sd#usesUnit
-pihm_cfg_simple_TI,Simple PIHM time interval,Time interval used in the PIHM simple configuration,1,day
-pihm_cfg_simple2_TI,Simple PIHM time interval,Time interval used in the PIHM simple configuration with additional input variables,1,day
+pihm_cfg_TI_general,Simple PIHM time interval,Time interval used in the PIHM simple configuration,1,day
+pihm_cfg_TI_SS,Simple PIHM time interval,Time interval used in the PIHM simple configuration with additional input variables,1,hour
 cycles_cfg_simple_TI,Simple cycles time interval,Time interval used in the Cycles simple configuration,1,day
 kimetrica_land_use_cfg_simple_TI,Simple kimetrica time interval,Time interval used in the Kimetrica land use simple configuration,,
 economic_aggregate_crop_supply_TI,Simple economic time interval,Time interval used in the aggregate crop supply response model for the country of South Sudan configuration,Harvest cycle,year
 topoflow_cfg_simple_TI,Simple topoflow time interval,Time interval used in the TopoFlow with basic configuration,,min
-dssat_cfg_simple_TI,Simple dssat time interval,Time interval used in the DSSAT simple configuration,,
+dssat_cfg_simple_TI,Simple dssat time interval,Time interval used in the DSSAT simple configuration,1,day
 wgen_1.0.1_cfg_timeinterval,WGEN time interval,Time interval used in WGEN basic configuration,1,day
 climcomp_0.0.2_P_cfg_TI,ClimComp time interval,Time interval at which ClimComp outputs,1,year
 climcomp_0.0.2_T_cfg_TI,ClimComp time interval,Time interval at which ClimComp outputs,1,year

@@ -44,5 +44,10 @@ river_depth_basin_id,basin_id,,100,string,https://w3id.org/wings/export/MINT#Bas
 river_depth_numsamples,numsamples,,3,int,https://w3id.org/wings/export/MINT#NumSamples,
 pihm_to_netcdf_start_date,output-start-date-range,,2017-05-01,string,https://w3id.org/wings/export/MINT#StartDate,
 pihm_to_netcdf_end_date,output-end-date-range,,2017-08-31,string,https://w3id.org/wings/export/MINT#EndDate,
-pihm_to_netcdf_grid_space,grid-space,,0.05,float,https://w3id.org/wings/export/MINT#NumSamples,
-
+pihm_to_netcdf_grid_space,grid-space,,0.05,float,https://w3id.org/wings/export/MINT#GridSpace,
+econ_crop_price_adjustment,crop-price-adjustment,,,float,https://w3id.org/wings/export/MINT#Adjustment,
+econ_land_cost_adjustment,land-cost-adjustment,,,float,https://w3id.org/wings/export/MINT#Adjustment,
+econ_cost_adjustment,fertilizer-cost-adjustment,,,float,https://w3id.org/wings/export/MINT#Adjustment,
+econ_crop_price_adjustment_fixed,crop-price-adjustment,,,float,https://w3id.org/wings/export/MINT#Adjustment,0
+econ_land_cost_adjustment_fixed,land-cost-adjustment,,,float,https://w3id.org/wings/export/MINT#Adjustment,0
+econ_cost_adjustment_fixed,fertilizer-cost-adjustment,,,float,https://w3id.org/wings/export/MINT#Adjustment,0

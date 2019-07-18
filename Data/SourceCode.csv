@@ -1,2 +1,4 @@
 https://w3id.org/okn/o/sd#SourceCode,http://www.w3.org/2000/01/rdf-schema#label,https://w3id.org/okn/o/sd#description,https://w3id.org/okn/o/sd#license,https://w3id.org/okn/o/sd#programmingLanguage,https://w3id.org/okn/o/sd#codeRepository
 pihm_sourceCode,PIHM source code,,https://github.com/pihmadmin/PIHM/blob/master/LICENSE.txt,C;C++,https://github.com/pihmadmin/PIHM
+pihm_sourceCode_v4,PIHM source code for version 4,This version of the code of PIHM is written in C++,,,https://github.com/shulele/PIHM-4.0
+source_econ_config,EACS configuration component,Code for creating an encapsulation of EACS for a model configuration,,shell,https://github.com/mintproject/MINT-WorkflowDomain/
