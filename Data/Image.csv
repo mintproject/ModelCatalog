@@ -10,6 +10,7 @@ cycles_screenshot1,Cycles crop description interface,Cycles has a generic plant 
 cycles_screenshot2,Cycles tillage setup interface,Cycles allows the user to select operations from dozens of tillage tools. These tools disturb the soil by mixing soil layers and all the components in them; breaking up residues and accelerating soil organic matter turnover. Cycles simulates till and no-till conditions; manure additions; and all the properties that affect soil surface processes.,https://plantscience.psu.edu/research/labs/kemanian/models-and-tools/cycles,https://plantscience.psu.edu/research/labs/kemanian/images/cycles-tillage-setup-interface/image_preview
 ,,,,
 modflow_2005,Modflow 2005 diagram,A discretized hypothetical aquifer system. (Modified from McDonald and Harbaugh. 1988.),https://www.usgs.gov/software/modflow-2005-usgs-three-dimensional-finite-difference-ground-water-model,https://prd-wret.s3-us-west-2.amazonaws.com/assets/palladium/production/s3fs-public/styles/side_image/public/thumbnails/image/modflow5-layers.jpg
+modflow_logo,Modlfow logo,Modlfow logo,https://www.usgs.gov/mission-areas/water-resources/science/modflow-and-related-programs?qt-science_center_objects=0#qt-science_center_objects,https://prd-wret.s3-us-west-2.amazonaws.com/assets/palladium/production/s3fs-public/styles/side_image/public/thumbnails/image/modflow-output-visualization.jpg
 ,,,,
 hand_logo,HAND logo,HAND algorithm implmentation logo,https://www.hydroshare.org/resource/69f7d237675c4c73938481904358c789/,https://github.com/mintproject/ModelCatalog/raw/master/Data/Images/hand_logo.jpg
 hand_explanation,HAND algorithm explanation,HAND classes procedure,https://www.researchgate.net/publication/232042361_Height_Above_the_Nearest_Drainage_-_a_hydrologically_relevant_new_terrain_model,https://github.com/mintproject/ModelCatalog/raw/master/Data/Images/hand_classes_procedure.png
@@ -18,6 +19,17 @@ hand_sample_visualization,Sample HAND visualization,"A sample visualization of t
 ,,,,
 eacs_explanation,Explanation of the EACS model,Diagram explaining the main interactions of processes and variables in the economic aggregate crop supply model,,
 eacs_forrester,Forrester diagram for EACS,Forrester diagram explaining the Economic Aggregate Crop Supply model main processes and their interactions,,
+eacs_logo,eacs_logo,Economic model logo,https://www.kisscc0.com/clipart/computer-icons-economy-economic-development-symbol-4yrzrs/,https://b.kisscc0.com/20180705/zvq/kisscc0-computer-icons-economy-economic-development-symbol-eco-green-growth-icon-5b3e5f701b1338.3434381215308143201109.png
 ,,,,
 remote_sensing_output,Remote sensing analysis output,A visualization of the estimation for river bed growth using remote sensing data analysis,https://github.com/mintproject/EthiopiaDemo/tree/master/RemoteSensing,https://github.com/mintproject/EthiopiaDemo/raw/master/RemoteSensing/Box-1667-sec-2.gif
 remote_sensing_river_bed_variation,Remote sensing analysis river depth variation,A visualization of the estimation for river bed growth using remote sensing data analysis. The visualization shows river depth variation,https://github.com/mintproject/EthiopiaDemo/tree/master/RemoteSensing,http://umnlcc.cs.umn.edu/carto-test/
+,,,,
+wgen_logo,wgen_logo,wgen_logo,https://www.kisscc0.com/clipart/overcast-cloud-computer-icons-weather-forecasting-lo6fso/,https://github.com/mintproject/ModelCatalog/raw/master/Data/Images/weather.png
+,,,,
+climcomp_logo,climcomp_logo,climcomp_logo,https://www.kisscc0.com/clipart/cloud-weather-climate-computer-fluffy-clouds-ehncs4/,https://b.kisscc0.com/20181116/ihq/kisscc0-cloud-weather-climate-computer-fluffy-clouds-5beeafb50684e3.6698636015423692050267.png
+,,,,
+kimetrica_logo,kimetrica_logo,kimetrica_logo,https://kimetrica.com/,https://github.com/mintproject/ModelCatalog/raw/master/Data/Images/k.png
+,,,,
+dssat_logo,dssat_logo,dssat_logo,https://dssat.net/,https://dssat.net/wp-content/uploads/2014/05/DSSAT-color-update-LOGO+-DSSAT.png
+,,,,
+topoflow_logo,topoflow_logo,topoflow_logo,https://csdms.colorado.edu/wiki/Model:TopoFlow,https://github.com/mintproject/ModelCatalog/raw/master/Data/Images/topoflow_logo.png
