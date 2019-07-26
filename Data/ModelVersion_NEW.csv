@@ -2,7 +2,7 @@ https://w3id.org/okn/o/sd#SoftwareVersion,http://www.w3.org/2000/01/rdf-schema#l
 pihm_2.2,PIHM v2.2,2.2,pihm-v2,Release 2.2 of the PIHM model,,,kumar_mesh,,,,,nsf,duffy_christopher,,,,,,pihm_sourceCode,,,,,,,penn_state,,,,,,,pihm_grid_general,
 pihm_v4,PIHM V4,4,pihm-v4,Version of PIHM adapted to C++ and including PIHM GIS transformations. All inputs and output have been modified to facilitate using standard formats,,https://github.com/shulele/PIHM-4.0/blob/master/README.md,shu_lele,,,6/25/2019,,darpa,shu_lele,,,,,,pihm_sourceCode_v4,,,,,,,penn_state,,,,,,,pihm_grid_general,
 cycles_0.8.0_alpha,Cycles v0.8.0 alpha,0.8.0,cycles;cycles_multiple_points,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-cycles_v2,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+cycles_v2,Cycles v2,2,cycles-v2;cycles-v2-simple-pongo;cycles-v2-advanced-pongo,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
 kimetrica_0.0,Kimetrica lv0.o0,0,kimetrica_land_use_cfg_simple,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
 EACS_2.0,EACS 2.0,2,economic-v2,Initial version of the model prepared as a component for a workflow,,,cobourn_kelly,,,,,darpa,,,,,,,,,,,,,,virginia_tech,,,,,,,,
 EACS_5.0,EACS 5.0,5,economic-v5,Version of the model regrouping variables according to their source,,,cobourn_kelly;zhang_zeya,,,6/24/2019,,darpa,,,,,,,,,,,,,,virginia_tech,,,,,,,,
