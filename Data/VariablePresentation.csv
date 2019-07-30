@@ -78,6 +78,12 @@ econ_land_area,land area,land area,land allocation,land area by crop (simulated)
 econ_obsyield,obsyield,obsyield,crop yields,crop yields per unit land area (simulated),land_crop__simulated_mass-per-area_yield,kg/ha,land_crop__mass-per-area_yield,,,,econ_land_area;econ_production
 econ_production,production,production,crop production,total production by crop (simulated),crop__simulated_produced_mass,kg,crop__production,,,,
 econ_Nfert,Nfert,Nfert,nitrogen fertilizer applications,nitrogen fertilizer applications (simulated),land_fertilizer~nitrogen__simulated_applied_mass-per-area_density,kg/ha,,,,,
+econ_sim_land_area,Simulated land area,simulated land area,simulated land area,simulated land area,,ha,,,,,
+econ_sim_production,Simulated production,simulated production,simulated production,simulated production,,kg,,,,,
+econ_sim_Nfert,Simulated N use,simulated N use,simulated N use,simulated N use,,kg,,,,,
+econ_obs_land_area,Observed land area,observed land area,observed land area,observed land area,,ha,,,,,
+econ_obs_Nfert,Observed N use,observed N use,observed N use,observed N use,,kg,,,,,
+econ_obs_production,Observed production,observed production,observed production,observed production,,kg,,,,,
 ,,,,,,,,,,,
 econ_nuse,Nuse,Nuse,total fertilizer use,total fertilizer use,,kg,,,,,
 ,,,,,,,,,,,

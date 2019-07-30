@@ -1,5 +1,12 @@
 https://w3id.org/okn/o/sd#SourceCode,http://www.w3.org/2000/01/rdf-schema#label,https://w3id.org/okn/o/sd#description,https://w3id.org/okn/o/sd#license,https://w3id.org/okn/o/sd#programmingLanguage,https://w3id.org/okn/o/sd#codeRepository
 pihm_sourceCode,PIHM source code,,https://github.com/pihmadmin/PIHM/blob/master/LICENSE.txt,C;C++,https://github.com/pihmadmin/PIHM
 pihm_sourceCode_v4,PIHM source code for version 4,This version of the code of PIHM is written in C++,,,https://github.com/shulele/PIHM-4.0
-source_econ_config,EACS configuration component,Code for creating an encapsulation of EACS for a model configuration,,shell,https://github.com/mintproject/MINT-WorkflowDomain/
+source_econ_config_v2,EACS configuration component (version 2 of code),Code for creating an encapsulation of EACS for a model configuration (version 2),,shell,https://github.com/mintproject/MINT-WorkflowDomain/tree/master/WINGSWorkflowComponents/economic-v2
 swat_source,SWAT source  code,SWAT source  code,,Fortran 90,https://bitbucket.org/blacklandgrasslandmodels/modular_swatplus/src/master/
+source_econ_config_v5,EACS configuration component (version 5 of code),Code for creating an encapsulation of EACS for a model configuration (version 5),,shell,https://github.com/mintproject/MINT-WorkflowDomain/tree/master/WINGSWorkflowComponents/economic-v5
+source_econ_config_v6,EACS configuration component (version 6 of code),Code for creating an encapsulation of EACS for a model configuration (version 6),,shell,https://github.com/mintproject/MINT-WorkflowDomain/tree/master/WINGSWorkflowComponents/economic-v6
+source_cycles_config,Cycles configuration component,Code for creating an encapsulation of Cycles (v0.8.3),,shell,https://github.com/mintproject/MINT-WorkflowDomain/tree/master/WINGSWorkflowComponents/cycles
+source_cycles_config_v2,Cycles configuration component (v2),Code for creating an encapsulation of Cycles (v0.9.4),,shell,https://github.com/mintproject/MINT-WorkflowDomain/tree/master/WINGSWorkflowComponents/cycles_v2
+source_cycles_config_mp,Cycles configuration component (multiple points),Code for creating an encapsulation of Cycles for multiple points,,shell,https://github.com/mintproject/MINT-WorkflowDomain/tree/master/WINGSWorkflowComponents/cycles_multiple_points
+source_pihm_config_v2,PIHM configuration component code,Code for creating an encapsulation of PIHM for a model configuration (PIHM v2),,shell,https://github.com/mintproject/MINT-WorkflowDomain/tree/master/WINGSWorkflowComponents/pihm-v2
+source_pihm_config_v4,PIHM++ configuration component code,Code for creating an encapsulation of PIHM for a model configuration (PIHM++),,shell,https://github.com/mintproject/MINT-WorkflowDomain/tree/master/WINGSWorkflowComponents/pihm-v4

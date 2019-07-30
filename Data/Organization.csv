@@ -1,10 +1,10 @@
 https://w3id.org/okn/o/sd#Organization,http://www.w3.org/2000/01/rdf-schema#label,https://w3id.org/okn/o/sd#name,https://w3id.org/okn/o/sd#website,https://w3id.org/okn/o/sd#identifier
 nsf,National Science Foundation,National Science Foundation,https://www.nsf.gov/,https://www.wikidata.org/wiki/Q304878
 darpa,Defense Advanced Research Projects Agency,Defense Advanced Research Projects Agency,https://www.darpa.mil/,https://www.wikidata.org/wiki/Q207361
-texasU,Texas A&M University,Texas A&M University,https://www.tamu.edu/,https://www.wikidata.org/wiki/Q49212
+texas_university,Texas A&M University,Texas A&M University,https://www.tamu.edu/,https://www.wikidata.org/wiki/Q49212
 penn_state_university,Pennsylvania State University,Pennsylvania State University,https://www.psu.edu/,https://www.wikidata.org/wiki/Q739627
 kimetrica,Kimetrica,Kimetrica,https://kimetrica.com/,
-colorado_u,University of Colorado-Boulder,University of Colorado-Boulder,https://www.colorado.edu/,https://www.wikidata.org/wiki/Q736674
+colorado_university,University of Colorado-Boulder,University of Colorado-Boulder,https://www.colorado.edu/,https://www.wikidata.org/wiki/Q736674
 virginia_tech,Virginia Tech,Virginia Tech,https://vt.edu/,https://www.wikidata.org/wiki/Q65379
 usc,University of Southern California,University of Southern California,https://usc.edu/,https://www.wikidata.org/wiki/Q4614
 usda,USDA Agricultural Research Service (USDA-ARS) ,USDA Agricultural Research Service (USDA-ARS) ,,
