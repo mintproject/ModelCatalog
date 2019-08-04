@@ -50,7 +50,7 @@ econ_land_cost_adjustment,land-cost-adjustment,,,float,https://w3id.org/wings/ex
 econ_cost_adjustment,fertilizer-cost-adjustment,,,float,https://w3id.org/wings/export/MINT#Adjustment,
 econ_crop_price_adjustment_fixed,crop-price-adjustment,,,float,https://w3id.org/wings/export/MINT#Adjustment,econ_zero
 econ_land_cost_adjustment_fixed,land-cost-adjustment,,,float,https://w3id.org/wings/export/MINT#Adjustment,econ_zero
-econ_cost_adjustment_fixed,fertilizer-cost-adjustment,,,float,https://w3id.org/wings/export/MINT#Adjustment,
+econ_cost_adjustment_fixed,fertilizer-cost-adjustment,,,float,https://w3id.org/wings/export/MINT#Adjustment,econ_zero
 cassava_crop_price_adjustment,cassava-crop-price-adjustment,,,float,https://w3id.org/wings/export/MINT#Adjustment,
 cassava_land_cost_adjustment,cassava-land-cost-adjustment,,,float,https://w3id.org/wings/export/MINT#Adjustment,
 cassava_fertilizer_cost_adjustment,cassava-fertilizer-cost-adjustment,,,float,https://w3id.org/wings/export/MINT#Adjustment,

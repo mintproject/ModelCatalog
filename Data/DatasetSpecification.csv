@@ -29,7 +29,7 @@ econ_data,economic-data,Contains data on observed prices for each crop and suppl
 econ_subsidies,economic-subsidies,File indicating the economic subsidies to use on each iteration of the model,,txt,0,,https://w3id.org/wings/export/MINT#EconomicSubsidies
 econ_yield,crop-yield,Contains the yield elasticities to fertilizer use that are derived from Cycles output,econ_ybarN,csv,0,,https://w3id.org/wings/export/MINT#CropYield
 econ_land_use,economic-land-use,Economic land use results,econ_fert_subsidy;econ_land_area;econ_obsyield;econ_production;econ_Nfert,txt,0,,https://w3id.org/wings/export/MINT#EconomicLandUse
-econ_calib_land_use,calibration-output,Economic calibration output,econ_sim_land_area;econ_land_area;econ_production;econ_Nfert;econ_sim_production;econ_sim_Nfert,txt,0,,https://w3id.org/wings/export/MINT#EconomicLandUseCalibration
+econ_calib_land_use,calibration-output,Economic calibration output,econ_sim_land_area;econ_obs_land_area;econ_obs_production;econ_obs_Nfert;econ_sim_production;econ_sim_Nfert,txt,0,,https://w3id.org/wings/export/MINT#EconomicLandUseCalibration
 ,,,,,,,
 econ_cycles_data,cycles-data,File with inputs used to configure the Cycles model (e.g. fertilizer),econ_xbar2;econ_ybar;econ_ybarN,csv,0,,https://w3id.org/wings/export/MINT#economic-cycles-data
 econ_land,land-input,Land allocation file,econ_xbar1,csv,0,,https://w3id.org/wings/export/MINT#economic-land-input
