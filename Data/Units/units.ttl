@@ -1,5 +1,5 @@
 @prefix ccut: <https://www.w3id.org/mint/ccut#> .
-@prefix mint: <https://w3id.org/mint/instance/> .
+@prefix mint: <https://w3id.org/okn/i/mint/> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix qudtp: <http://qudt.org/1.1/schema/qudt#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .

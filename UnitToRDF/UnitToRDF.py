@@ -327,7 +327,7 @@ def add_wiki_pages(store, qudtp, owl):
 
 
 def preprocess_turtle_file(store):
-    MINT = "https://w3id.org/mint/instance/"
+    MINT = "https://w3id.org/okn/i/mint/"#"https://w3id.org/mint/instance/"
     qudtp = "http://qudt.org/1.1/schema/qudt#"# to fix when I get the right NS.
     ccut = "https://www.w3id.org/mint/ccut#"
     owl = 'http://www.w3.org/2002/07/owl#'
