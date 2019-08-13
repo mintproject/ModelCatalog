@@ -1,102 +1,115 @@
-https://w3id.org/okn/o/sd#Parameter,http://www.w3.org/2000/01/rdf-schema#label,https://w3id.org/okn/o/sd#description,https://w3id.org/okn/o/sd#hasDefaultValue,https://w3id.org/okn/o/sd#hasDataType,http://www.w3.org/1999/02/22-rdf-syntax-ns#type,https://w3id.org/okn/o/sd#hasFixedValue,https://w3id.org/okn/o/sd#position,https://w3id.org/okn/o/sd#adjustsVariable
-pihm_flooding_threshold,flooding-threshold,,0.05,float,https://w3id.org/wings/export/MINT#FloodingThreshold,,,
-wgen_flagP,flagP,flag P,Rainf_f_tavg,string,https://w3id.org/wings/export/MINT#FlagP,wgen_flagP_P_fixed,1,
-wgen_min_lon,min_lon,minimum longitude,24.15235,float,https://w3id.org/wings/export/MINT#MinLongitude,,2,
-wgen_max_lon,max_lon,maximum longitude,27.74012,float,https://w3id.org/wings/export/MINT#MaxLongitude,,3,
-wgen_min_lat,min_lat,minimum latitude,6.700375,float,https://w3id.org/wings/export/MINT#MinLatitude,,4,
-wgen_max_lat,max_lat,maximum latitude,9.335303,float,https://w3id.org/wings/export/MINT#MaxLatitude,,5,
-wgen_min_month,min_month,minimum month,6,float,https://w3id.org/wings/export/MINT#MinMonth,,6,
-wgen_max_month,max_month,maximum month,8,float,https://w3id.org/wings/export/MINT#MaxMonth,,7,
-wgen_level,level,level,0.6,float,https://w3id.org/wings/export/MINT#Level,,8,
-wgen_flagP_T,flagP,flagP,Tair_f_tavg,string,https://w3id.org/wings/export/MINT#FlagP,wgen_flagP_T_fixed,1,
-,,,,,,,,
-climcomp_datasource,dataset_source,dataset source,FLDAS,string,https://w3id.org/wings/export/MINT#DataSource,,1,
-climcomp_flagP,flagP,flag P,Rainf_f_tavg,string,https://w3id.org/wings/export/MINT#FlagP,,2,
-climcomp_min_lon,min_lon,minimum longitude,24.15235,float,https://w3id.org/wings/export/MINT#MinLongitude,,3,
-climcomp_max_lon,max_lon,maximum longitude,27.74012,float,https://w3id.org/wings/export/MINT#MaxLongitude,,4,
-climcomp_min_lat,min_lat,minimum latitude,6.700375,float,https://w3id.org/wings/export/MINT#MinLatitude,,5,
-climcomp_max_lat,max_lat,maximum latitude,9.335303,float,https://w3id.org/wings/export/MINT#MaxLatitude,,6,
-climcomp_min_month,min_month,minimum month,6,float,https://w3id.org/wings/export/MINT#MinMonth,,7,
-climcomp_max_month,max_month,maximum month,8,float,https://w3id.org/wings/export/MINT#MaxMonth,,8,
-climcomp_year,year,year,2017,float,https://w3id.org/wings/export/MINT#ClimCompYear,,9,
-,,,,,,,,
-cycles_planting-day-1,cycles_planting-day-1,planting day 1,100,int,https://w3id.org/wings/export/MINT#CyclesPlantingDay1,,1,
-cycles_planting-day-1-duration,cycles_planting-day-1-duration,planting day 1 duration,10,int,https://w3id.org/wings/export/MINT#CyclesPlantingDay1Duration,,2,
-cycles_planting-day-2,cycles_planting-day-2,planting day 2,225,int,https://w3id.org/wings/export/MINT#CyclesPlantingDay2,,3,
-cycles_planting-day-2-duration,cycles_planting-day-2-duration,planting day 2 duration,10,int,https://w3id.org/wings/export/MINT#CyclesPlantingDay2Duration,,4,
-,,,,,,,,
-cycles_v2_start_year,start_year,start_year,2000,int,https://w3id.org/wings/export/MINT#CyclesStartYear,,1,
-cycles_v2_end_year,end_year,end_year,2017,int,https://w3id.org/wings/export/MINT#CyclesEndYear,,2,
-cycles_v2_crop_name,crop_name,crop_name,Maize,string,https://w3id.org/wings/export/MINT#CyclesCropName,,3,
-cycles_v2_start_planting_day,start_planting_day,start_planting_day,100,int,https://w3id.org/wings/export/MINT#CyclesStartPlantingDay,,4,
-cycles_v2_end_planting_day,end_planting_day,end_planting_day,149,int,https://w3id.org/wings/export/MINT#CyclesEndPlantingDay,,5,
-cycles_v2_fertilizer_type,fertilizer_type,fertilizer_type,urea,string,https://w3id.org/wings/export/MINT#CyclesFertilizerType,,6,
-cycles_v2_fertilizer_rate,fertilizer_rate,fertilizer_rate,0,float,https://w3id.org/wings/export/MINT#CyclesFertilizerRate,,7,
-cycles_v2_weed_fraction,weed_fraction,weed_fraction,0,float,https://w3id.org/wings/export/MINT#CyclesWeedFraction,,8,
-cycles_v2_use_forcing,use_forcing,use_forcing,FALSE,bool,https://w3id.org/wings/export/MINT#CyclesUseForcing,,9,
-,,,,,,,,
-pihm_start-date,pihm_start-date,start date,1/1/2017,string,https://w3id.org/wings/export/MINT#StartDate,,,
-pihm_end-date,pihm_end-date,end date, 2017-12-31,string,https://w3id.org/wings/export/MINT#EndDate,,,
-pihm_region-name,pihm_region-name,region name,pg,string,https://w3id.org/wings/export/MINT#RegionName,,,
-,,,,,,,,
-fldas_to_pihm_start-date,fldas_to_pihm_start-date,,1/1/2017,string,https://w3id.org/wings/export/MINT#StartDate,,,
-fldas_to_pihm_end-date,fldas_to_pihm_end-date,, 2017-12-31,string,https://w3id.org/wings/export/MINT#EndDate,,,
-,,,,,,,,
-pihm_cropland_to_points_num-points,num-points,,1,int,https://w3id.org/wings/export/MINT#NumPoints,,,
-pihm_forcing_to_cycles_weather_start-date,start-date,,1/1/2017,string,https://w3id.org/wings/export/MINT#StartDate,,,
-pihm_forcing_to_cycles_weather_end-date,end-date,, 2017-12-31,string,https://w3id.org/wings/export/MINT#EndDate,,,
-pihm_flooding_netcdf_start-date,start-date,,1/1/2017,string,https://w3id.org/wings/export/MINT#StartDate,,,
-pihm_flooding_netcdf_flooding-threshold,flooding-threshold,,0.05,float,https://w3id.org/wings/export/MINT#FloodingThreshold,,,
-pihm_flooding_netcdf_ouput_start_date_range,output-start-date-range,,5/1/2017,string,https://w3id.org/wings/export/MINT#EndDate,,,
-pihm_flooding_netcdf_ouput_end_date_range,output-end-date-range,,8/31/2017,string,https://w3id.org/wings/export/MINT#EndDate,,,
-,,,,,,,,
-cycles_to_crop_start-date,start-date,,1/1/2017,string,https://w3id.org/wings/export/MINT#StartDate,,,
-economic_to_vis_start_date,start-date,,1/1/2017,string,https://w3id.org/wings/export/MINT#StartDate,,,
-economic_to_vis_region_name,region-name,,pg,string,https://w3id.org/wings/export/MINT#RegionName,,,
-,,,,,,,,
-river_depth_estimation_basin_id,basin_id,,100,string,https://w3id.org/wings/export/MINT#BasinID,,,
-river_depth_start_date,start_date,,1/1/2016,string,https://w3id.org/wings/export/MINT#StartDate,,,
-river_depth_end_date,end_date,,3/31/2017,string,https://w3id.org/wings/export/MINT#EndDate,,,
-river_depth_basin_id,basin_id,,100,string,https://w3id.org/wings/export/MINT#BasinID,,,
-river_depth_numsamples,numsamples,,3,int,https://w3id.org/wings/export/MINT#NumSamples,,,
-pihm_to_netcdf_start_date,output-start-date-range,,5/1/2017,string,https://w3id.org/wings/export/MINT#StartDate,,,
-pihm_to_netcdf_end_date,output-end-date-range,,8/31/2017,string,https://w3id.org/wings/export/MINT#EndDate,,,
-pihm_to_netcdf_grid_space,grid-space,,0.05,float,https://w3id.org/wings/export/MINT#GridSpace,,,
-,,,,,,,,
-econ_v5_crop_price_adjustment,crop-price-adjustment,,0,float,https://w3id.org/wings/export/MINT#Adjustment,,1,econ_p
-econ_v5_land_cost_adjustment,land-cost-adjustment,,0,float,https://w3id.org/wings/export/MINT#Adjustment,,2,econ_c1
-econ_v5_cost_adjustment,fertilizer-cost-adjustment,,0,float,https://w3id.org/wings/export/MINT#Adjustment,,3,econ_c2
-econ_v5_crop_price_adjustment_fixed,crop-price-adjustment,,0,float,https://w3id.org/wings/export/MINT#Adjustment,econ_zero,1,econ_p
-econ_v5_land_cost_adjustment_fixed,land-cost-adjustment,,0,float,https://w3id.org/wings/export/MINT#Adjustment,econ_zero,2,econ_c1
-econ_v5_cost_adjustment_fixed,fertilizer-cost-adjustment,,0,float,https://w3id.org/wings/export/MINT#Adjustment,econ_zero,3,econ_c2
-,,,,,,,,
-econ_v6_sorghum_crop_price_adjustment,sorghum-crop-price-adjustment,,0,float,https://w3id.org/wings/export/MINT#Adjustment,,13,econ_p
-econ_v6_sorghum_land_cost_adjustment,sorghum-land-cost-adjustment,,0,float,https://w3id.org/wings/export/MINT#Adjustment,,14,econ_c1
-econ_v6_sorghum_fertilizer_cost_adjustment,sorghum-fertilizer-cost-adjustment,,0,float,https://w3id.org/wings/export/MINT#Adjustment,,15,econ_c2
-econ_v6_cassava_crop_price_adjustment,cassava-crop-price-adjustment,,0,float,https://w3id.org/wings/export/MINT#Adjustment,,1,econ_p
-econ_v6_cassava_land_cost_adjustment,cassava-land-cost-adjustment,,0,float,https://w3id.org/wings/export/MINT#Adjustment,,2,econ_c1
-econ_v6_cassava_fertilizer_cost_adjustment,cassava-fertilizer-cost-adjustment,,0,float,https://w3id.org/wings/export/MINT#Adjustment,,3,econ_c2
-econ_v6_groundnuts_crop_price_adjustment,groundnuts-cost-adjustment,,0,float,https://w3id.org/wings/export/MINT#Adjustment,,4,econ_p
-econ_v6_groundnuts_land_cost_adjustment,groundnuts-land-cost-adjustment,,0,float,https://w3id.org/wings/export/MINT#Adjustment,,5,econ_c1
-econ_v6_groundnuts_fertilizer_cost_adjustment,groundnuts-fertilizer-cost-adjustment,,0,float,https://w3id.org/wings/export/MINT#Adjustment,,6,econ_c2
-econ_v6_maize_crop_price_adjustment,maize-cropprice-cost-adjustment,,0,float,https://w3id.org/wings/export/MINT#Adjustment,,7,econ_p
-econ_v6_maize_land_cost_adjustment,maize-land-cost-adjustment,,0,float,https://w3id.org/wings/export/MINT#Adjustment,,8,econ_c1
-econ_v6_maize_fertilizer_cost_adjustment,maize-fertilizer-cost-adjustment,,0,float,https://w3id.org/wings/export/MINT#Adjustment,,9,econ_c2
-econ_v6_sesame_crop_price_adjustment,sesame-crop-price-adjustment,,0,float,https://w3id.org/wings/export/MINT#Adjustment,,10,econ_p
-econ_v6_sesame_land_cost_adjustment,sesame-land-cost-adjustment,,0,float,https://w3id.org/wings/export/MINT#Adjustment,,11,econ_c1
-econ_v6_sesame_fertilizer,sesame-fertilizer-cost-adjustment,,0,float,https://w3id.org/wings/export/MINT#Adjustment,,12,econ_c2
-econ_v6_sorghum_crop_price_adjustment_fixed,sorghum-crop-price-adjustment,,0,float,https://w3id.org/wings/export/MINT#Adjustment,econ_zero,13,econ_p
-econ_v6_sorghum_land_cost_adjustment_fixed,sorghum-land-cost-adjustment,,0,float,https://w3id.org/wings/export/MINT#Adjustment,econ_zero,14,econ_c1
-econ_v6_sorghum_fertilizer_cost_adjustment_fixed,sorghum-fertilizer-cost-adjustment,,0,float,https://w3id.org/wings/export/MINT#Adjustment,econ_zero,15,econ_c2
-econ_v6_cassava_crop_price_adjustment_fixed,cassava-crop-price-adjustment,,0,float,https://w3id.org/wings/export/MINT#Adjustment,econ_zero,1,econ_p
-econ_v6_cassava_land_cost_adjustment_fixed,cassava-land-cost-adjustment,,0,float,https://w3id.org/wings/export/MINT#Adjustment,econ_zero,2,econ_c1
-econ_v6_cassava_fertilizer_cost_adjustment_fixed,cassava-fertilizer-cost-adjustment,,0,float,https://w3id.org/wings/export/MINT#Adjustment,econ_zero,3,econ_c2
-econ_v6_groundnuts_crop_price_adjustment_fixed,groundnuts-cost-adjustment,,0,float,https://w3id.org/wings/export/MINT#Adjustment,econ_zero,4,econ_p
-econ_v6_groundnuts_land_cost_adjustment_fixed,groundnuts-land-cost-adjustment,,0,float,https://w3id.org/wings/export/MINT#Adjustment,econ_zero,5,econ_c1
-econ_v6_groundnuts_fertilizer_cost_adjustment_fixed,groundnuts-fertilizer-cost-adjustment,,0,float,https://w3id.org/wings/export/MINT#Adjustment,econ_zero,6,econ_c2
-econ_v6_maize_crop_price_adjustment_fixed,maize-cropprice-cost-adjustment,,0,float,https://w3id.org/wings/export/MINT#Adjustment,econ_zero,7,econ_p
-econ_v6_maize_land_cost_adjustment_fixed,maize-land-cost-adjustment,,0,float,https://w3id.org/wings/export/MINT#Adjustment,econ_zero,8,econ_c1
-econ_v6_maize_fertilizer_cost_adjustment_fixed,maize-fertilizer-cost-adjustment,,0,float,https://w3id.org/wings/export/MINT#Adjustment,econ_zero,9,econ_c2
-econ_v6_sesame_crop_price_adjustment_fixed,sesame-crop-price-adjustment,,0,float,https://w3id.org/wings/export/MINT#Adjustment,econ_zero,10,econ_p
-econ_v6_sesame_land_cost_adjustment_fixed,sesame-land-cost-adjustment,,0,float,https://w3id.org/wings/export/MINT#Adjustment,econ_zero,11,econ_c1
-econ_v6_sesame_fertilizer_fixed,sesame-fertilizer-cost-adjustment,,0,float,https://w3id.org/wings/export/MINT#Adjustment,econ_zero,12,econ_c2
+https://w3id.org/okn/o/sd#Parameter,http://www.w3.org/2000/01/rdf-schema#label,https://w3id.org/okn/o/sd#description,https://w3id.org/okn/o/sd#hasDefaultValue,https://w3id.org/okn/o/sd#hasDataType,http://www.w3.org/1999/02/22-rdf-syntax-ns#type,https://w3id.org/okn/o/sd#hasFixedValue,https://w3id.org/okn/o/sd#position,https://w3id.org/okn/o/sd#adjustsVariable,https://w3id.org/okn/o/sd#hasMinimumAcceptedValue,https://w3id.org/okn/o/sd#hasMaximumAcceptedValue
+pihm_flooding_threshold,flooding-threshold,,0.05,float,https://w3id.org/wings/export/MINT#FloodingThreshold,,,,,
+wgen_flagP,flagP,flag P,Rainf_f_tavg,string,https://w3id.org/wings/export/MINT#FlagP,Rainf_f_tavg,1,,,
+wgen_min_lon,min_lon,minimum longitude,24.15235,float,https://w3id.org/wings/export/MINT#MinLongitude,,2,,,
+wgen_max_lon,max_lon,maximum longitude,27.74012,float,https://w3id.org/wings/export/MINT#MaxLongitude,,3,,,
+wgen_min_lat,min_lat,minimum latitude,6.700375,float,https://w3id.org/wings/export/MINT#MinLatitude,,4,,,
+wgen_max_lat,max_lat,maximum latitude,9.335303,float,https://w3id.org/wings/export/MINT#MaxLatitude,,5,,,
+wgen_min_month,min_month,minimum month,6,float,https://w3id.org/wings/export/MINT#MinMonth,,6,,,
+wgen_max_month,max_month,maximum month,8,float,https://w3id.org/wings/export/MINT#MaxMonth,,7,,,
+wgen_level,level,level,0.6,float,https://w3id.org/wings/export/MINT#Level,,8,,,
+wgen_flagP_T,flagP,flagP,Tair_f_tavg,string,https://w3id.org/wings/export/MINT#FlagP,Tair_f_tavg,1,,,
+,,,,,,,,,,
+climcomp_datasource,dataset_source,dataset source,FLDAS,string,https://w3id.org/wings/export/MINT#DataSource,,1,,,
+climcomp_flagP,flagP,flag P,Rainf_f_tavg,string,https://w3id.org/wings/export/MINT#FlagP,,2,,,
+climcomp_min_lon,min_lon,minimum longitude,24.15235,float,https://w3id.org/wings/export/MINT#MinLongitude,,3,,,
+climcomp_max_lon,max_lon,maximum longitude,27.74012,float,https://w3id.org/wings/export/MINT#MaxLongitude,,4,,,
+climcomp_min_lat,min_lat,minimum latitude,6.700375,float,https://w3id.org/wings/export/MINT#MinLatitude,,5,,,
+climcomp_max_lat,max_lat,maximum latitude,9.335303,float,https://w3id.org/wings/export/MINT#MaxLatitude,,6,,,
+climcomp_min_month,min_month,minimum month,6,float,https://w3id.org/wings/export/MINT#MinMonth,,7,,,
+climcomp_max_month,max_month,maximum month,8,float,https://w3id.org/wings/export/MINT#MaxMonth,,8,,,
+climcomp_year,year,year,2017,float,https://w3id.org/wings/export/MINT#ClimCompYear,,9,,,
+,,,,,,,,,,
+cycles_planting-day-1,cycles_planting-day-1,planting day 1,100,int,https://w3id.org/wings/export/MINT#CyclesPlantingDay1,,1,,1,365
+cycles_planting-day-1-duration,cycles_planting-day-1-duration,planting day 1 duration,10,int,https://w3id.org/wings/export/MINT#CyclesPlantingDay1Duration,,2,,,
+cycles_planting-day-2,cycles_planting-day-2,planting day 2,225,int,https://w3id.org/wings/export/MINT#CyclesPlantingDay2,,3,,1,365
+cycles_planting-day-2-duration,cycles_planting-day-2-duration,planting day 2 duration,10,int,https://w3id.org/wings/export/MINT#CyclesPlantingDay2Duration,,4,,,
+,,,,,,,,,,
+cycles_v2_start_year,start_year,start_year,2000,int,https://w3id.org/wings/export/MINT#CyclesStartYear,,1,,,
+cycles_v2_end_year,end_year,end_year,2017,int,https://w3id.org/wings/export/MINT#CyclesEndYear,,2,,,
+cycles_v2_crop_name,crop_name,crop_name,Maize,string,https://w3id.org/wings/export/MINT#CyclesCropName,,3,,,
+cycles_v2_start_planting_day,start_planting_day,start_planting_day,100,int,https://w3id.org/wings/export/MINT#CyclesStartPlantingDay,,4,,1,365
+cycles_v2_end_planting_day,end_planting_day,end_planting_day,149,int,https://w3id.org/wings/export/MINT#CyclesEndPlantingDay,,5,,1,365
+cycles_v2_fertilizer_type,fertilizer_type,fertilizer_type,urea,string,https://w3id.org/wings/export/MINT#CyclesFertilizerType,,6,,,
+cycles_v2_fertilizer_rate,fertilizer_rate,fertilizer_rate,0,float,https://w3id.org/wings/export/MINT#CyclesFertilizerRate,,7,cycles_n_added,,
+cycles_v2_weed_fraction,weed_fraction,weed_fraction,0,float,https://w3id.org/wings/export/MINT#CyclesWeedFraction,,8,,,
+cycles_v2_use_forcing,use_forcing,use_forcing,FALSE,bool,https://w3id.org/wings/export/MINT#CyclesUseForcing,,9,,,
+,,,,,,,,,,
+cycles_v2_start_year_fixed,start_year,start year,2000,int,https://w3id.org/wings/export/MINT#CyclesStartYear,2000,1,,,
+cycles_v2_end_year_fixed,end_year,end year,2017,int,https://w3id.org/wings/export/MINT#CyclesEndYear,2017,2,,,
+cycles_v2_crop_name_fixed,crop_name,crop name,Maize,string,https://w3id.org/wings/export/MINT#CyclesCropName,Maize,3,,,
+cycles_v2_start_planting_day_fixed,start_planting_day,start planting day,100,int,https://w3id.org/wings/export/MINT#CyclesStartPlantingDay,100,4,,1,365
+cycles_v2_end_planting_day_fixed,end_planting_day,end planting day,149,int,https://w3id.org/wings/export/MINT#CyclesEndPlantingDay,149,5,,1,365
+cycles_v2_fertilizer_type_fixed,fertilizer_type,fertilizer type,urea,string,https://w3id.org/wings/export/MINT#CyclesFertilizerType,urea,6,,,
+cycles_v2_fertilizer_rate_fixed,fertilizer_rate,fertilizer rate,0,float,https://w3id.org/wings/export/MINT#CyclesFertilizerRate,0,7,cycles_n_added,,
+cycles_v2_weed_fraction_fixed,weed_fraction,weed fraction,0,float,https://w3id.org/wings/export/MINT#CyclesWeedFraction,0,8,,,
+cycles_v2_use_forcing_fixed,use_forcing,use forcing,FALSE,bool,https://w3id.org/wings/export/MINT#CyclesUseForcing,FALSE,9,,,
+,,,,,,,,,,
+cycles_v2_prod_unique_id,unique_id,unique id of the execution,,string,https://w3id.org/wings/export/MINT#CyclesUniqueId,,,,,
+cycles_v2_prod_crop_name,crop_name,crop name,,string,https://w3id.org/wings/export/MINT#CyclesCropName,,,,,
+,,,,,,,,,,
+pihm_start-date,pihm_start-date,start date,1/1/2017,string,https://w3id.org/wings/export/MINT#StartDate,,,,,
+pihm_end-date,pihm_end-date,end date, 2017-12-31,string,https://w3id.org/wings/export/MINT#EndDate,,,,,
+pihm_region-name,pihm_region-name,region name,pg,string,https://w3id.org/wings/export/MINT#RegionName,,,,,
+,,,,,,,,,,
+fldas_to_pihm_start-date,fldas_to_pihm_start-date,,1/1/2017,string,https://w3id.org/wings/export/MINT#StartDate,,,,,
+fldas_to_pihm_end-date,fldas_to_pihm_end-date,, 2017-12-31,string,https://w3id.org/wings/export/MINT#EndDate,,,,,
+,,,,,,,,,,
+pihm_cropland_to_points_num-points,num-points,,1,int,https://w3id.org/wings/export/MINT#NumPoints,,,,,
+pihm_forcing_to_cycles_weather_start-date,start-date,,1/1/2017,string,https://w3id.org/wings/export/MINT#StartDate,,,,,
+pihm_forcing_to_cycles_weather_end-date,end-date,, 2017-12-31,string,https://w3id.org/wings/export/MINT#EndDate,,,,,
+pihm_flooding_netcdf_start-date,start-date,,1/1/2017,string,https://w3id.org/wings/export/MINT#StartDate,,,,,
+pihm_flooding_netcdf_flooding-threshold,flooding-threshold,,0.05,float,https://w3id.org/wings/export/MINT#FloodingThreshold,,,,,
+pihm_flooding_netcdf_ouput_start_date_range,output-start-date-range,,5/1/2017,string,https://w3id.org/wings/export/MINT#EndDate,,,,,
+pihm_flooding_netcdf_ouput_end_date_range,output-end-date-range,,8/31/2017,string,https://w3id.org/wings/export/MINT#EndDate,,,,,
+,,,,,,,,,,
+cycles_to_crop_start-date,start-date,,1/1/2017,string,https://w3id.org/wings/export/MINT#StartDate,,,,,
+economic_to_vis_start_date,start-date,,1/1/2017,string,https://w3id.org/wings/export/MINT#StartDate,,,,,
+economic_to_vis_region_name,region-name,,pg,string,https://w3id.org/wings/export/MINT#RegionName,,,,,
+,,,,,,,,,,
+river_depth_estimation_basin_id,basin_id,,100,string,https://w3id.org/wings/export/MINT#BasinID,,,,,
+river_depth_start_date,start_date,,1/1/2016,string,https://w3id.org/wings/export/MINT#StartDate,,,,,
+river_depth_end_date,end_date,,3/31/2017,string,https://w3id.org/wings/export/MINT#EndDate,,,,,
+river_depth_basin_id,basin_id,,100,string,https://w3id.org/wings/export/MINT#BasinID,,,,,
+river_depth_numsamples,numsamples,,3,int,https://w3id.org/wings/export/MINT#NumSamples,,,,,
+pihm_to_netcdf_start_date,output-start-date-range,,5/1/2017,string,https://w3id.org/wings/export/MINT#StartDate,,,,,
+pihm_to_netcdf_end_date,output-end-date-range,,8/31/2017,string,https://w3id.org/wings/export/MINT#EndDate,,,,,
+pihm_to_netcdf_grid_space,grid-space,,0.05,float,https://w3id.org/wings/export/MINT#GridSpace,,,,,
+,,,,,,,,,,
+econ_v5_crop_price_adjustment,crop-price-adjustment,,0,float,https://w3id.org/wings/export/MINT#Adjustment,,1,econ_p,,
+econ_v5_land_cost_adjustment,land-cost-adjustment,,0,float,https://w3id.org/wings/export/MINT#Adjustment,,2,econ_c1,,
+econ_v5_cost_adjustment,fertilizer-cost-adjustment,,0,float,https://w3id.org/wings/export/MINT#Adjustment,,3,econ_c2,,
+econ_v5_crop_price_adjustment_fixed,crop-price-adjustment,,0,float,https://w3id.org/wings/export/MINT#Adjustment,0,1,econ_p,,
+econ_v5_land_cost_adjustment_fixed,land-cost-adjustment,,0,float,https://w3id.org/wings/export/MINT#Adjustment,0,2,econ_c1,,
+econ_v5_cost_adjustment_fixed,fertilizer-cost-adjustment,,0,float,https://w3id.org/wings/export/MINT#Adjustment,0,3,econ_c2,,
+,,,,,,,,,,
+econ_v6_sorghum_crop_price_adjustment,sorghum-crop-price-adjustment,,0,float,https://w3id.org/wings/export/MINT#Adjustment,,13,econ_p,,
+econ_v6_sorghum_land_cost_adjustment,sorghum-land-cost-adjustment,,0,float,https://w3id.org/wings/export/MINT#Adjustment,,14,econ_c1,,
+econ_v6_sorghum_fertilizer_cost_adjustment,sorghum-fertilizer-cost-adjustment,,0,float,https://w3id.org/wings/export/MINT#Adjustment,,15,econ_c2,,
+econ_v6_cassava_crop_price_adjustment,cassava-crop-price-adjustment,,0,float,https://w3id.org/wings/export/MINT#Adjustment,,1,econ_p,,
+econ_v6_cassava_land_cost_adjustment,cassava-land-cost-adjustment,,0,float,https://w3id.org/wings/export/MINT#Adjustment,,2,econ_c1,,
+econ_v6_cassava_fertilizer_cost_adjustment,cassava-fertilizer-cost-adjustment,,0,float,https://w3id.org/wings/export/MINT#Adjustment,,3,econ_c2,,
+econ_v6_groundnuts_crop_price_adjustment,groundnuts-cost-adjustment,,0,float,https://w3id.org/wings/export/MINT#Adjustment,,4,econ_p,,
+econ_v6_groundnuts_land_cost_adjustment,groundnuts-land-cost-adjustment,,0,float,https://w3id.org/wings/export/MINT#Adjustment,,5,econ_c1,,
+econ_v6_groundnuts_fertilizer_cost_adjustment,groundnuts-fertilizer-cost-adjustment,,0,float,https://w3id.org/wings/export/MINT#Adjustment,,6,econ_c2,,
+econ_v6_maize_crop_price_adjustment,maize-cropprice-cost-adjustment,,0,float,https://w3id.org/wings/export/MINT#Adjustment,,7,econ_p,,
+econ_v6_maize_land_cost_adjustment,maize-land-cost-adjustment,,0,float,https://w3id.org/wings/export/MINT#Adjustment,,8,econ_c1,,
+econ_v6_maize_fertilizer_cost_adjustment,maize-fertilizer-cost-adjustment,,0,float,https://w3id.org/wings/export/MINT#Adjustment,,9,econ_c2,,
+econ_v6_sesame_crop_price_adjustment,sesame-crop-price-adjustment,,0,float,https://w3id.org/wings/export/MINT#Adjustment,,10,econ_p,,
+econ_v6_sesame_land_cost_adjustment,sesame-land-cost-adjustment,,0,float,https://w3id.org/wings/export/MINT#Adjustment,,11,econ_c1,,
+econ_v6_sesame_fertilizer,sesame-fertilizer-cost-adjustment,,0,float,https://w3id.org/wings/export/MINT#Adjustment,,12,econ_c2,,
+econ_v6_sorghum_crop_price_adjustment_fixed,sorghum-crop-price-adjustment,,0,float,https://w3id.org/wings/export/MINT#Adjustment,0,13,econ_p,,
+econ_v6_sorghum_land_cost_adjustment_fixed,sorghum-land-cost-adjustment,,0,float,https://w3id.org/wings/export/MINT#Adjustment,0,14,econ_c1,,
+econ_v6_sorghum_fertilizer_cost_adjustment_fixed,sorghum-fertilizer-cost-adjustment,,0,float,https://w3id.org/wings/export/MINT#Adjustment,0,15,econ_c2,,
+econ_v6_cassava_crop_price_adjustment_fixed,cassava-crop-price-adjustment,,0,float,https://w3id.org/wings/export/MINT#Adjustment,0,1,econ_p,,
+econ_v6_cassava_land_cost_adjustment_fixed,cassava-land-cost-adjustment,,0,float,https://w3id.org/wings/export/MINT#Adjustment,0,2,econ_c1,,
+econ_v6_cassava_fertilizer_cost_adjustment_fixed,cassava-fertilizer-cost-adjustment,,0,float,https://w3id.org/wings/export/MINT#Adjustment,0,3,econ_c2,,
+econ_v6_groundnuts_crop_price_adjustment_fixed,groundnuts-cost-adjustment,,0,float,https://w3id.org/wings/export/MINT#Adjustment,0,4,econ_p,,
+econ_v6_groundnuts_land_cost_adjustment_fixed,groundnuts-land-cost-adjustment,,0,float,https://w3id.org/wings/export/MINT#Adjustment,0,5,econ_c1,,
+econ_v6_groundnuts_fertilizer_cost_adjustment_fixed,groundnuts-fertilizer-cost-adjustment,,0,float,https://w3id.org/wings/export/MINT#Adjustment,0,6,econ_c2,,
+econ_v6_maize_crop_price_adjustment_fixed,maize-cropprice-cost-adjustment,,0,float,https://w3id.org/wings/export/MINT#Adjustment,0,7,econ_p,,
+econ_v6_maize_land_cost_adjustment_fixed,maize-land-cost-adjustment,,0,float,https://w3id.org/wings/export/MINT#Adjustment,0,8,econ_c1,,
+econ_v6_maize_fertilizer_cost_adjustment_fixed,maize-fertilizer-cost-adjustment,,0,float,https://w3id.org/wings/export/MINT#Adjustment,0,9,econ_c2,,
+econ_v6_sesame_crop_price_adjustment_fixed,sesame-crop-price-adjustment,,0,float,https://w3id.org/wings/export/MINT#Adjustment,0,10,econ_p,,
+econ_v6_sesame_land_cost_adjustment_fixed,sesame-land-cost-adjustment,,0,float,https://w3id.org/wings/export/MINT#Adjustment,0,11,econ_c1,,
+econ_v6_sesame_fertilizer_fixed,sesame-fertilizer-cost-adjustment,,0,float,https://w3id.org/wings/export/MINT#Adjustment,0,12,econ_c2,,

@@ -3,6 +3,7 @@ cycles_reinit,cycles_reinit,Cycles reinit file,cycles_doy;cycles_rot_year;cycles
 cycles_weather,cycles_weather,Cycles weather file,cycles_pp;cycles_tx;cycles_tn;cycles_sr;cycles_hx;cycles_hn;cycles_ws,weather,0,2,,https://w3id.org/wings/export/MINT#CyclesWeather
 cycles_soil,cycles_soil,Cycles soil file,cycles_cn;cycles_slope;cycles_layer;cycles_dz;cycles_clay;cycles_silt;cycles_rv;cycles_bd;cycles_som;cycles_smc,soil,0,3,,https://w3id.org/wings/export/MINT#CyclesSoil
 cycles_config,cycles_config,Cycles configuration file including crop names and percent fertilizer with subsidies to be used in the simulation,,txt,0,1,,https://w3id.org/wings/export/MINT#CyclesConfig
+,,,,,,,,
 cycles_soilProfile,cycles_soilProfile,Cycles soil profile file,cycles_c_diff;cycles_final_c;cycles_humified_c2;cycles_init_c_mass;cycles_res_biomass_in;cycles_res_c_decomp;cycles_respired_c;cycles_root_biomass_in;cycles_root_c_decomp;cycles_year,dat,0,1,,https://w3id.org/wings/export/MINT#CyclesAnnualSoilProfile
 cycles_somF,cycles_som,Cycles annual SOM file,cycles_bulk_density;cycles_c_sat._ratio;cycles_soil_c;cycles_thickness;cycles_year,dat,0,2,,https://w3id.org/wings/export/MINT#CyclesAnnualSOM
 cyles_crop,cyles_crop,Cycles crop output file,cycles_ag_biomass;cycles_ag_n;cycles_ag_n_concn;cycles_crop;cycles_cum._biomass;cycles_date;cycles_frac_intercep;cycles_n_added;cycles_n_fixation;cycles_n_stress;cycles_potential_tr;cycles_root_biomass;cycles_root_n;cycles_stage;cycles_thermal_time;cycles_total_n;cycles_water_stress,dat,0,3,,https://w3id.org/wings/export/MINT#CyclesCropOutput
@@ -12,7 +13,7 @@ cycles_summary,cycles_summary,Cycles summary file,cycles_avg_gross_n_min;cycles_
 cycles_weatherOutput,cycles_weatherOutput,Cycles weather output file,cycles_avg_tmp;cycles_date;cycles_max_tmp;cycles_min_tmp;cycles_precipitation;cycles_reference_et,dat,0,7,,https://w3id.org/wings/export/MINT#CyclesWeatherOutput
 cycles_water,cycles_water,Cycles water file,cycles_date;cycles_drainage;cycles_infiltration;cycles_irrigation;cycles_res_evap;cycles_plant_evap;cycles_runoff;cycles_snow_sub;cycles_soil_evap;cycles_transpiration;cycles_swc,dat,0,8,,https://w3id.org/wings/export/MINT#CyclesWaterOutput
 cycles_seasonConfig,cycles_seasonConfig,Cycles season configuration file,,txt,0,9,,https://w3id.org/wings/export/MINT#CyclesSeasonConfig
-,,,,,,,,
+,Cycles configuration using multiple points,,,,,,,
 cycles_mp_reinit,cycles_reinit,Cycles reinit file,cycles_doy;cycles_rot_year;cycles_smc_l1;cycles_infiltration,reinit,0,5,,https://w3id.org/wings/export/MINT#CyclesREINIT
 cycles_mp_weather,cycles_weather,Cycles weather file,cycles_pp;cycles_tx;cycles_tn;cycles_sr;cycles_hx;cycles_hn;cycles_ws,weather,0,3,,https://w3id.org/wings/export/MINT#CyclesWeather
 cycles_mp_soil,cycles_soil,Cycles soil file,cycles_cn;cycles_slope;cycles_layer;cycles_dz;cycles_clay;cycles_silt;cycles_rv;cycles_bd;cycles_som;cycles_smc,soil,0,4,,https://w3id.org/wings/export/MINT#CyclesSoil
@@ -23,6 +24,7 @@ cycles_v2_weather,cycles_weather,Cycles weather file,cycles_pp;cycles_tx;cycles_
 cycles_v2_soil,cycles_soil,Cycles soil file,cycles_cn;cycles_slope;cycles_layer;cycles_dz;cycles_clay;cycles_silt;cycles_rv;cycles_bd;cycles_som;cycles_smc,soil,0,2,,https://w3id.org/wings/export/MINT#CyclesSoil
 cycles_v2_crops,cycles_crops,Cycles crops file,,crop,0,3,,https://w3id.org/wings/export/MINT#CyclesCrops
 cycles_v2_reinit,cycles_reinit,Cycles reinit file,cycles_doy;cycles_rot_year;cycles_smc_l1;cycles_infiltration,reinit,0,4,,https://w3id.org/wings/export/MINT#CyclesREINIT
+,,,,,,,,
 cycles_v2_soilProfile,cycles_soilProfile,Cycles soil profile file,cycles_c_diff;cycles_final_c;cycles_humified_c2;cycles_init_c_mass;cycles_res_biomass_in;cycles_res_c_decomp;cycles_respired_c;cycles_root_biomass_in;cycles_root_c_decomp;cycles_year,dat,0,1,,https://w3id.org/wings/export/MINT#CyclesAnnualSoilProfile
 cycles_v2_somF,cycles_som,Cycles annual SOM file,cycles_bulk_density;cycles_c_sat._ratio;cycles_soil_c;cycles_thickness;cycles_year,dat,0,2,,https://w3id.org/wings/export/MINT#CyclesAnnualSOM
 cyles_v2_crop,cyles_crop,Cycles crop output file,cycles_ag_biomass;cycles_ag_n;cycles_ag_n_concn;cycles_crop;cycles_cum._biomass;cycles_date;cycles_frac_intercep;cycles_n_added;cycles_n_fixation;cycles_n_stress;cycles_potential_tr;cycles_root_biomass;cycles_root_n;cycles_stage;cycles_thermal_time;cycles_total_n;cycles_water_stress,dat,0,3,,https://w3id.org/wings/export/MINT#CyclesCropOutput
@@ -39,6 +41,23 @@ cycles_v2_weather_fixed,cycles_weather,Cycles weather file,cycles_pp;cycles_tx;c
 cycles_v2_soil_fixed,cycles_soil,Cycles soil file,cycles_cn;cycles_slope;cycles_layer;cycles_dz;cycles_clay;cycles_silt;cycles_rv;cycles_bd;cycles_som;cycles_smc,soil,0,2,cycles_soil_resource,https://w3id.org/wings/export/MINT#CyclesSoil
 cycles_v2_crops_fixed,cycles_crops,Cycles crops file,,crop,0,3,cycles_crops_resource,https://w3id.org/wings/export/MINT#CyclesCrops
 cycles_v2_reinit_fixed,cycles_reinit,Cycles reinit file,cycles_doy;cycles_rot_year;cycles_smc_l1;cycles_infiltration,reinit,0,4,cycles_reinit_resource,https://w3id.org/wings/export/MINT#CyclesREINIT
+,,,,,,,,
+cycles_v2_prod_weather,cycles_weather,Cycles weather file,cycles_pp;cycles_tx;cycles_tn;cycles_sr;cycles_hx;cycles_hn;cycles_ws,weather,0,1,,https://w3id.org/wings/export/MINT#CyclesWeather
+cycles_v2_prod_soil,cycles_soil,Cycles soil file,cycles_cn;cycles_slope;cycles_layer;cycles_dz;cycles_clay;cycles_silt;cycles_rv;cycles_bd;cycles_som;cycles_smc,soil,0,2,,https://w3id.org/wings/export/MINT#CyclesSoil
+cycles_v2_prod_crops,cycles_crops,Cycles crops file,,crop,0,4,,https://w3id.org/wings/export/MINT#CyclesCrops
+cycles_v2_prod_reinit,cycles_reinit,Cycles reinit file,cycles_doy;cycles_rot_year;cycles_smc_l1;cycles_infiltration,reinit,0,6,,https://w3id.org/wings/export/MINT#CyclesREINIT
+cycles_v2_prod_ctrl,cycles_ctrl,Cycles control file,,ctrl,0,3,,https://w3id.org/wings/export/MINT#CyclesCtrl
+cycles_v2_prod_operation,cycles_operation,Cycles operation file,,operation,0,5,,https://w3id.org/wings/export/MINT#CyclesOperation
+,,,,,,,,
+cycles_v2_prod_soilProfile,cycles_soilProfile,Cycles soil profile file,cycles_c_diff;cycles_final_c;cycles_humified_c2;cycles_init_c_mass;cycles_res_biomass_in;cycles_res_c_decomp;cycles_respired_c;cycles_root_biomass_in;cycles_root_c_decomp;cycles_year,dat,0,1,,https://w3id.org/wings/export/MINT#CyclesAnnualSoilProfile
+cycles_v2_prod_somF,cycles_som,Cycles annual SOM file,cycles_bulk_density;cycles_c_sat._ratio;cycles_soil_c;cycles_thickness;cycles_year,dat,0,2,,https://w3id.org/wings/export/MINT#CyclesAnnualSOM
+cyles_v2_prod_crop,cyles_crop,Cycles crop output file,cycles_ag_biomass;cycles_ag_n;cycles_ag_n_concn;cycles_crop;cycles_cum._biomass;cycles_date;cycles_frac_intercep;cycles_n_added;cycles_n_fixation;cycles_n_stress;cycles_potential_tr;cycles_root_biomass;cycles_root_n;cycles_stage;cycles_thermal_time;cycles_total_n;cycles_water_stress,dat,0,3,,https://w3id.org/wings/export/MINT#CyclesCropOutput
+cycles_v2_prod_nitrogen,cycles_nitrogen,Cycles Nitrogen file,cycles_date;cycles_immobilization;cycles_mineralization;cycles_n2o_from_denit;cycles_n2o_from_nitrif;cycles_net_mineraliz;cycles_nh4_leaching;cycles_nh4_nitrificat;cycles_nh4_volatiliz;cycles_no3_denitrif;cycles_no3_leaching;cycles_org_soil_n;cycles_prof_soil_nh4;cycles_prof_soil_no3,dat,0,4,,https://w3id.org/wings/export/MINT#CyclesNitrogen
+cycles_v2_prod_season,cycles_season,Cycles Season file,cycles_actual_tr;cycles_ag_residue;cycles_crop;cycles_cum._n_stress;cycles_date;cycles_forage_n;cycles_forage_yield;cycles_grain_n;cycles_grain_yield;cycles_harvest_index;cycles_n_concn_forage;cycles_n_in_harvest;cycles_n_in_residue;cycles_potential_tr;cycles_root_biomass;cycles_root_n;cycles_soil_evapr;cycles_total_biomass;cycles_total_n,dat,0,5,,https://w3id.org/wings/export/MINT#CyclesSeason
+cycles_v2_prod_summary,cycles_summary,Cycles summary file,cycles_avg_gross_n_min;cycles_avg_n_immob;cycles_avg_n2o_fr_deni;cycles_avg_n2o_fr_nit;cycles_avg_net_n_min;cycles_avg_nh3_volatil;cycles_avg_nh4_leach;cycles_avg_nh4_nitrif;cycles_avg_no3_denit;cycles_avg_no3_leach;cycles_avg_tot_n2o_emi;cycles_final_prof_c;cycles_humified_c;cycles_init_prof_c;cycles_produced_root;cycles_prof_c_diff;cycles_res_c_input;cycles_resp_res_c;cycles_resp_soil_c;cycles_retained_res;cycles_root_c_input;cycles_soil_c_chg/yr,dat,0,6,,https://w3id.org/wings/export/MINT#CyclesSummary
+cycles_v2_prod_weatherOutput,cycles_weatherOutput,Cycles weather output file,cycles_avg_tmp;cycles_date;cycles_max_tmp;cycles_min_tmp;cycles_precipitation;cycles_reference_et,dat,0,7,,https://w3id.org/wings/export/MINT#CyclesWeatherOutput
+cycles_v2_prod_water,cycles_water,Cycles water file,cycles_date;cycles_drainage;cycles_infiltration;cycles_irrigation;cycles_res_evap;cycles_plant_evap;cycles_runoff;cycles_snow_sub;cycles_soil_evap;cycles_transpiration;cycles_swc,dat,0,8,,https://w3id.org/wings/export/MINT#CyclesWaterOutput
+cycles_v2_prod_outputs,cycles_outputs,Cycles season configuration file,,txt,0,9,,https://w3id.org/wings/export/MINT#CyclesOutputs
 ,,,,,,,,
 crop_yields,crop_yields,Crop yield,econ_ybarN,csv,1,,,https://w3id.org/wings/export/MINT#CropYield
 crop_yield_merged,crop_yield_merged,Crop yield merged,econ_ybarN,csv,0,,,https://w3id.org/wings/export/MINT#CropYield

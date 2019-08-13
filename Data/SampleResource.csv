@@ -5,7 +5,7 @@ econ_price_resource,Price,Information about the prices from crops and fertilizer
 econ_production_cost_resource,Production cost,Total production cost,,https://data.mint.isi.edu/files/economic/pongo-productioncost.csv,fb1e373b-ea73-461c-ade5-52c9489dc76d
 econ_supply_elasticity_resource,Supply elasticity,File with supply elasticity information,,https://data.mint.isi.edu/files/economic/supplyelasticity.csv,3a5c1f9e-c7ae-4cda-ba23-2e4f2286a187
 ,,,,,
-econ_zero,Parameter value for a zero adjustment,Parameter value for increment adjustments,,0,
-,,,,,
-wgen_flagP_T_fixed,Fixed value for the flagP parameter to be fixed on temperature,,,Tair_f_tavg,
-wgen_flagP_P_fixed,Fixed value for the flagP parameter to be fixed on precipitation,,,Rainf_f_tavg,
+cycles_weather_resource,Sample weather file,Sample weather file,,https://publisher.mint.isi.edu/kkA2u/met9.12Nx27.62E.weather,
+cycles_soil_resource,Sample soil file,Sample soil file,,https://publisher.mint.isi.edu/OIvRW/pongo.soil,
+cycles_crops_resource,Sample crop file,Sample crop file,,https://publisher.mint.isi.edu/i5gwq/crops.crop,
+cycles_reinit_resource,Sample reinit file,Sample reinit file,,https://publisher.mint.isi.edu/EnAHZ/cycles_reinit-4ar11c5w9efib66lyn55wtxri.reinit,
