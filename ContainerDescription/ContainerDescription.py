@@ -9,7 +9,7 @@ sparql = SPARQLWrapper("http://ontosoft.isi.edu:3030/ds/query")
 sparql_query = """PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
 select distinct ?container
 where {
-    ?a <http://ontosoft.org/software#hasContainer> ?container.
+    ?a <http://ontosoft.org/software#hasSoftwareImage> ?container.
 
   }"""
 
