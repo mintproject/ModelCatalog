@@ -27,7 +27,7 @@ cycles_v2_reinit,cycles_reinit,Cycles reinit file,cycles_doy;cycles_rot_year;cyc
 ,,,,,,,,
 cycles_v2_soilProfile,cycles_soilProfile,Cycles soil profile file,cycles_c_diff;cycles_final_c;cycles_humified_c2;cycles_init_c_mass;cycles_res_biomass_in;cycles_res_c_decomp;cycles_respired_c;cycles_root_biomass_in;cycles_root_c_decomp;cycles_year,dat,0,1,,https://w3id.org/wings/export/MINT#CyclesAnnualSoilProfile
 cycles_v2_somF,cycles_som,Cycles annual SOM file,cycles_bulk_density;cycles_c_sat._ratio;cycles_soil_c;cycles_thickness;cycles_year,dat,0,2,,https://w3id.org/wings/export/MINT#CyclesAnnualSOM
-cyles_v2_crop,cyles_crop,Cycles crop output file,cycles_ag_biomass;cycles_ag_n;cycles_ag_n_concn;cycles_crop;cycles_cum._biomass;cycles_date;cycles_frac_intercep;cycles_n_added;cycles_n_fixation;cycles_n_stress;cycles_potential_tr;cycles_root_biomass;cycles_root_n;cycles_stage;cycles_thermal_time;cycles_total_n;cycles_water_stress,dat,0,3,,https://w3id.org/wings/export/MINT#CyclesCropOutput
+cylces_v2_crop,cyles_crop,Cycles crop output file,cycles_ag_biomass;cycles_ag_n;cycles_ag_n_concn;cycles_crop;cycles_cum._biomass;cycles_date;cycles_frac_intercep;cycles_n_added;cycles_n_fixation;cycles_n_stress;cycles_potential_tr;cycles_root_biomass;cycles_root_n;cycles_stage;cycles_thermal_time;cycles_total_n;cycles_water_stress,dat,0,3,,https://w3id.org/wings/export/MINT#CyclesCropOutput
 cycles_v2_nitrogen,cycles_nitrogen,Cycles Nitrogen file,cycles_date;cycles_immobilization;cycles_mineralization;cycles_n2o_from_denit;cycles_n2o_from_nitrif;cycles_net_mineraliz;cycles_nh4_leaching;cycles_nh4_nitrificat;cycles_nh4_volatiliz;cycles_no3_denitrif;cycles_no3_leaching;cycles_org_soil_n;cycles_prof_soil_nh4;cycles_prof_soil_no3,dat,0,4,,https://w3id.org/wings/export/MINT#CyclesNitrogen
 cycles_v2_season,cycles_season,Cycles Season file,cycles_actual_tr;cycles_ag_residue;cycles_crop;cycles_cum._n_stress;cycles_date;cycles_forage_n;cycles_forage_yield;cycles_grain_n;cycles_grain_yield;cycles_harvest_index;cycles_n_concn_forage;cycles_n_in_harvest;cycles_n_in_residue;cycles_potential_tr;cycles_root_biomass;cycles_root_n;cycles_soil_evapr;cycles_total_biomass;cycles_total_n,dat,0,5,,https://w3id.org/wings/export/MINT#CyclesSeason
 cycles_v2_summary,cycles_summary,Cycles summary file,cycles_avg_gross_n_min;cycles_avg_n_immob;cycles_avg_n2o_fr_deni;cycles_avg_n2o_fr_nit;cycles_avg_net_n_min;cycles_avg_nh3_volatil;cycles_avg_nh4_leach;cycles_avg_nh4_nitrif;cycles_avg_no3_denit;cycles_avg_no3_leach;cycles_avg_tot_n2o_emi;cycles_final_prof_c;cycles_humified_c;cycles_init_prof_c;cycles_produced_root;cycles_prof_c_diff;cycles_res_c_input;cycles_resp_res_c;cycles_resp_soil_c;cycles_retained_res;cycles_root_c_input;cycles_soil_c_chg/yr,dat,0,6,,https://w3id.org/wings/export/MINT#CyclesSummary
@@ -128,38 +128,54 @@ pihm_to_cycles_soil_soil,cycles-soil,Cycles soil file,cycles_cn;cycles_slope;cyc
 pihm_cropland_modelInfo,pihm-modelinfo,PIHM model information,pihm_Alpha;pihm_Beta;pihm_hAreaF;pihm_infD;pihm_KsatV;pihm_macKsatV;pihm_ThetaR;pihm_ThetaS,tar.gz,0,,,https://w3id.org/wings/export/MINT#PIHMModelInfo
 pihm_cropland_o,pihm-cropland,Cropland file,,csv,0,,,https://w3id.org/wings/export/MINT#PIHMCropland
 ,,,,,,,,
-pihm_att,pihm-att,PIHM attribute file with index values of variables for timeseries,,att,0,,,https://w3id.org/wings/export/MINT#PIHMAttribute
-pihm_forc,pihm-forc,PIHM forcing file with the majority of the relevant variables,pihm_Height;pihm_IsFactor;pihm_LAI;pihm_MF;pihm_PRCP;pihm_RH;pihm_RL;pihm_NER;pihm_SS;pihm_Time;pihm_TRMP;pihm_VP;pihm_WINF,forc,0,,,https://w3id.org/wings/export/MINT#PIHMForcing
-pihm_modelinfo,pihm-modelinfo,PIHM model information aggreagation file,pihm_Alpha;pihm_Beta;pihm_hAreaF;pihm_infD;pihm_KsatV;pihm_macKsatV;pihm_ThetaR;pihm_ThetaS,tar.gz,0,,,https://w3id.org/wings/export/MINT#PIHMModelInfo
-pihm_soil,pihm-soil,Soil parameters for the soil types,pihm_Alpha;pihm_Beta;pihm_hAreaF;pihm_infD;pihm_KsatV;pihm_macKsatV;pihm_ThetaR;pihm_ThetaS,soil,0,,,https://w3id.org/wings/export/MINT#PIHMSoil
-pihm_riv,pihm-riv,Spatial  geometry and material information of river segments,pihm_Bed;pihm_Cwr;pihm_Depth;pihm_KsatH;pihm_KsatVB;pihm_n;pihm_Time;pihm_WT_Value;pihm_BC_Value,riv,0,,,https://w3id.org/wings/export/MINT#PIHMRiverSegments
-pihm_geol,pihm-geol,Geologic file,pihm_Alpha;pihm_Beta;pihm_ginfD;pihm_KsatV;pihm_macD;pihm_macKsatH;pihm_gThetaR;pihm_gThetaS;pihm_vAreaF,geol,0,,,https://w3id.org/wings/export/MINT#PIHMGeologic
-pihm_ibc,pihm-ibc,Boundary condition information for elements,pihm_Time;pihm_Neumann_BCValue;pihm_Dirichlet_BCValue,ibc,0,,,https://w3id.org/wings/export/MINT#PIHMBoundaryCondition
-pihm_lc,pihm-lc,Vegetation parameters of different land cover types,pihm_Albedo;pihm_LAImax;pihm_n;pihm_Rmin;pihm_Rs_ref;pihm_RzD;pihm_VegFrac,lc,0,,,https://w3id.org/wings/export/MINT#PIHMLandCover
-pihm_base,pihm-base,Base file,,tar.gz,0,,,https://w3id.org/wings/export/MINT#PIHMBase
-pihm_groundwater,pihm-groundwater,Groundwater file,pihm_gw,GW,0,,,https://w3id.org/wings/export/MINT#PIHMGroundwaterHead
-pihm_infiltration,pihm-infiltration,Infiltration file,pihm_infil,infil,0,,,https://w3id.org/wings/export/MINT#PIHMInfiltration
-pihm_snow,pihm-snow,Snow accumilation file,pihm_snowV,snow,0,,,https://w3id.org/wings/export/MINT#PIHMSnowAccumulation
-pihm_surf,pihm-surf,Surface water file,pihm_surfV,surf,0,,,https://w3id.org/wings/export/MINT#PIHMSurfaceWater
-pihm_unsat,pihm-unsat,Soil moisture file,pihm_unsatV,unsat,0,,,https://w3id.org/wings/export/MINT#PIHMSoilMoisture
-pihm_et0,pihm-et0,Evaporation canopy file,pihm_et0V,et0,0,,,https://w3id.org/wings/export/MINT#PIHMEvaporationCanopy
-pihm_et1,pihm-et1,Model fileTranspiration file,pihm_transpiration,et1,0,,,https://w3id.org/wings/export/MINT#PIHMTranspiration
-pihm_et2,pihm-et2,Evapotranspiration ground surface file,pihm_et2v,et2,0,,,https://w3id.org/wings/export/MINT#PIHMEvaporationGroundSurface
-pihm_rech,pihm-rech,Recharge Rate file,pihm_rechr,rech,0,,,https://w3id.org/wings/export/MINT#PIHMRechargeRate
-pihm_stage,pihm-stage,River stage file,pihm_stagev,stage,0,,,https://w3id.org/wings/export/MINT#PIHMRiverStage
-pihm_rbed,pihm-rbed,River bed storage file,pihm_rbedv,rbed,0,,,https://w3id.org/wings/export/MINT#PIHMRiverBedStorage
-pihm_rivFlx0,pihm-rivFlx0,lateral influs to the stream reach,pihm_rivFlx0v,rivFlx0,0,,,https://w3id.org/wings/export/MINT#PIHMRivFlx0
-pihm_rivFlx1,pihm-rivFlx1,Lateral outflow from stream reach,pihm_rivFlx1v,rivFlx1,0,,,https://w3id.org/wings/export/MINT#PIHMRivFlx1
-pihm_rivFlx2,pihm-rivFlx2,Surface flow to stream reach from left terrain,pihm_rivFlx2v,rivFlx2,0,,,https://w3id.org/wings/export/MINT#PIHMRivFlx2
-pihm_rivFlx3,pihm-rivFlx3,surface flow frow to stream reach from right terrain,pihm_rivFlx3v,rivFlx3,0,,,https://w3id.org/wings/export/MINT#PIHMRivFlx3
-pihm_rivFlx4,pihm-rivFlx4,Baseflow to stream reach from aquifer on the left,pihm_rivFlx4v,rivFlx4,0,,,https://w3id.org/wings/export/MINT#PIHMRivFlx4
-pihm_rivFlx5,pihm-rivFlx5,baseflow to stream reach from aquifer on the right,pihm_rivFlx5v,rivFlx5,0,,,https://w3id.org/wings/export/MINT#PIHMRivFlx5
-pihm_rivFlx6,pihm-rivFlx6,leakage between stream reach and river bed,pihm_rivFlx6v,rivFlx6,0,,,https://w3id.org/wings/export/MINT#PIHMRivFlx6
-pihm_rivFlx7,pihm-rivFlx7,subsurface flow to the river bed from left aquifer,pihm_rivFlx7v,rivFlx7,0,,,https://w3id.org/wings/export/MINT#PIHMRivFlx7
-pihm_rivFlx8,pihm-rivFlx8,subsurface flow to the river bed from right aquifer,pihm_rivFlx8v,rivFlx8,0,,,https://w3id.org/wings/export/MINT#PIHMRivFlx8
-pihm_rivFlx9,pihm-rivFlx9,lateral outflux to the bed beneath river,pihm_rivFlx9v,rivFlx9,0,,,https://w3id.org/wings/export/MINT#PIHMRivFlx9
-pihm_rivFlx10,pihm-rivFlx10,lateral influx to the bed beneath river,pihm_rivFlx10v,rivFlx10,0,,,https://w3id.org/wings/export/MINT#PIHMRivFlx10
-pihm_is,pihm-is,Interception storage file,pihm_isv,is,0,,,https://w3id.org/wings/export/MINT#PIHMInterceptionStorage
+pihm_att,pihm-att,PIHM attribute file with index values of variables for timeseries,,att,0,1,,https://w3id.org/wings/export/MINT#PIHMAttribute
+pihm_forc,pihm-forc,PIHM forcing file with the majority of the relevant variables,pihm_Height;pihm_IsFactor;pihm_LAI;pihm_MF;pihm_PRCP;pihm_RH;pihm_RL;pihm_NER;pihm_SS;pihm_Time;pihm_TRMP;pihm_VP;pihm_WINF,forc,0,2,,https://w3id.org/wings/export/MINT#PIHMForcing
+pihm_modelinfo,pihm-modelinfo,PIHM model information aggreagation file,pihm_Alpha;pihm_Beta;pihm_hAreaF;pihm_infD;pihm_KsatV;pihm_macKsatV;pihm_ThetaR;pihm_ThetaS,tar.gz,0,3,,https://w3id.org/wings/export/MINT#PIHMModelInfo
+pihm_soil,pihm-soil,Soil parameters for the soil types,pihm_Alpha;pihm_Beta;pihm_hAreaF;pihm_infD;pihm_KsatV;pihm_macKsatV;pihm_ThetaR;pihm_ThetaS,soil,0,4,,https://w3id.org/wings/export/MINT#PIHMSoil
+pihm_riv,pihm-riv,Spatial  geometry and material information of river segments,pihm_Bed;pihm_Cwr;pihm_Depth;pihm_KsatH;pihm_KsatVB;pihm_n;pihm_Time;pihm_WT_Value;pihm_BC_Value,riv,0,5,,https://w3id.org/wings/export/MINT#PIHMRiverSegments
+pihm_geol,pihm-geol,Geologic file,pihm_Alpha;pihm_Beta;pihm_ginfD;pihm_KsatV;pihm_macD;pihm_macKsatH;pihm_gThetaR;pihm_gThetaS;pihm_vAreaF,geol,0,6,,https://w3id.org/wings/export/MINT#PIHMGeologic
+pihm_ibc,pihm-ibc,Boundary condition information for elements,pihm_Time;pihm_Neumann_BCValue;pihm_Dirichlet_BCValue,ibc,0,7,,https://w3id.org/wings/export/MINT#PIHMBoundaryCondition
+pihm_lc,pihm-lc,Vegetation parameters of different land cover types,pihm_Albedo;pihm_LAImax;pihm_n;pihm_Rmin;pihm_Rs_ref;pihm_RzD;pihm_VegFrac,lc,0,8,,https://w3id.org/wings/export/MINT#PIHMLandCover
+pihm_base,pihm-base,Base file,,tar.gz,0,9,,https://w3id.org/wings/export/MINT#PIHMBase
+,,,,,,,,
+pihm_groundwater,pihm-groundwater,Groundwater file,pihm_gw,GW,0,1,,https://w3id.org/wings/export/MINT#PIHMGroundwaterHead
+pihm_infiltration,pihm-infiltration,Infiltration file,pihm_infil,infil,0,2,,https://w3id.org/wings/export/MINT#PIHMInfiltration
+pihm_snow,pihm-snow,Snow accumilation file,pihm_snowV,snow,0,4,,https://w3id.org/wings/export/MINT#PIHMSnowAccumulation
+pihm_surf,pihm-surf,Surface water file,pihm_surfV,surf,0,5,,https://w3id.org/wings/export/MINT#PIHMSurfaceWater
+pihm_unsat,pihm-unsat,Soil moisture file,pihm_unsatV,unsat,0,6,,https://w3id.org/wings/export/MINT#PIHMSoilMoisture
+pihm_et0,pihm-et0,Evaporation canopy file,pihm_et0V,et0,0,7,,https://w3id.org/wings/export/MINT#PIHMEvaporationCanopy
+pihm_et1,pihm-et1,Model fileTranspiration file,pihm_transpiration,et1,0,8,,https://w3id.org/wings/export/MINT#PIHMTranspiration
+pihm_et2,pihm-et2,Evapotranspiration ground surface file,pihm_et2v,et2,0,9,,https://w3id.org/wings/export/MINT#PIHMEvaporationGroundSurface
+pihm_rech,pihm-rech,Recharge Rate file,pihm_rechr,rech,0,10,,https://w3id.org/wings/export/MINT#PIHMRechargeRate
+pihm_stage,pihm-stage,River stage file,pihm_stagev,stage,0,11,,https://w3id.org/wings/export/MINT#PIHMRiverStage
+pihm_rbed,pihm-rbed,River bed storage file,pihm_rbedv,rbed,0,12,,https://w3id.org/wings/export/MINT#PIHMRiverBedStorage
+pihm_rivFlx0,pihm-rivFlx0,lateral influs to the stream reach,pihm_rivFlx0v,rivFlx0,0,13,,https://w3id.org/wings/export/MINT#PIHMRivFlx0
+pihm_rivFlx1,pihm-rivFlx1,Lateral outflow from stream reach,pihm_rivFlx1v,rivFlx1,0,14,,https://w3id.org/wings/export/MINT#PIHMRivFlx1
+pihm_rivFlx2,pihm-rivFlx2,Surface flow to stream reach from left terrain,pihm_rivFlx2v,rivFlx2,0,15,,https://w3id.org/wings/export/MINT#PIHMRivFlx2
+pihm_rivFlx3,pihm-rivFlx3,surface flow frow to stream reach from right terrain,pihm_rivFlx3v,rivFlx3,0,16,,https://w3id.org/wings/export/MINT#PIHMRivFlx3
+pihm_rivFlx4,pihm-rivFlx4,Baseflow to stream reach from aquifer on the left,pihm_rivFlx4v,rivFlx4,0,17,,https://w3id.org/wings/export/MINT#PIHMRivFlx4
+pihm_rivFlx5,pihm-rivFlx5,baseflow to stream reach from aquifer on the right,pihm_rivFlx5v,rivFlx5,0,18,,https://w3id.org/wings/export/MINT#PIHMRivFlx5
+pihm_rivFlx6,pihm-rivFlx6,leakage between stream reach and river bed,pihm_rivFlx6v,rivFlx6,0,19,,https://w3id.org/wings/export/MINT#PIHMRivFlx6
+pihm_rivFlx7,pihm-rivFlx7,subsurface flow to the river bed from left aquifer,pihm_rivFlx7v,rivFlx7,0,20,,https://w3id.org/wings/export/MINT#PIHMRivFlx7
+pihm_rivFlx8,pihm-rivFlx8,subsurface flow to the river bed from right aquifer,pihm_rivFlx8v,rivFlx8,0,21,,https://w3id.org/wings/export/MINT#PIHMRivFlx8
+pihm_rivFlx9,pihm-rivFlx9,lateral outflux to the bed beneath river,pihm_rivFlx9v,rivFlx9,0,22,,https://w3id.org/wings/export/MINT#PIHMRivFlx9
+pihm_rivFlx10,pihm-rivFlx10,lateral influx to the bed beneath river,pihm_rivFlx10v,rivFlx10,0,23,,https://w3id.org/wings/export/MINT#PIHMRivFlx10
+pihm_is,pihm-is,Interception storage file,pihm_isv,is,0,3,,https://w3id.org/wings/export/MINT#PIHMInterceptionStorage
+,,,,,,,,
+pihm_v4_elevation,elevation,elevation,,,0,1,,https://w3id.org/wings/export/MINT#ASTER
+pihm_v4_stream-delineation-shp,stream-delineation-shp,stream-delineation-shp,,shp,0,2,,https://w3id.org/wings/export/MINT#pihm-stream-delineation-shp
+pihm_v4_stream-delineation-shx,stream-delineation-shx,stream-delineation-shx,,shx,0,3,,https://w3id.org/wings/export/MINT#stream-delineation-shx
+pihm_v4_stream-delineation-dbf,stream-delineation-dbf,stream-delineation-dbf,,dbf,0,4,,https://w3id.org/wings/export/MINT#pihm_v4_stream-delineation-dbf
+pihm_v4_stream-delineation-prj,stream-delineation-prj,stream-delineation-prj,,prj,0,5,,https://w3id.org/wings/export/MINT#pihm_v4_stream-delineation-prj
+pihm_v4_waterbed-delineation-shp,waterbed-delineation-shp,waterbed-delineation-shp,,shp,0,6,,https://w3id.org/wings/export/MINT#pihm_v4_waterbed-delineation-shp
+pihm_v4_waterbed-delineation-shx,waterbed-delineation-shx,waterbed-delineation-shx,,shx,0,7,,https://w3id.org/wings/export/MINT#pihm_v4_waterbed-delineation-shx
+pihm_v4_waterbed-delineation-dbf,waterbed-delineation-dbf,waterbed-delineation-dbf,,dbf,0,8,,https://w3id.org/wings/export/MINT#pihm_v4_waterbed-delineation-dbf
+pihm_v4_waterbed-delineation-prj,waterbed-delineation-prj,waterbed-delineation-prj,,prj,0,9,,https://w3id.org/wings/export/MINT#pihm_v4_waterbed-delineation-prj
+pihm_v4_landuse,landuse,landuse,,tif,0,10,,https://w3id.org/wings/export/MINT#USGS-LCI
+pihm_v4_soil,soil,soil,pihm_Alpha;pihm_Beta;pihm_hAreaF;pihm_infD;pihm_KsatV;pihm_macKsatV;pihm_ThetaR;pihm_ThetaS,tar.gz,0,11,,https://w3id.org/wings/export/MINT#pihm-soil
+pihm_v4_weather,weather,weather,fldas_Evap_tavg;fldas_LWdown_f_tavg;fldas_Lwnet_tavg;fldas_Psurf_f_tavg;fldas_Qair_f_tavg;fldas_Qg_tavg;fldas_Qh_tavg;fldas_Qle_tavg;fldas_Qs_tavg;fldas_Qsb_tavg;fldas_RadT_tavg;fldas_Rainf_f_tavg;flda,netcdf,0,12,,https://w3id.org/wings/export/MINT#FLDAS
+,,,,,,,,
+pihm_v4_targz,targz,Aggregated output with all PIHM files (all relevant variables are grouped in this file),pihm_gw;pihm_infil;pihm_snowV;pihm_surfV;pihm_unsatV;pihm_et0V;pihm_transpiration;pihm_et2v;pihm_rechr,tar.gz,0,1,,https://w3id.org/wings/export/MINT#targz
 ,,,,,,,,
 pihm_flooding_surf,pihm-surf,Surface water file,pihm_surfV,surf,0,,,https://w3id.org/wings/export/MINT#PIHMSurfaceWater
 pihm_flooding_o,pihm-flooding,,flooding_surfv,txt,0,,,https://w3id.org/wings/export/MINT#PIHMFlooding
@@ -211,3 +227,6 @@ pihm_to_netcdf_netcdf,pihm_netcdf,PIHM NetCDF file,pihm_Alpha;pihm_Beta;pihm_hAr
 cycles_outputs_season,cycles_season,Cycles Season file,cycles_actual_tr;cycles_ag_residue;cycles_crop;cycles_cum._n_stress;cycles_date;cycles_forage_n;cycles_forage_yield;cycles_grain_n;cycles_grain_yield;cycles_harvest_index;cycles_n_concn_forage;cycles_n_in_harvest;cycles_n_in_residue;cycles_potential_tr;cycles_root_biomass;cycles_root_n;cycles_soil_evapr;cycles_total_biomass;cycles_total_n,dat,0,,,https://w3id.org/wings/export/MINT#CyclesSeason
 cycles_outputs_weather,cycles_weatherOutput,Cycles weather output file,cycles_avg_tmp;cycles_date;cycles_max_tmp;cycles_min_tmp;cycles_precipitation;cycles_reference_et,dat,0,,,https://w3id.org/wings/export/MINT#CyclesWeatherOutput
 cycles_outputs_cycles_outputs,cycles_outputs,Aggregated season and weather file,cycles_actual_tr;cycles_ag_residue;cycles_crop;cycles_cum._n_stress;cycles_date;cycles_forage_n;cycles_forage_yield;cycles_grain_n;cycles_grain_yield;cycles_harvest_index;cycles_n_concn_forage;cycles_n_in_harvest;cycles_n_in_residue;cycles_potential_tr;cycles_root_biomass;cycles_root_n;cycles_soil_evapr;cycles_total_biomass;cycles_total_n;cycles_avg_tmp;cycles_date;cycles_max_tmp;cycles_min_tmp;cycles_precipitation;cycles_reference_et,tar.gz,0,,,https://w3id.org/wings/export/MINT#CyclesOutputs
+,,,,,,,,
+hand_input_dem,input-dem,Input digital elevation model,,tif,0,1,,https://w3id.org/wings/export/MINT#raster-dem
+hand_distance_down,distance-down,Distance down flooding map,,tif,0,1,,https://w3id.org/wings/export/MINT#raster-distancedown
