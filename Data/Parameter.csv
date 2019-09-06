@@ -95,7 +95,7 @@ econ_v6_maize_land_cost_adjustment,maize-land-cost-adjustment,Maize land cost ad
 econ_v6_maize_fertilizer_cost_adjustment,maize-fertilizer-cost-adjustment,Maize fertilizer cost adjustment (%),0,float,https://w3id.org/wings/export/MINT#Adjustment,,9,econ_c2,-50,50,%
 econ_v6_sesame_crop_price_adjustment,sesame-crop-price-adjustment,Sesame crop price adjustment (%),0,float,https://w3id.org/wings/export/MINT#Adjustment,,10,econ_p,-50,50,%
 econ_v6_sesame_land_cost_adjustment,sesame-land-cost-adjustment,Sesame land cost adjustment (%),0,float,https://w3id.org/wings/export/MINT#Adjustment,,11,econ_c1,-50,50,%
-econ_v6_sesame_fertilizer,sesame-fertilizer-cost-adjustment,Sesame fertilizer (%),0,float,https://w3id.org/wings/export/MINT#Adjustment,,12,econ_c2,-50,50,%
+econ_v6_sesame_fertilizer_cost_adjustment,sesame-fertilizer-cost-adjustment,Sesame fertilizer (%),0,float,https://w3id.org/wings/export/MINT#Adjustment,,12,econ_c2,-50,50,%
 econ_v6_sorghum_crop_price_adjustment_fixed,sorghum-crop-price-adjustment,Sorghum crop price adjustment fixed (%),0,float,https://w3id.org/wings/export/MINT#Adjustment,0,13,econ_p,-50,50,%
 econ_v6_sorghum_land_cost_adjustment_fixed,sorghum-land-cost-adjustment,Sorghum land cost adjustment fixed (%),0,float,https://w3id.org/wings/export/MINT#Adjustment,0,14,econ_c1,-50,50,%
 econ_v6_sorghum_fertilizer_cost_adjustment_fixed,sorghum-fertilizer-cost-adjustment,Sorghumfertilizer cost adjustment fixed (%),0,float,https://w3id.org/wings/export/MINT#Adjustment,0,15,econ_c2,-50,50,%
@@ -110,4 +110,4 @@ econ_v6_maize_land_cost_adjustment_fixed,maize-land-cost-adjustment,Maizeland co
 econ_v6_maize_fertilizer_cost_adjustment_fixed,maize-fertilizer-cost-adjustment,Maizefertilizer cost adjustment fixed (%),0,float,https://w3id.org/wings/export/MINT#Adjustment,0,9,econ_c2,-50,50,%
 econ_v6_sesame_crop_price_adjustment_fixed,sesame-crop-price-adjustment,Sesame crop price adjustment fixed (%),0,float,https://w3id.org/wings/export/MINT#Adjustment,0,10,econ_p,-50,50,%
 econ_v6_sesame_land_cost_adjustment_fixed,sesame-land-cost-adjustment,Sesame land cost adjustment fixed (%),0,float,https://w3id.org/wings/export/MINT#Adjustment,0,11,econ_c1,-50,50,%
-econ_v6_sesame_fertilizer_fixed,sesame-fertilizer-cost-adjustment,Sesame fertilizer fixed (%),0,float,https://w3id.org/wings/export/MINT#Adjustment,0,12,econ_c2,-50,50,%
+econ_v6_sesame_fertilizer_cost_adjustment_fixed,sesame-fertilizer-cost-adjustment,Sesame fertilizer fixed (%),0,float,https://w3id.org/wings/export/MINT#Adjustment,0,12,econ_c2,-50,50,%
