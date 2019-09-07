@@ -163,17 +163,29 @@ pihm_rivFlx10,pihm-rivFlx10,lateral influx to the bed beneath river,pihm_rivFlx1
 pihm_is,pihm-is,Interception storage file,pihm_isv,is,0,3,,https://w3id.org/wings/export/MINT#PIHMInterceptionStorage
 ,,,,,,,,
 pihm_v4_elevation,elevation,elevation,,,0,1,,https://w3id.org/wings/export/MINT#ASTER
+pihm_v4_elevation_fixed,elevation,elevation,,,0,1,pihm_elevation_resource,https://w3id.org/wings/export/MINT#ASTER
 pihm_v4_stream-delineation-shp,stream-delineation-shp,stream-delineation-shp,,shp,0,2,,https://w3id.org/wings/export/MINT#pihm-stream-delineation-shp
+pihm_v4_stream-delineation-shp_fixed,stream-delineation-shp,stream-delineation-shp,,shp,0,2,pihm_stream-delineation-shp_resource,https://w3id.org/wings/export/MINT#pihm-stream-delineation-shp
 pihm_v4_stream-delineation-shx,stream-delineation-shx,stream-delineation-shx,,shx,0,3,,https://w3id.org/wings/export/MINT#stream-delineation-shx
+pihm_v4_stream-delineation-shx_fixed,stream-delineation-shx,stream-delineation-shx,,shx,0,3,pihm_stream-delineation-shx_resource,https://w3id.org/wings/export/MINT#stream-delineation-shx
 pihm_v4_stream-delineation-dbf,stream-delineation-dbf,stream-delineation-dbf,,dbf,0,4,,https://w3id.org/wings/export/MINT#pihm_v4_stream-delineation-dbf
+pihm_v4_stream-delineation-dbf_fixed,stream-delineation-dbf,stream-delineation-dbf,,dbf,0,4,pihm_stream-delineation-dbf_resource,https://w3id.org/wings/export/MINT#pihm_v4_stream-delineation-dbf
 pihm_v4_stream-delineation-prj,stream-delineation-prj,stream-delineation-prj,,prj,0,5,,https://w3id.org/wings/export/MINT#pihm_v4_stream-delineation-prj
+pihm_v4_stream-delineation-prj_fixed,stream-delineation-prj,stream-delineation-prj,,prj,0,5,pihm_stream-delineation-prj_resource,https://w3id.org/wings/export/MINT#pihm_v4_stream-delineation-prj
 pihm_v4_waterbed-delineation-shp,waterbed-delineation-shp,waterbed-delineation-shp,,shp,0,6,,https://w3id.org/wings/export/MINT#pihm_v4_waterbed-delineation-shp
+pihm_v4_waterbed-delineation-shp_fixed,waterbed-delineation-shp,waterbed-delineation-shp,,shp,0,6,pihm_waterbed-delineation-shp_resource,https://w3id.org/wings/export/MINT#pihm_v4_waterbed-delineation-shp
 pihm_v4_waterbed-delineation-shx,waterbed-delineation-shx,waterbed-delineation-shx,,shx,0,7,,https://w3id.org/wings/export/MINT#pihm_v4_waterbed-delineation-shx
+pihm_v4_waterbed-delineation-shx_fixed,waterbed-delineation-shx,waterbed-delineation-shx,,shx,0,7,pihm_waterbed-delineation-shx_resource,https://w3id.org/wings/export/MINT#pihm_v4_waterbed-delineation-shx
 pihm_v4_waterbed-delineation-dbf,waterbed-delineation-dbf,waterbed-delineation-dbf,,dbf,0,8,,https://w3id.org/wings/export/MINT#pihm_v4_waterbed-delineation-dbf
+pihm_v4_waterbed-delineation-dbf_fixed,waterbed-delineation-dbf,waterbed-delineation-dbf,,dbf,0,8,pihm_waterbed-delineation-dbf_resource,https://w3id.org/wings/export/MINT#pihm_v4_waterbed-delineation-dbf
 pihm_v4_waterbed-delineation-prj,waterbed-delineation-prj,waterbed-delineation-prj,,prj,0,9,,https://w3id.org/wings/export/MINT#pihm_v4_waterbed-delineation-prj
+pihm_v4_waterbed-delineation-prj_fixed,waterbed-delineation-prj,waterbed-delineation-prj,,prj,0,9,pihm_waterbed-delineation-prj_resource,https://w3id.org/wings/export/MINT#pihm_v4_waterbed-delineation-prj
 pihm_v4_landuse,landuse,landuse,,tif,0,10,,https://w3id.org/wings/export/MINT#USGS-LCI
+pihm_v4_landuse_fixed,landuse,landuse,,tif,0,10,pihm_landuse_resource,https://w3id.org/wings/export/MINT#USGS-LCI
 pihm_v4_soil,soil,soil,pihm_Alpha;pihm_Beta;pihm_hAreaF;pihm_infD;pihm_KsatV;pihm_macKsatV;pihm_ThetaR;pihm_ThetaS,tar.gz,0,11,,https://w3id.org/wings/export/MINT#pihm-soil
+pihm_v4_soil_fixed,soil,soil,pihm_Alpha;pihm_Beta;pihm_hAreaF;pihm_infD;pihm_KsatV;pihm_macKsatV;pihm_ThetaR;pihm_ThetaS,tar.gz,0,11,pihm_soil_resource,https://w3id.org/wings/export/MINT#pihm-soil
 pihm_v4_weather,weather,weather,fldas_Evap_tavg;fldas_LWdown_f_tavg;fldas_Lwnet_tavg;fldas_Psurf_f_tavg;fldas_Qair_f_tavg;fldas_Qg_tavg;fldas_Qh_tavg;fldas_Qle_tavg;fldas_Qs_tavg;fldas_Qsb_tavg;fldas_RadT_tavg;fldas_Rainf_f_tavg;flda,netcdf,0,12,,https://w3id.org/wings/export/MINT#FLDAS
+pihm_v4_weather_fixed,weather,weather,fldas_Evap_tavg;fldas_LWdown_f_tavg;fldas_Lwnet_tavg;fldas_Psurf_f_tavg;fldas_Qair_f_tavg;fldas_Qg_tavg;fldas_Qh_tavg;fldas_Qle_tavg;fldas_Qs_tavg;fldas_Qsb_tavg;fldas_RadT_tavg;fldas_Rainf_f_tavg;flda,netcdf,0,12,pihm_weather_resource,https://w3id.org/wings/export/MINT#FLDAS
 ,,,,,,,,
 pihm_v4_targz,targz,Aggregated output with all PIHM files (all relevant variables are grouped in this file),pihm_gw;pihm_infil;pihm_snowV;pihm_surfV;pihm_unsatV;pihm_et0V;pihm_transpiration;pihm_et2v;pihm_rechr,tar.gz,0,1,,https://w3id.org/wings/export/MINT#targz
 ,,,,,,,,
@@ -209,7 +221,7 @@ DSSAT_weatherFile,DSSAT weather file,,DSSAT_LAT;DSSAT_LONG;DSSAT_RAIN;DSSAT_SRAD
 DSSAT_sol,DSSAT soil file,,DSSAT_SALB;DSSAT_SBDM;DSSAT_SDUL;DSSAT_SLB;DSSAT_SLCL;DSSAT_SLLL;DSSAT_SLOC;DSSAT_SLSI;DSSAT_SSAT;DSSAT_SSKS,sol,0,,,https://w3id.org/wings/export/MINT#Soil
 DSSAT_summary,DSSAT Summary file,,DSSAT_hwam;DSSAT_cwam,csv,0,,,https://w3id.org/wings/export/MINT#Summary
 ,,,,,,,,
-topo_rain,Rain rate txt file,,Topo_p,txt,0,,,https://w3id.org/wings/export/MINT#TOPO_Rain
+topo_rain,Rain rate file,,Topo_p,txt,0,,,https://w3id.org/wings/export/MINT#TOPO_Rain
 topo_aggr_files,TopoFlow aggregated inputs,,,tar.gz,0,,,https://w3id.org/wings/export/MINT#TOPO_Aggregation
 topo_aggregatedOutput,TopoFlow aggregated outputs,,Topo_qs;Topo_albedo,tar.gz,0,,,https://w3id.org/wings/export/MINT#TOPO_Aggregation
 ,,,,,,,,

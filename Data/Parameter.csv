@@ -48,7 +48,10 @@ cycles_v2_prod_crop_name,crop_name,crop name,,string,https://w3id.org/wings/expo
 ,,,,,,,,,,,
 pihm_start-date,pihm_start-date,start date,1/1/2017,string,https://w3id.org/wings/export/MINT#StartDate,,1,,,,date
 pihm_end-date,pihm_end-date,end date, 2017-12-31,string,https://w3id.org/wings/export/MINT#EndDate,,2,,,,date
-pihm_region-name,pihm_region-name,region name,pg,string,https://w3id.org/wings/export/MINT#RegionName,,3,,,,
+pihm_region-name,pihm_region-name,region name,pongo,string,https://w3id.org/wings/export/MINT#RegionName,,3,,,,
+pihm_region-name_fixed,pihm_region-name,region name,pongo,string,https://w3id.org/wings/export/MINT#RegionName,pongo,3,,,,
+pihm_adjustment_temp,temp-adjustment,Temperature adjustment (5),0,float,https://w3id.org/wings/export/MINT#Adjustment,0,4,pihm_TRMP,-50,50,%
+pihm_adjustment_precip,precip-adjustment,Precipitation adjustment (%),0,float,https://w3id.org/wings/export/MINT#Adjustment,0,5,pihm_PRCP,-50,50,%
 ,,,,,,,,,,,
 fldas_to_pihm_start-date,fldas_to_pihm_start-date,,1/1/2017,string,https://w3id.org/wings/export/MINT#StartDate,,,,,,date
 fldas_to_pihm_end-date,fldas_to_pihm_end-date,, 2017-12-31,string,https://w3id.org/wings/export/MINT#EndDate,,,,,,date
