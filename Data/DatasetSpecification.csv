@@ -85,10 +85,10 @@ econ_v5_supply_elasticity,supply-elasticity,File with supply elasticities (perce
 econ_v5_supply_elasticity_fixed,supply-elasticity,File with supply elasticities (percent change in crop supply divided by percent change in crop price),econ_eta,csv,0,3,econ_supply_elasticity_resource,https://w3id.org/wings/export/MINT#economic-supply-elasticity
 econ_v5_land_use,economic-land-use,Economic land use results,econ_fert_subsidy;econ_land_area;econ_obsyield;econ_production;econ_Nfert,txt,0,1,,https://w3id.org/wings/export/MINT#EconomicLandUse
 ,,,,,,,,
-econ_v6_cycles_data,cycles-data,File with inputs used to configure the Cycles model (e.g. fertilizer),econ_xbar2;econ_ybar;econ_ybarN,csv,0,1,,https://w3id.org/wings/export/MINT#economic-cycles-data
-econ_v6_cycles_data_fixed,cycles-data,File with inputs used to configure the Cycles model (e.g. fertilizer),econ_xbar2;econ_ybar;econ_ybarN,csv,0,1,econ_cycles_data_resource,https://w3id.org/wings/export/MINT#economic-cycles-data
-econ_v6_land,land-input,Land allocation file,econ_xbar1,csv,0,2,,https://w3id.org/wings/export/MINT#economic-land-input
-econ_v6_land_fixed,land-input,Land allocation file,econ_xbar1,csv,0,2,econ_land_input_resource,https://w3id.org/wings/export/MINT#economic-land-input
+econ_v6_cycles_data,cycles-data,File with inputs used to configure the Cycles model (e.g. fertilizer),econ_ybarN,csv,0,1,,https://w3id.org/wings/export/MINT#economic-cycles-data
+econ_v6_cycles_data_fixed,cycles-data,File with inputs used to configure the Cycles model (e.g. fertilizer),econ_ybarN,csv,0,1,econ_cycles_data_resource,https://w3id.org/wings/export/MINT#economic-cycles-data
+econ_v6_land,land-input,Land allocation file,econ_xbar1;econ_xbar2;econ_ybar,csv,0,2,,https://w3id.org/wings/export/MINT#economic-land-input
+econ_v6_land_fixed,land-input,Land allocation file,econ_xbar1;econ_xbar2;econ_ybar,csv,0,2,econ_land_input_resource,https://w3id.org/wings/export/MINT#economic-land-input
 econ_v6_price,price,File with the prices used in the model,econ_p,csv,0,3,,https://w3id.org/wings/export/MINT#economic-price
 econ_v6_price_fixed,price,File with the prices used in the model,econ_p,csv,0,3,econ_price_resource,https://w3id.org/wings/export/MINT#economic-price
 econ_v6_production_cost,production-cost,File with the production cost (e.g. fertilizer),econ_c1;econ_c2,csv,0,4,,https://w3id.org/wings/export/MINT#economic-production-cost
@@ -96,10 +96,10 @@ econ_v6_production_cost_fixed,production-cost,File with the production cost (e.g
 econ_v6_land_use,economic-land-use,Economic land use results,econ_fert_subsidy;econ_land_area;econ_obsyield;econ_production;econ_Nfert,txt,0,1,,https://w3id.org/wings/export/MINT#EconomicLandUse
 econ_v6_calib_land_use,calibration-output,Economic calibration output,econ_sim_land_area;econ_obs_land_area;econ_obs_production;econ_obs_Nfert;econ_sim_production;econ_sim_Nfert,txt,0,2,,https://w3id.org/wings/export/MINT#EconomicCalibration
 ,,,,,,,,
-econ_v6.1_cycles_data,cycles-data,File with inputs used to configure the Cycles model (e.g. fertilizer),econ_xbar2;econ_ybar;econ_ybarN,csv,0,1,,https://w3id.org/wings/export/MINT#economic-cycles-data
-econ_v6.1_cycles_data_fixed,cycles-data,File with inputs used to configure the Cycles model (e.g. fertilizer),econ_xbar2;econ_ybar;econ_ybarN,csv,0,1,econ_cycles_data_resource,https://w3id.org/wings/export/MINT#economic-cycles-data
-econ_v6.1_land,land-input,Land allocation file,econ_xbar1,csv,0,2,,https://w3id.org/wings/export/MINT#economic-land-input
-econ_v6.1_land_fixed,land-input,Land allocation file,econ_xbar1,csv,0,2,econ_land_input_resource,https://w3id.org/wings/export/MINT#economic-land-input
+econ_v6.1_cycles_data,cycles-data,File with inputs used to configure the Cycles model (e.g. fertilizer),econ_ybarN,csv,0,1,,https://w3id.org/wings/export/MINT#economic-cycles-data
+econ_v6.1_cycles_data_fixed,cycles-data,File with inputs used to configure the Cycles model (e.g. fertilizer),econ_ybarN,csv,0,1,econ_cycles_data_resource,https://w3id.org/wings/export/MINT#economic-cycles-data
+econ_v6.1_land,land-input,Land allocation file,econ_xbar1;econ_xbar2;econ_ybar,csv,0,2,,https://w3id.org/wings/export/MINT#economic-land-input
+econ_v6.1_land_fixed,land-input,Land allocation file,econ_xbar1;econ_xbar2;econ_ybar,csv,0,2,econ_land_input_resource,https://w3id.org/wings/export/MINT#economic-land-input
 econ_v6.1_price,price,File with the prices used in the model,econ_p,csv,0,3,,https://w3id.org/wings/export/MINT#economic-price
 econ_v6.1_price_fixed,price,File with the prices used in the model,econ_p,csv,0,3,econ_price_resource,https://w3id.org/wings/export/MINT#economic-price
 econ_v6.1_production_cost,production-cost,File with the production cost (e.g. fertilizer),econ_c1;econ_c2,csv,0,4,,https://w3id.org/wings/export/MINT#economic-production-cost
