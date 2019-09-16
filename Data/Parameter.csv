@@ -47,18 +47,22 @@ cycles_v2_prod_unique_id,unique_id,unique id of the execution,,string,https://w3
 cycles_v2_prod_crop_name,crop_name,crop name,,string,https://w3id.org/wings/export/MINT#CyclesCropName,,2,,,,
 ,,,,,,,,,,,
 pihm_start-date,pihm_start-date,start date,1/1/2017,string,https://w3id.org/wings/export/MINT#StartDate,,1,,,,date
-pihm_end-date,pihm_end-date,end date, 2017-12-31,string,https://w3id.org/wings/export/MINT#EndDate,,2,,,,date
+pihm_start-date_fixed,pihm_start-date,start date,1/1/2017,string,https://w3id.org/wings/export/MINT#StartDate,1/1/2017,1,,,,date
+pihm_end-date,pihm_end-date,end date, 12/31/2017,string,https://w3id.org/wings/export/MINT#EndDate,,2,,,,date
+pihm_end-date_fixed,pihm_end-date,end date, 12/31/2017,string,https://w3id.org/wings/export/MINT#EndDate, 12/31/2017,2,,,,date
 pihm_region-name,pihm_region-name,region name,pongo,string,https://w3id.org/wings/export/MINT#RegionName,,3,,,,
 pihm_region-name_fixed,pihm_region-name,region name,pongo,string,https://w3id.org/wings/export/MINT#RegionName,pongo,3,,,,
-pihm_adjustment_temp,temp-adjustment,Temperature adjustment (5),0,float,https://w3id.org/wings/export/MINT#Adjustment,0,4,pihm_TRMP,-50,50,%
-pihm_adjustment_precip,precip-adjustment,Precipitation adjustment (%),0,float,https://w3id.org/wings/export/MINT#Adjustment,0,5,pihm_PRCP,-50,50,%
+pihm_adjustment_temp,temp-adjustment,Temperature adjustment (%),0,float,https://w3id.org/wings/export/MINT#Adjustment,,4,pihm_TRMP,-50,50,%
+pihm_adjustment_temp_fixed,temp-adjustment,Temperature adjustment (%),0,float,https://w3id.org/wings/export/MINT#Adjustment,0,4,pihm_TRMP,-50,50,%
+pihm_adjustment_precip,precip-adjustment,Precipitation adjustment (%),0,float,https://w3id.org/wings/export/MINT#Adjustment,,5,pihm_PRCP,-50,50,%
+pihm_adjustment_precip_fixed,precip-adjustment,Precipitation adjustment (%),0,float,https://w3id.org/wings/export/MINT#Adjustment,0,5,pihm_PRCP,-50,50,%
 ,,,,,,,,,,,
 fldas_to_pihm_start-date,fldas_to_pihm_start-date,,1/1/2017,string,https://w3id.org/wings/export/MINT#StartDate,,,,,,date
-fldas_to_pihm_end-date,fldas_to_pihm_end-date,, 2017-12-31,string,https://w3id.org/wings/export/MINT#EndDate,,,,,,date
+fldas_to_pihm_end-date,fldas_to_pihm_end-date,, 12/31/2017,string,https://w3id.org/wings/export/MINT#EndDate,,,,,,date
 ,,,,,,,,,,,
 pihm_cropland_to_points_num-points,num-points,,1,int,https://w3id.org/wings/export/MINT#NumPoints,,,,,,
 pihm_forcing_to_cycles_weather_start-date,start-date,,1/1/2017,string,https://w3id.org/wings/export/MINT#StartDate,,,,,,date
-pihm_forcing_to_cycles_weather_end-date,end-date,, 2017-12-31,string,https://w3id.org/wings/export/MINT#EndDate,,,,,,date
+pihm_forcing_to_cycles_weather_end-date,end-date,, 12/31/2017,string,https://w3id.org/wings/export/MINT#EndDate,,,,,,date
 pihm_flooding_netcdf_start-date,start-date,,1/1/2017,string,https://w3id.org/wings/export/MINT#StartDate,,,,,,date
 pihm_flooding_netcdf_flooding-threshold,flooding-threshold,,0.05,float,https://w3id.org/wings/export/MINT#FloodingThreshold,,,,,,
 pihm_flooding_netcdf_ouput_start_date_range,output-start-date-range,,5/1/2017,string,https://w3id.org/wings/export/MINT#EndDate,,,,,,date
