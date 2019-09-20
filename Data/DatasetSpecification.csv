@@ -103,6 +103,12 @@ econ_v6.1_production_cost_fixed,production-cost,File with the production cost (e
 econ_v6.1_land_use,economic-land-use,Economic land use results,econ_year;econ_region_econ_crop;econ_fert_subsidy;econ_land_area;econ_obsyield;econ_production;econ_Nfert;econ_nuse,txt,0,1,,https://w3id.org/wings/export/MINT#EconomicLandUse
 econ_v6.1_calib_land_use,calibration-output,Economic calibration output,econ_year;econ_region;econ_crop;econ_cc1;econ_cc2;econ_sim_land_area;econ_obs_land_area;econ_sim_nuse;econ_observed_nuse;econ_obs_production;econ_sim_production;,txt,0,2,,https://w3id.org/wings/export/MINT#EconomicCalibration
 ,,,,,,,,
+econ_v6.1_single_crop_cycles_data_fixed,cycles-data,File with inputs used to configure the Cycles model (e.g. fertilizer),econ_ybarN,csv,0,1,econ_cycles_data_resource_single_crop,https://w3id.org/wings/export/MINT#economic-cycles-data
+econ_v6.1_single_crop_land_fixed,land-input,Land allocation file,econ_xbar1;econ_xbar2;econ_ybar,csv,0,2,econ_land_input_resource_single_crop,https://w3id.org/wings/export/MINT#economic-land-input
+econ_v6.1_single_crop_price_fixed,price,File with the prices used in the model,econ_p,csv,0,3,econ_price_resource_single_crop,https://w3id.org/wings/export/MINT#economic-price
+econ_v6.1_single_crop_production_cost_fixed,production-cost,File with the production cost (e.g. fertilizer),econ_c1;econ_c2,csv,0,4,econ_production_cost_resource_single_crop,https://w3id.org/wings/export/MINT#economic-production-cost
+econ_v6.1_single_crop_calib_land_use,calibration-output,Economic calibration output,econ_year;econ_region;econ_crop;econ_sim_land_area;econ_obs_land_area;econ_sim_nuse;econ_observed_nuse;econ_obs_production;econ_sim_production;,txt,0,2,,https://w3id.org/wings/export/MINT#EconomicCalibration
+,,,,,,,,
 economic_to_vis_land-use,economic-land-use,Economic land use results,econ_fert_subsidy;econ_land_area;econ_obsyield;econ_production;econ_Nfert,txt,1,,,https://w3id.org/wings/export/MINT#EconomicLandUse
 economic_to_vis_crop,economic-crop,Aggregated visualization of the results of the workflow,econ_fert_subsidy;econ_land_area;econ_production,csv,0,,,https://w3id.org/wings/export/MINT#EconomicCrop
 ,,,,,,,,
