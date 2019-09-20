@@ -164,8 +164,8 @@ pihm_rivFlx9,pihm-rivFlx9,lateral outflux to the bed beneath river,pihm_rivFlx9v
 pihm_rivFlx10,pihm-rivFlx10,lateral influx to the bed beneath river,pihm_rivFlx10v,rivFlx10,0,23,,https://w3id.org/wings/export/MINT#PIHMRivFlx10
 pihm_is,pihm-is,Interception storage file,pihm_isv,is,0,3,,https://w3id.org/wings/export/MINT#PIHMInterceptionStorage
 ,,,,,,,,
-pihm_v4_elevation,elevation,elevation,,,0,1,,https://w3id.org/wings/export/MINT#ASTER
-pihm_v4_elevation_fixed,elevation,elevation,,,0,1,pihm_elevation_resource,https://w3id.org/wings/export/MINT#ASTER
+pihm_v4_elevation,elevation,elevation,,tif,0,1,,https://w3id.org/wings/export/MINT#ASTER
+pihm_v4_elevation_fixed,elevation,elevation,,tif,0,1,pihm_elevation_resource,https://w3id.org/wings/export/MINT#ASTER
 pihm_v4_stream-delineation-shp,stream-delineation-shp,stream-delineation-shp,,shp,0,2,,https://w3id.org/wings/export/MINT#pihm-stream-delineation-shp
 pihm_v4_stream-delineation-shp_fixed,stream-delineation-shp,stream-delineation-shp,,shp,0,2,pihm_stream-delineation-shp_resource,https://w3id.org/wings/export/MINT#pihm-stream-delineation-shp
 pihm_v4_stream-delineation-shx,stream-delineation-shx,stream-delineation-shx,,shx,0,3,,https://w3id.org/wings/export/MINT#stream-delineation-shx
@@ -245,16 +245,16 @@ cycles_outputs_cycles_outputs,cycles_outputs,Aggregated season and weather file,
 hand_input_dem,input-dem,Input digital elevation model,,tif,0,1,,https://w3id.org/wings/export/MINT#raster-dem
 hand_distance_down,distance-down,Distance down flooding map,,tif,0,1,,https://w3id.org/wings/export/MINT#raster-distancedown
 ,,,,,,,,
-modflow_2005_Hfb,Hfb,Horizontal flow barrier file,,hf6,0,5,,https://w3id.org/wings/export/MINT#raster-distancedown
-modflow_2005_Oc,Oc,Output control file,,dat,0,6,,https://w3id.org/wings/export/MINT#raster-distancedown
-modflow_2005_Sip,Sip,Strongly Implicit Procedure package file,,dat,0,8,,https://w3id.org/wings/export/MINT#raster-distancedown
-modflow_2005_Bcf,Bcf,Block centered flow package file,modflow2005_trpy;modflow2005_sf1;modflow2005_tran;modflow2005_hy;modflow2005_vcont;modflow2005_sf2,bc6,0,2,,https://w3id.org/wings/export/MINT#raster-distancedown
-modflow_2005_Rech,Rech,Recharge file,modflow2005_rech,dat,0,7,,https://w3id.org/wings/export/MINT#raster-distancedown
-modflow_2005_Bas,Bas,Basic Package Input for the Groundwater Flow Process Basic file,modflow2005_strt,ba6,0,1,,https://w3id.org/wings/export/MINT#raster-distancedown
-modflow_2005_Well,Well,Well file,modflow2005_q,dat,0,9,,https://w3id.org/wings/export/MINT#raster-distancedown
-modflow_2005_Drn,Drn,Drain package file,,dat,0,4,,https://w3id.org/wings/export/MINT#raster-distancedown
-modflow_2005_Dis,Dis,Discretization file,modflow2005_nlay;modflow2005_nrow;modflow2005_ncol;modflow2005_nper;modflow2005_delr;modflow2005_delc;modflow2005_top;modflow2005_botm;modflow2005_perlen;modflow2005_nstp;modflow2005_tsmult,dis,0,3,,https://w3id.org/wings/export/MINT#raster-distancedown
-modflow_2005_budget,budget,Total budget file,,zot,0,3,,https://w3id.org/wings/export/MINT#raster-distancedown
-modflow_2005_heads,heads,Heads file,modflow2005_nd_critical_head;modflow2005_d_critical_head,hds,0,4,,https://w3id.org/wings/export/MINT#raster-distancedown
-modflow_2005_ddown,ddown,Drawdown,modflow2005_drawdown,ddn,0,2,,https://w3id.org/wings/export/MINT#raster-distancedown
-modflow_2005_list,list,List file,,lst,0,1,,https://w3id.org/wings/export/MINT#raster-distancedown
+modflow_2005_Hfb,Hfb,Horizontal flow barrier file,,hf6,0,5,,https://w3id.org/wings/export/MINT#Hfb
+modflow_2005_Oc,Oc,Output control file,,dat,0,6,,https://w3id.org/wings/export/MINT#Oc
+modflow_2005_Sip,Sip,Strongly Implicit Procedure package file,,dat,0,8,,https://w3id.org/wings/export/MINT#Sip
+modflow_2005_Bcf,Bcf,Block centered flow package file,modflow2005_trpy;modflow2005_sf1;modflow2005_tran;modflow2005_hy;modflow2005_vcont;modflow2005_sf2,bc6,0,2,,https://w3id.org/wings/export/MINT#Bcf
+modflow_2005_Rech,Rech,Recharge file,modflow2005_rech,dat,0,7,,https://w3id.org/wings/export/MINT#Rech
+modflow_2005_Bas,Bas,Basic Package Input for the Groundwater Flow Process Basic file,modflow2005_strt,ba6,0,1,,https://w3id.org/wings/export/MINT#Bas
+modflow_2005_Well,Well,Well file,modflow2005_q,dat,0,9,,https://w3id.org/wings/export/MINT#Well
+modflow_2005_Drn,Drn,Drain package file,,dat,0,4,,https://w3id.org/wings/export/MINT#SDrn
+modflow_2005_Dis,Dis,Discretization file,modflow2005_nlay;modflow2005_nrow;modflow2005_ncol;modflow2005_nper;modflow2005_delr;modflow2005_delc;modflow2005_top;modflow2005_botm;modflow2005_perlen;modflow2005_nstp;modflow2005_tsmult,dis,0,3,,https://w3id.org/wings/export/MINT#Dis
+modflow_2005_budget,budget,Total budget file,,zot,0,3,,https://w3id.org/wings/export/MINT#budget
+modflow_2005_heads,heads,Heads file,modflow2005_nd_critical_head;modflow2005_d_critical_head,hds,0,4,,https://w3id.org/wings/export/MINT#Head
+modflow_2005_ddown,ddown,Drawdown,modflow2005_drawdown,ddn,0,2,,https://w3id.org/wings/export/MINT#Ddown
+modflow_2005_list,list,List file,,lst,0,1,,https://w3id.org/wings/export/MINT#List
