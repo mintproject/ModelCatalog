@@ -255,6 +255,6 @@ modflow_2005_Well,Well,Well file,modflow2005_q,dat,0,9,,https://w3id.org/wings/e
 modflow_2005_Drn,Drn,Drain package file,,dat,0,4,,https://w3id.org/wings/export/MINT#SDrn
 modflow_2005_Dis,Dis,Discretization file,modflow2005_nlay;modflow2005_nrow;modflow2005_ncol;modflow2005_nper;modflow2005_delr;modflow2005_delc;modflow2005_top;modflow2005_botm;modflow2005_perlen;modflow2005_nstp;modflow2005_tsmult,dis,0,3,,https://w3id.org/wings/export/MINT#Dis
 modflow_2005_budget,budget,Total budget file,,zot,0,3,,https://w3id.org/wings/export/MINT#budget
-modflow_2005_heads,heads,Heads file,modflow2005_nd_critical_head;modflow2005_d_critical_head,hds,0,4,,https://w3id.org/wings/export/MINT#Head
+modflow_2005_heads,heads,Heads file,modflow2005_subsidence;modflow2005_layer_compaction;modflow2005_ndsys_compaction;modflow2005_dsys_compaction;modflow2005_z_displacement;modflow2005_nd_critical_head;modflow2005_d_critical_head,hds,0,4,,https://w3id.org/wings/export/MINT#Head
 modflow_2005_ddown,ddown,Drawdown,modflow2005_drawdown,ddn,0,2,,https://w3id.org/wings/export/MINT#Ddown
 modflow_2005_list,list,List file,,lst,0,1,,https://w3id.org/wings/export/MINT#List
