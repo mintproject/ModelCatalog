@@ -107,7 +107,7 @@ econ_v6.1_single_crop_cycles_data_fixed,cycles-data,File with inputs used to con
 econ_v6.1_single_crop_land_fixed,land-input,Land allocation file,econ_xbar1;econ_xbar2;econ_ybar,csv,0,2,econ_land_input_resource_single_crop,https://w3id.org/wings/export/MINT#economic-land-input
 econ_v6.1_single_crop_price_fixed,price,File with the prices used in the model,econ_p,csv,0,3,econ_price_resource_single_crop,https://w3id.org/wings/export/MINT#economic-price
 econ_v6.1_single_crop_production_cost_fixed,production-cost,File with the production cost (e.g. fertilizer),econ_c1;econ_c2,csv,0,4,econ_production_cost_resource_single_crop,https://w3id.org/wings/export/MINT#economic-production-cost
-econ_v6.1_single_crop_calib_land_use,calibration-output,Economic calibration output,econ_year;econ_region;econ_crop;econ_sim_land_area;econ_obs_land_area;econ_sim_nuse;econ_observed_nuse;econ_obs_production;econ_sim_production;,txt,0,2,,https://w3id.org/wings/export/MINT#EconomicCalibration
+econ_v6.1_single_crop_calib_land_use,calibration-output,Economic calibration output,econ_year;econ_region;econ_crop;econ_sim_land_area;econ_obs_land_area;econ_sim_nuse;econ_observed_nuse;econ_obs_production;econ_sim_production,txt,0,2,,https://w3id.org/wings/export/MINT#EconomicCalibration
 ,,,,,,,,
 economic_to_vis_land-use,economic-land-use,Economic land use results,econ_fert_subsidy;econ_land_area;econ_obsyield;econ_production;econ_Nfert,txt,1,,,https://w3id.org/wings/export/MINT#EconomicLandUse
 economic_to_vis_crop,economic-crop,Aggregated visualization of the results of the workflow,econ_fert_subsidy;econ_land_area;econ_production,csv,0,,,https://w3id.org/wings/export/MINT#EconomicCrop
@@ -244,3 +244,17 @@ cycles_outputs_cycles_outputs,cycles_outputs,Aggregated season and weather file,
 ,,,,,,,,
 hand_input_dem,input-dem,Input digital elevation model,,tif,0,1,,https://w3id.org/wings/export/MINT#raster-dem
 hand_distance_down,distance-down,Distance down flooding map,,tif,0,1,,https://w3id.org/wings/export/MINT#raster-distancedown
+,,,,,,,,
+modflow_2005_Hfb,Hfb,Horizontal flow barrier file,,hf6,0,5,,https://w3id.org/wings/export/MINT#raster-distancedown
+modflow_2005_Oc,Oc,Output control file,,dat,0,6,,https://w3id.org/wings/export/MINT#raster-distancedown
+modflow_2005_Sip,Sip,Strongly Implicit Procedure package file,,dat,0,8,,https://w3id.org/wings/export/MINT#raster-distancedown
+modflow_2005_Bcf,Bcf,Block centered flow package file,modflow2005_trpy;modflow2005_sf1;modflow2005_tran;modflow2005_hy;modflow2005_vcont;modflow2005_sf2,bc6,0,2,,https://w3id.org/wings/export/MINT#raster-distancedown
+modflow_2005_Rech,Rech,Recharge file,modflow2005_rech,dat,0,7,,https://w3id.org/wings/export/MINT#raster-distancedown
+modflow_2005_Bas,Bas,Basic Package Input for the Groundwater Flow Process Basic file,modflow2005_strt,ba6,0,1,,https://w3id.org/wings/export/MINT#raster-distancedown
+modflow_2005_Well,Well,Well file,modflow2005_q,dat,0,9,,https://w3id.org/wings/export/MINT#raster-distancedown
+modflow_2005_Drn,Drn,Drain package file,,dat,0,4,,https://w3id.org/wings/export/MINT#raster-distancedown
+modflow_2005_Dis,Dis,Discretization file,modflow2005_nlay;modflow2005_nrow;modflow2005_ncol;modflow2005_nper;modflow2005_delr;modflow2005_delc;modflow2005_top;modflow2005_botm;modflow2005_perlen;modflow2005_nstp;modflow2005_tsmult,dis,0,3,,https://w3id.org/wings/export/MINT#raster-distancedown
+modflow_2005_budget,budget,Total budget file,,zot,0,3,,https://w3id.org/wings/export/MINT#raster-distancedown
+modflow_2005_heads,heads,Heads file,modflow2005_nd_critical_head;modflow2005_d_critical_head,hds,0,4,,https://w3id.org/wings/export/MINT#raster-distancedown
+modflow_2005_ddown,ddown,Drawdown,modflow2005_drawdown,ddn,0,2,,https://w3id.org/wings/export/MINT#raster-distancedown
+modflow_2005_list,list,List file,,lst,0,1,,https://w3id.org/wings/export/MINT#raster-distancedown

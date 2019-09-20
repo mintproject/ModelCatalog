@@ -6,3 +6,4 @@ topoflow_grid_SS,Grid from the TopoFlow hydrology model for the area of South Su
 topoflow_grid_general,Grid from the TopoFlow hydrology model,https://w3id.org/okn/o/sdm#SpatiallyDistributedGrid,Grid from the TopoFlow hydrology model,2D,,variable range,
 cycles_grid,Grid from the Cycles agriculture model,https://w3id.org/okn/o/sdm#PointBasedGrid,Grid from the Cycles agriculture model,0D,Point,Point,
 swat_grid,Grid from the SWAT model,,Grid from the SWAT model,,,,
+modflow_grid_general,Grid from the Modflow2005 model,https://w3id.org/okn/o/sdm#SpatiallyDistributedGrid,Grid from the Modflow2005 model,3D,Block structure,variable range,

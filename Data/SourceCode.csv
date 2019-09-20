@@ -1,5 +1,5 @@
 https://w3id.org/okn/o/sd#SourceCode,http://www.w3.org/2000/01/rdf-schema#label,https://w3id.org/okn/o/sd#description,https://w3id.org/okn/o/sd#license,https://w3id.org/okn/o/sd#programmingLanguage,https://w3id.org/okn/o/sd#codeRepository
-pihm_source,PIHM source code,,https://github.com/pihmadmin/PIHM/blob/master/LICENSE.txt,C;C++,https://github.com/pihmadmin/PIHM
+pihm_source,PIHM source code,PIHM source code,https://github.com/pihmadmin/PIHM/blob/master/LICENSE.txt,C;C++,https://github.com/pihmadmin/PIHM
 pihm_sourceCode_v4,PIHM source code for version 4,This version of the code of PIHM is written in C++,,C;C++,https://github.com/shulele/PIHM-4.0
 source_econ_config_v2,EACS configuration component (version 2 of code),Code for creating an encapsulation of EACS for a model configuration (version 2),,shell,https://github.com/mintproject/MINT-WorkflowDomain/tree/master/WINGSWorkflowComponents/economic-v2
 swat_source,SWAT source  code,SWAT source  code,,Fortran 90,https://bitbucket.org/blacklandgrasslandmodels/modular_swatplus/src/master/
@@ -12,3 +12,4 @@ source_cycles-0.9.4-alpha,Cycles configuration component (v2),Code for creating 
 source_cycles_config_mp,Cycles configuration component (multiple points),Code for creating an encapsulation of Cycles for multiple points,,shell,https://github.com/mintproject/MINT-WorkflowDomain/tree/master/WINGSWorkflowComponents/cycles_multiple_points
 source_pihm_config_v2,PIHM configuration component code,Code for creating an encapsulation of PIHM for a model configuration (PIHM v2),,shell,https://github.com/mintproject/MINT-WorkflowDomain/tree/master/WINGSWorkflowComponents/pihm-v2
 source_pihm_config_v4,PIHM++ configuration component code,Code for creating an encapsulation of PIHM for a model configuration (PIHM++),,shell,https://github.com/mintproject/MINT-WorkflowDomain/tree/master/WINGSWorkflowComponents/pihm-v4
+modflow2005_source,ModFlow 2005 source code (v1.12.00),ModFlow 2005 source code (v1.12.00),https://creativecommons.org/publicdomain/zero/1.0/,Fortran 90;C;C++,
