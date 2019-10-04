@@ -19,8 +19,10 @@ def create_error_file(error_dict):
 
 
 if __name__ == '__main__':
+    endpoint = "http://ontosoft.isi.edu:3030/modelCatalog-1.0.0/query"
+    graph="http://ontosoft.isi.edu:3030/modelCatalog-1.0.0/data/mint"
     mode = sys.argv[1]
-    #mode = "i"
+    print("Mode "+mode+ " enabled")
     store = Graph()
     error_dict = dict()
     property_object_list = list()
@@ -32,12 +34,14 @@ if __name__ == '__main__':
     store.bind("owl", owl)
     ccut = Namespace(ccut)
     owl = Namespace(owl)
-    sparql = SPARQLWrapper("http://endpoint.mint.isi.edu/ds/query")
+    sparql = SPARQLWrapper(endpoint)
     sparql.setQuery("""
-    PREFIX mc: <https://w3id.org/mint/modelCatalog#>
+    PREFIX mc: <https://w3id.org/okn/o/sd#>
     PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
 
-    SELECT distinct ?u where {
+    SELECT distinct ?u 
+    from <"""+graph+""">  
+    where {
         ?a mc:hasStandardVariable ?un. ?un rdfs:label ?u
     }
     """)
@@ -49,26 +53,41 @@ if __name__ == '__main__':
 
         sparql = SPARQLWrapper("http://35.194.43.13:3030/ds/query")
         sparql.setQuery("""
-    prefix skos: <http://www.w3.org/2004/02/skos/core#>
-    PREFIX mc: <https://w3id.org/mint/modelCatalog#>
-select ?u ?b ?c
-where {
-    ?u skos:prefLabel \"""" + standard_variable + """\" @en.
-    ?u ?b ?c.
-  }
-""")
+            prefix skos: <http://www.w3.org/2004/02/skos/core#>
+            select ?u ?b ?c
+            where {
+                ?u skos:prefLabel \"""" + standard_variable + """\" @en.
+                ?u ?b ?c.
+              }
+        """)
         sparql.setReturnFormat(JSON)
         results = sparql.query().convert()
+        error = False
 
         if not results["results"]["bindings"]:
-            error_dict[standard_variable] = "No info available"
-        else:
+            #attempt with rdfs:label
+            print("No info available for "+standard_variable+". Attempting query to retrieve rdfs:label")
+            sparql.setQuery("""
+                PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+                select ?u ?b ?c
+                where {
+                    ?u rdfs:label \"""" + standard_variable + """\" @en.
+                    ?u ?b ?c.
+                  }
+            """)
+            sparql.setReturnFormat(JSON)
+            results = sparql.query().convert()
+            if not results["results"]["bindings"]:
+                error_dict[standard_variable] = "No info available"
+                print("Couldn't retrieve information for variable "+standard_variable)
+                error = True
+        if not error:
             for result in results["results"]["bindings"]:
                 subject = str(result["u"]["value"])
                 predicate = str(result["b"]["value"])
                 object = str(result["c"]["value"])
 
-                if predicate.endswith("hasProperty"):
+                if predicate.endswith("hasRecordedProperty"):
                     property_object_list.append(object)
                 # print(subject)
                 # print predicate
@@ -104,7 +123,7 @@ where {
             if not predicate.endswith("subLabel") and not predicate.endswith("comment"):
                 if predicate.endswith("isTypeOf"):
                     property_object_list.append(obj)
-                if predicate.endswith("hasUnits"):
+                if predicate.endswith("hasRecordedUnits"):
                     obj1 = obj.replace("^", "")
                     obj = obj1
                     store.add((URIRef(subject), ccut.hasDimension, Literal(obj)))
