@@ -13,7 +13,7 @@ cycles_summary,cycles_summary,Cycles summary file,cycles_avg_gross_n_min;cycles_
 cycles_weatherOutput,cycles_weatherOutput,Cycles weather output file,cycles_avg_tmp;cycles_date;cycles_max_tmp;cycles_min_tmp;cycles_precipitation;cycles_reference_et,dat,0,7,,https://w3id.org/wings/export/MINT#CyclesWeatherOutput
 cycles_water,cycles_water,Cycles water file,cycles_date;cycles_drainage;cycles_infiltration;cycles_irrigation;cycles_res_evap;cycles_plant_evap;cycles_runoff;cycles_snow_sub;cycles_soil_evap;cycles_transpiration;cycles_swc,dat,0,8,,https://w3id.org/wings/export/MINT#CyclesWaterOutput
 cycles_seasonConfig,cycles_seasonConfig,Cycles season configuration file,,txt,0,9,,https://w3id.org/wings/export/MINT#CyclesSeasonConfig
-,Cycles configuration using multiple points,,,,,,,
+,,,,,,,,
 cycles_mp_reinit,cycles_reinit,Cycles reinit file,cycles_doy;cycles_rot_year;cycles_smc_l1;cycles_infiltration,reinit,0,5,,https://w3id.org/wings/export/MINT#CyclesREINIT
 cycles_mp_weather,cycles_weather,Cycles weather file,cycles_pp;cycles_tx;cycles_tn;cycles_sr;cycles_hx;cycles_hn;cycles_ws,weather,0,3,,https://w3id.org/wings/export/MINT#CyclesWeather
 cycles_mp_soil,cycles_soil,Cycles soil file,cycles_cn;cycles_slope;cycles_layer;cycles_dz;cycles_clay;cycles_silt;cycles_rv;cycles_bd;cycles_som;cycles_smc,soil,0,4,,https://w3id.org/wings/export/MINT#CyclesSoil
