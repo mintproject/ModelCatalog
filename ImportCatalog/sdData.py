@@ -5,13 +5,13 @@ import csv
 
 class_query='prefix sd: <https://w3id.org/okn/o/sd#> ' \
             'PREFIX sdm: <https://w3id.org/okn/o/sdm#>' \
-            'SELECT distinct ?class  from <http://ontosoft.isi.edu:3030/modelCatalog-1.0.0/data/mint> where{' \
+            'SELECT distinct ?class  from <http://ontosoft.isi.edu:3030/modelCatalog-1.1.0/data/mint@isi.edu> where{' \
             '?a a ?class.' \
             'filter(regex(str(?class), "^https://w3id.org/okn/o/sd#", "i"))' \
             '}'
 
 PARAMS = {'query':class_query}
-URL = "http://ontosoft.isi.edu:3030/modelCatalog-1.0.0/query"
+URL = "http://ontosoft.isi.edu:3030/modelCatalog-1.1.0/query"
 
 r = requests.get(url = URL,params = PARAMS)
 data = r.json()
@@ -21,23 +21,22 @@ for i in range(len(data['results']['bindings'])):
     val=val.split('#')[-1]
     class_list.append(val)
 
-#print class_list
 for i in range(len(class_list)):
-    cla=class_list[i]
+    class_name=class_list[i]
     myquery='PREFIX sd: <https://w3id.org/okn/o/sd#> \n' \
-            'SELECT distinct ?b  from <http://ontosoft.isi.edu:3030/modelCatalog-1.0.0/data/mint> where{' \
+            'SELECT distinct ?b  from <http://ontosoft.isi.edu:3030/modelCatalog-1.1.0/data/mint@isi.edu> where{' \
             '?a a sd:'+class_list[i]+'.' \
             '?a ?b ?c' \
             '}'
 
     myquery1='PREFIX sdm: <https://w3id.org/okn/o/sd#>' \
-             'SELECT distinct ?a ?b ?c  from <http://ontosoft.isi.edu:3030/modelCatalog-1.0.0/data/mint> where{ ' \
+             'SELECT distinct ?a ?b ?c  from <http://ontosoft.isi.edu:3030/modelCatalog-1.1.0/data/mint@isi.edu> where{ ' \
              '?a a sdm:'+class_list[i]+'.' \
              '?a ?b ?c' \
              '}'
 
     PARAMS = {'query':myquery}
-    URL = "http://ontosoft.isi.edu:3030/modelCatalog-1.0.0/query"
+    URL = "http://ontosoft.isi.edu:3030/modelCatalog-1.1.0/query"
 
     r = requests.get(url = URL,params = PARAMS)
     data = r.json()
@@ -79,7 +78,7 @@ for i in range(len(class_list)):
 
         rows.append(row)
 
-    with open(cla+".csv", 'w') as csvfile:
+    with open(class_name + ".csv", 'w') as csvfile:
         csvwriter = csv.writer(csvfile)
         csvwriter.writerow(header_arr)
         for i in range(len(rows)):
@@ -91,4 +90,4 @@ for i in range(len(class_list)):
                      temp.append("")
             csvwriter.writerow(temp)
 
-    print cla +" is done"
+    print class_name + " is done"
