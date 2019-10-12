@@ -2,10 +2,11 @@ import requests
 import csv
 
 
+data_url="<http://ontosoft.isi.edu:3030/modelCatalog-1.1.0/data/mint@isi.edu>"
 
 class_query='prefix sd: <https://w3id.org/okn/o/sd#> ' \
             'PREFIX sdm: <https://w3id.org/okn/o/sdm#>' \
-            'SELECT distinct ?class  from <http://ontosoft.isi.edu:3030/modelCatalog-1.1.0/data/mint@isi.edu> where{' \
+            'SELECT distinct ?class  from '+data_url+' where{' \
             '?a a ?class.' \
             'filter(regex(str(?class), "^https://w3id.org/okn/o/sd#", "i"))' \
             '}'
@@ -24,13 +25,13 @@ for i in range(len(data['results']['bindings'])):
 for i in range(len(class_list)):
     class_name=class_list[i]
     myquery='PREFIX sd: <https://w3id.org/okn/o/sd#> \n' \
-            'SELECT distinct ?b  from <http://ontosoft.isi.edu:3030/modelCatalog-1.1.0/data/mint@isi.edu> where{' \
+            'SELECT distinct ?b  from '+data_url+' where{' \
             '?a a sd:'+class_list[i]+'.' \
             '?a ?b ?c' \
             '}'
 
     myquery1='PREFIX sdm: <https://w3id.org/okn/o/sd#>' \
-             'SELECT distinct ?a ?b ?c  from <http://ontosoft.isi.edu:3030/modelCatalog-1.1.0/data/mint@isi.edu> where{ ' \
+             'SELECT distinct ?a ?b ?c  from '+data_url+' where{ ' \
              '?a a sdm:'+class_list[i]+'.' \
              '?a ?b ?c' \
              '}'
