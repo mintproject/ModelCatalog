@@ -283,7 +283,7 @@ cycles_prof_soil_no3,PROF SOIL NO3,PROF SOIL NO3,,Soil profile nitrate-N content
 cycles_ag_biomass,AG BIOMASS,AG BIOMASS,,Aboveground dry biomass.,ground~above_crop_biomass~dry__mass-per-area_density,Mg/ha,,,,,
 cycles_ag_n,AG N,AG N,,Aboveground biomass N content.,ground~above_crop_nitrogen__mass-per-area_density,kg/ha,,,,,
 cycles_ag_n_concn,AG N CONCN,AG N CONCN,,Aboveground biomass N concentration.,ground~above_crop_nitrogen__mass_fraction,g/kg,,,,,
-cycles_crop,CROP,CROP,,The crop name.,crop__name,,,,,,
+cycles_crop_v,CROP,CROP,,The crop name.,crop__name,,,,,,
 cycles_cum._biomass,CUM. BIOMASS,CUM. BIOMASS,,The cumulative total crop biomass; sum of aboveground and roots.,crop_biomass__mass-per-area_density,Mg/ha,,,,,
 cycles_frac_intercep,FRAC INTERCEP,FRAC INTERCEP,,The fraction of solar radiation intercepted by the crop canopy.,crop_canopy_radiation~solar__interception_energy_flux_fraction,,,,,,
 cycles_n_added,N ADDED,N ADDED,,Cumulative N added to crop biomass to sustain growth in autofertilize mode.,crop_biomass_nitrogen__mass-per-area_application_density,kg/ha,,,,,
