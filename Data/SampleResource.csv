@@ -1,4 +1,4 @@
-https://w3id.org/okn/o/sd#SampleResource,http://www.w3.org/2000/01/rdf-schema#label,https://w3id.org/okn/o/sd#description,http://www.w3.org/ns/prov#wasGeneratedBy,http://www.w3.org/ns/prov#value,https://w3id.org/okn/o/sd#dataCatalogIdentifier
+https://w3id.org/okn/o/sd#SampleResource,http://www.w3.org/2000/01/rdf-schema#label,https://w3id.org/okn/o/sd#description,http://www.w3.org/ns/prov#wasGeneratedBy,https://w3id.org/okn/o/sd#value,https://w3id.org/okn/o/sd#dataCatalogIdentifier
 econ_cycles_data_resource,Cycles data,File with data outputs from the Cycles agriculture model ,,https://publisher.mint.isi.edu/eTdtX/cyclesdata.csv,0ea86a97-0bad-4097-b524-985fb7196362
 econ_land_input_resource,Calibration data,Calibration data from FAO,,https://publisher.mint.isi.edu/14mJfs/calibdata.csv,c803cca2-eaca-4162-99f6-73ab4f51993d
 econ_price_resource,Price,Information about the prices from crops and fertilizers,,https://data.mint.isi.edu/files/economic/pongo-price.csv,eed5b2cf-5f00-46e7-87bd-8bc58966da81
