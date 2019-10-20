@@ -34,9 +34,9 @@ cycles-0.9.4-alpha_weatherOutput,cycles_weatherOutput,Cycles weather output file
 cycles-0.9.4-alpha_water,cycles_water,Cycles water file,cycles_date;cycles_drainage;cycles_infiltration;cycles_irrigation;cycles_res_evap;cycles_plant_evap;cycles_runoff;cycles_snow_sub;cycles_soil_evap;cycles_transpiration;cycles_swc,dat,0,8,,https://w3id.org/wings/export/MINT#CyclesWaterOutput
 cycles-0.9.4-alpha_outputs,cycles_outputs,Cycles season configuration file,,txt,0,9,,https://w3id.org/wings/export/MINT#CyclesOutputs
 ,,,,,,,,
-cycles-0.9.4-alpha_weather_fixed,cycles_weather,Cycles weather file,cycles_pp;cycles_tx;cycles_tn;cycles_sr;cycles_hx;cycles_hn;cycles_ws,weather,0,1,cycles_weather_resource,https://w3id.org/wings/export/MINT#CyclesWeather
-cycles-0.9.4-alpha_soil_fixed,cycles_soil,Cycles soil file,cycles_cn;cycles_slope;cycles_layer;cycles_dz;cycles_clay;cycles_silt;cycles_rv;cycles_bd;cycles_som;cycles_smc,soil,0,2,cycles_soil_resource,https://w3id.org/wings/export/MINT#CyclesSoil
-cycles-0.9.4-alpha_crops_fixed,cycles_crops,Cycles crops file,,crop,0,3,cycles_crops_resource,https://w3id.org/wings/export/MINT#CyclesCrops
+cycles-0.9.4-alpha_weather_fixed,cycles_weather,Cycles weather file,cycles_pp;cycles_tx;cycles_tn;cycles_sr;cycles_hx;cycles_hn;cycles_ws,weather,0,1,cycles_weather_resource_pongo,https://w3id.org/wings/export/MINT#CyclesWeather
+cycles-0.9.4-alpha_soil_fixed,cycles_soil,Cycles soil file,cycles_cn;cycles_slope;cycles_layer;cycles_dz;cycles_clay;cycles_silt;cycles_rv;cycles_bd;cycles_som;cycles_smc,soil,0,2,cycles_soil_resource_pongo,https://w3id.org/wings/export/MINT#CyclesSoil
+cycles-0.9.4-alpha_crops_fixed,cycles_crops,Cycles crops file,,crop,0,3,cycles_crops_resource_pongo,https://w3id.org/wings/export/MINT#CyclesCrops
 ,,,,,,,,
 cycles_v2_prod_weather,cycles_weather,Cycles weather file,cycles_pp;cycles_tx;cycles_tn;cycles_sr;cycles_hx;cycles_hn;cycles_ws,weather,0,1,,https://w3id.org/wings/export/MINT#CyclesWeather
 cycles_v2_prod_soil,cycles_soil,Cycles soil file,cycles_cn;cycles_slope;cycles_layer;cycles_dz;cycles_clay;cycles_silt;cycles_rv;cycles_bd;cycles_som;cycles_smc,soil,0,2,,https://w3id.org/wings/export/MINT#CyclesSoil
@@ -70,36 +70,36 @@ econ_v2_yield,crop-yield,Contains the yield elasticities to fertilizer use that 
 econ_v2_land_use,economic-land-use,Economic land use results,econ_fert_subsidy;econ_land_area;econ_obsyield;econ_production;econ_Nfert,txt,0,1,,https://w3id.org/wings/export/MINT#EconomicLandUse
 ,,,,,,,,
 econ_v5_cycles_data,cycles-data,File with inputs used to configure the Cycles model (e.g. fertilizer),econ_xbar2;econ_ybar;econ_ybarN,csv,0,1,,https://w3id.org/wings/export/MINT#economic-cycles-data
-economic-v5_simple_pongo_cycles_data,cycles-data,File with inputs used to configure the Cycles model (e.g. fertilizer),econ_xbar2;econ_ybar;econ_ybarN,csv,0,1,econ_cycles_data_resource,https://w3id.org/wings/export/MINT#economic-cycles-data
-economic-v5_advanced_pongo_cycles_data,cycles-data,File with inputs used to configure the Cycles model (e.g. fertilizer),econ_xbar2;econ_ybar;econ_ybarN,csv,0,1,econ_cycles_data_resource,https://w3id.org/wings/export/MINT#economic-cycles-data
+economic-v5_simple_pongo_cycles_data,cycles-data,File with inputs used to configure the Cycles model (e.g. fertilizer),econ_xbar2;econ_ybar;econ_ybarN,csv,0,1,econ_cycles_data_resource_pongo,https://w3id.org/wings/export/MINT#economic-cycles-data
+economic-v5_advanced_pongo_cycles_data,cycles-data,File with inputs used to configure the Cycles model (e.g. fertilizer),econ_xbar2;econ_ybar;econ_ybarN,csv,0,1,econ_cycles_data_resource_pongo,https://w3id.org/wings/export/MINT#economic-cycles-data
 econ_v5_land,land-input,Land allocation file,econ_xbar1,csv,0,2,,https://w3id.org/wings/export/MINT#economic-land-input
-economic-v5_simple_pongo_land,land-input,Land allocation file,econ_xbar1,csv,0,2,econ_land_input_resource,https://w3id.org/wings/export/MINT#economic-land-input
-economic-v5_advanced_pongo_land,land-input,Land allocation file,econ_xbar1,csv,0,2,econ_land_input_resource,https://w3id.org/wings/export/MINT#economic-land-input
+economic-v5_simple_pongo_land,land-input,Land allocation file,econ_xbar1,csv,0,2,econ_land_input_resource_pongo,https://w3id.org/wings/export/MINT#economic-land-input
+economic-v5_advanced_pongo_land,land-input,Land allocation file,econ_xbar1,csv,0,2,econ_land_input_resource_pongo,https://w3id.org/wings/export/MINT#economic-land-input
 econ_v5_price,price,File with the prices used in the model,econ_p,csv,0,4,,https://w3id.org/wings/export/MINT#economic-price
-economic-v5_simple_pongo_price,price,File with the prices used in the model,econ_p,csv,0,4,econ_price_resource,https://w3id.org/wings/export/MINT#economic-price
-economic-v5_advanced_pongo_price,price,File with the prices used in the model,econ_p,csv,0,4,econ_price_resource,https://w3id.org/wings/export/MINT#economic-price
+economic-v5_simple_pongo_price,price,File with the prices used in the model,econ_p,csv,0,4,econ_price_resource_pongo,https://w3id.org/wings/export/MINT#economic-price
+economic-v5_advanced_pongo_price,price,File with the prices used in the model,econ_p,csv,0,4,econ_price_resource_pongo,https://w3id.org/wings/export/MINT#economic-price
 econ_v5_production_cost,production-cost,File with the production cost (e.g. fertilizer),econ_c1;econ_c2,csv,0,5,,https://w3id.org/wings/export/MINT#economic-production-cost
-economic-v5_simple_pongo_production_cost,production-cost,File with the production cost (e.g. fertilizer),econ_c1;econ_c2,csv,0,5,econ_production_cost_resource,https://w3id.org/wings/export/MINT#economic-production-cost
-economic-v5_advanced_pongo_production_cost,production-cost,File with the production cost (e.g. fertilizer),econ_c1;econ_c2,csv,0,5,econ_production_cost_resource,https://w3id.org/wings/export/MINT#economic-production-cost
+economic-v5_simple_pongo_production_cost,production-cost,File with the production cost (e.g. fertilizer),econ_c1;econ_c2,csv,0,5,econ_production_cost_resource_pongo,https://w3id.org/wings/export/MINT#economic-production-cost
+economic-v5_advanced_pongo_production_cost,production-cost,File with the production cost (e.g. fertilizer),econ_c1;econ_c2,csv,0,5,econ_production_cost_resource_pongo,https://w3id.org/wings/export/MINT#economic-production-cost
 econ_v5_supply_elasticity,supply-elasticity,File with supply elasticities (percent change in crop supply divided by percent change in crop price),econ_eta,csv,0,3,,https://w3id.org/wings/export/MINT#economic-supply-elasticity
-economic-v5_simple_pongo_supply_elasticity,supply-elasticity,File with supply elasticities (percent change in crop supply divided by percent change in crop price),econ_eta,csv,0,3,econ_supply_elasticity_resource,https://w3id.org/wings/export/MINT#economic-supply-elasticity
-economic-v5_advanced_pongo_supply_elasticity,supply-elasticity,File with supply elasticities (percent change in crop supply divided by percent change in crop price),econ_eta,csv,0,3,econ_supply_elasticity_resource,https://w3id.org/wings/export/MINT#economic-supply-elasticity
+economic-v5_simple_pongo_supply_elasticity,supply-elasticity,File with supply elasticities (percent change in crop supply divided by percent change in crop price),econ_eta,csv,0,3,econ_supply_elasticity_resource_pongo,https://w3id.org/wings/export/MINT#economic-supply-elasticity
+economic-v5_advanced_pongo_supply_elasticity,supply-elasticity,File with supply elasticities (percent change in crop supply divided by percent change in crop price),econ_eta,csv,0,3,econ_supply_elasticity_resource_pongo,https://w3id.org/wings/export/MINT#economic-supply-elasticity
 econ_v5_land_use,economic-land-use,Economic land use results,econ_fert_subsidy;econ_land_area;econ_obsyield;econ_production;econ_Nfert,txt,0,1,,https://w3id.org/wings/export/MINT#EconomicLandUse
 economic-v5_simple_pongo_land_use,economic-land-use,Economic land use results,econ_fert_subsidy;econ_land_area;econ_obsyield;econ_production;econ_Nfert,txt,0,1,,https://w3id.org/wings/export/MINT#EconomicLandUse
 economic-v5_advanced_pongo_land_use,economic-land-use,Economic land use results,econ_fert_subsidy;econ_land_area;econ_obsyield;econ_production;econ_Nfert,txt,0,1,,https://w3id.org/wings/export/MINT#EconomicLandUse
 ,,,,,,,,
 econ_v6_cycles_data,cycles-data,File with inputs used to configure the Cycles model (e.g. fertilizer),econ_ybarN,csv,0,1,,https://w3id.org/wings/export/MINT#economic-cycles-data
-economic-v6_simple_pongo_cycles_data,cycles-data,File with inputs used to configure the Cycles model (e.g. fertilizer),econ_ybarN,csv,0,1,econ_cycles_data_resource,https://w3id.org/wings/export/MINT#economic-cycles-data
-economic-v6_advanced_pongo_cycles_data,cycles-data,File with inputs used to configure the Cycles model (e.g. fertilizer),econ_ybarN,csv,0,1,econ_cycles_data_resource,https://w3id.org/wings/export/MINT#economic-cycles-data
+economic-v6_simple_pongo_cycles_data,cycles-data,File with inputs used to configure the Cycles model (e.g. fertilizer),econ_ybarN,csv,0,1,econ_cycles_data_resource_pongo,https://w3id.org/wings/export/MINT#economic-cycles-data
+economic-v6_advanced_pongo_cycles_data,cycles-data,File with inputs used to configure the Cycles model (e.g. fertilizer),econ_ybarN,csv,0,1,econ_cycles_data_resource_pongo,https://w3id.org/wings/export/MINT#economic-cycles-data
 econ_v6_land,land-input,Land allocation file,econ_xbar1;econ_xbar2;econ_ybar,csv,0,2,,https://w3id.org/wings/export/MINT#economic-land-input
-economic-v6_simple_pongo_land,land-input,Land allocation file,econ_xbar1;econ_xbar2;econ_ybar,csv,0,2,econ_land_input_resource,https://w3id.org/wings/export/MINT#economic-land-input
-economic-v6_advanced_pongo_land,land-input,Land allocation file,econ_xbar1;econ_xbar2;econ_ybar,csv,0,2,econ_land_input_resource,https://w3id.org/wings/export/MINT#economic-land-input
+economic-v6_simple_pongo_land,land-input,Land allocation file,econ_xbar1;econ_xbar2;econ_ybar,csv,0,2,econ_land_input_resource_pongo,https://w3id.org/wings/export/MINT#economic-land-input
+economic-v6_advanced_pongo_land,land-input,Land allocation file,econ_xbar1;econ_xbar2;econ_ybar,csv,0,2,econ_land_input_resource_pongo,https://w3id.org/wings/export/MINT#economic-land-input
 econ_v6_price,price,File with the prices used in the model,econ_p,csv,0,3,,https://w3id.org/wings/export/MINT#economic-price
-economic-v6_simple_pongo_price,price,File with the prices used in the model,econ_p,csv,0,3,econ_price_resource,https://w3id.org/wings/export/MINT#economic-price
-economic-v6_advanced_pongo_price,price,File with the prices used in the model,econ_p,csv,0,3,econ_price_resource,https://w3id.org/wings/export/MINT#economic-price
+economic-v6_simple_pongo_price,price,File with the prices used in the model,econ_p,csv,0,3,econ_price_resource_pongo,https://w3id.org/wings/export/MINT#economic-price
+economic-v6_advanced_pongo_price,price,File with the prices used in the model,econ_p,csv,0,3,econ_price_resource_pongo,https://w3id.org/wings/export/MINT#economic-price
 econ_v6_production_cost,production-cost,File with the production cost (e.g. fertilizer),econ_c1;econ_c2,csv,0,4,,https://w3id.org/wings/export/MINT#economic-production-cost
-economic-v6_simple_pongo_production_cost,production-cost,File with the production cost (e.g. fertilizer),econ_c1;econ_c2,csv,0,4,econ_production_cost_resource,https://w3id.org/wings/export/MINT#economic-production-cost
-economic-v6_advanced_pongo_production_cost,production-cost,File with the production cost (e.g. fertilizer),econ_c1;econ_c2,csv,0,4,econ_production_cost_resource,https://w3id.org/wings/export/MINT#economic-production-cost
+economic-v6_simple_pongo_production_cost,production-cost,File with the production cost (e.g. fertilizer),econ_c1;econ_c2,csv,0,4,econ_production_cost_resource_pongo,https://w3id.org/wings/export/MINT#economic-production-cost
+economic-v6_advanced_pongo_production_cost,production-cost,File with the production cost (e.g. fertilizer),econ_c1;econ_c2,csv,0,4,econ_production_cost_resource_pongo,https://w3id.org/wings/export/MINT#economic-production-cost
 econ_v6_land_use,economic-land-use,Economic land use results,econ_fert_subsidy;econ_land_area;econ_obsyield;econ_production;econ_Nfert,txt,0,1,,https://w3id.org/wings/export/MINT#EconomicLandUse
 economic-v6_simple_pongo_land_use,economic-land-use,Economic land use results,econ_fert_subsidy;econ_land_area;econ_obsyield;econ_production;econ_Nfert,txt,0,1,,https://w3id.org/wings/export/MINT#EconomicLandUse
 economic-v6_advanced_pongo_land_use,economic-land-use,Economic land use results,econ_fert_subsidy;econ_land_area;econ_obsyield;econ_production;econ_Nfert,txt,0,1,,https://w3id.org/wings/export/MINT#EconomicLandUse
@@ -108,17 +108,17 @@ economic-v6_simple_pongo_calib_land_use,calibration-output,Economic calibration 
 economic-v6_advanced_pongo_calib_land_use,calibration-output,Economic calibration output,econ_sim_land_area;econ_obs_land_area;econ_obs_production;econ_obs_Nfert;econ_sim_production;econ_sim_Nfert,txt,0,2,,https://w3id.org/wings/export/MINT#EconomicCalibration
 ,,,,,,,,
 econ_v6.1_cycles_data,cycles-data,File with inputs used to configure the Cycles model (e.g. fertilizer),econ_ybarN,csv,0,1,,https://w3id.org/wings/export/MINT#economic-cycles-data
-economic-v6.1_simple_pongo_cycles_data,cycles-data,File with inputs used to configure the Cycles model (e.g. fertilizer),econ_ybarN,csv,0,1,econ_cycles_data_resource,https://w3id.org/wings/export/MINT#economic-cycles-data
-economic-v6.1_advanced_pongo_cycles_data,cycles-data,File with inputs used to configure the Cycles model (e.g. fertilizer),econ_ybarN,csv,0,1,econ_cycles_data_resource,https://w3id.org/wings/export/MINT#economic-cycles-data
+economic-v6.1_simple_pongo_cycles_data,cycles-data,File with inputs used to configure the Cycles model (e.g. fertilizer),econ_ybarN,csv,0,1,econ_cycles_data_resource_pongo,https://w3id.org/wings/export/MINT#economic-cycles-data
+economic-v6.1_advanced_pongo_cycles_data,cycles-data,File with inputs used to configure the Cycles model (e.g. fertilizer),econ_ybarN,csv,0,1,econ_cycles_data_resource_pongo,https://w3id.org/wings/export/MINT#economic-cycles-data
 econ_v6.1_land,land-input,Land allocation file,econ_xbar1;econ_xbar2;econ_ybar,csv,0,2,,https://w3id.org/wings/export/MINT#economic-land-input
-economic-v6.1_simple_pongo_land,land-input,Land allocation file,econ_xbar1;econ_xbar2;econ_ybar,csv,0,2,econ_land_input_resource,https://w3id.org/wings/export/MINT#economic-land-input
-economic-v6.1_advanced_pongo_land,land-input,Land allocation file,econ_xbar1;econ_xbar2;econ_ybar,csv,0,2,econ_land_input_resource,https://w3id.org/wings/export/MINT#economic-land-input
+economic-v6.1_simple_pongo_land,land-input,Land allocation file,econ_xbar1;econ_xbar2;econ_ybar,csv,0,2,econ_land_input_resource_pongo,https://w3id.org/wings/export/MINT#economic-land-input
+economic-v6.1_advanced_pongo_land,land-input,Land allocation file,econ_xbar1;econ_xbar2;econ_ybar,csv,0,2,econ_land_input_resource_pongo,https://w3id.org/wings/export/MINT#economic-land-input
 econ_v6.1_price,price,File with the prices used in the model,econ_p,csv,0,3,,https://w3id.org/wings/export/MINT#economic-price
-economic-v6.1_simple_pongo_price,price,File with the prices used in the model,econ_p,csv,0,3,econ_price_resource,https://w3id.org/wings/export/MINT#economic-price
-economic-v6.1_advanced_pongo_price,price,File with the prices used in the model,econ_p,csv,0,3,econ_price_resource,https://w3id.org/wings/export/MINT#economic-price
+economic-v6.1_simple_pongo_price,price,File with the prices used in the model,econ_p,csv,0,3,econ_price_resource_pongo,https://w3id.org/wings/export/MINT#economic-price
+economic-v6.1_advanced_pongo_price,price,File with the prices used in the model,econ_p,csv,0,3,econ_price_resource_pongo,https://w3id.org/wings/export/MINT#economic-price
 econ_v6.1_production_cost,production-cost,File with the production cost (e.g. fertilizer),econ_c1;econ_c2,csv,0,4,,https://w3id.org/wings/export/MINT#economic-production-cost
-economic-v6.1_simple_pongo_production_cost,production-cost,File with the production cost (e.g. fertilizer),econ_c1;econ_c2,csv,0,4,econ_production_cost_resource,https://w3id.org/wings/export/MINT#economic-production-cost
-economic-v6.1_advanced_pongo_production_cost,production-cost,File with the production cost (e.g. fertilizer),econ_c1;econ_c2,csv,0,4,econ_production_cost_resource,https://w3id.org/wings/export/MINT#economic-production-cost
+economic-v6.1_simple_pongo_production_cost,production-cost,File with the production cost (e.g. fertilizer),econ_c1;econ_c2,csv,0,4,econ_production_cost_resource_pongo,https://w3id.org/wings/export/MINT#economic-production-cost
+economic-v6.1_advanced_pongo_production_cost,production-cost,File with the production cost (e.g. fertilizer),econ_c1;econ_c2,csv,0,4,econ_production_cost_resource_pongo,https://w3id.org/wings/export/MINT#economic-production-cost
 econ_v6.1_land_use,economic-land-use,Economic land use results,econ_year;econ_region_econ_crop;econ_fert_subsidy;econ_land_area;econ_obsyield;econ_production;econ_Nfert;econ_nuse,txt,0,1,,https://w3id.org/wings/export/MINT#EconomicLandUse
 economic-v6.1_simple_pongo_land_use,economic-land-use,Economic land use results,econ_year;econ_region_econ_crop;econ_fert_subsidy;econ_land_area;econ_obsyield;econ_production;econ_Nfert;econ_nuse,txt,0,1,,https://w3id.org/wings/export/MINT#EconomicLandUse
 economic-v6.1_advanced_pongo_land_use,economic-land-use,Economic land use results,econ_year;econ_region_econ_crop;econ_fert_subsidy;econ_land_area;econ_obsyield;econ_production;econ_Nfert;econ_nuse,txt,0,1,,https://w3id.org/wings/export/MINT#EconomicLandUse
@@ -126,14 +126,14 @@ econ_v6.1_calib_land_use,calibration-output,Economic calibration output,econ_yea
 economic-v6.1_simple_pongo_calib_land_use,calibration-output,Economic calibration output,econ_year;econ_region;econ_crop;econ_cc1;econ_cc2;econ_sim_land_area;econ_obs_land_area;econ_sim_nuse;econ_observed_nuse;econ_obs_production;econ_sim_production;,txt,0,2,,https://w3id.org/wings/export/MINT#EconomicCalibration
 economic-v6.1_advanced_pongo_calib_land_use,calibration-output,Economic calibration output,econ_year;econ_region;econ_crop;econ_cc1;econ_cc2;econ_sim_land_area;econ_obs_land_area;econ_sim_nuse;econ_observed_nuse;econ_obs_production;econ_sim_production;,txt,0,2,,https://w3id.org/wings/export/MINT#EconomicCalibration
 ,,,,,,,,
-econ_v6.1_single_crop_cycles_data,cycles-data,File with inputs used to configure the Cycles model (e.g. fertilizer),econ_ybarN,csv,0,1,econ_cycles_data_resource_single_crop,https://w3id.org/wings/export/MINT#economic-cycles-data
-econ_v6.1_single_crop_cycles_data_fixed,cycles-data,File with inputs used to configure the Cycles model (e.g. fertilizer),econ_ybarN,csv,0,1,econ_cycles_data_resource_single_crop,https://w3id.org/wings/export/MINT#economic-cycles-data
-econ_v6.1_single_crop_land,land-input,Land allocation file,econ_xbar1;econ_xbar2;econ_ybar,csv,0,2,econ_land_input_resource_single_crop,https://w3id.org/wings/export/MINT#economic-land-input
-econ_v6.1_single_crop_land_fixed,land-input,Land allocation file,econ_xbar1;econ_xbar2;econ_ybar,csv,0,2,econ_land_input_resource_single_crop,https://w3id.org/wings/export/MINT#economic-land-input
-econ_v6.1_single_crop_price,price,File with the prices used in the model,econ_p,csv,0,3,econ_price_resource_single_crop,https://w3id.org/wings/export/MINT#economic-price
-econ_v6.1_single_crop_price_fixed,price,File with the prices used in the model,econ_p,csv,0,3,econ_price_resource_single_crop,https://w3id.org/wings/export/MINT#economic-price
+econ_v6.1_single_crop_cycles_data,cycles-data,File with inputs used to configure the Cycles model (e.g. fertilizer),econ_ybarN,csv,0,1,econ_cycles_data_resource_pongo_single_crop,https://w3id.org/wings/export/MINT#economic-cycles-data
+econ_v6.1_single_crop_cycles_data_fixed,cycles-data,File with inputs used to configure the Cycles model (e.g. fertilizer),econ_ybarN,csv,0,1,econ_cycles_data_resource_pongo_single_crop,https://w3id.org/wings/export/MINT#economic-cycles-data
+econ_v6.1_single_crop_land,land-input,Land allocation file,econ_xbar1;econ_xbar2;econ_ybar,csv,0,2,econ_land_input_resource_pongo_single_crop,https://w3id.org/wings/export/MINT#economic-land-input
+econ_v6.1_single_crop_land_fixed,land-input,Land allocation file,econ_xbar1;econ_xbar2;econ_ybar,csv,0,2,econ_land_input_resource_pongo_single_crop,https://w3id.org/wings/export/MINT#economic-land-input
+econ_v6.1_single_crop_price,price,File with the prices used in the model,econ_p,csv,0,3,econ_price_resource_pongo_single_crop,https://w3id.org/wings/export/MINT#economic-price
+econ_v6.1_single_crop_price_fixed,price,File with the prices used in the model,econ_p,csv,0,3,econ_price_resource_pongo_single_crop,https://w3id.org/wings/export/MINT#economic-price
 econ_v6.1_single_crop_production_cost,production-cost,File with the production cost (e.g. fertilizer),econ_c1;econ_c2,csv,0,4,,https://w3id.org/wings/export/MINT#economic-production-cost
-econ_v6.1_single_crop_production_cost_fixed,production-cost,File with the production cost (e.g. fertilizer),econ_c1;econ_c2,csv,0,4,econ_production_cost_resource_single_crop,https://w3id.org/wings/export/MINT#economic-production-cost
+econ_v6.1_single_crop_production_cost_fixed,production-cost,File with the production cost (e.g. fertilizer),econ_c1;econ_c2,csv,0,4,econ_production_cost_resource_pongo_single_crop,https://w3id.org/wings/export/MINT#economic-production-cost
 econ_v6.1_single_crop_land_use,economic-land-use,Economic land use results,econ_year;econ_region_econ_crop;econ_fert_subsidy;econ_land_area;econ_obsyield;econ_production;econ_Nfert;econ_nuse,txt,0,1,,https://w3id.org/wings/export/MINT#EconomicLandUse
 economic-v6.1_single_crop_pongo_land_use,economic-land-use,Economic land use results,econ_year;econ_region_econ_crop;econ_fert_subsidy;econ_land_area;econ_obsyield;econ_production;econ_Nfert;econ_nuse,txt,0,1,,https://w3id.org/wings/export/MINT#EconomicLandUse
 econ_v6.1_single_crop_single_crop_calib_land_use,calibration-output,Economic calibration output,econ_year;econ_region;econ_crop;econ_sim_land_area;econ_obs_land_area;econ_sim_nuse;econ_observed_nuse;econ_obs_production;econ_sim_production,txt,0,2,,https://w3id.org/wings/export/MINT#EconomicCalibration
@@ -195,29 +195,29 @@ pihm_rivFlx10,pihm-rivFlx10,lateral influx to the bed beneath river,pihm_rivFlx1
 pihm_is,pihm-is,Interception storage file,pihm_isv,is,0,3,,https://w3id.org/wings/export/MINT#PIHMInterceptionStorage
 ,,,,,,,,
 pihm_v4_elevation,elevation,elevation,,tif,0,1,,https://w3id.org/wings/export/MINT#ASTER
-pihm_v4_elevation_fixed,elevation,elevation,,tif,0,1,pihm_elevation_resource,https://w3id.org/wings/export/MINT#ASTER
+pihm_v4_elevation_fixed,elevation,elevation,,tif,0,1,pihm_elevation_resource_pongo,https://w3id.org/wings/export/MINT#ASTER
 pihm_v4_stream-delineation-shp,stream-delineation-shp,stream-delineation-shp,,shp,0,2,,https://w3id.org/wings/export/MINT#pihm-stream-delineation-shp
-pihm_v4_stream-delineation-shp_fixed,stream-delineation-shp,stream-delineation-shp,,shp,0,2,pihm_stream-delineation-shp_resource,https://w3id.org/wings/export/MINT#pihm-stream-delineation-shp
+pihm_v4_stream-delineation-shp_fixed,stream-delineation-shp,stream-delineation-shp,,shp,0,2,pihm_stream-delineation-shp_resource_pongo,https://w3id.org/wings/export/MINT#pihm-stream-delineation-shp
 pihm_v4_stream-delineation-shx,stream-delineation-shx,stream-delineation-shx,,shx,0,3,,https://w3id.org/wings/export/MINT#stream-delineation-shx
-pihm_v4_stream-delineation-shx_fixed,stream-delineation-shx,stream-delineation-shx,,shx,0,3,pihm_stream-delineation-shx_resource,https://w3id.org/wings/export/MINT#stream-delineation-shx
+pihm_v4_stream-delineation-shx_fixed,stream-delineation-shx,stream-delineation-shx,,shx,0,3,pihm_stream-delineation-shx_resource_pongo,https://w3id.org/wings/export/MINT#stream-delineation-shx
 pihm_v4_stream-delineation-dbf,stream-delineation-dbf,stream-delineation-dbf,,dbf,0,4,,https://w3id.org/wings/export/MINT#pihm_v4_stream-delineation-dbf
-pihm_v4_stream-delineation-dbf_fixed,stream-delineation-dbf,stream-delineation-dbf,,dbf,0,4,pihm_stream-delineation-dbf_resource,https://w3id.org/wings/export/MINT#pihm_v4_stream-delineation-dbf
+pihm_v4_stream-delineation-dbf_fixed,stream-delineation-dbf,stream-delineation-dbf,,dbf,0,4,pihm_stream-delineation-dbf_resource_pongo,https://w3id.org/wings/export/MINT#pihm_v4_stream-delineation-dbf
 pihm_v4_stream-delineation-prj,stream-delineation-prj,stream-delineation-prj,,prj,0,5,,https://w3id.org/wings/export/MINT#pihm_v4_stream-delineation-prj
-pihm_v4_stream-delineation-prj_fixed,stream-delineation-prj,stream-delineation-prj,,prj,0,5,pihm_stream-delineation-prj_resource,https://w3id.org/wings/export/MINT#pihm_v4_stream-delineation-prj
+pihm_v4_stream-delineation-prj_fixed,stream-delineation-prj,stream-delineation-prj,,prj,0,5,pihm_stream-delineation-prj_resource_pongo,https://w3id.org/wings/export/MINT#pihm_v4_stream-delineation-prj
 pihm_v4_waterbed-delineation-shp,waterbed-delineation-shp,waterbed-delineation-shp,,shp,0,6,,https://w3id.org/wings/export/MINT#pihm_v4_waterbed-delineation-shp
-pihm_v4_waterbed-delineation-shp_fixed,waterbed-delineation-shp,waterbed-delineation-shp,,shp,0,6,pihm_waterbed-delineation-shp_resource,https://w3id.org/wings/export/MINT#pihm_v4_waterbed-delineation-shp
+pihm_v4_waterbed-delineation-shp_fixed,waterbed-delineation-shp,waterbed-delineation-shp,,shp,0,6,pihm_waterbed-delineation-shp_resource_pongo,https://w3id.org/wings/export/MINT#pihm_v4_waterbed-delineation-shp
 pihm_v4_waterbed-delineation-shx,waterbed-delineation-shx,waterbed-delineation-shx,,shx,0,7,,https://w3id.org/wings/export/MINT#pihm_v4_waterbed-delineation-shx
-pihm_v4_waterbed-delineation-shx_fixed,waterbed-delineation-shx,waterbed-delineation-shx,,shx,0,7,pihm_waterbed-delineation-shx_resource,https://w3id.org/wings/export/MINT#pihm_v4_waterbed-delineation-shx
+pihm_v4_waterbed-delineation-shx_fixed,waterbed-delineation-shx,waterbed-delineation-shx,,shx,0,7,pihm_waterbed-delineation-shx_resource_pongo,https://w3id.org/wings/export/MINT#pihm_v4_waterbed-delineation-shx
 pihm_v4_waterbed-delineation-dbf,waterbed-delineation-dbf,waterbed-delineation-dbf,,dbf,0,8,,https://w3id.org/wings/export/MINT#pihm_v4_waterbed-delineation-dbf
-pihm_v4_waterbed-delineation-dbf_fixed,waterbed-delineation-dbf,waterbed-delineation-dbf,,dbf,0,8,pihm_waterbed-delineation-dbf_resource,https://w3id.org/wings/export/MINT#pihm_v4_waterbed-delineation-dbf
+pihm_v4_waterbed-delineation-dbf_fixed,waterbed-delineation-dbf,waterbed-delineation-dbf,,dbf,0,8,pihm_waterbed-delineation-dbf_resource_pongo,https://w3id.org/wings/export/MINT#pihm_v4_waterbed-delineation-dbf
 pihm_v4_waterbed-delineation-prj,waterbed-delineation-prj,waterbed-delineation-prj,,prj,0,9,,https://w3id.org/wings/export/MINT#pihm_v4_waterbed-delineation-prj
-pihm_v4_waterbed-delineation-prj_fixed,waterbed-delineation-prj,waterbed-delineation-prj,,prj,0,9,pihm_waterbed-delineation-prj_resource,https://w3id.org/wings/export/MINT#pihm_v4_waterbed-delineation-prj
+pihm_v4_waterbed-delineation-prj_fixed,waterbed-delineation-prj,waterbed-delineation-prj,,prj,0,9,pihm_waterbed-delineation-prj_resource_pongo,https://w3id.org/wings/export/MINT#pihm_v4_waterbed-delineation-prj
 pihm_v4_landuse,landuse,landuse,,tif,0,10,,https://w3id.org/wings/export/MINT#USGS-LCI
-pihm_v4_landuse_fixed,landuse,landuse,,tif,0,10,pihm_landuse_resource,https://w3id.org/wings/export/MINT#USGS-LCI
+pihm_v4_landuse_fixed,landuse,landuse,,tif,0,10,pihm_landuse_resource_pongo,https://w3id.org/wings/export/MINT#USGS-LCI
 pihm_v4_soil,soil,soil,pihm_Alpha;pihm_Beta;pihm_hAreaF;pihm_infD;pihm_KsatV;pihm_macKsatV;pihm_ThetaR;pihm_ThetaS,tar.gz,0,11,,https://w3id.org/wings/export/MINT#pihm-soil
-pihm_v4_soil_fixed,soil,soil,pihm_Alpha;pihm_Beta;pihm_hAreaF;pihm_infD;pihm_KsatV;pihm_macKsatV;pihm_ThetaR;pihm_ThetaS,tar.gz,0,11,pihm_soil_resource,https://w3id.org/wings/export/MINT#pihm-soil
+pihm_v4_soil_fixed,soil,soil,pihm_Alpha;pihm_Beta;pihm_hAreaF;pihm_infD;pihm_KsatV;pihm_macKsatV;pihm_ThetaR;pihm_ThetaS,tar.gz,0,11,pihm_soil_resource_pongo,https://w3id.org/wings/export/MINT#pihm-soil
 pihm_v4_weather,weather,weather,fldas_Evap_tavg;fldas_LWdown_f_tavg;fldas_Lwnet_tavg;fldas_Psurf_f_tavg;fldas_Qair_f_tavg;fldas_Qg_tavg;fldas_Qh_tavg;fldas_Qle_tavg;fldas_Qs_tavg;fldas_Qsb_tavg;fldas_RadT_tavg;fldas_Rainf_f_tavg;flda,netcdf,0,12,,https://w3id.org/wings/export/MINT#FLDAS
-pihm_v4_weather_fixed,weather,weather,fldas_Evap_tavg;fldas_LWdown_f_tavg;fldas_Lwnet_tavg;fldas_Psurf_f_tavg;fldas_Qair_f_tavg;fldas_Qg_tavg;fldas_Qh_tavg;fldas_Qle_tavg;fldas_Qs_tavg;fldas_Qsb_tavg;fldas_RadT_tavg;fldas_Rainf_f_tavg;flda,netcdf,0,12,pihm_weather_resource,https://w3id.org/wings/export/MINT#FLDAS
+pihm_v4_weather_fixed,weather,weather,fldas_Evap_tavg;fldas_LWdown_f_tavg;fldas_Lwnet_tavg;fldas_Psurf_f_tavg;fldas_Qair_f_tavg;fldas_Qg_tavg;fldas_Qh_tavg;fldas_Qle_tavg;fldas_Qs_tavg;fldas_Qsb_tavg;fldas_RadT_tavg;fldas_Rainf_f_tavg;flda,netcdf,0,12,pihm_weather_resource_pongo,https://w3id.org/wings/export/MINT#FLDAS
 ,,,,,,,,
 pihm_v4_targz,targz,Aggregated output with all PIHM files (all relevant variables are grouped in this file),pihm_gw;pihm_infil;pihm_snowV;pihm_surfV;pihm_unsatV;pihm_et0V;pihm_transpiration;pihm_et2v;pihm_rechr,tar.gz,0,1,,https://w3id.org/wings/export/MINT#targz
 ,,,,,,,,
