@@ -25,6 +25,11 @@ cycles_planting-day-1-duration,cycles_planting-day-1-duration,Duration of planti
 cycles_planting-day-2,cycles_planting-day-2,Day of the year when the second planting started,225,int,https://w3id.org/wings/export/MINT#CyclesPlantingDay2,,3,,1,365,day,plantingWindows
 cycles_planting-day-2-duration,cycles_planting-day-2-duration,Duration of planting  (in days),10,int,https://w3id.org/wings/export/MINT#CyclesPlantingDay2Duration,,4,,,,,
 ,,,,,,,,,,,,
+cycles_mp_planting-day-1,cycles_planting-day-1,Day of the year for the start of the planting window,100,int,https://w3id.org/wings/export/MINT#CyclesPlantingDay1,,1,,1,365,day,plantingWindows
+cycles_mp_planting-day-1-duration,cycles_planting-day-1-duration,Duration of planting  (in days),10,int,https://w3id.org/wings/export/MINT#CyclesPlantingDay1Duration,,2,,,,,
+cycles_mp_planting-day-2,cycles_planting-day-2,Day of the year when the second planting started,225,int,https://w3id.org/wings/export/MINT#CyclesPlantingDay2,,3,,1,365,day,plantingWindows
+cycles_mp_planting-day-2-duration,cycles_planting-day-2-duration,Duration of planting  (in days),10,int,https://w3id.org/wings/export/MINT#CyclesPlantingDay2Duration,,4,,,,,
+,,,,,,,,,,,,
 cycles-0.9.4-alpha_start_year,start_year,Year when the simulation started,2000,int,https://w3id.org/wings/export/MINT#CyclesStartYear,,1,,,,year,
 cycles-0.9.4-alpha_end_year,end_year,Year when the simulation ended,2017,int,https://w3id.org/wings/export/MINT#CyclesEndYear,,2,,,,year,
 cycles-0.9.4-alpha_crop_name,crop_name,Name of the crop to run the simulation for,Maize,string,https://w3id.org/wings/export/MINT#CyclesCropName,,3,,,,,
