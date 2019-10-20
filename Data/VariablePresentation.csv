@@ -91,7 +91,7 @@ econ_nuse,Nuse,Nuse,total fertilizer use,total fertilizer use,,kg,,,,,
 econ_cc1,cc1,cc1,myopic elasticity calibration criteria,myopic elasticity calibration criteria,,,,,,,
 econ_cc2,cc2,cc2,no dominant response criteria,no dominant response criteria,,,,,,,
 ,,,,,,,,,,,
-cycles_doy,DOY,DOY,day of the year,Calendar day from 1 to 366,,,,,,,
+cycles_doy,DOY,DOY,day of the year,Calendar day from 1 to 366,crop__planting_start_time,,,,,,
 cycles_pp,PP,PP,precipitation,Precipitation,atmosphere_water__time_integral_of_precipitation_leq_volume_flux,mm,atmosphere_water__precipitation_volume_flux,,,,cycles_infiltration
 cycles_tx,Tx,Tx,temperature air maximum of the day,Maximum air temperature recorded or model-generated for that day at 1.5 m above the surface,air__daily_max_of_temperature,degC,,,,,cycles_cropGrowth;cycles_transpiration;cycles_soil_evapr;cycles_soil_evap
 cycles_tn,Tn,Tn,temperature minimum of the day,Minimum air temperature recorded or model-generated for that day at 1.5 m above the surface,air__daily_min_of_temperature,degC,,,,,cycles_cropGrowth;cycles_transpiration;cycles_soil_evapr;cycles_soil_evap
