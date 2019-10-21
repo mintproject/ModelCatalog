@@ -151,7 +151,7 @@ public class CSV2RDF {
                                         //Assumming only a single type per row
                                         if(p.toString().equals("http://www.w3.org/1999/02/22-rdf-syntax-ns#type")){
                                             ind.addProperty((Property) p, instances.createIndividual(rowValue,range));
-                                        }else if(p.toString().contains("usesUnit")){
+                                        }else if(p.toString().contains("usesUnit") ||p.toString().contains("intervalUnit")){
                                             //mapping to the unit conversion files. A variable can only have a unit assigned
                                             JsonElement unitElement = this.unitDictionary.get(rowValue);
                                             if(unitElement!=null){
@@ -163,7 +163,7 @@ public class CSV2RDF {
                                                 emptyUnit.addLabel(rowValue, null);
                                                 ind.addProperty((Property) p, emptyUnit);
                                             }
-                                        }else if(p.toString().contains("hasStandardVariable")){
+                                        }else if(p.toString().contains("hasStandardVariable") || p.toString().contains("usefulForCalculatingIndex")){
                                             /**
                                             read label, try to find one in the svo file (there should be).
                                             * If found, then use that URI. IF not found, then create one.
@@ -226,14 +226,14 @@ public class CSV2RDF {
      */
     public static String encode(String name){
         name = name.replace("http://","");
-        String prenom = name.substring(0, name.indexOf("/")+1);
+        //String prenom = name.substring(0, name.indexOf("/")+1);
         //remove tabs and new lines
-        String nom = name.replace(prenom, "");       
+        String nom = name;//name.replace(prenom, "");       
         nom = nom.replace("\\n", "");
         nom = nom.replace("\n", "");
         nom = nom.replace("\b", "");
-        nom = nom.replace("/","_");
-        nom = nom.replace("=","_");
+        nom = nom.replace("/","-");
+        nom = nom.replace("=","-");
         nom = nom.trim();
         nom = nom.toUpperCase();
         try {
@@ -242,7 +242,8 @@ public class CSV2RDF {
         catch (Exception ex) {
             System.err.println("Problem encoding the URI:" + nom + " " + ex.getMessage() );
         }
-        return prenom+nom;
+        return nom;
+        //return prenom+nom;
     }
     
     /**
@@ -293,6 +294,7 @@ public class CSV2RDF {
             test.processFile(pathToInstancesDataFolder+"\\Model.csv");
             test.processFile(pathToInstancesDataFolder+"\\ModelVersion.csv");
             test.processFile(pathToInstancesDataFolder+"\\ModelConfiguration.csv");
+            test.processFile(pathToInstancesDataFolder+"\\ModelConfigurationSetup.csv");
             test.processFile(pathToInstancesDataFolder+"\\DatasetSpecification.csv");
             test.processFile(pathToInstancesDataFolder+"\\Parameter.csv");
             test.processFile(pathToInstancesDataFolder+"\\VariablePresentation.csv");
@@ -309,6 +311,7 @@ public class CSV2RDF {
             test.processFile(pathToInstancesDataFolder+"\\SampleExecution.csv");
             test.processFile(pathToInstancesDataFolder+"\\SourceCode.csv");
             test.processFile(pathToInstancesDataFolder+"\\FundingInformation.csv");
+            test.processFile(pathToInstancesDataFolder+"\\Intervention.csv");
             test.processFile(pathToTransformationsDataFolder+"\\SoftwareScript.csv");
             test.processFile(pathToTransformationsDataFolder+"\\SoftwareConfiguration.csv");
             test.processFile(pathToTransformationsDataFolder+"\\SoftwareVersion.csv");
