@@ -9,10 +9,14 @@ SELECT distinct ?units where {
 After the changes, it will be:
 
 PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
-PREFIX mc: <https://w3id.org/mint/modelCatalog#>
-PREFIX dc: <http://purl.org/dc/terms/>
+PREFIX sd: <https://w3id.org/okn/o/sd#>
 
-SELECT distinct ?units where {
-	?a mc:usesUnit ?u.
+SELECT distinct ?units from <http://ontosoft.isi.edu:3030/modelCatalog-1.1.0/data/mint@isi.edu> where {
+	{
+        ?a sd:usesUnit ?u.
+    }UNION
+    {
+        ?b sdm:intervalUnit ?u
+    }
     ?u rdfs:label ?units
 }

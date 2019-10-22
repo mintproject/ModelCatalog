@@ -219,17 +219,18 @@ def add_wiki_pages(store, qudtp, owl):
     wiki_dict = {}
     unit_symbol_wiki_dict = {}
     exponent_symbol_list = list()
-    sparql = SPARQLWrapper("http://ontosoft.isi.edu:3030/ds/query")
+    sparql = SPARQLWrapper("http://ontosoft.isi.edu:3030/modelCatalog-1.1.0/query")
     sparql_query = """
     PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
     select distinct ?symbol ?label
+    from <http://ontosoft.isi.edu:3030/modelCatalog-1.1.0/data/mint@isi.edu>
     where {
-    ?part <https://www.w3id.org/mint/ccut#hasPart> ?symbol.
-    ?symbol rdfs:label ?label.
+        ?part <https://www.w3id.org/mint/ccut#hasPart> ?symbol.
+        ?symbol rdfs:label ?label.
     FILTER NOT EXISTS {
-    ?symbol <https://www.w3id.org/mint/ccut#hasPart> ?p
+        ?symbol <https://www.w3id.org/mint/ccut#hasPart> ?p
     }
-  }
+    }
             """
     sparql.setQuery(sparql_query)
     sparql.setReturnFormat(JSON)
@@ -238,8 +239,11 @@ def add_wiki_pages(store, qudtp, owl):
         key = result['symbol']['value']
         value1 = result['label']['value']
         dict4.update({key:value1})
-        value = value1.split("^")[0]
-        exponent = int(value1.split("^")[1])
+        splitValue = value1.split("^")
+        value = splitValue[0]
+        exponent = 1
+        if len(splitValue) > 1:
+            exponent = int(value1.split("^")[1])
         if exponent != 1:
             exponent_symbol_list.append(key)
 
