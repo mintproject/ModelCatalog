@@ -20,72 +20,81 @@ climcomp_min_month,min_month,minimum month,6,float,https://w3id.org/wings/export
 climcomp_max_month,max_month,maximum month,8,float,https://w3id.org/wings/export/MINT#MaxMonth,,8,,,,month,
 climcomp_year,year,year,2017,float,https://w3id.org/wings/export/MINT#ClimCompYear,,9,,,,year,
 ,,,,,,,,,,,,
-cycles_planting-day-1,cycles_planting-day-1,Day of the year for the start of the planting window,100,int,https://w3id.org/wings/export/MINT#CyclesPlantingDay1,,1,,1,365,day,plantingWindows
-cycles_planting-day-1-duration,cycles_planting-day-1-duration,Duration of planting  (in days),10,int,https://w3id.org/wings/export/MINT#CyclesPlantingDay1Duration,,2,,,,,
-cycles_planting-day-2,cycles_planting-day-2,Day of the year when the second planting started,225,int,https://w3id.org/wings/export/MINT#CyclesPlantingDay2,,3,,1,365,day,plantingWindows
-cycles_planting-day-2-duration,cycles_planting-day-2-duration,Duration of planting  (in days),10,int,https://w3id.org/wings/export/MINT#CyclesPlantingDay2Duration,,4,,,,,
+cycles_planting-day-1,cycles_planting-day-1,Day of the year for the start of the planting window,100,int,https://w3id.org/wings/export/MINT#CyclesPlantingDay1,,1,cycles_doy,1,365,day,plantingWindows
+cycles_planting-day-1-duration,cycles_planting-day-1-duration,Duration of planting  (in days),10,int,https://w3id.org/wings/export/MINT#CyclesPlantingDay1Duration,,2,cycles_end_doy,,,,
+cycles_planting-day-2,cycles_planting-day-2,Day of the year when the second planting started,225,int,https://w3id.org/wings/export/MINT#CyclesPlantingDay2,,3,cycles_doy,1,365,day,plantingWindows
+cycles_planting-day-2-duration,cycles_planting-day-2-duration,Duration of planting  (in days),10,int,https://w3id.org/wings/export/MINT#CyclesPlantingDay2Duration,,4,cycles_end_doy,,,,
 ,,,,,,,,,,,,
-cycles_mp_planting-day-1,cycles_planting-day-1,Day of the year for the start of the planting window,100,int,https://w3id.org/wings/export/MINT#CyclesPlantingDay1,,1,,1,365,day,plantingWindows
-cycles_mp_planting-day-1-duration,cycles_planting-day-1-duration,Duration of planting  (in days),10,int,https://w3id.org/wings/export/MINT#CyclesPlantingDay1Duration,,2,,,,,
-cycles_mp_planting-day-2,cycles_planting-day-2,Day of the year when the second planting started,225,int,https://w3id.org/wings/export/MINT#CyclesPlantingDay2,,3,,1,365,day,plantingWindows
-cycles_mp_planting-day-2-duration,cycles_planting-day-2-duration,Duration of planting  (in days),10,int,https://w3id.org/wings/export/MINT#CyclesPlantingDay2Duration,,4,,,,,
+cycles_mp_planting-day-1,cycles_planting-day-1,Day of the year for the start of the planting window,100,int,https://w3id.org/wings/export/MINT#CyclesPlantingDay1,,1,cycles_doy,1,365,day,plantingWindows
+cycles_mp_planting-day-1-duration,cycles_planting-day-1-duration,Duration of planting  (in days),10,int,https://w3id.org/wings/export/MINT#CyclesPlantingDay1Duration,,2,cycles_end_doy,,,,
+cycles_mp_planting-day-2,cycles_planting-day-2,Day of the year when the second planting started,225,int,https://w3id.org/wings/export/MINT#CyclesPlantingDay2,,3,cycles_doy,1,365,day,plantingWindows
+cycles_mp_planting-day-2-duration,cycles_planting-day-2-duration,Duration of planting  (in days),10,int,https://w3id.org/wings/export/MINT#CyclesPlantingDay2Duration,,4,cycles_end_doy,,,,
 ,,,,,,,,,,,,
-cycles-0.9.4-alpha_start_year,start_year,Year when the simulation started,2000,int,https://w3id.org/wings/export/MINT#CyclesStartYear,,1,,,,year,
-cycles-0.9.4-alpha_end_year,end_year,Year when the simulation ended,2017,int,https://w3id.org/wings/export/MINT#CyclesEndYear,,2,,,,year,
-cycles-0.9.4-alpha_crop_name,crop_name,Name of the crop to run the simulation for,Maize,string,https://w3id.org/wings/export/MINT#CyclesCropName,,3,,,,,
-cycles-0.9.4-alpha_start_planting_day,start_planting_day,Day of the year for the start of the planting window,100,int,https://w3id.org/wings/export/MINT#CyclesStartPlantingDay,,4,,1,365,day,plantingWindows
-cycles-0.9.4-alpha_end_planting_day,end_planting_day,Day of the year for the end of the planting window,149,int,https://w3id.org/wings/export/MINT#CyclesEndPlantingDay,,5,,1,365,day,plantingWindows
-cycles-0.9.4-alpha_fertilizer_rate,fertilizer_rate,Mass of nitrogen fertilizer added each year (kg/ha),0,float,https://w3id.org/wings/export/MINT#CyclesFertilizerRate,,6,,0,1250,kg/ha,weedControl
-cycles-0.9.4-alpha_weed_fraction,weed_fraction,Areal fraction of weed,0,float,https://w3id.org/wings/export/MINT#CyclesWeedFraction,,7,,0,1,%,
+cycles-0.9.4-alpha_start_year,start_year,Year when the simulation started,2000,int,https://w3id.org/wings/export/MINT#CyclesStartYear,,1,cycles_start_year,,,year,
+cycles-0.9.4-alpha_end_year,end_year,Year when the simulation ended,2017,int,https://w3id.org/wings/export/MINT#CyclesEndYear,,2,cycles_end_year,,,year,
+cycles-0.9.4-alpha_crop_name,crop_name,Name of the crop to run the simulation for,Maize,string,https://w3id.org/wings/export/MINT#CyclesCropName,,3,cycles_crop_name,,,,
+cycles-0.9.4-alpha_start_planting_day,start_planting_day,Day of the year for the start of the planting window,100,int,https://w3id.org/wings/export/MINT#CyclesStartPlantingDay,,4,cycles_doy,1,365,day,plantingWindows
+cycles-0.9.4-alpha_end_planting_day,end_planting_day,Day of the year for the end of the planting window,149,int,https://w3id.org/wings/export/MINT#CyclesEndPlantingDay,,5,cycles_end_doy,1,365,day,plantingWindows
+cycles-0.9.4-alpha_fertilizer_rate,fertilizer_rate,Mass of nitrogen fertilizer added each year (kg/ha),0,float,https://w3id.org/wings/export/MINT#CyclesFertilizerRate,,6,cycles_mass,0,1250,kg/ha,weedControl
+cycles-0.9.4-alpha_weed_fraction,weed_fraction,Areal fraction of weed,0,float,https://w3id.org/wings/export/MINT#CyclesWeedFraction,,7,cycles_fraction,0,1,%,
 cycles-0.9.4-alpha_use_forcing,use_forcing,Use forcing data from a hydrology model (when available),FALSE,boolean,https://w3id.org/wings/export/MINT#CyclesUseForcing,,8,,,,,
 ,,,,,,,,,,,,
-cycles-0.9.4-alpha-simple-pongo_start_year,start_year,Year when the simulation started,2000,int,https://w3id.org/wings/export/MINT#CyclesStartYear,2000,1,,,,year,
-cycles-0.9.4-alpha-simple-pongo_end_year,end_year,Year when the simulation ended,2017,int,https://w3id.org/wings/export/MINT#CyclesEndYear,2017,2,,,,year,
-cycles-0.9.4-alpha-simple-pongo_crop_name,crop_name,Name of the crop to run the simulation for,Maize,string,https://w3id.org/wings/export/MINT#CyclesCropName,Maize,3,,,,,
-cycles-0.9.4-alpha-simple-pongo_start_planting_day,start_planting_day,Day of the year for the start of the planting window,100,int,https://w3id.org/wings/export/MINT#CyclesStartPlantingDay,100,4,,1,365,day,plantingWindows
-cycles-0.9.4-alpha-simple-pongo_end_planting_day,end_planting_day,Day of the year for the end of the planting window,149,int,https://w3id.org/wings/export/MINT#CyclesEndPlantingDay,149,5,,1,365,day,plantingWindows
-cycles-0.9.4-alpha-simple-pongo_fertilizer_rate,fertilizer_rate,Mass of nitrogen fertilizer added each year (kg/ha),0,float,https://w3id.org/wings/export/MINT#CyclesFertilizerRate,0,6,,0,1250,kg/ha,
-cycles-0.9.4-alpha-simple-pongo_weed_fraction,weed_fraction,Areal fraction of weed ,0,float,https://w3id.org/wings/export/MINT#CyclesWeedFraction,0,7,,0,1,%,weedControl
+cycles-0.9.4-alpha-simple-pongo_start_year,start_year,Year when the simulation started,2000,int,https://w3id.org/wings/export/MINT#CyclesStartYear,2000,1,cycles_start_year,,,year,
+cycles-0.9.4-alpha-simple-pongo_end_year,end_year,Year when the simulation ended,2017,int,https://w3id.org/wings/export/MINT#CyclesEndYear,2017,2,cycles_end_year,,,year,
+cycles-0.9.4-alpha-simple-pongo_crop_name,crop_name,Name of the crop to run the simulation for,Maize,string,https://w3id.org/wings/export/MINT#CyclesCropName,Maize,3,cycles_crop_name,,,,
+cycles-0.9.4-alpha-simple-pongo_start_planting_day,start_planting_day,Day of the year for the start of the planting window,100,int,https://w3id.org/wings/export/MINT#CyclesStartPlantingDay,100,4,cycles_doy,1,365,day,plantingWindows
+cycles-0.9.4-alpha-simple-pongo_end_planting_day,end_planting_day,Day of the year for the end of the planting window,149,int,https://w3id.org/wings/export/MINT#CyclesEndPlantingDay,149,5,cycles_end_doy,1,365,day,plantingWindows
+cycles-0.9.4-alpha-simple-pongo_fertilizer_rate,fertilizer_rate,Mass of nitrogen fertilizer added each year (kg/ha),0,float,https://w3id.org/wings/export/MINT#CyclesFertilizerRate,0,6,cycles_mass,0,1250,kg/ha,
+cycles-0.9.4-alpha-simple-pongo_weed_fraction,weed_fraction,Areal fraction of weed ,0,float,https://w3id.org/wings/export/MINT#CyclesWeedFraction,0,7,cycles_fraction,0,1,%,weedControl
 cycles-0.9.4-alpha-simple-pongo_use_forcing,use_forcing,Use forcing data from a hydrology model (when available),FALSE,boolean,https://w3id.org/wings/export/MINT#CyclesUseForcing,FALSE,8,,,,,
 ,,,,,,,,,,,,
-cycles-0.9.4-alpha-advanced-pongo_start_year,start_year,Year when the simulation started,2000,int,https://w3id.org/wings/export/MINT#CyclesStartYear,,1,,,,year,
-cycles-0.9.4-alpha-advanced-pongo_end_year,end_year,Year when the simulation ended,2017,int,https://w3id.org/wings/export/MINT#CyclesEndYear,,2,,,,year,
-cycles-0.9.4-alpha-advanced-pongo_crop_name,crop_name,Name of the crop to run the simulation for,Maize,string,https://w3id.org/wings/export/MINT#CyclesCropName,,3,,,,,
-cycles-0.9.4-alpha-advanced-pongo_start_planting_day,start_planting_day,Day of the year for the start of the planting window,100,int,https://w3id.org/wings/export/MINT#CyclesStartPlantingDay,,4,,1,365,day,plantingWindows
-cycles-0.9.4-alpha-advanced-pongo_end_planting_day,end_planting_day,Day of the year for the end of the planting window,149,int,https://w3id.org/wings/export/MINT#CyclesEndPlantingDay,,5,,1,365,day,plantingWindows
-cycles-0.9.4-alpha-advanced-pongo_fertilizer_rate,fertilizer_rate,Mass of nitrogen fertilizer added each year (kg/ha),0,float,https://w3id.org/wings/export/MINT#CyclesFertilizerRate,,6,,0,1250,kg/ha,
-cycles-0.9.4-alpha-advanced-pongo_weed_fraction,weed_fraction,Areal fraction of weed ,0,float,https://w3id.org/wings/export/MINT#CyclesWeedFraction,,7,,0,1,%,weedControl
+cycles-0.9.4-alpha-advanced-pongo_start_year,start_year,Year when the simulation started,2000,int,https://w3id.org/wings/export/MINT#CyclesStartYear,,1,cycles_start_year,,,year,
+cycles-0.9.4-alpha-advanced-pongo_end_year,end_year,Year when the simulation ended,2017,int,https://w3id.org/wings/export/MINT#CyclesEndYear,,2,cycles_end_year,,,year,
+cycles-0.9.4-alpha-advanced-pongo_crop_name,crop_name,Name of the crop to run the simulation for,Maize,string,https://w3id.org/wings/export/MINT#CyclesCropName,,3,cycles_crop_name,,,,
+cycles-0.9.4-alpha-advanced-pongo_start_planting_day,start_planting_day,Day of the year for the start of the planting window,100,int,https://w3id.org/wings/export/MINT#CyclesStartPlantingDay,,4,cycles_doy,1,365,day,plantingWindows
+cycles-0.9.4-alpha-advanced-pongo_end_planting_day,end_planting_day,Day of the year for the end of the planting window,149,int,https://w3id.org/wings/export/MINT#CyclesEndPlantingDay,,5,cycles_end_doy,1,365,day,plantingWindows
+cycles-0.9.4-alpha-advanced-pongo_fertilizer_rate,fertilizer_rate,Mass of nitrogen fertilizer added each year (kg/ha),0,float,https://w3id.org/wings/export/MINT#CyclesFertilizerRate,,6,cycles_mass,0,1250,kg/ha,
+cycles-0.9.4-alpha-advanced-pongo_weed_fraction,weed_fraction,Areal fraction of weed ,0,float,https://w3id.org/wings/export/MINT#CyclesWeedFraction,,7,cycles_fraction,0,1,%,weedControl
 cycles-0.9.4-alpha-advanced-pongo_use_forcing,use_forcing,Use forcing data from a hydrology model (when available),FALSE,boolean,https://w3id.org/wings/export/MINT#CyclesUseForcing,FALSE,8,,,,,
 ,,,,,,,,,,,,
-cycles-0.9.4-alpha-advanced-pongo-weather_start_year,start_year,Year when the simulation started,2000,int,https://w3id.org/wings/export/MINT#CyclesStartYear,,1,,,,year,
-cycles-0.9.4-alpha-advanced-pongo-weather_end_year,end_year,Year when the simulation ended,2017,int,https://w3id.org/wings/export/MINT#CyclesEndYear,,2,,,,year,
-cycles-0.9.4-alpha-advanced-pongo-weather_crop_name,crop_name,Name of the crop to run the simulation for,Maize,string,https://w3id.org/wings/export/MINT#CyclesCropName,,3,,,,,
-cycles-0.9.4-alpha-advanced-pongo-weather_start_planting_day,start_planting_day,Day of the year for the start of the planting window,100,int,https://w3id.org/wings/export/MINT#CyclesStartPlantingDay,,4,,1,365,day,plantingWindows
-cycles-0.9.4-alpha-advanced-pongo-weather_end_planting_day,end_planting_day,Day of the year for the end of the planting window,149,int,https://w3id.org/wings/export/MINT#CyclesEndPlantingDay,,5,,1,365,day,plantingWindows
-cycles-0.9.4-alpha-advanced-pongo-weather_fertilizer_rate,fertilizer_rate,Mass of nitrogen fertilizer added each year (kg/ha),0,float,https://w3id.org/wings/export/MINT#CyclesFertilizerRate,,6,,0,1250,kg/ha,
-cycles-0.9.4-alpha-advanced-pongo-weather_weed_fraction,weed_fraction,Areal fraction of weed ,0,float,https://w3id.org/wings/export/MINT#CyclesWeedFraction,,7,,0,1,%,weedControl
+cycles-0.9.4-alpha-advanced-pongo-weather_start_year,start_year,Year when the simulation started,2000,int,https://w3id.org/wings/export/MINT#CyclesStartYear,,1,cycles_start_year,,,year,
+cycles-0.9.4-alpha-advanced-pongo-weather_end_year,end_year,Year when the simulation ended,2017,int,https://w3id.org/wings/export/MINT#CyclesEndYear,,2,cycles_end_year,,,year,
+cycles-0.9.4-alpha-advanced-pongo-weather_crop_name,crop_name,Name of the crop to run the simulation for,Maize,string,https://w3id.org/wings/export/MINT#CyclesCropName,,3,cycles_crop_name,,,,
+cycles-0.9.4-alpha-advanced-pongo-weather_start_planting_day,start_planting_day,Day of the year for the start of the planting window,100,int,https://w3id.org/wings/export/MINT#CyclesStartPlantingDay,,4,cycles_doy,1,365,day,plantingWindows
+cycles-0.9.4-alpha-advanced-pongo-weather_end_planting_day,end_planting_day,Day of the year for the end of the planting window,149,int,https://w3id.org/wings/export/MINT#CyclesEndPlantingDay,,5,cycles_end_doy,1,365,day,plantingWindows
+cycles-0.9.4-alpha-advanced-pongo-weather_fertilizer_rate,fertilizer_rate,Mass of nitrogen fertilizer added each year (kg/ha),0,float,https://w3id.org/wings/export/MINT#CyclesFertilizerRate,,6,cycles_mass,0,1250,kg/ha,
+cycles-0.9.4-alpha-advanced-pongo-weather_weed_fraction,weed_fraction,Areal fraction of weed ,0,float,https://w3id.org/wings/export/MINT#CyclesWeedFraction,,7,cycles_fraction,0,1,%,weedControl
 cycles-0.9.4-alpha-advanced-pongo-weather_use_forcing,use_forcing,Use forcing data from a hydrology model (when available),FALSE,boolean,https://w3id.org/wings/export/MINT#CyclesUseForcing,FALSE,8,,,,,
 ,,,,,,,,,,,,
-cycles-0.9.4-alpha-simple-texas_start_year,start_year,Year when the simulation started,1984,int,https://w3id.org/wings/export/MINT#CyclesStartYear,1984,1,,,,year,
-cycles-0.9.4-alpha-simple-texas_end_year,end_year,Year when the simulation ended,2018,int,https://w3id.org/wings/export/MINT#CyclesEndYear,2018,2,,,,year,
-cycles-0.9.4-alpha-simple-texas_crop_name,crop_name,Name of the crop to run the simulation for,Maize,string,https://w3id.org/wings/export/MINT#CyclesCropName,Maize,3,,,,,
-cycles-0.9.4-alpha-simple-texas_start_planting_day,start_planting_day,Day of the year for the start of the planting window,110,int,https://w3id.org/wings/export/MINT#CyclesStartPlantingDay,110,4,,1,365,day,plantingWindows
-cycles-0.9.4-alpha-simple-texas_end_planting_day,end_planting_day,Day of the year for the end of the planting window,149,int,https://w3id.org/wings/export/MINT#CyclesEndPlantingDay,149,5,,1,365,day,plantingWindows
-cycles-0.9.4-alpha-simple-texas_fertilizer_rate,fertilizer_rate,Mass of nitrogen fertilizer added each year (kg/ha),0,float,https://w3id.org/wings/export/MINT#CyclesFertilizerRate,0,6,,0,1250,kg/ha,
-cycles-0.9.4-alpha-simple-texas_weed_fraction,weed_fraction,Areal fraction of weed ,0,float,https://w3id.org/wings/export/MINT#CyclesWeedFraction,0,7,,0,1,%,weedControl
+cycles-0.9.4-alpha-simple-texas_start_year,start_year,Year when the simulation started,1984,int,https://w3id.org/wings/export/MINT#CyclesStartYear,1984,1,cycles_start_year,,,year,
+cycles-0.9.4-alpha-simple-texas_end_year,end_year,Year when the simulation ended,2018,int,https://w3id.org/wings/export/MINT#CyclesEndYear,2018,2,cycles_end_year,,,year,
+cycles-0.9.4-alpha-simple-texas_crop_name,crop_name,Name of the crop to run the simulation for,Maize,string,https://w3id.org/wings/export/MINT#CyclesCropName,Maize,3,cycles_crop_name,,,,
+cycles-0.9.4-alpha-simple-texas_start_planting_day,start_planting_day,Day of the year for the start of the planting window,110,int,https://w3id.org/wings/export/MINT#CyclesStartPlantingDay,110,4,cycles_doy,1,365,day,plantingWindows
+cycles-0.9.4-alpha-simple-texas_end_planting_day,end_planting_day,Day of the year for the end of the planting window,149,int,https://w3id.org/wings/export/MINT#CyclesEndPlantingDay,149,5,cycles_end_doy,1,365,day,plantingWindows
+cycles-0.9.4-alpha-simple-texas_fertilizer_rate,fertilizer_rate,Mass of nitrogen fertilizer added each year (kg/ha),0,float,https://w3id.org/wings/export/MINT#CyclesFertilizerRate,0,6,cycles_mass,0,1250,kg/ha,
+cycles-0.9.4-alpha-simple-texas_weed_fraction,weed_fraction,Areal fraction of weed ,0,float,https://w3id.org/wings/export/MINT#CyclesWeedFraction,0,7,cycles_fraction,0,1,%,weedControl
 cycles-0.9.4-alpha-simple-texas_use_forcing,use_forcing,Use forcing data from a hydrology model (when available),FALSE,boolean,https://w3id.org/wings/export/MINT#CyclesUseForcing,FALSE,8,,,,,
 ,,,,,,,,,,,,
-cycles-0.9.4-alpha-advanced-texas-weather_start_year,start_year,Year when the simulation started,1984,int,https://w3id.org/wings/export/MINT#CyclesStartYear,,1,,,,year,
-cycles-0.9.4-alpha-advanced-texas-weather_end_year,end_year,Year when the simulation ended,2018,int,https://w3id.org/wings/export/MINT#CyclesEndYear,,2,,,,year,
-cycles-0.9.4-alpha-advanced-texas-weather_crop_name,crop_name,Name of the crop to run the simulation for,Maize,string,https://w3id.org/wings/export/MINT#CyclesCropName,,3,,,,,
-cycles-0.9.4-alpha-advanced-texas-weather_start_planting_day,start_planting_day,Day of the year for the start of the planting window,110,int,https://w3id.org/wings/export/MINT#CyclesStartPlantingDay,,4,,1,365,day,plantingWindows
-cycles-0.9.4-alpha-advanced-texas-weather_end_planting_day,end_planting_day,Day of the year for the end of the planting window,149,int,https://w3id.org/wings/export/MINT#CyclesEndPlantingDay,,5,,1,365,day,plantingWindows
-cycles-0.9.4-alpha-advanced-texas-weather_fertilizer_rate,fertilizer_rate,Mass of nitrogen fertilizer added each year (kg/ha),0,float,https://w3id.org/wings/export/MINT#CyclesFertilizerRate,,6,,0,1250,kg/ha,
-cycles-0.9.4-alpha-advanced-texas-weather_weed_fraction,weed_fraction,Areal fraction of weed ,0,float,https://w3id.org/wings/export/MINT#CyclesWeedFraction,,7,,0,1,%,weedControl
+cycles-0.9.4-alpha-advanced-texas_start_year,start_year,Year when the simulation started,1984,int,https://w3id.org/wings/export/MINT#CyclesStartYear,,1,cycles_start_year,,,year,
+cycles-0.9.4-alpha-advanced-texas_end_year,end_year,Year when the simulation ended,2018,int,https://w3id.org/wings/export/MINT#CyclesEndYear,,2,cycles_end_year,,,year,
+cycles-0.9.4-alpha-advanced-texas_crop_name,crop_name,Name of the crop to run the simulation for,Maize,string,https://w3id.org/wings/export/MINT#CyclesCropName,,3,cycles_crop_name,,,,
+cycles-0.9.4-alpha-advanced-texas_start_planting_day,start_planting_day,Day of the year for the start of the planting window,110,int,https://w3id.org/wings/export/MINT#CyclesStartPlantingDay,,4,cycles_doy,1,365,day,plantingWindows
+cycles-0.9.4-alpha-advanced-texas_end_planting_day,end_planting_day,Day of the year for the end of the planting window,149,int,https://w3id.org/wings/export/MINT#CyclesEndPlantingDay,,5,cycles_end_doy,1,365,day,plantingWindows
+cycles-0.9.4-alpha-advanced-texas_fertilizer_rate,fertilizer_rate,Mass of nitrogen fertilizer added each year (kg/ha),0,float,https://w3id.org/wings/export/MINT#CyclesFertilizerRate,,6,cycles_mass,0,1250,kg/ha,
+cycles-0.9.4-alpha-advanced-texas_weed_fraction,weed_fraction,Areal fraction of weed ,0,float,https://w3id.org/wings/export/MINT#CyclesWeedFraction,,7,cycles_fraction,0,1,%,weedControl
+cycles-0.9.4-alpha-advanced-texas_use_forcing,use_forcing,Use forcing data from a hydrology model (when available),FALSE,boolean,https://w3id.org/wings/export/MINT#CyclesUseForcing,FALSE,8,,,,,
+,,,,,,,,,,,,
+cycles-0.9.4-alpha-advanced-texas-weather_start_year,start_year,Year when the simulation started,1984,int,https://w3id.org/wings/export/MINT#CyclesStartYear,,1,cycles_start_year,,,year,
+cycles-0.9.4-alpha-advanced-texas-weather_end_year,end_year,Year when the simulation ended,2018,int,https://w3id.org/wings/export/MINT#CyclesEndYear,,2,cycles_end_year,,,year,
+cycles-0.9.4-alpha-advanced-texas-weather_crop_name,crop_name,Name of the crop to run the simulation for,Maize,string,https://w3id.org/wings/export/MINT#CyclesCropName,,3,cycles_crop_name,,,,
+cycles-0.9.4-alpha-advanced-texas-weather_start_planting_day,start_planting_day,Day of the year for the start of the planting window,110,int,https://w3id.org/wings/export/MINT#CyclesStartPlantingDay,,4,cycles_doy,1,365,day,plantingWindows
+cycles-0.9.4-alpha-advanced-texas-weather_end_planting_day,end_planting_day,Day of the year for the end of the planting window,149,int,https://w3id.org/wings/export/MINT#CyclesEndPlantingDay,,5,cycles_end_doy,1,365,day,plantingWindows
+cycles-0.9.4-alpha-advanced-texas-weather_fertilizer_rate,fertilizer_rate,Mass of nitrogen fertilizer added each year (kg/ha),0,float,https://w3id.org/wings/export/MINT#CyclesFertilizerRate,,6,cycles_mass,0,1250,kg/ha,
+cycles-0.9.4-alpha-advanced-texas-weather_weed_fraction,weed_fraction,Areal fraction of weed ,0,float,https://w3id.org/wings/export/MINT#CyclesWeedFraction,,7,cycles_fraction,0,1,%,weedControl
 cycles-0.9.4-alpha-advanced-texas-weather_use_forcing,use_forcing,Use forcing data from a hydrology model (when available),FALSE,boolean,https://w3id.org/wings/export/MINT#CyclesUseForcing,FALSE,8,,,,,
 ,,,,,,,,,,,,
 cycles_v2_prod_unique_id,unique_id,unique id of the execution,,string,https://w3id.org/wings/export/MINT#CyclesUniqueId,,1,,,,,
-cycles_v2_prod_crop_name,crop_name,crop name,,string,https://w3id.org/wings/export/MINT#CyclesCropName,,2,,,,,
+cycles_v2_prod_crop_name,crop_name,crop name,,string,https://w3id.org/wings/export/MINT#CyclesCropName,,2,cycles_crop_name,,,,
 ,,,,,,,,,,,,
 pihm_start-date,pihm_start-date,start date,1/1/2017,string,https://w3id.org/wings/export/MINT#StartDate,,1,,,,date,
 pihm_start-date_fixed,pihm_start-date,start date,1/1/2017,string,https://w3id.org/wings/export/MINT#StartDate,1/1/2017,1,,,,date,
