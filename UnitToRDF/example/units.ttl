@@ -1,16 +1,11 @@
 @prefix ccut: <https://www.w3id.org/mint/ccut#> .
-@prefix mint: <https://w3id.org/mint/instance/> .
+@prefix mint: <https://w3id.org/okn/i/mint/> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix qudtp: <http://qudt.org/1.1/schema/qudt#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix xml: <http://www.w3.org/XML/1998/namespace> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
-
-mint:C a qudtp:Unit ;
-    rdfs:label "C" ;
-    qudtp:abbreviation "C" ;
-    ccut:hasPart mint:u_coulomb_C .
 
 mint:Cs_Cx_1T a qudtp:Unit ;
     rdfs:label "Cs Cx-1" ;
@@ -41,20 +36,11 @@ mint:MJ_m_2_day_1M_T_3 a qudtp:Unit ;
         mint:u__1_T_day_day,
         mint:u__2_L_meter_m .
 
-mint:Mg_CM a qudtp:Unit ;
-    rdfs:label "Mg C" ;
-    qudtp:abbreviation "Mg C" ;
+mint:MgM a qudtp:Unit ;
+    rdfs:label "Mg" ;
+    qudtp:abbreviation "Mg" ;
     ccut:hasDimension "M" ;
-    ccut:hasPart mint:u_M_mega_gram_Mg,
-        mint:u_coulomb_C .
-
-mint:Mg_C_year_1M_T_1 a qudtp:Unit ;
-    rdfs:label "Mg C year-1" ;
-    qudtp:abbreviation "Mg C year-1" ;
-    ccut:hasDimension "M T-1" ;
-    ccut:hasPart mint:u_M_mega_gram_Mg,
-        mint:u__1_T_year365day_year,
-        mint:u_coulomb_C .
+    ccut:hasPart mint:u_M_mega_gram_Mg .
 
 mint:Mg_Mg_1 a qudtp:Unit ;
     rdfs:label "Mg Mg-1" ;
@@ -75,6 +61,13 @@ mint:Mg_m_3M_L_3 a qudtp:Unit ;
     ccut:hasDimension "L-3 M" ;
     ccut:hasPart mint:u_M_mega_gram_Mg,
         mint:u__3_L_meter_m .
+
+mint:Mg_year_1M_T_1 a qudtp:Unit ;
+    rdfs:label "Mg year-1" ;
+    qudtp:abbreviation "Mg year-1" ;
+    ccut:hasDimension "M T-1" ;
+    ccut:hasPart mint:u_M_mega_gram_Mg,
+        mint:u__1_T_year365day_year .
 
 mint:PaM_L_1_T_2 a qudtp:Unit ;
     rdfs:label "Pa" ;
@@ -157,34 +150,29 @@ mint:day_m_1L_1_T a qudtp:Unit ;
     ccut:hasPart mint:u_T_day_day,
         mint:u__1_L_meter_m .
 
-mint:decimal_degrees a qudtp:Unit ;
-    rdfs:label "decimal degrees" ;
-    qudtp:abbreviation "decimal degrees" ;
-    ccut:hasPart mint:u_decimal,
-        mint:u_degrees .
+mint:degCTe a qudtp:Unit ;
+    rdfs:label "degC" ;
+    qudtp:abbreviation "degC" ;
+    ccut:hasDimension "Te" ;
+    ccut:hasPart mint:u_Te_degreecelsius_degC .
 
-mint:deg_C a qudtp:Unit ;
-    rdfs:label "deg C" ;
-    qudtp:abbreviation "deg C" ;
-    ccut:hasPart mint:u_deg_C .
+mint:degC_day_1T_1_Te a qudtp:Unit ;
+    rdfs:label "degC day-1" ;
+    qudtp:abbreviation "degC day-1" ;
+    ccut:hasDimension "T-1 Te" ;
+    ccut:hasPart mint:u_Te_degreecelsius_degC,
+        mint:u__1_T_day_day .
 
-mint:deg_KTe_D a qudtp:Unit ;
-    rdfs:label "deg K" ;
-    qudtp:abbreviation "deg K" ;
-    ccut:hasDimension "D Te" ;
-    ccut:hasPart mint:u_D_degreeangle_deg,
-        mint:u_Te_kelvin_K .
+mint:degree a qudtp:Unit ;
+    rdfs:label "degree" ;
+    qudtp:abbreviation "degree" ;
+    ccut:hasPart mint:u_degree .
 
-mint:forage a qudtp:Unit ;
-    rdfs:label "forage" ;
-    qudtp:abbreviation "forage" ;
-    ccut:hasPart mint:u_forage .
-
-mint:g_100g_1 a qudtp:Unit ;
-    rdfs:label "g 100g-1" ;
-    qudtp:abbreviation "g 100g-1" ;
-    ccut:hasPart mint:u_M_gram_g,
-        mint:u__1_M_100_gram_g .
+mint:g99M99 a qudtp:Unit ;
+    rdfs:label "g99" ;
+    qudtp:abbreviation "g99" ;
+    ccut:hasDimension "M99" ;
+    ccut:hasPart mint:u_99_M_gram_g .
 
 mint:g_cm_3M_L_3 a qudtp:Unit ;
     rdfs:label "g cm-3" ;
@@ -199,16 +187,22 @@ mint:g_kg_1 a qudtp:Unit ;
     ccut:hasPart mint:u_M_gram_g,
         mint:u__1_M_kilo_gram_kg .
 
+mint:h a qudtp:Unit ;
+    rdfs:label "h" ;
+    qudtp:abbreviation "h" ;
+    ccut:hasPart mint:u_h .
+
 mint:haL2 a qudtp:Unit ;
     rdfs:label "ha" ;
     qudtp:abbreviation "ha" ;
     ccut:hasDimension "L2" ;
     ccut:hasPart mint:u_L2_hectare_ha .
 
-mint:kg0 a qudtp:Unit ;
-    rdfs:label "kg0" ;
-    qudtp:abbreviation "kg0" ;
-    ccut:hasPart mint:u_0_M_kilo_gram_kg .
+mint:hourT a qudtp:Unit ;
+    rdfs:label "hour" ;
+    qudtp:abbreviation "hour" ;
+    ccut:hasDimension "T" ;
+    ccut:hasPart mint:u_T_hour_hour .
 
 mint:kgM a qudtp:Unit ;
     rdfs:label "kg" ;
@@ -216,35 +210,18 @@ mint:kgM a qudtp:Unit ;
     ccut:hasDimension "M" ;
     ccut:hasPart mint:u_M_kilo_gram_kg .
 
-mint:kg_CM a qudtp:Unit ;
-    rdfs:label "kg C" ;
-    qudtp:abbreviation "kg C" ;
-    ccut:hasDimension "M" ;
-    ccut:hasPart mint:u_M_kilo_gram_kg,
-        mint:u_coulomb_C .
-
-mint:kg_N_ha_1M2_L_1_T_2 a qudtp:Unit ;
-    rdfs:label "kg N ha-1" ;
-    qudtp:abbreviation "kg N ha-1" ;
-    ccut:hasDimension "L-1 M2 T-2" ;
-    ccut:hasPart mint:u_M_L_T_2_newton_N,
-        mint:u_M_kilo_gram_kg,
-        mint:u__1_L2_hectare_ha .
-
-mint:kg_N_yr_1M2_L_T_3 a qudtp:Unit ;
-    rdfs:label "kg N yr-1" ;
-    qudtp:abbreviation "kg N yr-1" ;
-    ccut:hasDimension "L M2 T-3" ;
-    ccut:hasPart mint:u_M_L_T_2_newton_N,
-        mint:u_M_kilo_gram_kg,
-        mint:u__1_T_yearsidereal_yr .
-
 mint:kg_ha_1M_L_2 a qudtp:Unit ;
     rdfs:label "kg ha-1" ;
     qudtp:abbreviation "kg ha-1" ;
     ccut:hasDimension "L-2 M" ;
     ccut:hasPart mint:u_M_kilo_gram_kg,
         mint:u__1_L2_hectare_ha .
+
+mint:kg_kg_1 a qudtp:Unit ;
+    rdfs:label "kg kg-1" ;
+    qudtp:abbreviation "kg kg-1" ;
+    ccut:hasPart mint:u_M_kilo_gram_kg,
+        mint:u__1_M_kilo_gram_kg .
 
 mint:kg_kg_1_x_100 a qudtp:Unit ;
     rdfs:label "kg kg-1 x-100" ;
@@ -261,16 +238,42 @@ mint:kg_m_2_s_1M_L_2_T_1 a qudtp:Unit ;
         mint:u__1_T_secondtime_s,
         mint:u__2_L_meter_m .
 
+mint:kg_yr_1M_T_1 a qudtp:Unit ;
+    rdfs:label "kg yr-1" ;
+    qudtp:abbreviation "kg yr-1" ;
+    ccut:hasDimension "M T-1" ;
+    ccut:hasPart mint:u_M_kilo_gram_kg,
+        mint:u__1_T_year365day_yr .
+
 mint:m0 a qudtp:Unit ;
     rdfs:label "m0" ;
     qudtp:abbreviation "m0" ;
     ccut:hasPart mint:u_0_L_meter_m .
+
+mint:m2L2 a qudtp:Unit ;
+    rdfs:label "m2" ;
+    qudtp:abbreviation "m2" ;
+    ccut:hasDimension "L2" ;
+    ccut:hasPart mint:u_2_L_meter_m .
+
+mint:m2_h_1L2 a qudtp:Unit ;
+    rdfs:label "m2 h-1" ;
+    qudtp:abbreviation "m2 h-1" ;
+    ccut:hasDimension "L2" ;
+    ccut:hasPart mint:u_2_L_meter_m,
+        mint:u__1_h .
 
 mint:m2_m_2 a qudtp:Unit ;
     rdfs:label "m2 m-2" ;
     qudtp:abbreviation "m2 m-2" ;
     ccut:hasPart mint:u_2_L_meter_m,
         mint:u__2_L_meter_m .
+
+mint:m3L3 a qudtp:Unit ;
+    rdfs:label "m3" ;
+    qudtp:abbreviation "m3" ;
+    ccut:hasDimension "L3" ;
+    ccut:hasPart mint:u_3_L_meter_m .
 
 mint:m3_day_1L3_T_1 a qudtp:Unit ;
     rdfs:label "m3 day-1" ;
@@ -291,6 +294,18 @@ mint:mL a qudtp:Unit ;
     ccut:hasDimension "L" ;
     ccut:hasPart mint:u_L_meter_m .
 
+mint:m_1L_1 a qudtp:Unit ;
+    rdfs:label "m-1" ;
+    qudtp:abbreviation "m-1" ;
+    ccut:hasDimension "L-1" ;
+    ccut:hasPart mint:u__1_L_meter_m .
+
+mint:m_2L_2 a qudtp:Unit ;
+    rdfs:label "m-2" ;
+    qudtp:abbreviation "m-2" ;
+    ccut:hasDimension "L-2" ;
+    ccut:hasPart mint:u__2_L_meter_m .
+
 mint:m_d_1L_T_1 a qudtp:Unit ;
     rdfs:label "m d-1" ;
     qudtp:abbreviation "m d-1" ;
@@ -305,6 +320,13 @@ mint:m_day_1L_T_1 a qudtp:Unit ;
     ccut:hasPart mint:u_L_meter_m,
         mint:u__1_T_day_day .
 
+mint:m_h_1L a qudtp:Unit ;
+    rdfs:label "m h-1" ;
+    qudtp:abbreviation "m h-1" ;
+    ccut:hasDimension "L" ;
+    ccut:hasPart mint:u_L_meter_m,
+        mint:u__1_h .
+
 mint:m_m_1 a qudtp:Unit ;
     rdfs:label "m m-1" ;
     qudtp:abbreviation "m m-1" ;
@@ -317,6 +339,12 @@ mint:m_s_1L_T_1 a qudtp:Unit ;
     ccut:hasDimension "L T-1" ;
     ccut:hasPart mint:u_L_meter_m,
         mint:u__1_T_secondtime_s .
+
+mint:minT a qudtp:Unit ;
+    rdfs:label "min" ;
+    qudtp:abbreviation "min" ;
+    ccut:hasDimension "T" ;
+    ccut:hasPart mint:u_T_minutetime_min .
 
 mint:mmL a qudtp:Unit ;
     rdfs:label "mm" ;
@@ -338,24 +366,30 @@ mint:mm_h_1L a qudtp:Unit ;
     ccut:hasPart mint:u_L_milli_meter_mm,
         mint:u__1_h .
 
-mint:number_m_2L_2 a qudtp:Unit ;
-    rdfs:label "number m-2" ;
-    qudtp:abbreviation "number m-2" ;
-    ccut:hasDimension "L-2" ;
-    ccut:hasPart mint:u__2_L_meter_m,
-        mint:u_number .
-
-mint:percent a qudtp:Unit ;
-    rdfs:label "percent" ;
-    qudtp:abbreviation "percent" ;
-    ccut:hasPart mint:u_percent .
+mint:month a qudtp:Unit ;
+    rdfs:label "month" ;
+    qudtp:abbreviation "month" ;
+    ccut:hasPart mint:u_month .
 
 mint:ppm a qudtp:Unit ;
     rdfs:label "ppm" ;
     qudtp:abbreviation "ppm" ;
     ccut:hasPart mint:u_ppm .
 
-mint:u_cord_C qudtp:quantityKind <http://www.wikidata.org/entity/Q25406> .
+mint:u_0_L_centi_meter_cm qudtp:quantityKind <http://www.wikidata.org/entity/Q174728> .
+
+mint:u_0_M_L_1_T_2_pascal_Pa qudtp:quantityKind <http://www.wikidata.org/entity/Q44395> .
+
+mint:u_0_M_kilo_gram_kg qudtp:quantityKind <http://www.wikidata.org/entity/Q11570> .
+
+mint:u_0_M_mega_gram_Mg qudtp:quantityKind <http://www.wikidata.org/entity/Q11776930> .
+
+mint:u__1_M_100_gram_g qudtp:quantityKind <http://www.wikidata.org/entity/Q41803> .
+
+mint:variable a qudtp:Unit ;
+    rdfs:label "variable" ;
+    qudtp:abbreviation "variable" ;
+    ccut:hasPart mint:u_variable .
 
 mint:yearT a qudtp:Unit ;
     rdfs:label "year" ;
@@ -372,46 +406,24 @@ mint:u_0_L_meter_m rdfs:label "m^0" ;
     ccut:exponent "0" ;
     ccut:hasDimension "L" .
 
-mint:u_0_M_kilo_gram_kg rdfs:label "kg^0" ;
-    qudtp:conversionMultiplier "0.001" ;
-    qudtp:conversionOffset "0.0" ;
-    qudtp:quantityKind <http://www.qudt.org/qudt/owl/1.0.0/unit/Instances.html#Gram> ;
-    qudtp:symbol "kg" ;
-    ccut:exponent "0" ;
-    ccut:hasDimension "M" ;
-    ccut:prefix <http://www.qudt.org/qudt/owl/1.0.0/unit/Instances.html#Kilo> ;
-    ccut:prefixConversionMultiplier "1000.0" ;
-    ccut:prefixConversionOffset "0.0" .
-
-mint:u_2_L_meter_m rdfs:label "m^2" ;
-    qudtp:conversionMultiplier "1.0" ;
-    qudtp:conversionOffset "0.0" ;
-    qudtp:quantityKind <http://www.qudt.org/qudt/owl/1.0.0/unit/Instances.html#Meter>,
-        <http://www.wikidata.org/entity/Q11573> ;
-    qudtp:symbol "m" ;
-    owl:sameAs <http://www.wikidata.org/entity/Q25343> ;
-    ccut:exponent "2" ;
-    ccut:hasDimension "L" .
-
 mint:u_3_L_centi_meter_cm rdfs:label "cm^3" ;
     qudtp:conversionMultiplier "1.0" ;
     qudtp:conversionOffset "0.0" ;
-    qudtp:quantityKind <http://www.qudt.org/qudt/owl/1.0.0/unit/Instances.html#Meter>,
-        <http://www.wikidata.org/entity/Q174728> ;
+    qudtp:quantityKind <http://www.qudt.org/qudt/owl/1.0.0/unit/Instances.html#Meter> ;
     qudtp:symbol "cm" ;
-    owl:sameAs <http://www.wikidata.org/entity/Q1022113> ;
     ccut:exponent "3" ;
     ccut:hasDimension "L" ;
     ccut:prefix <http://www.qudt.org/qudt/owl/1.0.0/unit/Instances.html#Centi> ;
     ccut:prefixConversionMultiplier "0.01" ;
     ccut:prefixConversionOffset "0.0" .
 
-mint:u_D_degreeangle_deg rdfs:label "deg" ;
-    qudtp:conversionMultiplier "0.0174532925" ;
+mint:u_99_M_gram_g rdfs:label "g^99" ;
+    qudtp:conversionMultiplier "0.001" ;
     qudtp:conversionOffset "0.0" ;
-    qudtp:quantityKind <http://www.qudt.org/qudt/owl/1.0.0/unit/Instances.html#DegreeAngle> ;
-    qudtp:symbol "deg" ;
-    ccut:hasDimension "D" .
+    qudtp:quantityKind <http://www.qudt.org/qudt/owl/1.0.0/unit/Instances.html#Gram> ;
+    qudtp:symbol "g" ;
+    ccut:exponent "99" ;
+    ccut:hasDimension "M" .
 
 mint:u_L2_hectare_ha rdfs:label "ha" ;
     qudtp:conversionMultiplier "10000.0" ;
@@ -439,12 +451,35 @@ mint:u_T_centi_secondtime_Cs rdfs:label "Cs" ;
     ccut:prefixConversionMultiplier "0.01" ;
     ccut:prefixConversionOffset "0.0" .
 
+mint:u_T_hour_hour rdfs:label "hour" ;
+    qudtp:conversionMultiplier "3600.0" ;
+    qudtp:conversionOffset "0.0" ;
+    qudtp:quantityKind <http://www.qudt.org/qudt/owl/1.0.0/unit/Instances.html#Hour> ;
+    qudtp:symbol "hour" ;
+    ccut:hasDimension "T" .
+
+mint:u_T_minutetime_min rdfs:label "min" ;
+    qudtp:conversionMultiplier "60.0" ;
+    qudtp:conversionOffset "0.0" ;
+    qudtp:quantityKind <http://www.qudt.org/qudt/owl/1.0.0/unit/Instances.html#MinuteTime>,
+        <http://www.wikidata.org/entity/Q7727> ;
+    qudtp:symbol "min" ;
+    ccut:hasDimension "T" .
+
 mint:u_T_year365day_year rdfs:label "year" ;
     qudtp:conversionMultiplier "31536000.0" ;
     qudtp:conversionOffset "0.0" ;
     qudtp:quantityKind <http://www.qudt.org/qudt/owl/1.0.0/unit/Instances.html#Year365Day> ;
     qudtp:symbol "year" ;
     ccut:hasDimension "T" .
+
+mint:u_Te_kelvin_K rdfs:label "K" ;
+    qudtp:conversionMultiplier "1.0" ;
+    qudtp:conversionOffset "0.0" ;
+    qudtp:quantityKind <http://www.qudt.org/qudt/owl/1.0.0/unit/Instances.html#Kelvin>,
+        <http://www.wikidata.org/entity/Q11579> ;
+    qudtp:symbol "K" ;
+    ccut:hasDimension "Te" .
 
 mint:u_YYYY rdfs:label "YYYY" ;
     qudtp:conversionMultiplier "None" ;
@@ -457,21 +492,10 @@ mint:u__1_Cx rdfs:label "Cx^-1" ;
     qudtp:symbol "Cx" ;
     ccut:exponent "-1" .
 
-mint:u__1_M_100_gram_g rdfs:label "g^-1" ;
-    qudtp:conversionMultiplier "0.001" ;
-    qudtp:conversionOffset "0.0" ;
-    qudtp:quantityKind <http://www.qudt.org/qudt/owl/1.0.0/unit/Instances.html#Gram>,
-        <http://www.wikidata.org/entity/Q41803> ;
-    qudtp:symbol "g" ;
-    ccut:exponent "-1" ;
-    ccut:hasDimension "M" ;
-    ccut:multiplier "100" .
-
 mint:u__1_M_L_1_T_2_pascal_Pa rdfs:label "Pa^-1" ;
     qudtp:conversionMultiplier "1.0" ;
     qudtp:conversionOffset "0.0" ;
-    qudtp:quantityKind <http://www.qudt.org/qudt/owl/1.0.0/unit/Instances.html#Pascal>,
-        <http://www.wikidata.org/entity/Q44395> ;
+    qudtp:quantityKind <http://www.qudt.org/qudt/owl/1.0.0/unit/Instances.html#Pascal> ;
     qudtp:symbol "Pa" ;
     ccut:exponent "-1" ;
     ccut:hasDimension "M L-1 T-2" .
@@ -479,8 +503,7 @@ mint:u__1_M_L_1_T_2_pascal_Pa rdfs:label "Pa^-1" ;
 mint:u__1_M_mega_gram_Mg rdfs:label "Mg^-1" ;
     qudtp:conversionMultiplier "0.001" ;
     qudtp:conversionOffset "0.0" ;
-    qudtp:quantityKind <http://www.qudt.org/qudt/owl/1.0.0/unit/Instances.html#Gram>,
-        <http://www.wikidata.org/entity/Q11776930> ;
+    qudtp:quantityKind <http://www.qudt.org/qudt/owl/1.0.0/unit/Instances.html#Gram> ;
     qudtp:symbol "Mg" ;
     ccut:exponent "-1" ;
     ccut:hasDimension "M" ;
@@ -496,10 +519,10 @@ mint:u__1_T_year365day_year rdfs:label "year^-1" ;
     ccut:exponent "-1" ;
     ccut:hasDimension "T" .
 
-mint:u__1_T_yearsidereal_yr rdfs:label "yr^-1" ;
-    qudtp:conversionMultiplier "31558149.7632" ;
+mint:u__1_T_year365day_yr rdfs:label "yr^-1" ;
+    qudtp:conversionMultiplier "31536000.0" ;
     qudtp:conversionOffset "0.0" ;
-    qudtp:quantityKind <http://www.qudt.org/qudt/owl/1.0.0/unit/Instances.html#YearSidereal> ;
+    qudtp:quantityKind <http://www.qudt.org/qudt/owl/1.0.0/unit/Instances.html#Year365Day> ;
     qudtp:symbol "yr" ;
     ccut:exponent "-1" ;
     ccut:hasDimension "T" .
@@ -514,35 +537,21 @@ mint:u_date rdfs:label "date" ;
     qudtp:conversionOffset "None" ;
     qudtp:symbol "date" .
 
-mint:u_decimal rdfs:label "decimal" ;
+mint:u_degree rdfs:label "degree" ;
     qudtp:conversionMultiplier "None" ;
     qudtp:conversionOffset "None" ;
-    qudtp:symbol "decimal" .
+    qudtp:symbol "degree" .
 
-mint:u_deg_C rdfs:label "deg C" ;
+mint:u_h rdfs:label "h" ;
     qudtp:conversionMultiplier "None" ;
     qudtp:conversionOffset "None" ;
-    qudtp:symbol "deg C" .
+    qudtp:quantityKind <http://www.wikidata.org/entity/Q25235> ;
+    qudtp:symbol "h" .
 
-mint:u_degrees rdfs:label "degrees" ;
+mint:u_month rdfs:label "month" ;
     qudtp:conversionMultiplier "None" ;
     qudtp:conversionOffset "None" ;
-    qudtp:symbol "degrees" .
-
-mint:u_forage rdfs:label "forage" ;
-    qudtp:conversionMultiplier "None" ;
-    qudtp:conversionOffset "None" ;
-    qudtp:symbol "forage" .
-
-mint:u_number rdfs:label "number" ;
-    qudtp:conversionMultiplier "None" ;
-    qudtp:conversionOffset "None" ;
-    qudtp:symbol "number" .
-
-mint:u_percent rdfs:label "percent" ;
-    qudtp:conversionMultiplier "None" ;
-    qudtp:conversionOffset "None" ;
-    qudtp:symbol "percent" .
+    qudtp:symbol "month" .
 
 mint:u_ppm rdfs:label "ppm" ;
     qudtp:conversionMultiplier "None" ;
@@ -550,15 +559,10 @@ mint:u_ppm rdfs:label "ppm" ;
     qudtp:quantityKind <http://www.wikidata.org/entity/Q21006887> ;
     qudtp:symbol "ppm" .
 
-mint:u_3_L_meter_m rdfs:label "m^3" ;
-    qudtp:conversionMultiplier "1.0" ;
-    qudtp:conversionOffset "0.0" ;
-    qudtp:quantityKind <http://www.qudt.org/qudt/owl/1.0.0/unit/Instances.html#Meter>,
-        <http://www.wikidata.org/entity/Q11573> ;
-    qudtp:symbol "m" ;
-    owl:sameAs <http://www.wikidata.org/entity/Q25517> ;
-    ccut:exponent "3" ;
-    ccut:hasDimension "L" .
+mint:u_variable rdfs:label "variable" ;
+    qudtp:conversionMultiplier "None" ;
+    qudtp:conversionOffset "None" ;
+    qudtp:symbol "variable" .
 
 mint:u_L_centi_meter_cm rdfs:label "cm" ;
     qudtp:conversionMultiplier "1.0" ;
@@ -590,13 +594,13 @@ mint:u_M_L_1_T_2_pascal_Pa rdfs:label "Pa" ;
     qudtp:symbol "Pa" ;
     ccut:hasDimension "M L-1 T-2" .
 
-mint:u_M_L_T_2_newton_N rdfs:label "N" ;
-    qudtp:conversionMultiplier "1.0" ;
+mint:u_M_gram_g rdfs:label "g" ;
+    qudtp:conversionMultiplier "0.001" ;
     qudtp:conversionOffset "0.0" ;
-    qudtp:quantityKind <http://www.qudt.org/qudt/owl/1.0.0/unit/Instances.html#Newton>,
-        <http://www.wikidata.org/entity/Q12438> ;
-    qudtp:symbol "N" ;
-    ccut:hasDimension "M L T-2" .
+    qudtp:quantityKind <http://www.qudt.org/qudt/owl/1.0.0/unit/Instances.html#Gram>,
+        <http://www.wikidata.org/entity/Q41803> ;
+    qudtp:symbol "g" ;
+    ccut:hasDimension "M" .
 
 mint:u_T_day_day rdfs:label "day" ;
     qudtp:conversionMultiplier "86400.0" ;
@@ -605,12 +609,11 @@ mint:u_T_day_day rdfs:label "day" ;
     qudtp:symbol "day" ;
     ccut:hasDimension "T" .
 
-mint:u_Te_kelvin_K rdfs:label "K" ;
+mint:u_Te_degreecelsius_degC rdfs:label "degC" ;
     qudtp:conversionMultiplier "1.0" ;
-    qudtp:conversionOffset "0.0" ;
-    qudtp:quantityKind <http://www.qudt.org/qudt/owl/1.0.0/unit/Instances.html#Kelvin>,
-        <http://www.wikidata.org/entity/Q11579> ;
-    qudtp:symbol "K" ;
+    qudtp:conversionOffset "273.15" ;
+    qudtp:quantityKind <http://www.qudt.org/qudt/owl/1.0.0/unit/Instances.html#DegreeCelsius> ;
+    qudtp:symbol "degC" ;
     ccut:hasDimension "Te" .
 
 mint:u_USD rdfs:label "USD" ;
@@ -623,16 +626,6 @@ mint:u__100_x rdfs:label "x^-100" ;
     qudtp:conversionOffset "None" ;
     qudtp:symbol "x" ;
     ccut:exponent "-100" .
-
-mint:u__1_L_meter_m rdfs:label "m^-1" ;
-    qudtp:conversionMultiplier "1.0" ;
-    qudtp:conversionOffset "0.0" ;
-    qudtp:quantityKind <http://www.qudt.org/qudt/owl/1.0.0/unit/Instances.html#Meter>,
-        <http://www.wikidata.org/entity/Q11573> ;
-    qudtp:symbol "m" ;
-    owl:sameAs <http://www.wikidata.org/entity/Q11547251> ;
-    ccut:exponent "-1" ;
-    ccut:hasDimension "L" .
 
 mint:u__1_T_day_d rdfs:label "d^-1" ;
     qudtp:conversionMultiplier "86400.0" ;
@@ -652,13 +645,6 @@ mint:u__1_T_secondtime_s rdfs:label "s^-1" ;
     owl:sameAs <http://www.wikidata.org/entity/Q6137407> ;
     ccut:exponent "-1" ;
     ccut:hasDimension "T" .
-
-mint:u__1_h rdfs:label "h^-1" ;
-    qudtp:conversionMultiplier "None" ;
-    qudtp:conversionOffset "None" ;
-    qudtp:quantityKind <http://www.wikidata.org/entity/Q25235> ;
-    qudtp:symbol "h" ;
-    ccut:exponent "-1" .
 
 mint:u__3_L_centi_meter_cm rdfs:label "cm^-3" ;
     qudtp:conversionMultiplier "1.0" ;
@@ -682,6 +668,26 @@ mint:u__3_L_meter_m rdfs:label "m^-3" ;
     ccut:exponent "-3" ;
     ccut:hasDimension "L" .
 
+mint:u_2_L_meter_m rdfs:label "m^2" ;
+    qudtp:conversionMultiplier "1.0" ;
+    qudtp:conversionOffset "0.0" ;
+    qudtp:quantityKind <http://www.qudt.org/qudt/owl/1.0.0/unit/Instances.html#Meter>,
+        <http://www.wikidata.org/entity/Q11573> ;
+    qudtp:symbol "m" ;
+    owl:sameAs <http://www.wikidata.org/entity/Q25343> ;
+    ccut:exponent "2" ;
+    ccut:hasDimension "L" .
+
+mint:u_3_L_meter_m rdfs:label "m^3" ;
+    qudtp:conversionMultiplier "1.0" ;
+    qudtp:conversionOffset "0.0" ;
+    qudtp:quantityKind <http://www.qudt.org/qudt/owl/1.0.0/unit/Instances.html#Meter>,
+        <http://www.wikidata.org/entity/Q11573> ;
+    qudtp:symbol "m" ;
+    owl:sameAs <http://www.wikidata.org/entity/Q25517> ;
+    ccut:exponent "3" ;
+    ccut:hasDimension "L" .
+
 mint:u_L_milli_meter_mm rdfs:label "mm" ;
     qudtp:conversionMultiplier "1.0" ;
     qudtp:conversionOffset "0.0" ;
@@ -693,13 +699,24 @@ mint:u_L_milli_meter_mm rdfs:label "mm" ;
     ccut:prefixConversionMultiplier "0.001" ;
     ccut:prefixConversionOffset "0.0" .
 
-mint:u_M_gram_g rdfs:label "g" ;
-    qudtp:conversionMultiplier "0.001" ;
+mint:u__1_L2_hectare_ha rdfs:label "ha^-1" ;
+    qudtp:conversionMultiplier "10000.0" ;
     qudtp:conversionOffset "0.0" ;
-    qudtp:quantityKind <http://www.qudt.org/qudt/owl/1.0.0/unit/Instances.html#Gram>,
-        <http://www.wikidata.org/entity/Q41803> ;
-    qudtp:symbol "g" ;
-    ccut:hasDimension "M" .
+    qudtp:quantityKind <http://www.qudt.org/qudt/owl/1.0.0/unit/Instances.html#Hectare>,
+        <http://www.wikidata.org/entity/Q35852> ;
+    qudtp:symbol "ha" ;
+    ccut:exponent "-1" ;
+    ccut:hasDimension "L2" .
+
+mint:u__1_L_meter_m rdfs:label "m^-1" ;
+    qudtp:conversionMultiplier "1.0" ;
+    qudtp:conversionOffset "0.0" ;
+    qudtp:quantityKind <http://www.qudt.org/qudt/owl/1.0.0/unit/Instances.html#Meter>,
+        <http://www.wikidata.org/entity/Q11573> ;
+    qudtp:symbol "m" ;
+    owl:sameAs <http://www.wikidata.org/entity/Q11547251> ;
+    ccut:exponent "-1" ;
+    ccut:hasDimension "L" .
 
 mint:u__1_M_kilo_gram_kg rdfs:label "kg^-1" ;
     qudtp:conversionMultiplier "0.001" ;
@@ -713,37 +730,12 @@ mint:u__1_M_kilo_gram_kg rdfs:label "kg^-1" ;
     ccut:prefixConversionMultiplier "1000.0" ;
     ccut:prefixConversionOffset "0.0" .
 
-mint:u__1_L2_hectare_ha rdfs:label "ha^-1" ;
-    qudtp:conversionMultiplier "10000.0" ;
-    qudtp:conversionOffset "0.0" ;
-    qudtp:quantityKind <http://www.qudt.org/qudt/owl/1.0.0/unit/Instances.html#Hectare>,
-        <http://www.wikidata.org/entity/Q35852> ;
-    qudtp:symbol "ha" ;
-    ccut:exponent "-1" ;
-    ccut:hasDimension "L2" .
-
-mint:u__1_T_day_day rdfs:label "day^-1" ;
-    qudtp:conversionMultiplier "86400.0" ;
-    qudtp:conversionOffset "0.0" ;
-    qudtp:quantityKind <http://www.qudt.org/qudt/owl/1.0.0/unit/Instances.html#Day> ;
-    qudtp:symbol "day" ;
-    ccut:exponent "-1" ;
-    ccut:hasDimension "T" .
-
-mint:u_coulomb_C rdfs:label "C" ;
-    qudtp:conversionMultiplier "1.0" ;
-    qudtp:conversionOffset "0.0" ;
-    qudtp:quantityKind <http://www.qudt.org/qudt/owl/1.0.0/unit/Instances.html#Coulomb> ;
-    qudtp:symbol "C" ;
-    ccut:hasDimension "DIMENSION NOT IN MAPPING" .
-
-mint:u_L_meter_m rdfs:label "m" ;
-    qudtp:conversionMultiplier "1.0" ;
-    qudtp:conversionOffset "0.0" ;
-    qudtp:quantityKind <http://www.qudt.org/qudt/owl/1.0.0/unit/Instances.html#Meter>,
-        <http://www.wikidata.org/entity/Q11573> ;
-    qudtp:symbol "m" ;
-    ccut:hasDimension "L" .
+mint:u__1_h rdfs:label "h^-1" ;
+    qudtp:conversionMultiplier "None" ;
+    qudtp:conversionOffset "None" ;
+    qudtp:quantityKind <http://www.wikidata.org/entity/Q25235> ;
+    qudtp:symbol "h" ;
+    ccut:exponent "-1" .
 
 mint:u_M_mega_gram_Mg rdfs:label "Mg" ;
     qudtp:conversionMultiplier "0.001" ;
@@ -756,13 +748,20 @@ mint:u_M_mega_gram_Mg rdfs:label "Mg" ;
     ccut:prefixConversionMultiplier "1000000.0" ;
     ccut:prefixConversionOffset "0.0" .
 
-mint:u__2_L_meter_m rdfs:label "m^-2" ;
+mint:u__1_T_day_day rdfs:label "day^-1" ;
+    qudtp:conversionMultiplier "86400.0" ;
+    qudtp:conversionOffset "0.0" ;
+    qudtp:quantityKind <http://www.qudt.org/qudt/owl/1.0.0/unit/Instances.html#Day> ;
+    qudtp:symbol "day" ;
+    ccut:exponent "-1" ;
+    ccut:hasDimension "T" .
+
+mint:u_L_meter_m rdfs:label "m" ;
     qudtp:conversionMultiplier "1.0" ;
     qudtp:conversionOffset "0.0" ;
     qudtp:quantityKind <http://www.qudt.org/qudt/owl/1.0.0/unit/Instances.html#Meter>,
         <http://www.wikidata.org/entity/Q11573> ;
     qudtp:symbol "m" ;
-    ccut:exponent "-2" ;
     ccut:hasDimension "L" .
 
 mint:u_M_kilo_gram_kg rdfs:label "kg" ;
@@ -775,4 +774,13 @@ mint:u_M_kilo_gram_kg rdfs:label "kg" ;
     ccut:prefix <http://www.qudt.org/qudt/owl/1.0.0/unit/Instances.html#Kilo> ;
     ccut:prefixConversionMultiplier "1000.0" ;
     ccut:prefixConversionOffset "0.0" .
+
+mint:u__2_L_meter_m rdfs:label "m^-2" ;
+    qudtp:conversionMultiplier "1.0" ;
+    qudtp:conversionOffset "0.0" ;
+    qudtp:quantityKind <http://www.qudt.org/qudt/owl/1.0.0/unit/Instances.html#Meter>,
+        <http://www.wikidata.org/entity/Q11573> ;
+    qudtp:symbol "m" ;
+    ccut:exponent "-2" ;
+    ccut:hasDimension "L" .
 

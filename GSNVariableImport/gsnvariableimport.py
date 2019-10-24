@@ -5,6 +5,9 @@ from SPARQLWrapper import SPARQLWrapper, JSON
 import rdflib
 import re
 import sys
+import urllib.request
+import urllib.parse
+from time import sleep
 
 
 def create_turtle_file(store):
@@ -19,8 +22,8 @@ def create_error_file(error_dict):
 
 
 if __name__ == '__main__':
-    endpoint = "http://ontosoft.isi.edu:3030/modelCatalog-1.0.0/query"
-    graph="http://ontosoft.isi.edu:3030/modelCatalog-1.0.0/data/mint"
+    endpoint = "http://ontosoft.isi.edu:3030/modelCatalog-1.1.0/query"
+    graph="http://ontosoft.isi.edu:3030/modelCatalog-1.1.0/data/mint@isi.edu"
     mode = sys.argv[1]
     print("Mode "+mode+ " enabled")
     store = Graph()
@@ -36,13 +39,17 @@ if __name__ == '__main__':
     owl = Namespace(owl)
     sparql = SPARQLWrapper(endpoint)
     sparql.setQuery("""
-    PREFIX mc: <https://w3id.org/okn/o/sd#>
+    PREFIX sd: <https://w3id.org/okn/o/sd#>
+    PREFIX sdm: <https://w3id.org/okn/o/sdm#>
     PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
 
     SELECT distinct ?u 
     from <"""+graph+""">  
     where {
-        ?a mc:hasStandardVariable ?un. ?un rdfs:label ?u
+        {?a sdm:usefulForCalculatingIndex ?un}
+        UNION
+        {?a sd:hasStandardVariable ?un.} 
+        ?un rdfs:label ?u
     }
     """)
 
@@ -50,7 +57,9 @@ if __name__ == '__main__':
     results = sparql.query().convert()
     for result in results["results"]["bindings"]:
         standard_variable = result["u"]["value"]
-
+        
+        #
+        
         sparql = SPARQLWrapper("http://35.194.43.13:3030/ds/query")
         sparql.setQuery("""
             prefix skos: <http://www.w3.org/2004/02/skos/core#>
@@ -89,9 +98,9 @@ if __name__ == '__main__':
 
                 if predicate.endswith("hasRecordedProperty"):
                     property_object_list.append(object)
-                # print(subject)
-                # print predicate
-                # print object
+                #print(subject)
+                #print predicate
+                #print object
                 # store.add((URIRef(subject), URIRef(predicate), Literal(object)))
                 if not predicate.endswith("subLabel"):
                     if result["u"]["type"] == "uri":
@@ -102,6 +111,20 @@ if __name__ == '__main__':
                             else:
                                 store.add((URIRef(result["u"]["value"]), URIRef(result["b"]["value"]),
                                            Literal(result["c"]["value"])))
+                                if "prefLabel" in URIRef(result["b"]["value"]):
+                                    #should add to dictionary to do request only once
+                                    #label = urllib.parse.quote('atmosphere_water__precipitation_leq_volume_flux')
+                                    label = urllib.parse.quote(URIRef(result["c"]["value"]))
+                                    print('getting description for '+label)
+                                    contents = urllib.request.urlopen('http://34.73.227.230:8000/get_doc/'+label+'/').read()
+                                    if "invalid input" not in str(contents):
+                                        y = json.loads(contents)
+                                        finalContents = y["results"].replace('\n','')
+                                        #print(finalContents)
+                                        if len(finalContents)>1:
+                                            store.add((URIRef(result["u"]["value"]), URIRef('https://schema.org/description'),
+                                               Literal(finalContents)))
+                                           
     for property_object in property_object_list:
         sparql_query = """
         select  ?b ?c
@@ -144,35 +167,38 @@ if __name__ == '__main__':
                     if property_result["c"]["type"] == "uri":
                         store.add((URIRef(subject), URIRef(predicate),
                                    URIRef(obj)))
-                    else:
+                    else:    
                         store.add((URIRef(subject), URIRef(predicate),
                                    Literal(obj)))
-    # print wiki_data_dict
-    wiki_variable_list = wiki_data_dict.keys()
-    # print wiki_variable_list
-    sparql = SPARQLWrapper("https://query.wikidata.org/sparql")
-    for wiki_var in wiki_variable_list:
-        sparql_query = """
-        select ?a ?c where {?a rdfs:label \"""" + wiki_var +"""\"@en.
-                            ?a schema:description ?c.
-                           FILTER (lang(?c) = 'en')}
-        """
-
-        sparql.setQuery(sparql_query)
-        sparql.setReturnFormat(JSON)
-        results2 = sparql.query().convert()
-        number_of_options = len(results2["results"]["bindings"])
-
-        if number_of_options == 0:
-            continue
-
-        if number_of_options == 1:
-            for res in results2["results"]["bindings"]:
-                value = res['c']['value']
-                subject = res['a']['value']
-                store.add((URIRef(wiki_data_dict[wiki_var]), owl.sameAs, URIRef(subject)))
-                store.add((URIRef(wiki_data_dict[wiki_var]), URIRef("https://schema.org/description"), Literal(value)))
-
+    ##commented out due to "too many requests issues"
+    ### print wiki_data_dict
+    ##wiki_variable_list = wiki_data_dict.keys()
+    ### print wiki_variable_list
+    ##sparql = SPARQLWrapper("https://query.wikidata.org/sparql")
+    ##for wiki_var in wiki_variable_list:
+    ##    #delay between requests.
+    ##    sleep(1)
+    ##    sparql_query = """
+    ##    select ?a ?c where {?a rdfs:label \"""" + wiki_var +"""\"@en.
+    ##                        ?a schema:description ?c.
+    ##                       FILTER (lang(?c) = 'en')}
+    ##    """
+##
+##       sparql.setQuery(sparql_query)
+##        sparql.setReturnFormat(JSON)
+##        results2 = sparql.query().convert()
+##        number_of_options = len(results2["results"]["bindings"])
+##
+##        if number_of_options == 0:
+##            continue
+##
+##        if number_of_options == 1:
+##            for res in results2["results"]["bindings"]:
+##                value = res['c']['value']
+##                subject = res['a']['value']
+##                store.add((URIRef(wiki_data_dict[wiki_var]), owl.sameAs, URIRef(subject)))
+##                store.add((URIRef(wiki_data_dict[wiki_var]), URIRef("https://schema.org/description"), Literal(value)))
+##
         if mode == 'i':
             if number_of_options > 1:
                 serial_number = 1
