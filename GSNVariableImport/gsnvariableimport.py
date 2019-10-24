@@ -116,14 +116,12 @@ if __name__ == '__main__':
                                     #label = urllib.parse.quote('atmosphere_water__precipitation_leq_volume_flux')
                                     label = urllib.parse.quote(URIRef(result["c"]["value"]))
                                     print('getting description for '+label)
-                                    contents = str(urllib.request.urlopen('http://34.73.227.230:8000/get_doc/'+label+'/').read())
-                                    if "invalid input" not in contents:
-                                        if '{"results": ""}' not in contents:
-                                            finalContents = contents.replace("b'{","")
-                                            finalContents = finalContents.replace('"results": ','')
-                                            finalContents = finalContents.replace('\\n','')
-                                            finalContents = finalContents.replace(' "}','')
-                                            #print(finalContents)
+                                    contents = urllib.request.urlopen('http://34.73.227.230:8000/get_doc/'+label+'/').read()
+                                    if "invalid input" not in str(contents):
+                                        y = json.loads(contents)
+                                        finalContents = y["results"].replace('\n','')
+                                        #print(finalContents)
+                                        if len(finalContents)>1:
                                             store.add((URIRef(result["u"]["value"]), URIRef('https://schema.org/description'),
                                                Literal(finalContents)))
                                            
