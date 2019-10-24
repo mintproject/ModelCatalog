@@ -10,7 +10,7 @@ def import_script(concept,class_list):
                 '?a a ?class.' \
                 'filter(regex(str(?class), "^'+concept+'", "i"))' \
                 '}'
-
+    not_to_trim_list=["rdf-syntax-ns#type","sd#hasStandardVariable","sd#website","sd#hadPrimarySource","sd#value","sd#identifier","sd#license","sd#codeRepository"]
     PARAMS = {'query':class_query}
     r = requests.get(url = URL,params = PARAMS)
     data = r.json()
@@ -58,10 +58,9 @@ def import_script(concept,class_list):
             c=data['results']['bindings'][i]['c']['value']
             if c not in header_arr and b not in header_arr:
                 header_arr.append(b)
-            if c in header_arr or "rdf-syntax-ns#type" in b or "sd#hasStandardVariable" in b or "sd#website" in b:
-                c=c
-            else:
-                c=c.split('/')[-1]
+            if c not in header_arr and all(substring not in b for substring in not_to_trim_list):
+                 c=c.split('/')[-1]
+
             if a not in data_dict:
                 data_dict[a]=[]
             data_dict[a].append((b, c))
