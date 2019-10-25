@@ -1,5 +1,4 @@
 import pandas as pd
-import math
 import os
 def testFiles(file_name, file_uri,row_list):
     print ""
@@ -52,12 +51,12 @@ def testFiles(file_name, file_uri,row_list):
 
 if __name__== "__main__":
 
-    testFiles("DatasetSpecification.csv",'https://w3id.org/okn/o/sd#DatasetSpecification',[1,2,3])
+    testFiles("DatasetSpecification.csv",'https://w3id.org/okn/o/sd#DatasetSpecification',[1,6,10])
     testFiles("Image.csv",'https://w3id.org/okn/o/sd#Image',[5,6,7])
-    testFiles("VariablePresentation.csv",'https://w3id.org/okn/o/sd#VariablePresentation',[0,1,2])
-    testFiles("Grid.csv",'https://w3id.org/okn/o/sdm#Grid',[0,1,2])
-    testFiles("Parameter.csv",'https://w3id.org/okn/o/sd#Parameter',[0,1,2])
-    testFiles("Person.csv",'https://w3id.org/okn/o/sd#Person',[0,1,2])
+    testFiles("VariablePresentation.csv",'https://w3id.org/okn/o/sd#VariablePresentation',[1,6,10,12])
+    testFiles("Grid.csv",'https://w3id.org/okn/o/sdm#Grid',[1,10,11])
+    testFiles("Parameter.csv",'https://w3id.org/okn/o/sd#Parameter',[1,6,10,12])
+    testFiles("Person.csv",'https://w3id.org/okn/o/sd#Person',[1,6,10,12])
     testFiles("TimeInterval.csv",'https://w3id.org/okn/o/sdm#TimeInterval',[0,1,2])
     testFiles("Process.csv",'https://w3id.org/okn/o/sdm#Process',[0,1,2])
     testFiles("Visualization.csv",'https://w3id.org/okn/o/sd#Visualization',[0,1,2])

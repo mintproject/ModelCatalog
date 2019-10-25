@@ -23,11 +23,6 @@ def import_script(concept,class_list):
 
     for i in range(len(class_list)):
         class_name=class_list[i]
-        myquery='PREFIX sd: <'+concept+'> \n' \
-                'SELECT distinct ?b  from '+data_url+' where{' \
-                '?a a sd:'+class_list[i]+'.' \
-                '?a ?b ?c' \
-                '}'
 
         myquery1='PREFIX sdm: <'+concept+'>' \
                  'SELECT distinct ?a ?b ?c  from '+data_url+' where{ ' \
@@ -35,17 +30,8 @@ def import_script(concept,class_list):
                  '?a ?b ?c' \
                  '}'
 
-        PARAMS = {'query':myquery}
-
-        r = requests.get(url = URL,params = PARAMS)
-        data = r.json()
         header_arr=[]
         header_arr.append(concept+class_list[i])
-
-        # for i in range(len(data['results']['bindings'])):
-        #     header_arr.append(data['results']['bindings'][i]['b']['value'])
-        #print header_arr
-
         PARAMS = {'query':myquery1}
         r = requests.get(url = URL,params = PARAMS)
         data = r.json()
