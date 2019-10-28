@@ -6,10 +6,15 @@ CYCLES,Cycles,cycles_v0.9.3_alpha;cycles_v0.9.4_alpha,"""Cycles simulates the pr
 When using the Cycles AgroEcosystems Model in any region, you should follow the steps indicated below :
 
  1) Find your field location using a map. Cycles is a point-based model, and you will need information about the soil and weather for the point being simulated.
+ 
  2) **[Expert users/modelers]** Check the default control properties. These can be found in the Cycles control file. In the MINT configuration of Cycles, this file is not exposed, but can be found by downloading the component and looking at the technical details. 
+ 
  3) Check the soil values for the chosen location (by default Cyles uses [GSSURGO](https://www.nrcs.usda.gov/wps/portal/nrcs/detail/soils/home/?cid=nrcs142p2_053628)) properties from your field location.
+ 
  4)  Select the weather location (by default Cycles tries to use the closes [NLDAS](https://ldas.gsfc.nasa.gov/nldas) grid) for your field location.
+ 
  5) **[Expert users/modelers]** Create operations for your field location using the Operation Panel and/or Timeline. In the MINT configuration of Cycles, this file is not exposed, but can be found by downloading the component and looking at the technical details.
+ 
  6) Inspect/visualize model results.
 
 **Scenario**: In our case we want to calculate the Seasonal Crop Production Index for the Pongo basin in South Sudan, because it provides a fast and robust way of reporting normalized yields for a given grid point or region. The goal of the index is to easily segment “years” or “seasons” that can be problematic for food production, and to provide an intuitive sense of the magnitude of the problem. The raw yield outputs might be difficult to interpret for non-experts, and index is more transparent. 
