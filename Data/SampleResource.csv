@@ -12,11 +12,14 @@ econ_production_cost_resource_pongo_single_crop,Production cost (maize),Total pr
 ,,,,,
 cycles_weather_resource_pongo,Weather file (Pongo region),Sample weather file (Pongo),,https://publisher.mint.isi.edu/kkA2u/met9.12Nx27.62E.weather,FFF-155c1f9e-c7ae-4cda-ba23-2e4f2286a187
 cycles_soil_resource_pongo,Sample soil file (Pongo region),Sample soil file (Pongo),,https://publisher.mint.isi.edu/OIvRW/pongo.soil,FFF-165c1f9e-c7ae-4cda-ba23-2e4f2286a187
-cycles_crops_resource_pongo,Sample crop file (Pongo region),Sample crop file (Pongo),,https://publisher.mint.isi.edu/i5gwq/crops.crop,FFF-111c1f9e-c7ae-4cda-ba23-2e4f2286a187
+cycles_crops_resource_pongo,Default crop file (Pongo region),Sample crop file (Pongo),,https://raw.githubusercontent.com/pegasus-isi/pegasus-cycles/master/data/crops.crop,FFF-111c1f9e-c7ae-4cda-ba23-2e4f2286a187
 cycles_reinit_resource_pongo,Sample reinit file (Pongo region),Sample reinit file (Pongo),,https://publisher.mint.isi.edu/EnAHZ/cycles_reinit-4ar11c5w9efib66lyn55wtxri.reinit,FFF-12341f9e-c7ae-4cda-ba23-2e4f2286a187
 cycles_weather_resource_texas,Sample weather file (Texas region),Sample weather file (Texas),,https://data.mint.isi.edu/files/sample-inputs-outputs/texas/Texas_lat3102Nlong9739Wnasa.txt,3a7a8b28-7a0d-4155-9d23-56f40ab44e42
 cycles_soil_resource_texas,Sample soil file (Texas region),Sample soil file (Texas),,https://data.mint.isi.edu/files/sample-inputs-outputs/texas/texas_soilBellCoTX.soil,FFF-blac1f9e-c7ae-4cda-ba23-2e4f2286a187
 cycles_crops_resource_texas,Sample crop file (Texas region),Sample crop file (Texas),,https://data.mint.isi.edu/files/sample-inputs-outputs/texas/crops-texas.crop,FFF-banc1f9e-c7ae-4cda-ba23-2e4f2286a187
+cycles_crops_resource_gambela,Default crop file (Gambela region),Sample crop file (Gambela),,https://raw.githubusercontent.com/pegasus-isi/pegasus-cycles/master/data/crops.crop,
+cycles_soil_resource_gambela,,,,https://raw.githubusercontent.com/pegasus-isi/pegasus-cycles/master/data/gambela.soil,
+cycles_weather_resource_gambela,,,,https://raw.githubusercontent.com/pegasus-isi/pegasus-cycles/master/weather/met10.12Nx34.62E.weather,
 ,,,,,
 pihm_elevation_resource_pongo,Sample elevation file (Pongo),Sample elevation file,,https://wings.mint.isi.edu/users/mint/MINT-production/data/fetch?data_id=http%3A//localhost%3A8080/export/users/mint/MINT-production/data/library.owl%23Aster_GDEM30m.tif,FFF-015c1f9e-c7ae-4cda-ba23-2e4f2286a187
 pihm_stream-delineation-shp_resource_pongo,Sample stream delineation shp file (Pongo),Sample stream delineation shp file,,https://data.mint.isi.edu/files/pihm/south-soudan/pongo/Stream_Delineation.shp,FFF-2a5c1f9e-c7ae-4cda-ba23-2e4f2286a187
