@@ -342,9 +342,11 @@ DSSAT_weatherFile,DSSAT weather file,,DSSAT_LAT;DSSAT_LONG;DSSAT_RAIN;DSSAT_SRAD
 DSSAT_sol,DSSAT soil file,,DSSAT_SALB;DSSAT_SBDM;DSSAT_SDUL;DSSAT_SLB;DSSAT_SLCL;DSSAT_SLLL;DSSAT_SLOC;DSSAT_SLSI;DSSAT_SSAT;DSSAT_SSKS,sol,0,,,https://w3id.org/wings/export/MINT#Soil
 DSSAT_summary,DSSAT Summary file,,DSSAT_hwam;DSSAT_cwam,csv,0,,,https://w3id.org/wings/export/MINT#Summary
 ,,,,,,,,
-topo_rain,Rain rate file,,Topo_p,txt,0,,,https://w3id.org/wings/export/MINT#TOPO_Rain
-topo_aggr_files,TopoFlow aggregated inputs,,,tar.gz,0,,,https://w3id.org/wings/export/MINT#TOPO_Aggregation
-topo_aggregatedOutput,TopoFlow aggregated outputs,,Topo_qs;Topo_albedo,tar.gz,0,,,https://w3id.org/wings/export/MINT#TOPO_Aggregation
+topoflow_cfg_simple_aggregatedInput,TopoFlow aggregated inputs,,topo_p;topo_albedo;topo_DEM;topo_slope_grid_file;topo_aspect_grid_file;topo_slope_file;topo_nval;topo_z0val;topo_width;topo_angle,tar.gz,0,1,,https://w3id.org/wings/export/MINT#TopoflowAggregatedInput
+topoflow_cfg_simple_aggregatedOutput,TopoFlow aggregated outputs,,Topo_Q,tar.gz,0,1,,https://w3id.org/wings/export/MINT#TopoflowAggregatedOutputs
+,,,,,,,,
+topoflow_cfg_simple_Baro_aggregatedInput,TopoFlow aggregated inputs,,topo_p;topo_albedo;topo_DEM;topo_slope_grid_file;topo_aspect_grid_file;topo_slope_file;topo_nval;topo_z0val;topo_width;topo_angle,tar.gz,0,1,,https://w3id.org/wings/export/MINT#TopoflowAggregatedInput
+topoflow_cfg_simple_Baro_aggregatedOutput,TopoFlow aggregated outputs,,Topo_Q,tar.gz,0,1,,https://w3id.org/wings/export/MINT#TopoflowAggregatedOutputs
 ,,,,,,,,
 river_depth_estimation_remote_sensing_data,remote_sensing_data,,,tar.gz,0,,,https://w3id.org/wings/export/MINT#RemoteSensingData
 river_depth_estimation_river_depth_data,river_depth_data,,,tar.gz,0,,,https://w3id.org/wings/export/MINT#RiverDepth
@@ -361,8 +363,11 @@ cycles_outputs_season,cycles_season,The season.dat file provides information abo
 cycles_outputs_weather,cycles_weatherOutput,Cycles weather output file,cycles_avg_tmp;cycles_date;cycles_max_tmp;cycles_min_tmp;cycles_precipitation;cycles_reference_et,dat,0,,,https://w3id.org/wings/export/MINT#CyclesWeatherOutput
 cycles_outputs_cycles_outputs,cycles_outputs,Aggregated season and weather file,cycles_actual_tr;cycles_ag_residue;cycles_crop_v;cycles_cum._n_stress;cycles_date;cycles_forage_n;cycles_forage_yield;cycles_grain_n;cycles_grain_yield;cycles_harvest_index;cycles_n_concn_forage;cycles_n_in_harvest;cycles_n_in_residue;cycles_potential_tr;cycles_root_biomass;cycles_root_n;cycles_soil_evapr;cycles_total_biomass;cycles_total_n;cycles_avg_tmp;cycles_date;cycles_max_tmp;cycles_min_tmp;cycles_precipitation;cycles_reference_et,tar.gz,0,,,https://w3id.org/wings/export/MINT#CyclesOutputs
 ,,,,,,,,
-hand_input_dem,input-dem,Input digital elevation model,,tif,0,1,,https://w3id.org/wings/export/MINT#raster-dem
-hand_distance_down,distance-down,Distance down flooding map,,tif,0,1,,https://w3id.org/wings/export/MINT#raster-distancedown
+hand_v1_simple_input_dem,input-dem,Input digital elevation model,hand_dem,tif,0,1,,https://w3id.org/wings/export/MINT#hydrological-dem
+hand_v1_simple_distance_down,distance-down,Distance down flooding map,hand_demang;svid_demp;hand_flow,tif,0,1,,https://w3id.org/wings/export/MINT#hydrological-demdd
+,,,,,,,,
+hand_v1_simple_texas_input_dem,input-dem,Input digital elevation model,hand_dem,tif,0,1,,https://w3id.org/wings/export/MINT#hydrological-dem
+hand_v1_simple_texas_distance_down,distance-down,Distance down flooding map,hand_demang;svid_demp;hand_flow,tif,0,1,,https://w3id.org/wings/export/MINT#hydrological-demdd
 ,,,,,,,,
 modflow_2005_Hfb,Hfb,Horizontal flow barrier file,,hf6,0,8,,https://w3id.org/wings/export/MINT#MODFLOWhfb6
 modflow_2005_Oc,Oc,Output control file,,dat,0,4,,https://w3id.org/wings/export/MINT#MODFLOWoc

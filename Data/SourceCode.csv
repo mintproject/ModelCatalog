@@ -13,3 +13,6 @@ source_cycles_config_mp,Cycles configuration component (multiple points),Code fo
 source_pihm_config_v2,PIHM configuration component code,Code for creating an encapsulation of PIHM for a model configuration (PIHM v2),,shell,https://github.com/mintproject/MINT-WorkflowDomain/tree/master/WINGSWorkflowComponents/pihm-v2
 source_pihm_config_v4,PIHM++ configuration component code,Code for creating an encapsulation of PIHM for a model configuration (PIHM++),,shell,https://github.com/mintproject/MINT-WorkflowDomain/tree/master/WINGSWorkflowComponents/pihm-v4
 modflow2005_source,ModFlow 2005 source code (v1.12.00),ModFlow 2005 source code (v1.12.00),https://creativecommons.org/publicdomain/zero/1.0/,Fortran 90;C;C++,
+topoflow_sourceCode_v3.6,Topoflow source code (v 3.6),Topoflow source code (v 3.6),https://github.com/peckhams/topoflow/blob/master/LICENSE.txt,python3.6,https://github.com/peckhams/topoflow/
+source_topoflow36,Topoflow component ,Topoflow component ,,shell,https://github.com/mintproject/MINT-WorkflowDomain/tree/master/WINGSWorkflowComponents/topoflow-36
+source_hand_v1,HAND component,HAND component,,shell,https://github.com/mintproject/MINT-WorkflowDomain/tree/master/WINGSWorkflowComponents/HAND-v1
