@@ -337,16 +337,16 @@ pihm_flooding_netcdf_pihm_surf,pihm-surf,Surface water file,pihm_surfV,surf,0,,,
 pihm_flooding_netcdf_pihm-flooding-netcdf,pihm-flooding-netcdf,flooding results in netcdf,,tar.gz,0,,,https://w3id.org/wings/export/MINT#PIHMFloodingNetCDF
 ,,,,,,,,
 ,,,,,,,,
-DSSAT_simulationFile,DSSAT simulation file,,DSSAT_FAMN;DSSAT_FDATE;DSSAT_FDEP;DSSAT_XCRD;DSSAT_YCRD;DSSAT_ICBL;DSSAT_SH2O;DSSAT_SNH4;DSSAT_SNO3;DSSAT_CR;DSSAT_INGENO;DSSAT_PDATE;DSSAT_PLDP;DSSAT_PLRS;DSSAT_PPOP,x,0,,,https://w3id.org/wings/export/MINT#DSSAT_SIMULATION
-DSSAT_weatherFile,DSSAT weather file,,DSSAT_LAT;DSSAT_LONG;DSSAT_RAIN;DSSAT_SRAD;DSSAT_TAV;DSSAT_TMAX;DSSAT_TMIN;DSSAT_WSTA,wth,0,,,https://w3id.org/wings/export/DSSAT_WEATHER
-DSSAT_sol,DSSAT soil file,,DSSAT_SALB;DSSAT_SBDM;DSSAT_SDUL;DSSAT_SLB;DSSAT_SLCL;DSSAT_SLLL;DSSAT_SLOC;DSSAT_SLSI;DSSAT_SSAT;DSSAT_SSKS,sol,0,,,https://w3id.org/wings/export/MINT#Soil
-DSSAT_summary,DSSAT Summary file,,DSSAT_hwam;DSSAT_cwam,csv,0,,,https://w3id.org/wings/export/MINT#Summary
+DSSAT_simulationFile,DSSAT simulation file,DSSAT simulation file,DSSAT_FAMN;DSSAT_FDATE;DSSAT_FDEP;DSSAT_XCRD;DSSAT_YCRD;DSSAT_ICBL;DSSAT_SH2O;DSSAT_SNH4;DSSAT_SNO3;DSSAT_CR;DSSAT_INGENO;DSSAT_PDATE;DSSAT_PLDP;DSSAT_PLRS;DSSAT_PPOP,x,0,,,https://w3id.org/wings/export/MINT#DSSAT_SIMULATION
+DSSAT_weatherFile,DSSAT weather file,DSSAT weather file,DSSAT_LAT;DSSAT_LONG;DSSAT_RAIN;DSSAT_SRAD;DSSAT_TAV;DSSAT_TMAX;DSSAT_TMIN;DSSAT_WSTA,wth,0,,,https://w3id.org/wings/export/DSSAT_WEATHER
+DSSAT_sol,DSSAT soil file,DSSAT soil file,DSSAT_SALB;DSSAT_SBDM;DSSAT_SDUL;DSSAT_SLB;DSSAT_SLCL;DSSAT_SLLL;DSSAT_SLOC;DSSAT_SLSI;DSSAT_SSAT;DSSAT_SSKS,sol,0,,,https://w3id.org/wings/export/MINT#Soil
+DSSAT_summary,DSSAT Summary file,DSSAT Summary file,DSSAT_hwam;DSSAT_cwam,csv,0,,,https://w3id.org/wings/export/MINT#Summary
 ,,,,,,,,
-topoflow_cfg_simple_aggregatedInput,TopoFlow aggregated inputs,,topo_p;topo_albedo;topo_DEM;topo_slope_grid_file;topo_aspect_grid_file;topo_slope_file;topo_nval;topo_z0val;topo_width;topo_angle,tar.gz,0,1,,https://w3id.org/wings/export/MINT#TopoflowAggregatedInput
-topoflow_cfg_simple_aggregatedOutput,TopoFlow aggregated outputs,,Topo_Q,tar.gz,0,1,,https://w3id.org/wings/export/MINT#TopoflowAggregatedOutputs
+topoflow_cfg_simple_aggregatedInput,aggregated-inputs,TopoFlow aggregated inputs,topo_p;topo_albedo;topo_DEM;topo_slope_grid_file;topo_aspect_grid_file;topo_slope_file;topo_nval;topo_z0val;topo_width;topo_angle,tar.gz,0,1,,https://w3id.org/wings/export/MINT#TopoflowAggregatedInput
+topoflow_cfg_simple_aggregatedOutput,aggregated-outputs,TopoFlow aggregated outputs,topo_Q,tar.gz,0,1,,https://w3id.org/wings/export/MINT#TopoflowAggregatedOutputs
 ,,,,,,,,
-topoflow_cfg_simple_Baro_aggregatedInput,TopoFlow aggregated inputs,,topo_p;topo_albedo;topo_DEM;topo_slope_grid_file;topo_aspect_grid_file;topo_slope_file;topo_nval;topo_z0val;topo_width;topo_angle,tar.gz,0,1,,https://w3id.org/wings/export/MINT#TopoflowAggregatedInput
-topoflow_cfg_simple_Baro_aggregatedOutput,TopoFlow aggregated outputs,,Topo_Q,tar.gz,0,1,,https://w3id.org/wings/export/MINT#TopoflowAggregatedOutputs
+topoflow_cfg_simple_Baro_aggregatedInput,aggregated-inputs,,topo_p;topo_albedo;topo_DEM;topo_slope_grid_file;topo_aspect_grid_file;topo_slope_file;topo_nval;topo_z0val;topo_width;topo_angle,tar.gz,0,1,topoflow_inputs_baro,https://w3id.org/wings/export/MINT#TopoflowAggregatedInput
+topoflow_cfg_simple_Baro_aggregatedOutput,aggregated-outputs,,topo_Q,tar.gz,0,1,,https://w3id.org/wings/export/MINT#TopoflowAggregatedOutputs
 ,,,,,,,,
 river_depth_estimation_remote_sensing_data,remote_sensing_data,,,tar.gz,0,,,https://w3id.org/wings/export/MINT#RemoteSensingData
 river_depth_estimation_river_depth_data,river_depth_data,,,tar.gz,0,,,https://w3id.org/wings/export/MINT#RiverDepth
@@ -366,7 +366,7 @@ cycles_outputs_cycles_outputs,cycles_outputs,Aggregated season and weather file,
 hand_v1_simple_input_dem,input-dem,Input digital elevation model,hand_dem,tif,0,1,,https://w3id.org/wings/export/MINT#hydrological-dem
 hand_v1_simple_distance_down,distance-down,Distance down flooding map,hand_demang;svid_demp;hand_flow,tif,0,1,,https://w3id.org/wings/export/MINT#hydrological-demdd
 ,,,,,,,,
-hand_v1_simple_texas_input_dem,input-dem,Input digital elevation model,hand_dem,tif,0,1,,https://w3id.org/wings/export/MINT#hydrological-dem
+hand_v1_simple_texas_input_dem,input-dem,Input digital elevation model,hand_dem,tif,0,1,hand_sample_dem,https://w3id.org/wings/export/MINT#hydrological-dem
 hand_v1_simple_texas_distance_down,distance-down,Distance down flooding map,hand_demang;svid_demp;hand_flow,tif,0,1,,https://w3id.org/wings/export/MINT#hydrological-demdd
 ,,,,,,,,
 modflow_2005_Hfb,Hfb,Horizontal flow barrier file,,hf6,0,8,,https://w3id.org/wings/export/MINT#MODFLOWhfb6
