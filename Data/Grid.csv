@@ -1,6 +1,7 @@
 https://w3id.org/okn/o/sdm#Grid,http://www.w3.org/2000/01/rdf-schema#label,http://www.w3.org/1999/02/22-rdf-syntax-ns#type,https://w3id.org/okn/o/sd#description,https://w3id.org/okn/o/sdm#hasDimension,https://w3id.org/okn/o/sdm#hasShape,https://w3id.org/okn/o/sdm#hasSpatialResolution,https://w3id.org/okn/o/sdm#hasCoordinateSystem
 econ_grid,Grid from the economic crop supply model,https://w3id.org/okn/o/sdm#PointBasedGrid,Grid from the economic crop supply model,0D,Point,Point,
 pihm_grid_SS,Grid from the PIHM hydrology model for the Pongo/South Sudan region,https://w3id.org/okn/o/sdm#SpatiallyDistributedGrid,Grid from the PIHM hydrology model for the region of south Sudan,2D,Triangular,50m-200m,
+pihm_grid_Ethiopia,Grid from the PIHM hydrology model for the Baro region in Ethiopia,https://w3id.org/okn/o/sdm#SpatiallyDistributedGrid,Grid from the PIHM hydrology model for the region of south Sudan,2D,Triangular,50m-200m,
 pihm_grid_general,Grid from the PIHM hydrology model,https://w3id.org/okn/o/sdm#SpatiallyDistributedGrid,Grid from the PIHM hydrology model,2D,Triangular,variable range,
 topoflow_grid_Baro,Grid from the TopoFlow hydrology model for the area of South Sudan,https://w3id.org/okn/o/sdm#SpatiallyDistributedGrid,Grid from the TopoFlow hydrology model,2D,,100x100m,
 topoflow_grid_general,Grid from the TopoFlow hydrology model,https://w3id.org/okn/o/sdm#SpatiallyDistributedGrid,Grid from the TopoFlow hydrology model,2D,,variable range,
