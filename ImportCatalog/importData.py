@@ -65,7 +65,7 @@ def import_script(concept,class_list):
                         row[type]=row[type]+";"+val
 
             rows.append(row)
-
+        rows = sorted(rows, key=lambda x:x[concept+class_name])
         with open(class_name + ".csv", 'w') as csvfile:
             csvwriter = csv.writer(csvfile)
             csvwriter.writerow(header_arr)
