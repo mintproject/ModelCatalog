@@ -284,6 +284,25 @@ economic-v6.1_single_crop_pongo_land_use,economic-land-use,Economic land use res
 econ_v6.1_single_crop_single_crop_calib_land_use,calibration-output,Economic calibration output,econ_year;econ_region;econ_crop;econ_sim_land_area;econ_obs_land_area;econ_sim_nuse;econ_observed_nuse;econ_obs_production;econ_sim_production,txt,0,2,,https://w3id.org/wings/export/MINT#EconomicCalibration
 economic-v6.1_single_crop_pongo_calib_land_use,calibration-output,Economic calibration output,econ_year;econ_region;econ_crop;econ_sim_land_area;econ_obs_land_area;econ_sim_nuse;econ_observed_nuse;econ_obs_production;econ_sim_production,txt,0,2,,https://w3id.org/wings/export/MINT#EconomicCalibration
 ,,,,,,,,
+economicGambela-v6.1_cycles_data,cycles-data,File with inputs used to configure the Cycles model (e.g. fertilizer),econ_ybarN,csv,0,1,,https://w3id.org/wings/export/MINT#economic-cycles-data
+economic-v6.1_gambela_advanced_cycles_data,cycles-data,File with inputs used to configure the Cycles model (e.g. fertilizer),econ_ybarN,csv,0,1,econ_cycles_data_resource_gambela,https://w3id.org/wings/export/MINT#economic-cycles-data
+economic-v6.1_gambela_advanced_elasticities_cycles_data,cycles-data,File with inputs used to configure the Cycles model (e.g. fertilizer),econ_ybarN,csv,0,1,,https://w3id.org/wings/export/MINT#economic-cycles-data
+economicGambela-v6.1_land,land-input,Land allocation file,econ_xbar1;econ_xbar2;econ_ybar,csv,0,2,,https://w3id.org/wings/export/MINT#economic-land-input
+economic-v6.1_gambela_advanced_land,land-input,Land allocation file,econ_xbar1;econ_xbar2;econ_ybar,csv,0,2,econ_land_input_resource_gambela,https://w3id.org/wings/export/MINT#economic-land-input
+economic-v6.1_gambela_advanced_elasticities_land,land-input,Land allocation file,econ_xbar1;econ_xbar2;econ_ybar,csv,0,2,econ_land_input_resource_gambela,https://w3id.org/wings/export/MINT#economic-land-input
+economicGambela-v6.1_price,price,File with the prices used in the model,econ_p,csv,0,3,,https://w3id.org/wings/export/MINT#economic-price
+economic-v6.1_gambela_advanced_price,price,File with the prices used in the model,econ_p,csv,0,3,econ_price_resource_gambela,https://w3id.org/wings/export/MINT#economic-price
+economic-v6.1_gambela_advanced_elasticities_price,price,File with the prices used in the model,econ_p,csv,0,3,econ_price_resource_gambela,https://w3id.org/wings/export/MINT#economic-price
+economicGambela-v6.1_production_cost,production-cost,File with the production cost (e.g. fertilizer),econ_c1;econ_c2,csv,0,4,,https://w3id.org/wings/export/MINT#economic-production-cost
+economic-v6.1_gambela_advanced_production_cost,production-cost,File with the production cost (e.g. fertilizer),econ_c1;econ_c2,csv,0,4,econ_production_cost_resource_gambela,https://w3id.org/wings/export/MINT#economic-production-cost
+economic-v6.1_gambela_advanced_elasticities_production_cost,production-cost,File with the production cost (e.g. fertilizer),econ_c1;econ_c2,csv,0,4,econ_production_cost_resource_gambela,https://w3id.org/wings/export/MINT#economic-production-cost
+economicGambela-v6.1_land_use,economic-land-use,Economic land use results,econ_year;econ_region_econ_crop;econ_fert_subsidy;econ_land_area;econ_obsyield;econ_production;econ_Nfert;econ_nuse,txt,0,1,,https://w3id.org/wings/export/MINT#EconomicLandUse
+economic-v6.1_gambela_advanced_land_use,economic-land-use,Economic land use results,econ_year;econ_region_econ_crop;econ_fert_subsidy;econ_land_area;econ_obsyield;econ_production;econ_Nfert;econ_nuse,txt,0,1,,https://w3id.org/wings/export/MINT#EconomicLandUse
+economic-v6.1_gambela_advanced_elasticities_land_use,economic-land-use,Economic land use results,econ_year;econ_region_econ_crop;econ_fert_subsidy;econ_land_area;econ_obsyield;econ_production;econ_Nfert;econ_nuse,txt,0,1,,https://w3id.org/wings/export/MINT#EconomicLandUse
+economicGambela-v6.1_calib_land_use,calibration-output,Economic calibration output,econ_year;econ_region;econ_crop;econ_sim_land_area;econ_obs_land_area;econ_sim_nuse;econ_observed_nuse;econ_obs_production;econ_sim_production,txt,0,2,,https://w3id.org/wings/export/MINT#EconomicCalibration
+economic-v6.1_gambela_advanced_land_use,calibration-output,Economic calibration output,econ_year;econ_region;econ_crop;econ_sim_land_area;econ_obs_land_area;econ_sim_nuse;econ_observed_nuse;econ_obs_production;econ_sim_production,txt,0,2,,https://w3id.org/wings/export/MINT#EconomicCalibration
+economic-v6.1_gambela_advanced_elasticities_land_use,calibration-output,Economic calibration output,econ_year;econ_region;econ_crop;econ_sim_land_area;econ_obs_land_area;econ_sim_nuse;econ_observed_nuse;econ_obs_production;econ_sim_production,txt,0,2,,https://w3id.org/wings/export/MINT#EconomicCalibration
+,,,,,,,,
 economic_to_vis_land-use,economic-land-use,Economic land use results,econ_fert_subsidy;econ_land_area;econ_obsyield;econ_production;econ_Nfert,txt,1,,,https://w3id.org/wings/export/MINT#EconomicLandUse
 economic_to_vis_crop,economic-crop,Aggregated visualization of the results of the workflow,econ_fert_subsidy;econ_land_area;econ_production,csv,0,,,https://w3id.org/wings/export/MINT#EconomicCrop
 ,,,,,,,,
@@ -404,10 +423,16 @@ DSSAT_weatherFile,DSSAT weather file,DSSAT weather file,DSSAT_LAT;DSSAT_LONG;DSS
 DSSAT_sol,DSSAT soil file,DSSAT soil file,DSSAT_SALB;DSSAT_SBDM;DSSAT_SDUL;DSSAT_SLB;DSSAT_SLCL;DSSAT_SLLL;DSSAT_SLOC;DSSAT_SLSI;DSSAT_SSAT;DSSAT_SSKS,sol,0,,,https://w3id.org/wings/export/MINT#Soil
 DSSAT_summary,DSSAT Summary file,DSSAT Summary file,DSSAT_hwam;DSSAT_cwam,csv,0,,,https://w3id.org/wings/export/MINT#Summary
 ,,,,,,,,
-topoflow_cfg_simple_aggregatedInput,aggregated-inputs,TopoFlow aggregated inputs,topo_p;topo_albedo;topo_DEM;topo_slope_grid_file;topo_aspect_grid_file;topo_slope_file;topo_nval;topo_z0val;topo_width;topo_angle,tar.gz,0,1,,https://w3id.org/wings/export/MINT#TopoflowAggregatedInput
+topoflow_cfg_simple_aggregatedInput,aggregated-inputs,TopoFlow aggregated inputs,topo_albedo;topo_DEM;topo_slope_grid_file;topo_aspect_grid_file;topo_slope_file;topo_nval;topo_z0val;topo_width;topo_angle,tar.gz,0,1,,https://w3id.org/wings/export/MINT#TopoflowAggregatedInput
+topoflow_cfg_simple-rainRates,precipitation-rates,Precipitation rates,topo_p,zip,0,2,,https://w3id.org/wings/export/MINT#TopoflowPrecipitationRate
 topoflow_cfg_simple_aggregatedOutput,aggregated-outputs,TopoFlow aggregated outputs,topo_Q,tar.gz,0,1,,https://w3id.org/wings/export/MINT#TopoflowAggregatedOutputs
 ,,,,,,,,
 topoflow_cfg_simple_Baro_aggregatedInput,aggregated-inputs,,topo_p;topo_albedo;topo_DEM;topo_slope_grid_file;topo_aspect_grid_file;topo_slope_file;topo_nval;topo_z0val;topo_width;topo_angle,tar.gz,0,1,topoflow_inputs_baro,https://w3id.org/wings/export/MINT#TopoflowAggregatedInput
+topoflow_cfg_simple_Baro_rainRates,precipitation-rates,Precipitation rates,topo_p,zip,0,2,topoflow_precipitation_rates_baro,https://w3id.org/wings/export/MINT#TopoflowPrecipitationRate
+topoflow_cfg_simple_Baro_aggregatedOutput,aggregated-outputs,,topo_Q,tar.gz,0,1,,https://w3id.org/wings/export/MINT#TopoflowAggregatedOutputs
+,,,,,,,,
+topoflow_cfg_simple_Baro_aggregatedInput,aggregated-inputs,,topo_p;topo_albedo;topo_DEM;topo_slope_grid_file;topo_aspect_grid_file;topo_slope_file;topo_nval;topo_z0val;topo_width;topo_angle,tar.gz,0,1,topoflow_inputs_baro,https://w3id.org/wings/export/MINT#TopoflowAggregatedInput
+topoflow_cfg_advanced_Baro_rainRates,precipitation-rates,Precipitation rates,topo_p,zip,0,2,,https://w3id.org/wings/export/MINT#TopoflowPrecipitationRate
 topoflow_cfg_simple_Baro_aggregatedOutput,aggregated-outputs,,topo_Q,tar.gz,0,1,,https://w3id.org/wings/export/MINT#TopoflowAggregatedOutputs
 ,,,,,,,,
 river_depth_estimation_remote_sensing_data,remote_sensing_data,,,tar.gz,0,,,https://w3id.org/wings/export/MINT#RemoteSensingData
