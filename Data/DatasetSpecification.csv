@@ -417,7 +417,6 @@ pihm_flooding_netcdf_pihm-modelInfo,pihm-modelinfo,PIHM Model info file,pihm_Alp
 pihm_flooding_netcdf_pihm_surf,pihm-surf,Surface water file,pihm_surfV,surf,0,,,https://w3id.org/wings/export/MINT#PIHMSurfaceWater
 pihm_flooding_netcdf_pihm-flooding-netcdf,pihm-flooding-netcdf,flooding results in netcdf,,tar.gz,0,,,https://w3id.org/wings/export/MINT#PIHMFloodingNetCDF
 ,,,,,,,,
-,,,,,,,,
 DSSAT_simulationFile,DSSAT simulation file,DSSAT simulation file,DSSAT_FAMN;DSSAT_FDATE;DSSAT_FDEP;DSSAT_XCRD;DSSAT_YCRD;DSSAT_ICBL;DSSAT_SH2O;DSSAT_SNH4;DSSAT_SNO3;DSSAT_CR;DSSAT_INGENO;DSSAT_PDATE;DSSAT_PLDP;DSSAT_PLRS;DSSAT_PPOP,x,0,,,https://w3id.org/wings/export/MINT#DSSAT_SIMULATION
 DSSAT_weatherFile,DSSAT weather file,DSSAT weather file,DSSAT_LAT;DSSAT_LONG;DSSAT_RAIN;DSSAT_SRAD;DSSAT_TAV;DSSAT_TMAX;DSSAT_TMIN;DSSAT_WSTA,wth,0,,,https://w3id.org/wings/export/DSSAT_WEATHER
 DSSAT_sol,DSSAT soil file,DSSAT soil file,DSSAT_SALB;DSSAT_SBDM;DSSAT_SDUL;DSSAT_SLB;DSSAT_SLCL;DSSAT_SLLL;DSSAT_SLOC;DSSAT_SLSI;DSSAT_SSAT;DSSAT_SSKS,sol,0,,,https://w3id.org/wings/export/MINT#Soil
