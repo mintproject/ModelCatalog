@@ -9,14 +9,12 @@ General instructions: When using the Cycles AgroEcosystems Model in any region, 
 1) Find your field location using a map. Cycles is a point-based model, and you will need information about the soil and weather for the point being simulated.
 
 2) [Expert users/modelers] Check the default control properties. These can be found in the Cycles control file. In the MINT configuration of Cycles, this file is not exposed, but can be found by downloading the component and looking at the technical details.
-
-3) Check the soil values for the chosen location (by default Cyles uses GSSURGO) properties from your field location.
  
- 3) Check the soil values for the chosen location (by default Cyles uses [GSSURGO](https://www.nrcs.usda.gov/wps/portal/nrcs/detail/soils/home/?cid=nrcs142p2_053628)) properties from your field location.
+3) Check the soil values for the chosen location (by default Cyles uses [GSSURGO](https://www.nrcs.usda.gov/wps/portal/nrcs/detail/soils/home/?cid=nrcs142p2_053628)) properties from your field location.
  
- 4)  Select the weather location (by default Cycles tries to use the closest GLDAS grid) for your field location. A python script is used to read GLDAS netCDF4 files, aggregate subdaily GLDAS forcing data to daily resolution, and output the daily variables in text format to be used by Cycles.
+4)  Select the weather location (by default Cycles tries to use the closest GLDAS grid) for your field location. A python script is used to read GLDAS netCDF4 files, aggregate subdaily GLDAS forcing data to daily resolution, and output the daily variables in text format to be used by Cycles.
  
- 5) **[Expert users/modelers]** Create operations for your field location using the Operation Panel and/or Timeline. In the MINT configuration of Cycles, this file is not exposed, but can be found by downloading the component and looking at the technical details.
+5) **[Expert users/modelers]** Create operations for your field location using the Operation Panel and/or Timeline. In the MINT configuration of Cycles, this file is not exposed, but can be found by downloading the component and looking at the technical details.
 
 6) Inspect/visualize model results.
 
