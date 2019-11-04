@@ -23,7 +23,7 @@ cycles_weather_resource_texas,Sample weather file (Texas region),Sample weather 
 cycles_soil_resource_texas,Sample soil file (Texas region),Sample soil file (Texas),https://data.mint.isi.edu/files/sample-inputs-outputs/texas/texas_soilBellCoTX.soil,FFF-blac1f9e-c7ae-4cda-ba23-2e4f2286a187,
 cycles_crops_resource_texas,Sample crop file (Texas region),Sample crop file (Texas),https://data.mint.isi.edu/files/sample-inputs-outputs/texas/crops-texas.crop,FFF-banc1f9e-c7ae-4cda-ba23-2e4f2286a187,
 cycles_crops_resource_Gambella,Default crop file (Gambella region),Sample crop file (Gambella),https://data.mint.isi.edu/files/Cycles/crops-complete.crop,FFF-banc1f9e-c7ae-4cda-ba23-2e4f2286a186,
-cycles_soil_resource_Gambella,Cycles soil file (Gambella region) ,Soil file used for Cycles in the Gambella region,https://raw.githubusercontent.com/pegasus-isi/pegasus-cycles/master/data/Gambella.soil,FFF-banc1f9e-c7ae-4cda-ba23-2e4f2286a185,
+cycles_soil_resource_Gambella,Cycles soil file (Gambella region) ,Soil file used for Cycles in the Gambella region,https://raw.githubusercontent.com/pegasus-isi/pegasus-cycles/master/data/gambela.soil,FFF-banc1f9e-c7ae-4cda-ba23-2e4f2286a185,
 cycles_weather_resource_Gambella,Cycles weather sample file (Gambella region),Sample weather file for Cycles in the Gambella region,https://raw.githubusercontent.com/pegasus-isi/pegasus-cycles/master/weather/met10.12Nx34.62E.weather,FFF-banc1f9e-c7ae-4cda-ba23-2e4f2286a184,
 ,,,,,
 pihm_elevation_resource_pongo,Sample elevation file (Pongo),Sample elevation file,https://wings.mint.isi.edu/users/mint/MINT-production/data/fetch?data_id=http%3A//localhost%3A8080/export/users/mint/MINT-production/data/library.owl%23Aster_GDEM30m.tif,FFF-015c1f9e-c7ae-4cda-ba23-2e4f2286a187,
