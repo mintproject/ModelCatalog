@@ -417,3 +417,4 @@ hand_demang,demang,demang,,D-infinity flow direction,recharge_volume_flux,degree
 svid_demp,demp,demp,,D8 flow direction,storage_volume,m,,,,,
 hand_flow,flow,flow,,Flowlines,drawdown,,,,,,
 hand_dem,dem,dem,,Digital elevation model,land_surface__elevation,m,,,,,
+hand_flooding,flooding contour,flooding contour,,flooding contour,flooding_contour,,,,,,
