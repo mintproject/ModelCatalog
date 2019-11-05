@@ -36,6 +36,7 @@ topo_z0val,z0val,z0val,Law-of-wall roughness values,Law-of-wall roughness values
 topo_width,width,width,bottom width of trapezoid cross-section,bottom width of trapezoid cross-section,channel_x-section_trapezoid_bottom__width,m,,,,,
 topo_angle,angle,angle,bank angle of trapezoid cross-section,bank angle of trapezoid cross-section,channel_x-section_trapezoid_side__flare_angle,rad,,,,,
 topo_Q,Q,Q,Discharge,Cross section volume rate (discharge),channel_water_x-section__volume_flow_rate,m3 s-1,,,,,
+topo_inundation,flood,flood,Overbank flood depth,Overbank flood depth,land_surface_water__flood_inundation_dept,m,,,,,
 topo_stream,ds_flow,ds_flow,Downstream volume flow rate,Downstream volume flow rate,downstream_volume_flow_rate,,,,,,
 ,,,,,,,,,,,
 DSSAT_hwam,HWAM,HWAM,harvest yield,Harvest yield at harvest maturity (dry wt),crop~mature~dry__harvest_mass-per-area_yield,kg/ha,,,,,
