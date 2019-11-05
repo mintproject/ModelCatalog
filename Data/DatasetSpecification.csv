@@ -455,7 +455,7 @@ hand_v1_simple_distance_down,distance-down,Distance down flooding map,hand_deman
 hand_v1_simple_texas_input_dem,input-dem,Input digital elevation model,hand_dem,tif,0,1,hand_sample_dem_texas,https://w3id.org/wings/export/MINT#hydrological-dem
 hand_v1_simple_texas_distance_down,distance-down,Distance down flooding map,hand_demang;svid_demp;hand_flow,tif,0,1,,https://w3id.org/wings/export/MINT#hydrological-demdd
 ,,,,,,,,
-hand_v1_simple_ethiopia_input_dem,input-dem,Input digital elevation model for a basin in Ethiopia,hand_dem,tif,0,1,hand_sample_dem_ethiopia,https://w3id.org/wings/export/MINT#hydrological-dem
+hand_v1_simple_ethiopia_input_dem,input-dem,Input digital elevation model for the Alwero-Perboma basin in Ethiopia,hand_dem,tif,0,1,hand_sample_dem_ethiopia,https://w3id.org/wings/export/MINT#hydrological-dem
 hand_v1_simple_ethiopia_distance_down,distance-down,Distance down flooding map,hand_demang;svid_demp;hand_flow,tif,0,1,,https://w3id.org/wings/export/MINT#hydrological-demdd
 ,,,,,,,,
 modflow_2005_Hfb,Hfb,Horizontal flow barrier file,,hf6,0,8,,https://w3id.org/wings/export/MINT#MODFLOWhfb6
