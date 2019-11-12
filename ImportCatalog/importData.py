@@ -10,7 +10,7 @@ def import_script(concept,class_list):
                 '?a a ?class.' \
                 'filter(regex(str(?class), "^'+concept+'", "i"))' \
                 '}'
-    not_to_trim_list=["rdf-syntax-ns#type","sd#hasStandardVariable","sd#website","sd#hadPrimarySource","sd#value","sd#identifier","sd#license","sd#codeRepository"]
+    not_to_trim_list=["rdf-syntax-ns#type","sd#hasStandardVariable","sd#website","sd#hadPrimarySource","sd#value","sd#identifier","sd#license","sd#codeRepository","sd#hasComponentLocation"]
     PARAMS = {'query':class_query}
     r = requests.get(url = URL,params = PARAMS)
     data = r.json()
