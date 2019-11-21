@@ -461,62 +461,62 @@ hand_v1_simple_texas_distance_down,distance-down,Distance down flooding map,hand
 hand_v1_simple_ethiopia_input_dem,input-dem,Input digital elevation model for the Alwero-Perboma basin in Ethiopia,hand_dem,tif,0,1,hand_sample_dem_ethiopia,https://w3id.org/wings/export/MINT#hydrological-dem
 hand_v1_simple_ethiopia_distance_down,distance-down,Distance down flooding map,hand_demang;svid_demp;hand_flow,tif,0,1,,https://w3id.org/wings/export/MINT#hydrological-demdd
 ,,,,,,,,
-modflow_2005_Hfb,Hfb,Horizontal flow barrier file,,hf6,0,8,,https://w3id.org/wings/export/MINT#MODFLOWhfb6
-modflow_2005_Oc,Oc,Output control file,,dat,0,4,,https://w3id.org/wings/export/MINT#MODFLOWoc
-modflow_2005_Sip,Sip,Strongly Implicit Procedure package file,,dat,0,9,,https://w3id.org/wings/export/MINT#MODFLOWsip
-modflow_2005_Bcf,Bcf,Block centered flow package file,modflow2005_trpy;modflow2005_sf1;modflow2005_tran;modflow2005_hy;modflow2005_vcont;modflow2005_sf2,bc6,0,3,,https://w3id.org/wings/export/MINT#MODFLOWbcf6
-modflow_2005_Rech,Rech,Recharge file,modflow2005_rech,dat,0,7,,https://w3id.org/wings/export/MINT#MODFLOWrch
-modflow_2005_Bas,Bas,Basic Package Input for the Groundwater Flow Process Basic file,modflow2005_strt,ba6,0,1,,https://w3id.org/wings/export/MINT#MODFLOWBas6
-modflow_2005_Well,Well,Well file,modflow2005_q,dat,0,5,,https://w3id.org/wings/export/MINT#MODFLOWwel
-modflow_2005_Drn,Drn,Drain package file,,dat,0,6,,https://w3id.org/wings/export/MINT#MODFLOWdrn
-modflow_2005_Dis,Dis,Discretization file,modflow2005_nlay;modflow2005_nrow;modflow2005_ncol;modflow2005_nper;modflow2005_delr;modflow2005_delc;modflow2005_top;modflow2005_botm;modflow2005_perlen;modflow2005_nstp;modflow2005_tsmult,dis,0,2,,https://w3id.org/wings/export/MINT#MODFLOWdis
+modflow_2005_Hfb,hfb6,Horizontal flow barrier file,,hf6,0,8,,https://w3id.org/wings/export/MINT#MODFLOWhfb6
+modflow_2005_Oc,oc,Output control file,,dat,0,4,,https://w3id.org/wings/export/MINT#MODFLOWoc
+modflow_2005_Sip,sip,Strongly Implicit Procedure package file,,dat,0,9,,https://w3id.org/wings/export/MINT#MODFLOWsip
+modflow_2005_Bcf,bcf6,Block centered flow package file,modflow2005_trpy;modflow2005_sf1;modflow2005_tran;modflow2005_hy;modflow2005_vcont;modflow2005_sf2,bc6,0,3,,https://w3id.org/wings/export/MINT#MODFLOWbcf6
+modflow_2005_Rech,rch,Recharge file,modflow2005_rech,dat,0,7,,https://w3id.org/wings/export/MINT#MODFLOWrch
+modflow_2005_Bas,bas6,Basic Package Input for the Groundwater Flow Process Basic file,modflow2005_strt,ba6,0,1,,https://w3id.org/wings/export/MINT#MODFLOWBas6
+modflow_2005_Well,wel,Well file,modflow2005_q,dat,0,5,,https://w3id.org/wings/export/MINT#MODFLOWwel
+modflow_2005_Drn,drn,Drain package file,,dat,0,6,,https://w3id.org/wings/export/MINT#MODFLOWdrn
+modflow_2005_Dis,dis,Discretization file,modflow2005_nlay;modflow2005_nrow;modflow2005_ncol;modflow2005_nper;modflow2005_delr;modflow2005_delc;modflow2005_top;modflow2005_botm;modflow2005_perlen;modflow2005_nstp;modflow2005_tsmult,dis,0,2,,https://w3id.org/wings/export/MINT#MODFLOWdis
 ,,,,,,,,
 modflow_2005_cbb,cbb,Total cell by cell budget file,,cbb,0,2,,https://w3id.org/wings/export/MINT#MODFLOWcbb
-modflow_2005_heads,heads,Cell by cell hydraulic lead file,modflow2005_subsidence;modflow2005_layer_compaction;modflow2005_ndsys_compaction;modflow2005_dsys_compaction;modflow2005_z_displacement;modflow2005_nd_critical_head;modflow2005_d_critical_head,hds,0,3,,https://w3id.org/wings/export/MINT#MODFLOWhds
-modflow_2005_ddown,ddown,Cell by cell drawdown file,modflow2005_drawdown,ddn,0,4,,https://w3id.org/wings/export/MINT#MODFLOWddn
-modflow_2005_list,list,File containing budgets summarizing the entire model for a selection of stress periods,,lst,0,1,,https://w3id.org/wings/export/MINT#MODFLOWlst
+modflow_2005_heads,hds,Cell by cell hydraulic lead file,modflow2005_subsidence;modflow2005_layer_compaction;modflow2005_ndsys_compaction;modflow2005_dsys_compaction;modflow2005_z_displacement;modflow2005_nd_critical_head;modflow2005_d_critical_head,hds,0,3,,https://w3id.org/wings/export/MINT#MODFLOWhds
+modflow_2005_ddown,ddn,Cell by cell drawdown file,modflow2005_drawdown,ddn,0,4,,https://w3id.org/wings/export/MINT#MODFLOWddn
+modflow_2005_list,lst,File containing budgets summarizing the entire model for a selection of stress periods,,lst,0,1,,https://w3id.org/wings/export/MINT#MODFLOWlst
 ,,,,,,,,
-modflow_2005_BartonSprings_avg_Hfb,Hfb,Horizontal flow barrier file,,hf6,0,8,modflow_resource_BS_avg_hfb,https://w3id.org/wings/export/MINT#MODFLOWhfb6
-modflow_2005_BartonSprings_avg_Oc,Oc,Output control file,,dat,0,4,modflow_resource_BS_avg_oc,https://w3id.org/wings/export/MINT#MODFLOWoc
-modflow_2005_BartonSprings_avg_Sip,Sip,Strongly Implicit Procedure package file,,dat,0,9,modflow_resource_BS_avg_sip,https://w3id.org/wings/export/MINT#MODFLOWsip
-modflow_2005_BartonSprings_avg_Bcf,Bcf,Block centered flow package file,modflow2005_trpy;modflow2005_sf1;modflow2005_tran;modflow2005_hy;modflow2005_vcont;modflow2005_sf2,bc6,0,3,modflow_resource_BS_avg_bcf,https://w3id.org/wings/export/MINT#MODFLOWbcf6
-modflow_2005_BartonSprings_avg_Rech,Rech,Recharge file,modflow2005_rech,dat,0,7,modflow_resource_BS_avg_rech,https://w3id.org/wings/export/MINT#MODFLOWrch
-modflow_2005_BartonSprings_avg_Bas,Bas,Basic Package Input for the Groundwater Flow Process Basic file,modflow2005_strt,ba6,0,1,modflow_resource_BS_avg_bas,https://w3id.org/wings/export/MINT#MODFLOWBas6
-modflow_2005_BartonSprings_avg_Well,Well,Well file,modflow2005_q,dat,0,5,modflow_resource_BS_avg_well,https://w3id.org/wings/export/MINT#MODFLOWwel
-modflow_2005_BartonSprings_avg_Drn,Drn,Drain package file,,dat,0,6,modflow_resource_BS_avg_drn,https://w3id.org/wings/export/MINT#MODFLOWdrn
-modflow_2005_BartonSprings_avg_Dis,Dis,Discretization file,modflow2005_nlay;modflow2005_nrow;modflow2005_ncol;modflow2005_nper;modflow2005_delr;modflow2005_delc;modflow2005_top;modflow2005_botm;modflow2005_perlen;modflow2005_nstp;modflow2005_tsmult,dis,0,2,modflow_resource_BS_avg_dis,https://w3id.org/wings/export/MINT#MODFLOWdis
+modflow_2005_BartonSprings_avg_Hfb,hfb6,Horizontal flow barrier file,,hf6,0,8,modflow_resource_BS_avg_hfb,https://w3id.org/wings/export/MINT#MODFLOWhfb6
+modflow_2005_BartonSprings_avg_Oc,oc,Output control file,,dat,0,4,modflow_resource_BS_avg_oc,https://w3id.org/wings/export/MINT#MODFLOWoc
+modflow_2005_BartonSprings_avg_Sip,sip,Strongly Implicit Procedure package file,,dat,0,9,modflow_resource_BS_avg_sip,https://w3id.org/wings/export/MINT#MODFLOWsip
+modflow_2005_BartonSprings_avg_Bcf,bcf6,Block centered flow package file,modflow2005_trpy;modflow2005_sf1;modflow2005_tran;modflow2005_hy;modflow2005_vcont;modflow2005_sf2,bc6,0,3,modflow_resource_BS_avg_bcf,https://w3id.org/wings/export/MINT#MODFLOWbcf6
+modflow_2005_BartonSprings_avg_Rech,rch,Recharge file,modflow2005_rech,dat,0,7,modflow_resource_BS_avg_rech,https://w3id.org/wings/export/MINT#MODFLOWrch
+modflow_2005_BartonSprings_avg_Bas,bas6,Basic Package Input for the Groundwater Flow Process Basic file,modflow2005_strt,ba6,0,1,modflow_resource_BS_avg_bas,https://w3id.org/wings/export/MINT#MODFLOWBas6
+modflow_2005_BartonSprings_avg_Well,wel,Well file,modflow2005_q,dat,0,5,modflow_resource_BS_avg_well,https://w3id.org/wings/export/MINT#MODFLOWwel
+modflow_2005_BartonSprings_avg_Drn,drn,Drain package file,,dat,0,6,modflow_resource_BS_avg_drn,https://w3id.org/wings/export/MINT#MODFLOWdrn
+modflow_2005_BartonSprings_avg_Dis,dis,Discretization file,modflow2005_nlay;modflow2005_nrow;modflow2005_ncol;modflow2005_nper;modflow2005_delr;modflow2005_delc;modflow2005_top;modflow2005_botm;modflow2005_perlen;modflow2005_nstp;modflow2005_tsmult,dis,0,2,modflow_resource_BS_avg_dis,https://w3id.org/wings/export/MINT#MODFLOWdis
 ,,,,,,,,
 modflow_2005_BartonSprings_avg_cbb,cbb,Total budget file,,cbb,0,2,,https://w3id.org/wings/export/MINT#MODFLOWcbb
-modflow_2005_BartonSprings_avg_heads,heads,Heads file,modflow2005_subsidence;modflow2005_layer_compaction;modflow2005_ndsys_compaction;modflow2005_dsys_compaction;modflow2005_z_displacement;modflow2005_nd_critical_head;modflow2005_d_critical_head,hds,0,3,,https://w3id.org/wings/export/MINT#MODFLOWhds
-modflow_2005_BartonSprings_avg_ddown,ddown,Drawdown,modflow2005_drawdown,ddn,0,4,,https://w3id.org/wings/export/MINT#MODFLOWddn
-modflow_2005_BartonSprings_avg_list,list,List file,,lst,0,1,,https://w3id.org/wings/export/MINT#MODFLOWlst
+modflow_2005_BartonSprings_avg_heads,hds,Heads file,modflow2005_subsidence;modflow2005_layer_compaction;modflow2005_ndsys_compaction;modflow2005_dsys_compaction;modflow2005_z_displacement;modflow2005_nd_critical_head;modflow2005_d_critical_head,hds,0,3,,https://w3id.org/wings/export/MINT#MODFLOWhds
+modflow_2005_BartonSprings_avg_ddown,ddn,Drawdown,modflow2005_drawdown,ddn,0,4,,https://w3id.org/wings/export/MINT#MODFLOWddn
+modflow_2005_BartonSprings_avg_list,lst,List file,,lst,0,1,,https://w3id.org/wings/export/MINT#MODFLOWlst
 ,,,,,,,,
-modflow_2005_BartonSprings_drought_Hfb,Hfb,Horizontal flow barrier file,,hf6,0,8,modflow_resource_BS_drought_hfb,https://w3id.org/wings/export/MINT#MODFLOWhfb6
-modflow_2005_BartonSprings_drought_Oc,Oc,Output control file,,dat,0,4,modflow_resource_BS_drought_oc,https://w3id.org/wings/export/MINT#MODFLOWoc
-modflow_2005_BartonSprings_drought_Sip,Sip,Strongly Implicit Procedure package file,,dat,0,9,modflow_resource_BS_drought_sip,https://w3id.org/wings/export/MINT#MODFLOWsip
-modflow_2005_BartonSprings_drought_Bcf,Bcf,Block centered flow package file,modflow2005_trpy;modflow2005_sf1;modflow2005_tran;modflow2005_hy;modflow2005_vcont;modflow2005_sf2,bc6,0,3,modflow_resource_BS_drought_bcf,https://w3id.org/wings/export/MINT#MODFLOWbcf6
-modflow_2005_BartonSprings_drought_Rech,Rech,Recharge file,modflow2005_rech,dat,0,7,modflow_resource_BS_drought_rech,https://w3id.org/wings/export/MINT#MODFLOWrch
-modflow_2005_BartonSprings_drought_Bas,Bas,Basic Package Input for the Groundwater Flow Process Basic file,modflow2005_strt,ba6,0,1,modflow_resource_BS_drought_bas,https://w3id.org/wings/export/MINT#MODFLOWBas6
-modflow_2005_BartonSprings_drought_Well,Well,Well file,modflow2005_q,dat,0,5,modflow_resource_BS_drought_well,https://w3id.org/wings/export/MINT#MODFLOWwel
-modflow_2005_BartonSprings_drought_Drn,Drn,Drain package file,,dat,0,6,modflow_resource_BS_drought_drn,https://w3id.org/wings/export/MINT#MODFLOWdrn
-modflow_2005_BartonSprings_drought_Dis,Dis,Discretization file,modflow2005_nlay;modflow2005_nrow;modflow2005_ncol;modflow2005_nper;modflow2005_delr;modflow2005_delc;modflow2005_top;modflow2005_botm;modflow2005_perlen;modflow2005_nstp;modflow2005_tsmult,dis,0,2,modflow_resource_BS_drought_dis,https://w3id.org/wings/export/MINT#MODFLOWdis
+modflow_2005_BartonSprings_drought_Hfb,hfb6,Horizontal flow barrier file,,hf6,0,8,modflow_resource_BS_drought_hfb,https://w3id.org/wings/export/MINT#MODFLOWhfb6
+modflow_2005_BartonSprings_drought_Oc,oc,Output control file,,dat,0,4,modflow_resource_BS_drought_oc,https://w3id.org/wings/export/MINT#MODFLOWoc
+modflow_2005_BartonSprings_drought_Sip,sip,Strongly Implicit Procedure package file,,dat,0,9,modflow_resource_BS_drought_sip,https://w3id.org/wings/export/MINT#MODFLOWsip
+modflow_2005_BartonSprings_drought_Bcf,bcf6,Block centered flow package file,modflow2005_trpy;modflow2005_sf1;modflow2005_tran;modflow2005_hy;modflow2005_vcont;modflow2005_sf2,bc6,0,3,modflow_resource_BS_drought_bcf,https://w3id.org/wings/export/MINT#MODFLOWbcf6
+modflow_2005_BartonSprings_drought_Rech,rch,Recharge file,modflow2005_rech,dat,0,7,modflow_resource_BS_drought_rech,https://w3id.org/wings/export/MINT#MODFLOWrch
+modflow_2005_BartonSprings_drought_Bas,bas6,Basic Package Input for the Groundwater Flow Process Basic file,modflow2005_strt,ba6,0,1,modflow_resource_BS_drought_bas,https://w3id.org/wings/export/MINT#MODFLOWBas6
+modflow_2005_BartonSprings_drought_Well,wel,Well file,modflow2005_q,dat,0,5,modflow_resource_BS_drought_well,https://w3id.org/wings/export/MINT#MODFLOWwel
+modflow_2005_BartonSprings_drought_Drn,drn,Drain package file,,dat,0,6,modflow_resource_BS_drought_drn,https://w3id.org/wings/export/MINT#MODFLOWdrn
+modflow_2005_BartonSprings_drought_Dis,dis,Discretization file,modflow2005_nlay;modflow2005_nrow;modflow2005_ncol;modflow2005_nper;modflow2005_delr;modflow2005_delc;modflow2005_top;modflow2005_botm;modflow2005_perlen;modflow2005_nstp;modflow2005_tsmult,dis,0,2,modflow_resource_BS_drought_dis,https://w3id.org/wings/export/MINT#MODFLOWdis
 ,,,,,,,,
 modflow_2005_BartonSprings_drought_cbb,cbb,Total budget file,,cbb,0,2,,https://w3id.org/wings/export/MINT#MODFLOWcbb
-modflow_2005_BartonSprings_drought_heads,heads,Heads file,modflow2005_subsidence;modflow2005_layer_compaction;modflow2005_ndsys_compaction;modflow2005_dsys_compaction;modflow2005_z_displacement;modflow2005_nd_critical_head;modflow2005_d_critical_head,hds,0,3,,https://w3id.org/wings/export/MINT#MODFLOWhds
-modflow_2005_BartonSprings_drought_ddown,ddown,Drawdown,modflow2005_drawdown,ddn,0,4,,https://w3id.org/wings/export/MINT#MODFLOWddn
-modflow_2005_BartonSprings_drought_list,list,List file,,lst,0,1,,https://w3id.org/wings/export/MINT#MODFLOWlst
+modflow_2005_BartonSprings_drought_heads,hds,Heads file,modflow2005_subsidence;modflow2005_layer_compaction;modflow2005_ndsys_compaction;modflow2005_dsys_compaction;modflow2005_z_displacement;modflow2005_nd_critical_head;modflow2005_d_critical_head,hds,0,3,,https://w3id.org/wings/export/MINT#MODFLOWhds
+modflow_2005_BartonSprings_drought_ddown,ddn,Drawdown,modflow2005_drawdown,ddn,0,4,,https://w3id.org/wings/export/MINT#MODFLOWddn
+modflow_2005_BartonSprings_drought_list,lst,List file,,lst,0,1,,https://w3id.org/wings/export/MINT#MODFLOWlst
 ,,,,,,,,
-modflow_2005_BartonSprings_advanced_Hfb,Hfb,Horizontal flow barrier file,,hf6,0,8,modflow_resource_BS_avg_hfb,https://w3id.org/wings/export/MINT#MODFLOWhfb6
-modflow_2005_BartonSprings_advanced_Oc,Oc,Output control file,,dat,0,4,modflow_resource_BS_avg_oc,https://w3id.org/wings/export/MINT#MODFLOWoc
-modflow_2005_BartonSprings_advanced_Sip,Sip,Strongly Implicit Procedure package file,,dat,0,9,modflow_resource_BS_avg_sip,https://w3id.org/wings/export/MINT#MODFLOWsip
-modflow_2005_BartonSprings_advanced_Bcf,Bcf,Block centered flow package file,modflow2005_trpy;modflow2005_sf1;modflow2005_tran;modflow2005_hy;modflow2005_vcont;modflow2005_sf2,bc6,0,3,modflow_resource_BS_avg_bcf,https://w3id.org/wings/export/MINT#MODFLOWbcf6
-modflow_2005_BartonSprings_advanced_Rech,Rech,Recharge file,modflow2005_rech,dat,0,7,,https://w3id.org/wings/export/MINT#MODFLOWrch
-modflow_2005_BartonSprings_advanced_Bas,Bas,Basic Package Input for the Groundwater Flow Process Basic file,modflow2005_strt,ba6,0,1,modflow_resource_BS_avg_bas,https://w3id.org/wings/export/MINT#MODFLOWBas6
-modflow_2005_BartonSprings_advanced_Well,Well,Well file,modflow2005_q,dat,0,5,modflow_resource_BS_avg_well,https://w3id.org/wings/export/MINT#MODFLOWwel
-modflow_2005_BartonSprings_advanced_Drn,Drn,Drain package file,,dat,0,6,modflow_resource_BS_avg_drn,https://w3id.org/wings/export/MINT#MODFLOWdrn
-modflow_2005_BartonSprings_advanced_Dis,Dis,Discretization file,modflow2005_nlay;modflow2005_nrow;modflow2005_ncol;modflow2005_nper;modflow2005_delr;modflow2005_delc;modflow2005_top;modflow2005_botm;modflow2005_perlen;modflow2005_nstp;modflow2005_tsmult,dis,0,2,modflow_resource_BS_avg_dis,https://w3id.org/wings/export/MINT#MODFLOWdis
+modflow_2005_BartonSprings_advanced_Hfb,hfb6,Horizontal flow barrier file,,hf6,0,8,modflow_resource_BS_avg_hfb,https://w3id.org/wings/export/MINT#MODFLOWhfb6
+modflow_2005_BartonSprings_advanced_Oc,oc,Output control file,,dat,0,4,modflow_resource_BS_avg_oc,https://w3id.org/wings/export/MINT#MODFLOWoc
+modflow_2005_BartonSprings_advanced_Sip,sip,Strongly Implicit Procedure package file,,dat,0,9,modflow_resource_BS_avg_sip,https://w3id.org/wings/export/MINT#MODFLOWsip
+modflow_2005_BartonSprings_advanced_Bcf,bcf6,Block centered flow package file,modflow2005_trpy;modflow2005_sf1;modflow2005_tran;modflow2005_hy;modflow2005_vcont;modflow2005_sf2,bc6,0,3,modflow_resource_BS_avg_bcf,https://w3id.org/wings/export/MINT#MODFLOWbcf6
+modflow_2005_BartonSprings_advanced_Rech,rch,Recharge file,modflow2005_rech,dat,0,7,,https://w3id.org/wings/export/MINT#MODFLOWrch
+modflow_2005_BartonSprings_advanced_Bas,bas6,Basic Package Input for the Groundwater Flow Process Basic file,modflow2005_strt,ba6,0,1,modflow_resource_BS_avg_bas,https://w3id.org/wings/export/MINT#MODFLOWBas6
+modflow_2005_BartonSprings_advanced_Well,wel,Well file,modflow2005_q,dat,0,5,modflow_resource_BS_avg_well,https://w3id.org/wings/export/MINT#MODFLOWwel
+modflow_2005_BartonSprings_advanced_Drn,drn,Drain package file,,dat,0,6,modflow_resource_BS_avg_drn,https://w3id.org/wings/export/MINT#MODFLOWdrn
+modflow_2005_BartonSprings_advanced_Dis,dis,Discretization file,modflow2005_nlay;modflow2005_nrow;modflow2005_ncol;modflow2005_nper;modflow2005_delr;modflow2005_delc;modflow2005_top;modflow2005_botm;modflow2005_perlen;modflow2005_nstp;modflow2005_tsmult,dis,0,2,modflow_resource_BS_avg_dis,https://w3id.org/wings/export/MINT#MODFLOWdis
 ,,,,,,,,
 modflow_2005_BartonSprings_advanced_cbb,cbb,Total budget file,,cbb,0,2,,https://w3id.org/wings/export/MINT#MODFLOWcbb
-modflow_2005_BartonSprings_advanced_heads,heads,Heads file,modflow2005_subsidence;modflow2005_layer_compaction;modflow2005_ndsys_compaction;modflow2005_dsys_compaction;modflow2005_z_displacement;modflow2005_nd_critical_head;modflow2005_d_critical_head,hds,0,3,,https://w3id.org/wings/export/MINT#MODFLOWhds
-modflow_2005_BartonSprings_advanced_ddown,ddown,Drawdown,modflow2005_drawdown,ddn,0,4,,https://w3id.org/wings/export/MINT#MODFLOWddn
-modflow_2005_BartonSprings_advanced_list,list,List file,,lst,0,1,,https://w3id.org/wings/export/MINT#MODFLOWlst
+modflow_2005_BartonSprings_advanced_heads,hds,Heads file,modflow2005_subsidence;modflow2005_layer_compaction;modflow2005_ndsys_compaction;modflow2005_dsys_compaction;modflow2005_z_displacement;modflow2005_nd_critical_head;modflow2005_d_critical_head,hds,0,3,,https://w3id.org/wings/export/MINT#MODFLOWhds
+modflow_2005_BartonSprings_advanced_ddown,ddn,Drawdown,modflow2005_drawdown,ddn,0,4,,https://w3id.org/wings/export/MINT#MODFLOWddn
+modflow_2005_BartonSprings_advanced_list,lst,List file,,lst,0,1,,https://w3id.org/wings/export/MINT#MODFLOWlst
