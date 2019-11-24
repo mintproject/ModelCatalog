@@ -470,25 +470,25 @@ cycles_outputs_cycles_outputs,cycles_outputs,Aggregated season and weather file,
 hand_v1_simple_input_dem,input-dem,Input digital elevation model,hand_dem,tif,0,1,,https://w3id.org/wings/export/MINT#hydrological-dem
 hand_v1_simple_distance_down,distance-down,Distance down flooding map,hand_demang;svid_demp;hand_flow,tif,0,1,,https://w3id.org/wings/export/MINT#hydrological-demdd
 ,,,,,,,,
-hand_v1_simple_texas_input_dem,input-dem,Input digital elevation model,hand_dem,tif,0,1,hand_sample_dem_texas,https://w3id.org/wings/export/MINT#hydrological-dem
+hand_v1_simple_texas_input_dem,input-dem,Input digital elevation model of the Barton Springs region (Texas),hand_dem,tif,0,1,hand_sample_dem_texas,https://w3id.org/wings/export/MINT#hydrological-dem
 hand_v1_simple_texas_distance_down,distance-down,Distance down flooding map,hand_demang;svid_demp;hand_flow,tif,0,1,,https://w3id.org/wings/export/MINT#hydrological-demdd
 ,,,,,,,,
-hand_v1_simple_baro_input_dem,input-dem,Input digital elevation model for the Alwero-Perboma basin in Ethiopia,hand_dem,tif,0,1,hand_dem_Baro,https://w3id.org/wings/export/MINT#hydrological-dem
+hand_v1_simple_baro_input_dem,input-dem,Input digital elevation model for the Baro basin in Ethiopia,hand_dem,tif,0,1,hand_dem_Baro,https://w3id.org/wings/export/MINT#hydrological-dem
 hand_v1_simple_baro_distance_down,distance-down,Distance down flooding map,hand_demang;svid_demp;hand_flow,tif,0,1,,https://w3id.org/wings/export/MINT#hydrological-demdd
 ,,,,,,,,
-hand_v1_simple_bashilo_input_dem,input-dem,Input digital elevation model for the Alwero-Perboma basin in Ethiopia,hand_dem,tif,0,1,hand_dem_Bashilo,https://w3id.org/wings/export/MINT#hydrological-dem
+hand_v1_simple_bashilo_input_dem,input-dem,Input digital elevation model for the Bashilo basin in Ethiopia,hand_dem,tif,0,1,hand_dem_Bashilo,https://w3id.org/wings/export/MINT#hydrological-dem
 hand_v1_simple_bashilo_distance_down,distance-down,Distance down flooding map,hand_demang;svid_demp;hand_flow,tif,0,1,,https://w3id.org/wings/export/MINT#hydrological-demdd
 ,,,,,,,,
-hand_v1_simple_muger_input_dem,input-dem,Input digital elevation model for the Alwero-Perboma basin in Ethiopia,hand_dem,tif,0,1,hand_dem_Muger,https://w3id.org/wings/export/MINT#hydrological-dem
+hand_v1_simple_muger_input_dem,input-dem,Input digital elevation model for the Muger basin in Ethiopia,hand_dem,tif,0,1,hand_dem_Muger,https://w3id.org/wings/export/MINT#hydrological-dem
 hand_v1_simple_muger_distance_down,distance-down,Distance down flooding map,hand_demang;svid_demp;hand_flow,tif,0,1,,https://w3id.org/wings/export/MINT#hydrological-demdd
 ,,,,,,,,
-hand_v1_simple_jamma_input_dem,input-dem,Input digital elevation model for the Alwero-Perboma basin in Ethiopia,hand_dem,tif,0,1,hand_dem_Jamma,https://w3id.org/wings/export/MINT#hydrological-dem
+hand_v1_simple_jamma_input_dem,input-dem,Input digital elevation model for the Jamma basin in Ethiopia,hand_dem,tif,0,1,hand_dem_Jamma,https://w3id.org/wings/export/MINT#hydrological-dem
 hand_v1_simple_jamma_distance_down,distance-down,Distance down flooding map,hand_demang;svid_demp;hand_flow,tif,0,1,,https://w3id.org/wings/export/MINT#hydrological-demdd
 ,,,,,,,,
-hand_v1_simple_guder_input_dem,input-dem,Input digital elevation model for the Alwero-Perboma basin in Ethiopia,hand_dem,tif,0,1,hand_dem_Guder,https://w3id.org/wings/export/MINT#hydrological-dem
+hand_v1_simple_guder_input_dem,input-dem,Input digital elevation model for the Guder basin in Ethiopia,hand_dem,tif,0,1,hand_dem_Guder,https://w3id.org/wings/export/MINT#hydrological-dem
 hand_v1_simple_guder_distance_down,distance-down,Distance down flooding map,hand_demang;svid_demp;hand_flow,tif,0,1,,https://w3id.org/wings/export/MINT#hydrological-demdd
 ,,,,,,,,
-hand_v1_simple_beko-tippi_input_dem,input-dem,Input digital elevation model for the Alwero-Perboma basin in Ethiopia,hand_dem,tif,0,1,hand_dem_Beko-Tippi,https://w3id.org/wings/export/MINT#hydrological-dem
+hand_v1_simple_beko-tippi_input_dem,input-dem,Input digital elevation model for the Beko-Tippi basin in Ethiopia,hand_dem,tif,0,1,hand_dem_Beko-Tippi,https://w3id.org/wings/export/MINT#hydrological-dem
 hand_v1_simple_beko-tippi_distance_down,distance-down,Distance down flooding map,hand_demang;svid_demp;hand_flow,tif,0,1,,https://w3id.org/wings/export/MINT#hydrological-demdd
 ,,,,,,,,
 modflow_2005_Hfb,hfb6,Horizontal flow barrier file,,hf6,0,8,,https://w3id.org/wings/export/MINT#MODFLOWhfb6
