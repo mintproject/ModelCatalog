@@ -17,20 +17,22 @@ hand_explanation2,HAND algorithm explanation,HAND model procedure,https://www.re
 ,,,,
 eacs_explanation,Explanation of the EACS model,Diagram explaining the main interactions of processes and variables in the economic aggregate crop supply model,,
 eacs_forrester,Forrester diagram for EACS,Forrester diagram explaining the Economic Aggregate Crop Supply model main processes and their interactions,,
-eacs_logo,eacs_logo,Economic model logo,https://www.kisscc0.com/clipart/computer-icons-economy-economic-development-symbol-4yrzrs/,https://b.kisscc0.com/20180705/zvq/kisscc0-computer-icons-economy-economic-development-symbol-eco-green-growth-icon-5b3e5f701b1338.3434381215308143201109.png
+eacs_logo,EACS logo,Economic model logo,https://www.kisscc0.com/clipart/computer-icons-economy-economic-development-symbol-4yrzrs/,https://b.kisscc0.com/20180705/zvq/kisscc0-computer-icons-economy-economic-development-symbol-eco-green-growth-icon-5b3e5f701b1338.3434381215308143201109.png
 ,,,,
 remote_sensing_output,Remote sensing analysis output,A visualization of the estimation for river bed growth using remote sensing data analysis,https://github.com/mintproject/EthiopiaDemo/tree/master/RemoteSensing,https://github.com/mintproject/EthiopiaDemo/raw/master/RemoteSensing/Box-1667-sec-2.gif
 remote_sensing_river_bed_variation,Remote sensing analysis river depth variation,A visualization of the estimation for river bed growth using remote sensing data analysis. The visualization shows river depth variation,https://github.com/mintproject/EthiopiaDemo/tree/master/RemoteSensing,http://umnlcc.cs.umn.edu/carto-test/
 ,,,,
 wgen_logo,wgen_logo,wgen logo,https://www.kisscc0.com/clipart/overcast-cloud-computer-icons-weather-forecasting-lo6fso/,https://github.com/mintproject/ModelCatalog/raw/master/Data/Images/weather.png
 ,,,,
-climcomp_logo,climcomp_logo,climcomp logo,https://www.kisscc0.com/clipart/cloud-weather-climate-computer-fluffy-clouds-ehncs4/,https://b.kisscc0.com/20181116/ihq/kisscc0-cloud-weather-climate-computer-fluffy-clouds-5beeafb50684e3.6698636015423692050267.png
+climcomp_logo,Climcomp logo,climcomp logo,https://www.kisscc0.com/clipart/cloud-weather-climate-computer-fluffy-clouds-ehncs4/,https://b.kisscc0.com/20181116/ihq/kisscc0-cloud-weather-climate-computer-fluffy-clouds-5beeafb50684e3.6698636015423692050267.png
 ,,,,
-kimetrica_logo,kimetrica_logo,kimetrica logo,https://kimetrica.com/,https://github.com/mintproject/ModelCatalog/raw/master/Data/Images/k.png
+kimetrica_logo,Kimetrica logo,kimetrica logo,https://kimetrica.com/,https://github.com/mintproject/ModelCatalog/raw/master/Data/Images/k.png
 ,,,,
-dssat_logo,dssat_logo,dssat logo,https://dssat.net/,https://dssat.net/wp-content/uploads/2014/05/DSSAT-color-update-LOGO+-DSSAT.png
+dssat_logo,DSSAT logo,dssat logo,https://dssat.net/,https://dssat.net/wp-content/uploads/2014/05/DSSAT-color-update-LOGO+-DSSAT.png
 dssat_explanation_diagram,DSSAT architecture diagram,An image displaying the different modules that are part of DSSAT,https://dssat.net/,https://dssat.net/wp-content/uploads/2018/02/CSM-Components_color.jpg
 ,,,,
-topoflow_logo,topoflow_logo,topoflow_logo,https://csdms.colorado.edu/wiki/Model:TopoFlow,https://github.com/mintproject/ModelCatalog/raw/master/Data/Images/topoflow_logo.png
+topoflow_logo,Topoflow logo,topoflow_logo,https://csdms.colorado.edu/wiki/Model:TopoFlow,https://github.com/mintproject/ModelCatalog/raw/master/Data/Images/topoflow_logo.png
 ,,,,
-swat_logo,swat logo,A logo of the SWAT model,https://www.esri.com/arcgis-blog/products/product/water/swat-soil-water-assessment-tool/,http://downloads.esri.com/blogs/hydro/ArcSWAT/Fig4.jpg
+swat_logo,SWAT logo,A logo of the SWAT model,https://www.esri.com/arcgis-blog/products/product/water/swat-soil-water-assessment-tool/,http://downloads.esri.com/blogs/hydro/ArcSWAT/Fig4.jpg
+,,,,
+fsi_logo,Flood Severity Index logo,A logo for the Flood Severity Index model,https://en.wikipedia.org/wiki/Gumbel_distribution,https://upload.wikimedia.org/wikipedia/commons/thumb/3/32/Gumbel-Density.svg/1024px-Gumbel-Density.svg.png
