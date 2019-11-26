@@ -564,10 +564,10 @@ modflow_2005_BartonSprings_advanced_heads,hds,Heads file,modflow2005_subsidence;
 modflow_2005_BartonSprings_advanced_ddown,ddn,Drawdown,modflow2005_drawdown,ddn,0,4,,https://w3id.org/wings/export/MINT#MODFLOWddn
 modflow_2005_BartonSprings_advanced_list,lst,List file,,lst,0,1,,https://w3id.org/wings/export/MINT#MODFLOWlst
 ,,,,,,,,
-fsi_1.0_simple_glofas,glofas-data,Glofas data input,fsi_q,nc,0,1,,https://w3id.org/wings/export/MINT#GloFas
+fsi_1.0_simple_glofas,glofas_data,Glofas data input,fsi_q,nc,0,1,,https://w3id.org/wings/export/MINT#GloFas
 fsi_1.0_simple_out,floodIndex,Output netcdf with the results,fsi_fsi,nc,0,1,,https://w3id.org/wings/export/MINT#FloodIndex
 fsi_1.0_simple_movie,flood_index_movie,Result movie,fsi_fsi,mp4,0,2,,https://w3id.org/wings/export/MINT#Movie
 ,,,,,,,,
-fsi_1.0_simple_et_ss_glofas,glofas-data,Glofas data input,fsi_q,nc,0,1,glofas_data_Et_SS,https://w3id.org/wings/export/MINT#GloFas
+fsi_1.0_simple_et_ss_glofas,glofas_data,Glofas data input,fsi_q,nc,0,1,glofas_data_Et_SS,https://w3id.org/wings/export/MINT#GloFas
 fsi_1.0_simple_et_ss_out,floodIndex,Output netcdf with the results,fsi_fsi,nc,0,1,,https://w3id.org/wings/export/MINT#FloodIndex
 fsi_1.0_simple_et_ss_movie,flood_index_movie,Result movie,fsi_fsi,mp4,0,2,,https://w3id.org/wings/export/MINT#Movie
