@@ -495,8 +495,8 @@ hand_v1_simple_guder_distance_down,distance-down,Distance down flooding map,hand
 hand_v1_simple_beko-tippi_input_dem,input-dem,Input digital elevation model for the Beko-Tippi basin in Ethiopia,hand_dem,tif,0,1,hand_dem_Beko-Tippi,https://w3id.org/wings/export/MINT#rasterDem
 hand_v1_simple_beko-tippi_distance_down,distance-down,Distance down flooding map,hand_demang;svid_demp;hand_flow,tif,0,1,,https://w3id.org/wings/export/MINT#rasterDistancedown
 ,,,,,,,,
-hand_v1_simple_awaro_input_dem,input-dem,Input digital elevation model for the Beko-Tippi basin in Ethiopia,hand_dem,tif,0,1,hand_dem_Awash,https://w3id.org/wings/export/MINT#rasterDem
-hand_v1_simple_awaro_distance_down,distance-down,Distance down flooding map,hand_demang;svid_demp;hand_flow,tif,0,1,,https://w3id.org/wings/export/MINT#rasterDistancedown
+hand_v1_simple_awash_input_dem,input-dem,Input digital elevation model for the Beko-Tippi basin in Ethiopia,hand_dem,tif,0,1,hand_dem_Awash,https://w3id.org/wings/export/MINT#rasterDem
+hand_v1_simple_awash_distance_down,distance-down,Distance down flooding map,hand_demang;svid_demp;hand_flow,tif,0,1,,https://w3id.org/wings/export/MINT#rasterDistancedown
 ,,,,,,,,
 hand_v1_simple_ganale_input_dem,input-dem,Input digital elevation model for the Beko-Tippi basin in Ethiopia,hand_dem,tif,0,1,hand_dem_Ganale,https://w3id.org/wings/export/MINT#rasterDem
 hand_v1_simple_ganale_distance_down,distance-down,Distance down flooding map,hand_demang;svid_demp;hand_flow,tif,0,1,,https://w3id.org/wings/export/MINT#rasterDistancedown
