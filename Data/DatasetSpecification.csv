@@ -452,6 +452,10 @@ topoflow_cfg_advanced_Baro_aggregatedInput,aggregated-inputs,Topoflow aggregated
 topoflow_cfg_advanced_Baro_rainRates,precipitation-rates,Precipitation rates,topo_p,zip,0,2,,https://w3id.org/wings/export/MINT#TopoflowPrecipitationRate
 topoflow_cfg_advanced_Baro_aggregatedOutput,aggregated-outputs,Topoflow aggregated outputs ,topo_Q;topo_stream;topo_inundation,tar.gz,0,1,,https://w3id.org/wings/export/MINT#TopoflowAggregatedOutputs
 ,,,,,,,,
+topoflow_cfg_simple_Muger_aggregatedInput,aggregated-inputs,Topoflow aggregated inputs for the Baro region,topo_p;topo_albedo;topo_DEM;topo_slope_grid_file;topo_aspect_grid_file;topo_slope_file;topo_nval;topo_z0val;topo_width;topo_angle,tar.gz,0,1,topoflow_inputs_muger,https://w3id.org/wings/export/MINT#TopoflowAggregatedInput
+topoflow_cfg_simple_Muger_rainRates,precipitation-rates,Precipitation rates,topo_p,zip,0,2,topoflow_precipitation_rates_muger,https://w3id.org/wings/export/MINT#TopoflowPrecipitationRate
+topoflow_cfg_simple_Muger_aggregatedOutput,aggregated-outputs,Topoflow aggregated outputs ,topo_Q;topo_stream;topo_inundation,tar.gz,0,1,,https://w3id.org/wings/export/MINT#TopoflowAggregatedOutputs
+,,,,,,,,
 river_depth_estimation_remote_sensing_data,remote_sensing_data,,,tar.gz,0,,,https://w3id.org/wings/export/MINT#RemoteSensingData
 river_depth_estimation_river_depth_data,river_depth_data,,,tar.gz,0,,,https://w3id.org/wings/export/MINT#RiverDepth
 ,,,,,,,,
@@ -490,6 +494,15 @@ hand_v1_simple_guder_distance_down,distance-down,Distance down flooding map,hand
 ,,,,,,,,
 hand_v1_simple_beko-tippi_input_dem,input-dem,Input digital elevation model for the Beko-Tippi basin in Ethiopia,hand_dem,tif,0,1,hand_dem_Beko-Tippi,https://w3id.org/wings/export/MINT#rasterDem
 hand_v1_simple_beko-tippi_distance_down,distance-down,Distance down flooding map,hand_demang;svid_demp;hand_flow,tif,0,1,,https://w3id.org/wings/export/MINT#rasterDistancedown
+,,,,,,,,
+hand_v1_simple_awaro_input_dem,input-dem,Input digital elevation model for the Beko-Tippi basin in Ethiopia,hand_dem,tif,0,1,hand_dem_Awash,https://w3id.org/wings/export/MINT#rasterDem
+hand_v1_simple_awaro_distance_down,distance-down,Distance down flooding map,hand_demang;svid_demp;hand_flow,tif,0,1,,https://w3id.org/wings/export/MINT#rasterDistancedown
+,,,,,,,,
+hand_v1_simple_ganale_input_dem,input-dem,Input digital elevation model for the Beko-Tippi basin in Ethiopia,hand_dem,tif,0,1,hand_dem_Ganale,https://w3id.org/wings/export/MINT#rasterDem
+hand_v1_simple_ganale_distance_down,distance-down,Distance down flooding map,hand_demang;svid_demp;hand_flow,tif,0,1,,https://w3id.org/wings/export/MINT#rasterDistancedown
+,,,,,,,,
+hand_v1_simple_shebelle_input_dem,input-dem,Input digital elevation model for the Beko-Tippi basin in Ethiopia,hand_dem,tif,0,1,hand_dem_Shebelle,https://w3id.org/wings/export/MINT#rasterDem
+hand_v1_simple_shebelle_distance_down,distance-down,Distance down flooding map,hand_demang;svid_demp;hand_flow,tif,0,1,,https://w3id.org/wings/export/MINT#rasterDistancedown
 ,,,,,,,,
 modflow_2005_Hfb,hfb6,Horizontal flow barrier file,,hf6,0,8,,https://w3id.org/wings/export/MINT#MODFLOWhfb6
 modflow_2005_Oc,oc,Output control file,,dat,0,4,,https://w3id.org/wings/export/MINT#MODFLOWoc
