@@ -19,3 +19,4 @@ topoflow_sourceCode_v3.6,Topoflow source code (v 3.6),Topoflow source code (v 3.
 source_topoflow36,Topoflow component ,Topoflow component ,,shell,https://github.com/mintproject/MINT-WorkflowDomain/raw/master/WINGSWorkflowComponents/topoflow-3.6.0-precipitation/
 source_hand_v1,HAND component,HAND component,,shell,https://github.com/mintproject/MINT-WorkflowDomain/tree/master/WINGSWorkflowComponents/HAND-v1
 fsi_source,Flood severity index source code,Flood severity index source code,,Python3.6,https://github.com/mintproject/FloodSeverityIndex
+source_fsi_comp,Flood severity index component code,Flood severity index component code,,shell,https://github.com/mintproject/MINT-WorkflowDomain/tree/master/WINGSWorkflowComponents/fsi-1.0.0

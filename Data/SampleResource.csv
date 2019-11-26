@@ -91,3 +91,5 @@ hand_dem_Muger,DEM frr Muger,Digital elevation model of the Muger region in Ethi
 hand_dem_Jamma,DEM far Jamma,Digital elevation model of the Jamma region in Ethiopia,https://data.mint.isi.edu/files/hand-dem/Jamma_DEM.tif,FFF-3s5c113e-c7ae-4cda-ba23-2e4f2286dem4,
 hand_dem_Guder,DEM frr Guder,Digital elevation model of the Guder region in Ethiopia,https://data.mint.isi.edu/files/hand-dem/Guder_DEM.tif,FFF-3s5c113e-c7ae-4cda-ba23-2e4f2286dem5,
 hand_dem_Beko-Tippi,DEM fir Beko-Tippi,Digital elevation model of the Beko-Tippi region in Ethiopia,https://data.mint.isi.edu/files/hand-dem/Beko-Tippi_DEM.tif,FFF-3s5c113e-c7ae-4cda-ba23-2e4f2286dem6,
+,,,,,
+glofas_data_Et_SS,GloFASv2.1 from 1981 to 2017 cut to Ethiopia and South Sudan,GloFASv2.1 from 1981 to 2017 cut to Ethiopia and South Sudan,https://data.mint.isi.edu/files/raw-data/GloFAS/flooding/GloFASv2.1_SS_ET_1981_2017.nc,FFF-3s5c113e-c7ae-4cda-ba23-2e4f2286glofas,

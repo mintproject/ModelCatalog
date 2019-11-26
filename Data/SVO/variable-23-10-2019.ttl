@@ -8,6 +8,9 @@
 @prefix xml: <http://www.w3.org/XML/1998/namespace> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
+<http://www.geoscienceontology.org/svo/svl/variable#channel%40context%7Ein_%28water_flowing%29__flood_volume-flux_severity_index> a ns1:Variable,
+        owl:NamedIndividual ;
+    rdfs:label "channel_water_flow__flood_volume-flux_severity_index" .
 <http://www.geoscienceontology.org/svo/svl/variable#%28%28channel_bottom%29%40context%7Eon_%28sediment_grain%29%29%40medium_water__hydraulic_conductivity> a ns1:Variable,
         owl:NamedIndividual ;
     rdfs:label "channel_bottom_sediment_grain_water__hydraulic_conductivity" ;
