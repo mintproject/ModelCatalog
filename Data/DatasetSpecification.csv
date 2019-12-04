@@ -42,7 +42,7 @@ cycles-0.9.4-alpha_summary,cycles_summary,The summary file provides a summarized
 cycles-0.9.4-alpha_weatherOutput,cycles_weatherOutput,Cycles weather output file,cycles_avg_tmp;cycles_date;cycles_max_tmp;cycles_min_tmp;cycles_precipitation;cycles_reference_et,dat,0,7,,https://w3id.org/wings/export/MINT#CyclesWeatherOutput
 cycles-0.9.4-alpha_water,cycles_water,Cycles water file,cycles_date;cycles_drainage;cycles_infiltration;cycles_irrigation;cycles_res_evap;cycles_plant_evap;cycles_runoff;cycles_snow_sub;cycles_soil_evap;cycles_transpiration;cycles_swc,dat,0,8,,https://w3id.org/wings/export/MINT#CyclesWaterOutput
 cycles-0.9.4-alpha_outputs,cycles_outputs,Cycles season configuration file,,txt,0,9,,https://w3id.org/wings/export/MINT#CyclesOutputs
-,,,,,,,,
+,,,,,,,,hand_v1_simple_baro_distance_down;
 cycles-0.9.4-alpha-simple-pongo_weather,cycles_weather,"Cycles weather description file. The weather files typically have a suffix of .weather, but any suffix or file naming convention can be used so long as the name of the weather file listed in the control file exactly matches the name of the weather file to be used in the input directory. Weather files contain three lines at the beginning with the keyword tags LATITUDE, ALTITUDE, and SCREENING_HEIGHT, each followed by a tab-delimited value. Altitude and screening height values should be entered in meters. Screening height is the height of the weather station instruments above the land surface. Following these three lines is a row of tab-delimited column headers in the order YEAR, DOY, PP, TX, TN, SOLAR, RHX, RHN, WIND",cycles_pp;cycles_tx;cycles_tn;cycles_sr;cycles_hx;cycles_hn;cycles_ws,weather,0,1,cycles_weather_resource_pongo,https://w3id.org/wings/export/MINT#CyclesWeather
 cycles-0.9.4-alpha-simple-pongo_soil,cycles_soil,"Cycles soil description file. Soil files typically have a suffix of .soil, but any naming convention can be used as long as it matches the soil file name listed in the control file. The soil file starts with three lines at the beginning with the keyword tags CURVE_NUMBER, SLOPE, and TOTAL_LAYERS, with each keyword followed by a tab-delimited value.",cycles_cn;cycles_slope;cycles_layer;cycles_dz;cycles_clay;cycles_silt;cycles_rv;cycles_bd;cycles_som;cycles_smc,soil,0,2,cycles_soil_resource_pongo,https://w3id.org/wings/export/MINT#CyclesSoil
 cycles-0.9.4-alpha-simple-pongo_crops,cycles_crops,The crop description file defines physiological and management parameters that control the growth and harvest of crops used in the simulation. Each crop used in the simulation must have an entry in the crop description file. Each crop entry begins with the keyword tag NAME.,cycles_name;cycles_flowering_tt;cycles_maturity_tt;cycles_maximum_soil_coverage;cycles_maximum_rooting_depth;cycles_standing_residue_at_harvest;cycles_residue_removed;cycles_clipping_biomass_threshold_upper;cycles_clipping_biomass_threshold_lower;cycles_harvest_timing;cycles_harvest_biomass_destiny;cycles_min_temperature_for_transpiration;cycles_threshold_temperature_for_transpiration;cycles_min_temperature_for_cold_damage;cycles_threshold_temperature_for_cold_damage;cycles_base_temperature_for_development;cycles_optimum_temperature_for_development;cycles_max_temperature_for_development;cycles_initial_partitioning_to_shoot;cycles_final_partitioning_to_shoot;cycles_radiation_use_efficiency;cycles_transpiration_use_efficiency;cycles_maximum_harvest_index;cycles_minimum_harvest_index;cycles_crop_harvest_index;cycles_thermal_time_to_emergence;cycles_n_max_concentration;cycles_n_dilution_slope;cycles_kc;cycles_annual;cycles_legume;cycles_c3;cycles_lwp_stress_onset;cycles_lwp_wilting_point;cycles_transpiration_max,crop,0,3,cycles_crops_resource_pongo,https://w3id.org/wings/export/MINT#CyclesCrops
@@ -495,33 +495,43 @@ hand_v1_simple_distance_down,distance-down,Distance down flooding map,hand_deman
 ,,,,,,,,
 hand_v1_simple_texas_input_dem,input-dem,Input digital elevation model of the Barton Springs region (Texas),hand_dem,tif,0,1,hand_sample_dem_texas,https://w3id.org/wings/export/MINT#rasterDem
 hand_v1_simple_texas_distance_down,distance-down,Distance down flooding map,hand_demang;svid_demp;hand_flow,tif,0,1,,https://w3id.org/wings/export/MINT#rasterDistancedown
+hand_v1_simple_texas_distance_down_image,distance-down-image,Distance down flooding map image,hand_demang;svid_demp;hand_flow,png,0,2,,https://w3id.org/wings/export/MINT#distanceDownImage
 ,,,,,,,,
 hand_v1_simple_baro_input_dem,input-dem,Input digital elevation model for the Baro basin in Ethiopia,hand_dem,tif,0,1,hand_dem_Baro,https://w3id.org/wings/export/MINT#rasterDem
 hand_v1_simple_baro_distance_down,distance-down,Distance down flooding map,hand_demang;svid_demp;hand_flow,tif,0,1,,https://w3id.org/wings/export/MINT#rasterDistancedown
+hand_v1_simple_baro_distance_down_image,distance-down-image,Distance down flooding map image,hand_demang;svid_demp;hand_flow,png,0,2,,https://w3id.org/wings/export/MINT#distanceDownImage
 ,,,,,,,,
 hand_v1_simple_bashilo_input_dem,input-dem,Input digital elevation model for the Bashilo basin in Ethiopia,hand_dem,tif,0,1,hand_dem_Bashilo,https://w3id.org/wings/export/MINT#rasterDem
 hand_v1_simple_bashilo_distance_down,distance-down,Distance down flooding map,hand_demang;svid_demp;hand_flow,tif,0,1,,https://w3id.org/wings/export/MINT#rasterDistancedown
+hand_v1_simple_bashilo_distance_down_image,distance-down-image,Distance down flooding map image,hand_demang;svid_demp;hand_flow,png,0,2,,https://w3id.org/wings/export/MINT#distanceDownImage
 ,,,,,,,,
 hand_v1_simple_muger_input_dem,input-dem,Input digital elevation model for the Muger basin in Ethiopia,hand_dem,tif,0,1,hand_dem_Muger,https://w3id.org/wings/export/MINT#rasterDem
 hand_v1_simple_muger_distance_down,distance-down,Distance down flooding map,hand_demang;svid_demp;hand_flow,tif,0,1,,https://w3id.org/wings/export/MINT#rasterDistancedown
+hand_v1_simple_muger_distance_down_image,distance-down-image,Distance down flooding map image,hand_demang;svid_demp;hand_flow,png,0,2,,https://w3id.org/wings/export/MINT#distanceDownImage
 ,,,,,,,,
 hand_v1_simple_jamma_input_dem,input-dem,Input digital elevation model for the Jamma basin in Ethiopia,hand_dem,tif,0,1,hand_dem_Jamma,https://w3id.org/wings/export/MINT#rasterDem
 hand_v1_simple_jamma_distance_down,distance-down,Distance down flooding map,hand_demang;svid_demp;hand_flow,tif,0,1,,https://w3id.org/wings/export/MINT#rasterDistancedown
+hand_v1_simple_jamma_distance_down_image,distance-down-image,Distance down flooding map image,hand_demang;svid_demp;hand_flow,png,0,2,,https://w3id.org/wings/export/MINT#distanceDownImage
 ,,,,,,,,
 hand_v1_simple_guder_input_dem,input-dem,Input digital elevation model for the Guder basin in Ethiopia,hand_dem,tif,0,1,hand_dem_Guder,https://w3id.org/wings/export/MINT#rasterDem
 hand_v1_simple_guder_distance_down,distance-down,Distance down flooding map,hand_demang;svid_demp;hand_flow,tif,0,1,,https://w3id.org/wings/export/MINT#rasterDistancedown
+hand_v1_simple_guder_distance_down_image,distance-down-image,Distance down flooding map image,hand_demang;svid_demp;hand_flow,png,0,2,,https://w3id.org/wings/export/MINT#distanceDownImage
 ,,,,,,,,
 hand_v1_simple_beko-tippi_input_dem,input-dem,Input digital elevation model for the Beko-Tippi basin in Ethiopia,hand_dem,tif,0,1,hand_dem_Beko-Tippi,https://w3id.org/wings/export/MINT#rasterDem
 hand_v1_simple_beko-tippi_distance_down,distance-down,Distance down flooding map,hand_demang;svid_demp;hand_flow,tif,0,1,,https://w3id.org/wings/export/MINT#rasterDistancedown
+hand_v1_simple_beko-tippi_distance_down_image,distance-down-image,Distance down flooding map image,hand_demang;svid_demp;hand_flow,png,0,2,,https://w3id.org/wings/export/MINT#distanceDownImage
 ,,,,,,,,
 hand_v1_simple_awash_input_dem,input-dem,Input digital elevation model for the Beko-Tippi basin in Ethiopia,hand_dem,tif,0,1,hand_dem_Awash,https://w3id.org/wings/export/MINT#rasterDem
 hand_v1_simple_awash_distance_down,distance-down,Distance down flooding map,hand_demang;svid_demp;hand_flow,tif,0,1,,https://w3id.org/wings/export/MINT#rasterDistancedown
+hand_v1_simple_awash_distance_down_image,distance-down-image,Distance down flooding map image,hand_demang;svid_demp;hand_flow,png,0,2,,https://w3id.org/wings/export/MINT#distanceDownImage
 ,,,,,,,,
 hand_v1_simple_ganale_input_dem,input-dem,Input digital elevation model for the Beko-Tippi basin in Ethiopia,hand_dem,tif,0,1,hand_dem_Ganale,https://w3id.org/wings/export/MINT#rasterDem
 hand_v1_simple_ganale_distance_down,distance-down,Distance down flooding map,hand_demang;svid_demp;hand_flow,tif,0,1,,https://w3id.org/wings/export/MINT#rasterDistancedown
+hand_v1_simple_ganale_distance_down_image,distance-down-image,Distance down flooding map image,hand_demang;svid_demp;hand_flow,png,0,2,,https://w3id.org/wings/export/MINT#distanceDownImage
 ,,,,,,,,
 hand_v1_simple_shebelle_input_dem,input-dem,Input digital elevation model for the Beko-Tippi basin in Ethiopia,hand_dem,tif,0,1,hand_dem_Shebelle,https://w3id.org/wings/export/MINT#rasterDem
 hand_v1_simple_shebelle_distance_down,distance-down,Distance down flooding map,hand_demang;svid_demp;hand_flow,tif,0,1,,https://w3id.org/wings/export/MINT#rasterDistancedown
+hand_v1_simple_shebelle_distance_down_image,distance-down-image,Distance down flooding map image,hand_demang;svid_demp;hand_flow,png,0,2,,https://w3id.org/wings/export/MINT#distanceDownImage
 ,,,,,,,,
 modflow_2005_Hfb,hfb6,Horizontal flow barrier file,,hf6,0,8,,https://w3id.org/wings/export/MINT#MODFLOWhfb6
 modflow_2005_Oc,oc,Output control file,,dat,0,4,,https://w3id.org/wings/export/MINT#MODFLOWoc
