@@ -15,8 +15,9 @@ source_pihm_config_v2,PIHM configuration component code,Code for creating an enc
 source_pihm_config_v4,PIHM++ configuration component code,Code for creating an encapsulation of PIHM for a model configuration (PIHM++),,shell,https://github.com/mintproject/MINT-WorkflowDomain/tree/master/WINGSWorkflowComponents/pihm-v4
 source_pihm_config_v4.1.0,PIHM++ configuration component code,Code for creating an encapsulation of PIHM for a model configuration (PIHM++),,shell,https://github.com/mintproject/MINT-WorkflowDomain/tree/master/WINGSWorkflowComponents/pihm-4.1.0
 modflow2005_source,ModFlow 2005 source code (v1.12.00),ModFlow 2005 source code (v1.12.00),https://creativecommons.org/publicdomain/zero/1.0/,Fortran 90;C;C++,
-topoflow_sourceCode_v3.6,Topoflow source code (v 3.6),Topoflow source code (v 3.6),https://github.com/peckhams/topoflow/blob/master/LICENSE.txt,python3.6,https://github.com/peckhams/topoflow/
+topoflow_sourceCode_v3.6,Topoflow source code (v 3.6),Topoflow source code (v3.6),https://github.com/peckhams/topoflow/blob/master/LICENSE.txt,python3.6,https://github.com/peckhams/topoflow/
 source_topoflow36,Topoflow component ,Topoflow component ,,shell,https://github.com/mintproject/MINT-WorkflowDomain/raw/master/WINGSWorkflowComponents/topoflow-3.6.0-precipitation/
 source_hand_v1,HAND component,HAND component,,shell,https://github.com/mintproject/MINT-WorkflowDomain/tree/master/WINGSWorkflowComponents/HAND-v1
 fsi_source,Flood severity index source code,Flood severity index source code,,Python3.6,https://github.com/mintproject/FloodSeverityIndex
 source_fsi_comp,Flood severity index component code,Flood severity index component code,,shell,https://github.com/mintproject/MINT-WorkflowDomain/tree/master/WINGSWorkflowComponents/fsi-1.0.0
+topoflow_source,Topoflow source code,Topoflow source code,https://github.com/peckhams/topoflow/blob/master/LICENSE.txt,python3.6,https://github.com/peckhams/topoflow

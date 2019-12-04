@@ -5227,8 +5227,7 @@
         ns1:QuantitativeProperty,
         ns1:StandardizedProperty,
         owl:NamedIndividual ;
-    rdfs:label "storage_capacity",
-        "storage_volume" ;
+    rdfs:label "storage_volume" ;
     ns1:hasAttribute <http://www.geoscienceontology.org/svo/svl/attribute#storage> ;
     ns1:hasUnits "L^3" ;
     ns1:isTypeOf <http://www.geoscienceontology.org/svo/svl/property#volume> ;
