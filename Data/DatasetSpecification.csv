@@ -443,12 +443,12 @@ DSSAT_weatherFile,DSSAT weather file,DSSAT weather file,DSSAT_LAT;DSSAT_LONG;DSS
 DSSAT_sol,DSSAT soil file,DSSAT soil file,DSSAT_SALB;DSSAT_SBDM;DSSAT_SDUL;DSSAT_SLB;DSSAT_SLCL;DSSAT_SLLL;DSSAT_SLOC;DSSAT_SLSI;DSSAT_SSAT;DSSAT_SSKS,sol,0,,,https://w3id.org/wings/export/MINT#Soil
 DSSAT_summary,DSSAT Summary file,DSSAT Summary file,DSSAT_hwam;DSSAT_cwam,csv,0,,,https://w3id.org/wings/export/MINT#Summary
 ,,,,,,,,
-topoflow_cfg_simple_aggregatedInput,aggregated-inputs,TopoFlow aggregated inputs,topo_albedo;topo_DEM;topo_slope_grid_file;topo_aspect_grid_file;topo_slope_file;topo_nval;topo_z0val;topo_width;topo_angle,tar.gz,0,1,,https://w3id.org/wings/export/MINT#TopoflowAggregatedInput
-topoflow_cfg_simple-rainRates,precipitation-rates,Precipitation rates,topo_p,zip,0,2,,https://w3id.org/wings/export/MINT#TopoflowPrecipitationRate
+topoflow_cfg_simple_aggregatedInput,aggregated-inputs,TopoFlow aggregated inputs,topo_albedo;topo_DEM;topo_slope_grid_file;topo_aspect_grid_file;topo_slope_file;topo_nval;topo_z0val;topo_width;topo_angle,zip,0,1,,https://w3id.org/wings/export/MINT#TopoflowAggregatedInput
+topoflow_cfg_simple-rainRates,precipitation-rates,Precipitation rates,topo_p,tar.gz,0,2,,https://w3id.org/wings/export/MINT#TopoflowPrecipitationRate
 topoflow_cfg_simple_aggregatedOutput,aggregated-outputs,TopoFlow aggregated outputs,topo_Q;topo_stream;topo_inundation,zip,0,1,,https://w3id.org/wings/export/MINT#TopoflowAggregatedOutputs
 ,,,,,,,,
-topoflow_cfg_simple_Baro_aggregatedInput,aggregated-inputs,Topoflow aggregated inputs for the Baro region,topo_p;topo_albedo;topo_DEM;topo_slope_grid_file;topo_aspect_grid_file;topo_slope_file;topo_nval;topo_z0val;topo_width;topo_angle,tar.gz,0,1,topoflow_inputs_baro,https://w3id.org/wings/export/MINT#TopoflowAggregatedInput
-topoflow_cfg_simple_Baro_rainRates,precipitation-rates,Precipitation rates,topo_p,zip,0,2,topoflow_precipitation_rates_baro,https://w3id.org/wings/export/MINT#TopoflowPrecipitationRate
+topoflow_cfg_simple_Baro_aggregatedInput,aggregated-inputs,Topoflow aggregated inputs for the Baro region,topo_p;topo_albedo;topo_DEM;topo_slope_grid_file;topo_aspect_grid_file;topo_slope_file;topo_nval;topo_z0val;topo_width;topo_angle,zip,0,1,topoflow_inputs_baro,https://w3id.org/wings/export/MINT#TopoflowAggregatedInput
+topoflow_cfg_simple_Baro_rainRates,precipitation-rates,Precipitation rates,topo_p,tar.gz,0,2,topoflow_precipitation_rates_baro,https://w3id.org/wings/export/MINT#TopoflowPrecipitationRate
 topoflow_cfg_simple_Baro_aggregatedOutput,aggregated-outputs,Topoflow aggregated outputs ,topo_Q;topo_stream;topo_inundation,zip,0,1,,https://w3id.org/wings/export/MINT#TopoflowAggregatedOutputs
 ,,,,,,,,
 topoflow_cfg_advanced_Baro_aggregatedInput,aggregated-inputs,Topoflow aggregated inputs for the Baro region,topo_p;topo_albedo;topo_DEM;topo_slope_grid_file;topo_aspect_grid_file;topo_slope_file;topo_nval;topo_z0val;topo_width;topo_angle,zip,0,1,topoflow_inputs_baro,https://w3id.org/wings/export/MINT#TopoflowAggregatedInput
