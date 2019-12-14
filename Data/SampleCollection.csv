@@ -1,3 +1,5 @@
 https://w3id.org/okn/o/sd#SampleCollection,http://www.w3.org/2000/01/rdf-schema#label,https://w3id.org/okn/o/sd#description,https://w3id.org/okn/o/sd#hasPart
 cycles_weather_pongo_collection,Collection of weather files for Pongo,"""A set of resources from the Pongo region (South Sudan) appropriate to run Cycles""",met9.12Nx27.38E.weather;met8.62Nx26.12E.weather;met8.62Nx26.62E.weather;met7.62Nx26.12E.weather;met8.88Nx27.12E.weather
 cycles_weather_Gambella_collection,Collection of weather files for Gambella,"""A set of resources from the Gambella region (Ethiopia) that are appropriate to run Cycles""",met7.12Nx34.62E.weather;met7.62Nx34.62E.weather;met7.62Nx34.12E.weather;met8.12Nx34.62E.weather;met8.12Nx33.62E.weather
+cycles_weather_Oromia_collection,,,
+cyles_soil_Oromia_collection,,,

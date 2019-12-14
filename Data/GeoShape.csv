@@ -1,5 +1,5 @@
 https://w3id.org/okn/o/sdm#GeoShape,https://w3id.org/okn/o/sdm#box,http://www.w3.org/2000/01/rdf-schema#label
-Baro_Shape," ""34.518749999999,7.431249999999 36.31541666666567,9.417083333332332""",Bounding box for Baro basin
+Baro_Shape," ""33.2078,7.4312 36.3155,9.4162""",Bounding box for Baro basin
 Pongo_Basin_SS_Shape," ""24.14233611868619,6.682771856532459 27.741570450529053,9.345303077456506""",Bounding box for Pongo basin
 Gambella_Shape," ""32.991536,6.27026 35.402297999999995,8.718837""",Bounding box for Gambella region
 Muger_Shape," ""37.902916666667004,9.073750000000333 39.032916666667,9.97625000000033""",Bounding box for Muger basin
@@ -13,3 +13,4 @@ Ganale_Shape,"""39.38034620913843,5.629512229025655 40.993819420185524,6.9513211
 Shebelle_Shape,"""38.68201146140237,6.36367971332346 43.34548744123218,9.527153158178406""",Bounding box for the Shebelle basin
 SouthSudan_Shape,"""24.121374145000107,3.538957621000113 35.814150025000096,12.226154684000159""",Bounding box for South Sudan
 Ethiopia_Shape,"""32.94418,3.4120600000000003 47.79942,14.96943""",Bounding box for Ethiopia
+Tekeze_Shape,,Bounding box for Tekeze basin
