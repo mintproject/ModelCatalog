@@ -480,21 +480,41 @@ topoflow_cfg_simple_Muger_aggregatedInput,aggregated-inputs,Topoflow aggregated 
 topoflow_cfg_simple_Muger_rainRates,precipitation-rates,Precipitation rates,topo_p,tar.gz,0,2,topoflow_precipitation_rates_muger,https://w3id.org/wings/export/MINT#TopoflowPrecipitationRate
 topoflow_cfg_simple_Muger_aggregatedOutput,aggregated-outputs,Topoflow aggregated outputs ,topo_Q;topo_stream;topo_inundation,zip,0,1,,https://w3id.org/wings/export/MINT#TopoflowAggregatedOutputs
 ,,,,,,,,
+topoflow_cfg_advanced_Muger_aggregatedInput,aggregated-inputs,Topoflow aggregated inputs for the Baro region,topo_p;topo_albedo;topo_DEM;topo_slope_grid_file;topo_aspect_grid_file;topo_slope_file;topo_nval;topo_z0val;topo_width;topo_angle,zip,0,1,topoflow_inputs_muger,https://w3id.org/wings/export/MINT#TopoflowAggregatedInput
+topoflow_cfg_advanced_Muger_rainRates,precipitation-rates,Precipitation rates,topo_p,tar.gz,0,2,,https://w3id.org/wings/export/MINT#TopoflowPrecipitationRate
+topoflow_cfg_advanced_Muger_aggregatedOutput,aggregated-outputs,Topoflow aggregated outputs ,topo_Q;topo_stream;topo_inundation,zip,0,1,,https://w3id.org/wings/export/MINT#TopoflowAggregatedOutputs
+,,,,,,,,
 topoflow_cfg_simple_Awash_aggregatedInput,aggregated-inputs,Topoflow aggregated inputs for the Baro region,topo_p;topo_albedo;topo_DEM;topo_slope_grid_file;topo_aspect_grid_file;topo_slope_file;topo_nval;topo_z0val;topo_width;topo_angle,zip,0,1,topoflow_inputs_awash,https://w3id.org/wings/export/MINT#TopoflowAggregatedInput
 topoflow_cfg_simple_Awash_rainRates,precipitation-rates,Precipitation rates,topo_p,tar.gz,0,2,topoflow_precipitation_rates_awash,https://w3id.org/wings/export/MINT#TopoflowPrecipitationRate
 topoflow_cfg_simple_Awash_aggregatedOutput,aggregated-outputs,Topoflow aggregated outputs ,topo_Q;topo_stream;topo_inundation,zip,0,1,,https://w3id.org/wings/export/MINT#TopoflowAggregatedOutputs
+,,,,,,,,
+topoflow_cfg_advanced_Awash_aggregatedInput,aggregated-inputs,Topoflow aggregated inputs for the Baro region,topo_p;topo_albedo;topo_DEM;topo_slope_grid_file;topo_aspect_grid_file;topo_slope_file;topo_nval;topo_z0val;topo_width;topo_angle,zip,0,1,topoflow_inputs_awash,https://w3id.org/wings/export/MINT#TopoflowAggregatedInput
+topoflow_cfg_advanced_Awash_rainRates,precipitation-rates,Precipitation rates,topo_p,tar.gz,0,2,,https://w3id.org/wings/export/MINT#TopoflowPrecipitationRate
+topoflow_cfg_advanced_Awash_aggregatedOutput,aggregated-outputs,Topoflow aggregated outputs ,topo_Q;topo_stream;topo_inundation,zip,0,1,,https://w3id.org/wings/export/MINT#TopoflowAggregatedOutputs
 ,,,,,,,,
 topoflow_cfg_simple_Ganale_aggregatedInput,aggregated-inputs,Topoflow aggregated inputs for the Baro region,topo_p;topo_albedo;topo_DEM;topo_slope_grid_file;topo_aspect_grid_file;topo_slope_file;topo_nval;topo_z0val;topo_width;topo_angle,zip,0,1,topoflow_inputs_ganale,https://w3id.org/wings/export/MINT#TopoflowAggregatedInput
 topoflow_cfg_simple_Ganale_rainRates,precipitation-rates,Precipitation rates,topo_p,tar.gz,0,2,topoflow_precipitation_rates_ganale,https://w3id.org/wings/export/MINT#TopoflowPrecipitationRate
 topoflow_cfg_simple_Ganale_aggregatedOutput,aggregated-outputs,Topoflow aggregated outputs ,topo_Q;topo_stream;topo_inundation,zip,0,1,,https://w3id.org/wings/export/MINT#TopoflowAggregatedOutputs
 ,,,,,,,,
+topoflow_cfg_advanced_Ganale_aggregatedInput,aggregated-inputs,Topoflow aggregated inputs for the Baro region,topo_p;topo_albedo;topo_DEM;topo_slope_grid_file;topo_aspect_grid_file;topo_slope_file;topo_nval;topo_z0val;topo_width;topo_angle,zip,0,1,topoflow_inputs_ganale,https://w3id.org/wings/export/MINT#TopoflowAggregatedInput
+topoflow_cfg_advanced_Ganale_rainRates,precipitation-rates,Precipitation rates,topo_p,tar.gz,0,2,,https://w3id.org/wings/export/MINT#TopoflowPrecipitationRate
+topoflow_cfg_advanced_Ganale_aggregatedOutput,aggregated-outputs,Topoflow aggregated outputs ,topo_Q;topo_stream;topo_inundation,zip,0,1,,https://w3id.org/wings/export/MINT#TopoflowAggregatedOutputs
+,,,,,,,,
 topoflow_cfg_simple_Guder_aggregatedInput,aggregated-inputs,Topoflow aggregated inputs for the Baro region,topo_p;topo_albedo;topo_DEM;topo_slope_grid_file;topo_aspect_grid_file;topo_slope_file;topo_nval;topo_z0val;topo_width;topo_angle,zip,0,1,topoflow_inputs_guder,https://w3id.org/wings/export/MINT#TopoflowAggregatedInput
 topoflow_cfg_simple_Guder_rainRates,precipitation-rates,Precipitation rates,topo_p,tar.gz,0,2,topoflow_precipitation_rates_guder,https://w3id.org/wings/export/MINT#TopoflowPrecipitationRate
 topoflow_cfg_simple_Guder_aggregatedOutput,aggregated-outputs,Topoflow aggregated outputs ,topo_Q;topo_stream;topo_inundation,zip,0,1,,https://w3id.org/wings/export/MINT#TopoflowAggregatedOutputs
 ,,,,,,,,
+topoflow_cfg_advanced_Guder_aggregatedInput,aggregated-inputs,Topoflow aggregated inputs for the Baro region,topo_p;topo_albedo;topo_DEM;topo_slope_grid_file;topo_aspect_grid_file;topo_slope_file;topo_nval;topo_z0val;topo_width;topo_angle,zip,0,1,topoflow_inputs_guder,https://w3id.org/wings/export/MINT#TopoflowAggregatedInput
+topoflow_cfg_advanced_Guder_rainRates,precipitation-rates,Precipitation rates,topo_p,tar.gz,0,2,,https://w3id.org/wings/export/MINT#TopoflowPrecipitationRate
+topoflow_cfg_advanced_Guder_aggregatedOutput,aggregated-outputs,Topoflow aggregated outputs ,topo_Q;topo_stream;topo_inundation,zip,0,1,,https://w3id.org/wings/export/MINT#TopoflowAggregatedOutputs
+,,,,,,,,
 topoflow_cfg_simple_Shebelle_aggregatedInput,aggregated-inputs,Topoflow aggregated inputs for the Baro region,topo_p;topo_albedo;topo_DEM;topo_slope_grid_file;topo_aspect_grid_file;topo_slope_file;topo_nval;topo_z0val;topo_width;topo_angle,zip,0,1,topoflow_inputs_shebelle,https://w3id.org/wings/export/MINT#TopoflowAggregatedInput
 topoflow_cfg_simple_Shebelle_rainRates,precipitation-rates,Precipitation rates,topo_p,tar.gz,0,2,topoflow_precipitation_rates_shebelle,https://w3id.org/wings/export/MINT#TopoflowPrecipitationRate
 topoflow_cfg_simple_Shebelle_aggregatedOutput,aggregated-outputs,Topoflow aggregated outputs ,topo_Q;topo_stream;topo_inundation,zip,0,1,,https://w3id.org/wings/export/MINT#TopoflowAggregatedOutputs
+,,,,,,,,
+topoflow_cfg_advanced_Shebelle_aggregatedInput,aggregated-inputs,Topoflow aggregated inputs for the Baro region,topo_p;topo_albedo;topo_DEM;topo_slope_grid_file;topo_aspect_grid_file;topo_slope_file;topo_nval;topo_z0val;topo_width;topo_angle,zip,0,1,topoflow_inputs_shebelle,https://w3id.org/wings/export/MINT#TopoflowAggregatedInput
+topoflow_cfg_advanced_Shebelle_rainRates,precipitation-rates,Precipitation rates,topo_p,tar.gz,0,2,,https://w3id.org/wings/export/MINT#TopoflowPrecipitationRate
+topoflow_cfg_advanced_Shebelle_aggregatedOutput,aggregated-outputs,Topoflow aggregated outputs ,topo_Q;topo_stream;topo_inundation,zip,0,1,,https://w3id.org/wings/export/MINT#TopoflowAggregatedOutputs
 ,,,,,,,,
 river_depth_estimation_remote_sensing_data,remote_sensing_data,,,tar.gz,0,,,https://w3id.org/wings/export/MINT#RemoteSensingData
 river_depth_estimation_river_depth_data,river_depth_data,,,tar.gz,0,,,https://w3id.org/wings/export/MINT#RiverDepth

@@ -13,4 +13,4 @@ Ganale_Shape,"""39.38034620913843,5.629512229025655 40.993819420185524,6.9513211
 Shebelle_Shape,"""38.68201146140237,6.36367971332346 43.34548744123218,9.527153158178406""",Bounding box for the Shebelle basin
 SouthSudan_Shape,"""24.121374145000107,3.538957621000113 35.814150025000096,12.226154684000159""",Bounding box for South Sudan
 Ethiopia_Shape,"""32.94418,3.4120600000000003 47.79942,14.96943""",Bounding box for Ethiopia
-Tekeze_Shape,,Bounding box for Tekeze basin
+Tekeze_Shape,"""37.5413,11.6546 39.7112,13.6246""",Bounding box for Tekeze basin
