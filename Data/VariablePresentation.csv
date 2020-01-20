@@ -3,7 +3,7 @@ fldas_Evap_tavg,Evap_tavg,Evap_tavg,total_evapotranspiration,,land_surface_water
 fldas_LWdown_f_tavg,LWdown_f_tavg,LWdown_f_tavg,surface_downwelling_longwave_flux_in_air,,land_surface_air_radiation~longwave~downwelling__energy_flux,W m-2,,,,,
 fldas_Lwnet_tavg,Lwnet_tavg,Lwnet_tavg,surface_net_downward_longwave_flux,,land_surface_air_radiation~longwave~downward__energy_flux,W m-2,,,,,
 fldas_Psurf_f_tavg,Psurf_f_tavg,Psurf_f_tavg,surface_air_pressure,,land_surface_air__pressure,Pa,,,,,
-fldas_Qair_f_tavg,Qair_f_tavg,Qair_f_tavg,specific_humidity,,atmosphere_air_water~vapor__specific_saturation,kg/kg,,,,,
+fldas_Qair_f_tavg,Qair_f_tavg,0.10.2-alpha,specific_humidity,,atmosphere_air_water~vapor__specific_saturation,kg/kg,,,,,
 fldas_Qg_tavg,Qg_tavg,Qg_tavg,downward_heat_flux_in_soil,,soil__downward_heat_energy_flux,W m-2,,,,,
 fldas_Qh_tavg,Qh_tavg,Qh_tavg,surface_upward_sensible_heat_flux,,land_surface__upward_sensible_heat_energy_flux,W m-2,,,,,
 fldas_Qle_tavg,Qle_tavg,Qle_tavg,surface_upward_latent_heat_flux,,land_surface__upward_latent_heat_energy_flux,W m-2,,,,,
@@ -84,7 +84,7 @@ econ_c1,c1,c1,land cost,costs of production per unit land area,land_crop__produc
 econ_c2,c2,c2,nitrogen fertilizer cost,costs of fertilizer use per unit applied,fertilizer~nitrogen__usage-cost-per-applied-mass,USD/kg,fertilizer~nitrogen__usage-cost-per-applied-mass,,,,econ_obsyield;econ_land_area
 econ_ybarN,ybarN,ybarN,yield elasticity,percent change in crop yield divided by percent change in nitrogen fertilizer use (from agriculture model such as Cycles),crop_fertilizer~nitrogen__yield_elasticity,,crop_fertilizer~nitrogen__yield_elasticity,,,,econ_land_area
 econ_fert_subsidy,fert_subsidy,fert_subsidy,nitrogen fertilizer subsidy,percent reduction in nitrogen fertilizer cost per unit applied,fertilizer~nitrogen__application_reduced_cost_fraction,%,,,,,
-econ_land_area,land area,land area,land allocation,land area by crop (simulated),land_crop__simulated_allocated_area,ha,land_crop__allocated_area,,,,econ_obsyield;econ_production
+econ_land_area,land_area,land_area,land allocation,land area by crop (simulated),land_crop__simulated_allocated_area,ha,land_crop__allocated_area,,,,econ_obsyield;econ_production
 econ_obsyield,obsyield,obsyield,crop yields,crop yields per unit land area (simulated),land_crop__simulated_mass-per-area_yield,kg/ha,land_crop__mass-per-area_yield,,,,econ_land_area;econ_production
 econ_production,production,production,crop production,total production by crop (simulated),crop__simulated_produced_mass,kg,crop__production,,,,
 econ_Nfert,Nfert,Nfert,nitrogen fertilizer applications,nitrogen fertilizer applications (simulated),land_fertilizer~nitrogen__simulated_applied_mass-per-area_density,kg/ha,,,,,
@@ -100,6 +100,17 @@ econ_crop,crop,crop,Crop,Crop,,,,,,,
 econ_nuse,Nuse,Nuse,total fertilizer use,total fertilizer use,,kg,,,,,
 econ_cc1,cc1,cc1,myopic elasticity calibration criteria,myopic elasticity calibration criteria,,,,,,,
 econ_cc2,cc2,cc2,no dominant response criteria,no dominant response criteria,,,,,,,
+,,,,,,,,,,,
+econ_land_area_obs,land_area,land_area,Observed land area planted by crop,Observed land area planted by crop,land_crop__observed_allocated_area,ha,land_crop__allocated_area,,,,
+econ_obs_crop_yield,crop_yield,crop_yield,Observed yield by crop,Observed yield by crop,land_crop__observed_mass-per-area_yield,kg/ha,land_crop__mass-per-area_yield,,,,
+econ_obs_crop_price,crop_price,crop_price,Observed crop prices,Observed crop prices,farmer_crop__received_price-per-mass,USD/kg,crop__price-per-mass,,,,
+econ_lvar,calib,calib,Variable costs of production per unit land area,Variable costs of production per unit land area,land_crop__production_cost-per-area,USD/ha,,,,,
+econ_fvar,calib,calib,Variable costs of fertilizer applications,Variable costs of fertilizer applications,fertilizer__usage-cost-per-applied-mass,USD/kg,fertilizer__usage-cost-per-applied-mass,,,,
+econ_obs_fert,calib,calib,Observed fertilizer application rates,Observed fertilizer application rates,,kg/ha,,,,,
+econ_cycles_elasticity,calib,calib,"Elasticity of yield with respect to nitrogen applications at observed level
+of fertilizer application rates","Elasticity of yield with respect to nitrogen applications at observed level
+of fertilizer application rates",,,,,,,
+econ_obs_eta,calib,calib,supply elasticities,percent change in crop supply divided by percent change in crop price,crop__supply_elasticity,,,,,,
 ,,,,,,,,,,,
 cycles_doy,DOY,DOY,day of the year,Calendar day from 1 to 366,crop__planting_start_time,,,0,365,,
 cycles_pp,PP,PP,precipitation,Precipitation,atmosphere_water__time_integral_of_precipitation_leq_volume_flux,mm,atmosphere_water__precipitation_volume_flux,,,,cycles_infiltration
