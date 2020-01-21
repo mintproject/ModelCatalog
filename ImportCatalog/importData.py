@@ -1,9 +1,10 @@
 import requests
 import csv
+import yaml
 
-def import_script(concept,class_list):
-    data_url="<http://ontosoft.isi.edu:3030/modelCatalog-1.1.0/data/mint@isi.edu>"
-    URL = "http://ontosoft.isi.edu:3030/modelCatalog-1.1.0/query"
+def import_script(concept,class_list,data_url,query_url):
+    #data_url="<http://ontosoft.isi.edu:3030/modelCatalog-1.1.0/data/mint@isi.edu>"
+    #query_url = "http://ontosoft.isi.edu:3030/modelCatalog-1.1.0/query"
 
     class_query='prefix sd: <'+concept+'> ' \
                 'SELECT distinct ?class  from '+data_url+' where{' \
@@ -12,7 +13,7 @@ def import_script(concept,class_list):
                 '}'
     not_to_trim_list=["rdf-syntax-ns#type","sd#hasStandardVariable","sd#website","sd#hadPrimarySource","sd#value","sd#identifier","sd#license","sd#codeRepository","sd#hasComponentLocation","sd#hasImplementationScriptLocation"]
     PARAMS = {'query':class_query}
-    r = requests.get(url = URL,params = PARAMS)
+    r = requests.get(url = query_url,params = PARAMS)
     data = r.json()
     if len(class_list)==0:
         class_list=[]
@@ -33,7 +34,7 @@ def import_script(concept,class_list):
         header_arr=[]
         header_arr.append(concept+class_list[i])
         PARAMS = {'query':myquery1}
-        r = requests.get(url = URL,params = PARAMS)
+        r = requests.get(url = query_url,params = PARAMS)
         data = r.json()
 
         data_dict = {}
@@ -85,5 +86,9 @@ def import_script(concept,class_list):
 
 if __name__== "__main__":
 
-  import_script("https://w3id.org/okn/o/sd#",[])
-  import_script("https://w3id.org/okn/o/sdm#",class_list=["CausalDiagram","TimeInterval","Model","Region","ModelConfiguration","Grid","Process"])
+  with open("config.yml", 'r') as ymlfile:
+     cfg = yaml.safe_load(ymlfile)
+  data_url="<"+cfg['data_url']+">"
+  query_url=cfg['query_url']
+  import_script("https://w3id.org/okn/o/sd#",[],data_url,query_url)
+  import_script("https://w3id.org/okn/o/sdm#",["CausalDiagram","TimeInterval","Model","Region","ModelConfiguration","Grid","Process"],data_url,query_url)
