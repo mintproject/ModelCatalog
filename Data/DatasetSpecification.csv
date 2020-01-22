@@ -573,6 +573,14 @@ topoflow_cfg_advanced_Shebelle_aggregatedInput,aggregated-inputs,Topoflow aggreg
 topoflow_cfg_advanced_Shebelle_rainRates,precipitation-rates,Precipitation rates,topo_p,tar.gz,0,2,,https://w3id.org/wings/export/MINT#TopoflowPrecipitationRate
 topoflow_cfg_advanced_Shebelle_aggregatedOutput,aggregated-outputs,Topoflow aggregated outputs ,topo_Q;topo_stream;topo_inundation,zip,0,1,,https://w3id.org/wings/export/MINT#TopoflowAggregatedOutputs
 ,,,,,,,,
+topoflow36_2.1.0_aggregatedInput,aggregated-inputs,Topoflow aggregated inputs for the Baro region,topo_p;topo_albedo;topo_DEM;topo_slope_grid_file;topo_aspect_grid_file;topo_slope_file;topo_nval;topo_z0val;topo_width;topo_angle,zip,0,1,topoflow_inputs_shebelle,https://w3id.org/wings/export/MINT#TopoflowAggregatedInput
+topoflow36_2.1.0_rainRates,precipitation-rates,Precipitation rates,topo_p,tar.gz,0,2,,https://w3id.org/wings/export/MINT#TopoflowPrecipitationRate
+topoflow36_2.1.0_aggregatedOutput,aggregated-outputs,Topoflow aggregated outputs ,topo_Q;topo_stream;topo_inundation,zip,0,1,,https://w3id.org/wings/export/MINT#TopoflowAggregatedOutputs
+,,,,,,,,
+topoflow36_2.1.0_Baro_aggregatedInput,aggregated-inputs,Topoflow aggregated inputs for the Baro region,topo_p;topo_albedo;topo_DEM;topo_slope_grid_file;topo_aspect_grid_file;topo_slope_file;topo_nval;topo_z0val;topo_width;topo_angle,zip,0,1,topoflow_inputs_baro,https://w3id.org/wings/export/MINT#TopoflowAggregatedInput
+topoflow36_2.1.0_Baro_rainRates,precipitation-rates,Precipitation rates,topo_p,tar.gz,0,2,,https://w3id.org/wings/export/MINT#TopoflowPrecipitationRate
+topoflow36_2.1.0_Baro_aggregatedOutput,aggregated-outputs,Topoflow aggregated outputs ,topo_Q;topo_stream;topo_inundation,zip,0,1,,https://w3id.org/wings/export/MINT#TopoflowAggregatedOutputs
+,,,,,,,,
 river_depth_estimation_remote_sensing_data,remote_sensing_data,,,tar.gz,0,,,https://w3id.org/wings/export/MINT#RemoteSensingData
 river_depth_estimation_river_depth_data,river_depth_data,,,tar.gz,0,,,https://w3id.org/wings/export/MINT#RiverDepth
 ,,,,,,,,
