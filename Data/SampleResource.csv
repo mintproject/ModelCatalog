@@ -121,7 +121,6 @@ hand_dem_Awash,DEM fir Awash,Digital elevation model of the Awash region in Ethi
 hand_dem_Ganale,DEM fir Ganale,Digital elevation model of the Ganale region in Ethiopia,https://data.mint.isi.edu/files/hand-dem/GIS-Oromia/Ganale/Ganale-border_3sec_DEM_buffer.tif,FFF-3s5c113e-c7ae-4cda-ba23-2e4f2286dem6,
 hand_dem_Shebelle,DEM fir Shebelle,Digital elevation model of the Shebelle basin in Ethiopia,https://data.mint.isi.edu/files/hand-dem/GIS-Oromia/Shebelle/Shebelle-Imi_3sec_DEM_buffer.tif,FFF-3s5c113e-c7ae-4cda-ba23-2e4f2286dem6,
 ,,,,,
-glofas_data_Et_SS_2018,GloFASv2.1 from 1981 to 2017 cut to Ethiopia and South Sudan,GloFASv2.1 for 2018 cut to Ethiopia and South Sudan,https://data.mint.isi.edu/files/raw-data/GloFAS/flooding/GloFAS_FloodIndex_2018.nc,FFF-3s5c113e-c7ae-4cda-ba23-2e4f22glofas18,
 glofas_data_Et_SS,GloFASv2.1 from 1981 to 2017 cut to Ethiopia and South Sudan,GloFASv2.1 from 1981 to 2017 cut to Ethiopia and South Sudan,https://data.mint.isi.edu/files/raw-data/GloFAS/flooding/GloFASv2.1_SS_ET_1981_2017.nc,FFF-3s5c113e-c7ae-4cda-ba23-2e4f2286glofas,
 ,,,,,
 met6.62Nx34.88E.weather,Cycles weather file met6.62Nx34.88E.weather,Cycles weather file met6.62Nx34.88E.weather,https://raw.githubusercontent.com/pegasus-isi/pegasus-cycles/master/weather/met6.62Nx34.88E.weather,FFF-de5c1f9e-c7ae-4cda-ba23-2e4f2286a18o,
