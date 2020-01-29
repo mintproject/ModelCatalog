@@ -79,7 +79,7 @@ econ_xbar1,xbar1,xbar1,land allocation,land area by crop (observed),land_crop__o
 econ_xbar2,xbar2,xbar2,nitrogen fertilizer use,nitrogen fertilizer applications by crop (observed),crop_fertilizer~nitrogen__observed_applied_mass,kg,,,,,econ_land_area;econ_ybarN
 econ_ybar,ybar,ybar,crop yields,crop yields per unit land area (observed),land_crop__observed_mass-per-area_yield,kg/ha,crop__mass-per-area_yield,,,,econ_obsyield;econ_land_area
 econ_p,p,p,crop prices,crop prices received by farmer in USD,farmer_crop__received_price-per-mass,USD/kg,crop__price-per-mass,,,,econ_obsyield;econ_land_area
-econ_eta,eta,eta,supply elasticities,percent change in crop supply divided by percent change in crop price,crop__supply_elasticity,,,,,,econ_obsyield;econ_land_area
+econ_eta,eta,eta,supply elasticities,percent change in crop supply divided by percent change in crop price,crop__supply_elasticity,%,,,,,econ_obsyield;econ_land_area
 econ_c1,c1,c1,land cost,costs of production per unit land area,land_crop__production_cost-per-area,USD/ha,,,,,econ_obsyield;econ_land_area
 econ_c2,c2,c2,nitrogen fertilizer cost,costs of fertilizer use per unit applied,fertilizer~nitrogen__usage-cost-per-applied-mass,USD/kg,fertilizer~nitrogen__usage-cost-per-applied-mass,,,,econ_obsyield;econ_land_area
 econ_ybarN,ybarN,ybarN,yield elasticity,percent change in crop yield divided by percent change in nitrogen fertilizer use (from agriculture model such as Cycles),crop_fertilizer~nitrogen__yield_elasticity,,crop_fertilizer~nitrogen__yield_elasticity,,,,econ_land_area
@@ -101,6 +101,20 @@ econ_nuse,Nuse,Nuse,total fertilizer use,total fertilizer use,,kg,,,,,
 econ_cc1,cc1,cc1,myopic elasticity calibration criteria,myopic elasticity calibration criteria,,,,,,,
 econ_cc2,cc2,cc2,no dominant response criteria,no dominant response criteria,,,,,,,
 ,,,,,,,,,,,
+econ_sim_crop_land,sim crop land (k ha),sim crop land (k ha),Simulated land area planted for each crop,Simulated land area planted for each crop,land_crop__simulated_allocated_area,1000ha,,,,,
+econ_change_crop_land,change crop land (%),change crop land (%),Change in land area planted for each crop,Change in land area planted for each crop,,%,,,,,
+econ_sim_ag_land,sim ag land (k ha),sim ag land (k ha),Simulated total agricultural land by region,Simulated total agricultural land by region,land_crop__simulated_allocated_area,1000ha,,,,,
+econ_sim_change_ag_land,change ag land (%),change ag land (%),Change in total agricultural land by region,Change in total agricultural land by region,,%,,,,,
+econ_sim_fert_rate,sim fert rate (kg/ha),sim fert rate (kg/ha),Simulated level of fertilizer applications by crop ,Simulated level of fertilizer applications by crop ,,kg/ha,,,,,
+econ_change_fert_rate,change fert rate (%),change fert rate (%),"Change in level of fertilizer applications
+By crop 
+","Change in level of fertilizer applications
+By crop 
+",,%,,,,,
+econ_sim_production_m,sim production (m kg),sim production (m kg),Simulated level of production by crop ,Simulated level of production by crop ,,1000000kg,,,,,
+econ_change_production,change production (%),,Change level of production by crop ,Change level of production by crop ,,%,,,,,
+econ_sim_net_revenue,sim net revenue (m USD),sim net revenue (m USD),Simulated level of net revenue by region ,Simulated level of net revenue by region ,,1000000$,,,,,
+econ_change_net_revenue,change net revenue (%),change net revenue (%),Change in level of net revenue by region ,Change in level of net revenue by region ,,%,,,,,
 econ_land_area_obs,land_area,land_area,Observed land area planted by crop,Observed land area planted by crop,land_crop__observed_allocated_area,ha,land_crop__allocated_area,,,,
 econ_obs_crop_yield,crop_yield,crop_yield,Observed yield by crop,Observed yield by crop,land_crop__observed_mass-per-area_yield,kg/ha,land_crop__mass-per-area_yield,,,,
 econ_obs_crop_price,crop_price,crop_price,Observed crop prices,Observed crop prices,farmer_crop__received_price-per-mass,USD/kg,crop__price-per-mass,,,,
@@ -111,6 +125,9 @@ econ_cycles_elasticity,calib,calib,"Elasticity of yield with respect to nitrogen
 of fertilizer application rates","Elasticity of yield with respect to nitrogen applications at observed level
 of fertilizer application rates",,,,,,,
 econ_obs_eta,calib,calib,supply elasticities,percent change in crop supply divided by percent change in crop price,crop__supply_elasticity,,,,,,
+econ_model_error_land_area,model error land area,model error land area,model error in land area,model error in land area,,,,,,,
+econ_model_error_fertilizer_use,model error fertilizer use,model error fertilizer use,model error in fertilizer use,model error in fertilizer use,,,,,,,
+econ_model_error_crop_production,model error crop production,model error crop production,model error in crop production,model error in crop production,,,,,,,
 ,,,,,,,,,,,
 cycles_doy,DOY,DOY,day of the year,Calendar day from 1 to 366,crop__planting_start_time,,,0,365,,
 cycles_pp,PP,PP,precipitation,Precipitation,atmosphere_water__time_integral_of_precipitation_leq_volume_flux,mm,atmosphere_water__precipitation_volume_flux,,,,cycles_infiltration

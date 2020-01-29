@@ -351,8 +351,8 @@ economic-v7_fvar,fvar,"""Variable costs of fertilizer applications""",econ_fvar,
 economic-v7_fertilizer,fertilizer,"""Observed fertilizer application rates""",econ_obs_fert,csv,0,4,,https://w3id.org/wings/export/MINT#Fertilizer
 economic-v7_cycles-data,cycles-data,"""Elasticity of yield with respect to nitrogen applications at observed level of fertilizer application rates""",econ_cycles_elasticity,csv,0,5,,https://w3id.org/wings/export/MINT#EconomicCyles
 economic-v7_eta,eta,"""Supply elasticity with respect to crop price""",econ_obs_eta,csv,0,6,,https://w3id.org/wings/export/MINT#SupplyElasticity
-economic-v7_land_use,economic-land-use,Economic land use results,econ_year;econ_region_econ_crop;econ_fert_subsidy;econ_land_area;econ_obsyield;econ_production;econ_Nfert;econ_nuse,txt,0,1,,https://w3id.org/wings/export/MINT#EconomicLandUse
-economic-v7_calib_land_use,calibration-output,Economic calibration output,econ_year;econ_region;econ_crop;econ_sim_land_area;econ_obs_land_area;econ_sim_nuse;econ_observed_nuse;econ_obs_production;econ_sim_production,txt,0,2,,https://w3id.org/wings/export/MINT#EconomicCalibration
+economic-v7_land_use,economic-land-use,Economic land use results,econ_year;econ_region;econ_crop;econ_sim_crop_land;econ_change_crop_land;econ_sim_ag_land;econ_sim_change_ag_land;econ_sim_fert_rate;econ_change_fert_rate;econ_sim_production_m;econ_change_production;econ_sim_net_revenue;econ_change_net_revenue,txt,0,1,,https://w3id.org/wings/export/MINT#EconomicLandUse
+economic-v7_calib_land_use,calibration-output,Economic calibration output,econ_crop;econ_model_error_land_area;econ_model_error_fertilizer_use;econ_model_error_crop_production,txt,0,2,,https://w3id.org/wings/export/MINT#EconomicCalibration
 ,,,,,,,,
 economic-v7_Oromia_regional-data,regional-data,"""Master dataset for all crops, years, and regions""",econ_land_area_obs;econ_obs_crop_yield;econ_obs_crop_price,csv,0,1,econ_alldata_ethiopia,https://w3id.org/wings/export/MINT#RegionalData
 economic-v7_Oromia_lvar,lvar,"""Variable costs of production per unit land area""",econ_lvar,csv,0,2,econ_lvar_oromia,https://w3id.org/wings/export/MINT#Lvar
@@ -360,8 +360,8 @@ economic-v7_Oromia_fvar,fvar,"""Variable costs of fertilizer applications""",eco
 economic-v7_Oromia_fertilizer,fertilizer,"""Observed fertilizer application rates""",econ_obs_fert,csv,0,4,econ_fertilizer_oromia,https://w3id.org/wings/export/MINT#Fertilizer
 economic-v7_Oromia_cycles-data,cycles-data,"""Elasticity of yield with respect to nitrogen applications at observed level of fertilizer application rates""",econ_cycles_elasticity,csv,0,5,econ_cycles-data_oromia,https://w3id.org/wings/export/MINT#EconomicCyles
 economic-v7_Oromia_eta,eta,"""Supply elasticity with respect to crop price""",econ_obs_eta,csv,0,6,econ_eta_oromia,https://w3id.org/wings/export/MINT#SupplyElasticity
-economic-v7_Oromia_land_use,economic-land-use,Economic land use results,econ_year;econ_region_econ_crop;econ_fert_subsidy;econ_land_area;econ_obsyield;econ_production;econ_Nfert;econ_nuse,txt,0,1,,https://w3id.org/wings/export/MINT#EconomicLandUse
-economic-v7_Oromia_calib_land_use,calibration-output,Economic calibration output,econ_year;econ_region;econ_crop;econ_sim_land_area;econ_obs_land_area;econ_sim_nuse;econ_observed_nuse;econ_obs_production;econ_sim_production,txt,0,2,,https://w3id.org/wings/export/MINT#EconomicCalibration
+economic-v7_Oromia_land_use,economic-land-use,Economic land use results,econ_year;econ_region;econ_crop;econ_sim_crop_land;econ_change_crop_land;econ_sim_ag_land;econ_sim_change_ag_land;econ_sim_fert_rate;econ_change_fert_rate;econ_sim_production_m;econ_change_production;econ_sim_net_revenue;econ_change_net_revenue,txt,0,1,,https://w3id.org/wings/export/MINT#EconomicLandUse
+economic-v7_Oromia_calib_land_use,calibration-output,Economic calibration output,econ_crop;econ_model_error_land_area;econ_model_error_fertilizer_use;econ_model_error_crop_production,txt,0,2,,https://w3id.org/wings/export/MINT#EconomicCalibration
 ,,,,,,,,
 pihm_to_cycles_reinit_cropland,pihm-cropland,Cropland file,,txt,0,,,https://w3id.org/wings/export/MINT#PIHMCropland
 pihm_to_cycles_reinit_groundwater,pihm-groundwater,Groundwater file,pihm_gw,gw,0,,,https://w3id.org/wings/export/MINT#PIHMGroundwaterHead
