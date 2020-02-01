@@ -1145,7 +1145,7 @@ dsi_1.0_cfg_data_start_year,data_start_year,The year for which to start calculat
 dsi_1.0_cfg_data_end_year,data_end_year,The year for which to end the calculation,2017,integer,https://w3id.org/wings/export/MINT#EndYear,,11,,,,,,
 dsi_1.0_cfg_calibration_start_year,calibration_start_year, The start year for the calibration,2000,integer,https://w3id.org/wings/export/MINT#StartYear,,12,,,,,,
 dsi_1.0_cfg_calibration_end_year,calibration_end_year,The end year for the calibration.,2017,integer,https://w3id.org/wings/export/MINT#EndYear,,13,,,,,,
-dsi_1.0_cfg_generate_visualization,generate_visualization,"If True, will generate a movie. PET visualization is not currently supported",TRUE,boolean,https://w3id.org/wings/export/MINT#GenerateImage,True,14,,,,,,
+dsi_1.0_cfg_generate_visualization,generate_visualization,"If True, will generate a movie. PET visualization is not currently supported",True,boolean,https://w3id.org/wings/export/MINT#GenerateImage,True,14,,,,,,
 ,,,,,,,,,,,,,
 dsi_1.0_cfg_spi_ethiopia_data_type,data_type,"""The type of NetCDF files. Valid entries are GLDAS, FLDAS or CHIRPS""",GLDAS,string,https://w3id.org/wings/export/MINT#DataSelection,,1,,,,,,
 dsi_1.0_cfg_spi_ethiopia_index,index,"""The index to be calculated.
@@ -1164,4 +1164,4 @@ dsi_1.0_cfg_spi_ethiopia_data_start_year,data_start_year,The year for which to s
 dsi_1.0_cfg_spi_ethiopia_data_end_year,data_end_year,The year for which to end the calculation,2017,integer,https://w3id.org/wings/export/MINT#EndYear,,11,,,,,,
 dsi_1.0_cfg_spi_ethiopia_calibration_start_year,calibration_start_year, The start year for the calibration,2000,integer,https://w3id.org/wings/export/MINT#StartYear,,12,,,,,,
 dsi_1.0_cfg_spi_ethiopia_calibration_end_year,calibration_end_year,The end year for the calibration.,2017,integer,https://w3id.org/wings/export/MINT#EndYear,,13,,,,,,
-dsi_1.0_cfg_spi_ethiopia_generate_visualization,generate_visualization,"If True, will generate a movie. PET visualization is not currently supported",TRUE,boolean,https://w3id.org/wings/export/MINT#GenerateImage,True,14,,,,,,
+dsi_1.0_cfg_spi_ethiopia_generate_visualization,generate_visualization,"If True, will generate a movie. PET visualization is not currently supported",True,boolean,https://w3id.org/wings/export/MINT#GenerateImage,True,14,,,,,,
