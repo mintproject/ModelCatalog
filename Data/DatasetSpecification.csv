@@ -750,3 +750,11 @@ fsi_1.0_simple_movie,flood_index_movie,Result movie,fsi_fsi,mp4,0,2,,https://w3i
 fsi_1.0_simple_et_ss_glofas,glofas_data,Glofas data input,fsi_q,nc,0,1,glofas_data_Et_SS,https://w3id.org/wings/export/MINT#GloFas
 fsi_1.0_simple_et_ss_out,floodIndex,Output netcdf with the results,fsi_fsi,nc,0,1,,https://w3id.org/wings/export/MINT#FloodIndex
 fsi_1.0_simple_et_ss_movie,flood_index_movie,Result movie,fsi_fsi,mp4,0,2,,https://w3id.org/wings/export/MINT#Movie
+,,,,,,,,
+dsi_1.0_cfg_dataset,data,Data input,,nc,0,1,,https://w3id.org/wings/export/MINT#Data
+dsi_1.0_cfg_out,index,Output netcdf with the results,,nc,0,1,,https://w3id.org/wings/export/MINT#DroughtIndex
+dsi_1.0_cfg_movie,index_movie,Result movie,,mp4,0,2,,https://w3id.org/wings/export/MINT#Movie
+,,,,,,,,
+dsi_1.0_cfg_spi_ethiopia_dataset,data,Data input,,nc,0,1,,https://w3id.org/wings/export/MINT#Data
+dsi_1.0_cfg_spi_ethiopia_out,index,Output netcdf with the results,,nc,0,1,,https://w3id.org/wings/export/MINT#DroughtIndex
+dsi_1.0_cfg_spi_ethiopia_movie,index_movie,Result movie,,mp4,0,2,,https://w3id.org/wings/export/MINT#Movie

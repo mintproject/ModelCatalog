@@ -83,3 +83,17 @@ SWAT,The Soil & Water Assessment Tool (SWAT),swat_1.2.0,"""The Soil & Water Asse
 KIMETRICA_LAND_USE,Kimetrica land use model,kimetrica_0.0,"""The Kimetrica model simulates land use""",,,Land Use,,,,,,,,,KIMETRICA_LAND_USE_funding,,,,,,,,,,,kimetrica_logo,,,,kimetrica,,,,,,,,,,
 FSI,Flood Severity Index model,fsi_1.0,"""This Python model calculates a flood severity index based on the annual maxima of volumetric flow for the period 1981-2017 obtained from the GloFAS data (http://www.globalfloods.eu/). The thresholds were estimated from a Gumbel distribution using the methods of L-moments. The severity is based on a 2-yr return period (medium), 5-yr return period (high), and 20-yr return period (severe).""",,,Hydrology,,https://github.com/mintproject/FloodSeverityIndex/blob/master/README.md,https://w3id.org/okn/o/sdm#EmpiricalModel,khider_deborah,,,2019,2019,,khider_deborah,https://github.com/mintproject/FloodSeverityIndex,,https://github.com/mintproject/FloodSeverityIndex/blob/master/README.md,flood severity index calculation,,fsi_source,,hydrology; flood; index,https://github.com/mintproject/FloodSeverityIndex/blob/master/LICENSE,fsi_logo,,Unix,,,,,,""" xarray = 0.12.1 (Do not update to the latest version);   numpy;    cartopy;   panda;  matplotlib;    imageio
 """,,,fsi_grid,,https://github.com/mintproject/FloodSeverityIndex,channel_water_flow__flood_volume-flux_severity_index
+DSI,Drought Severity Index model,dsi_1.0,"""Model to calculate various drought indices from precipitation/temperature data.""",,,Hydrology,,https://github.com/mintproject/droughtIndices/blob/master/README.md,https://w3id.org/okn/o/sdm#EmpiricalModel,khider_deborah,,,2019,2019,,khider_deborah,https://github.com/mintproject/droughtIndices,,https://github.com/mintproject/droughtIndices/blob/master/README.md,drought indices calculation,,,,hydrology; drought; index,https://github.com/mintproject/droughtIndices/blob/master/README.md,dsi_logo,,Unix,,,,,,"""Package requirements:
+
+    xarray - 0.14.1
+    dask - 2.2.0
+    netcdf4 - 1.4.2
+    bottleneck - 1.2.1
+    pandas - 0.25.3
+    numpy - 1.17.4
+    climate-indices - 1.0.6 Install this package from source (not pip) -> https://github.com/monocongo/climate_indices
+    cftime - 1.0.4.2
+    cartopy - 0.17.0 Install using conda conda install -c conda-forge cartopy
+    matplotlib - 3.1.0
+    imageio - 2.6.1
+    imageio-ffmpeg - 0.3.0""",,,,,https://github.com/mintproject/droughtIndices/,atmosphere_water__precipitation_standardized_index;atmosphere_water__precipitation_evapotranspiration_standardized_index;evaporation_volume_flux_index
