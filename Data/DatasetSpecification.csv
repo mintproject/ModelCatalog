@@ -643,7 +643,7 @@ cycles_outputs_cycles_outputs,cycles_outputs,Aggregated season and weather file,
 hand_v1_simple_input_dem,input-dem,Input digital elevation model,hand_dem,tif,0,1,,https://w3id.org/wings/export/MINT#rasterDem
 hand_v1_simple_distance_down,distance-down,Distance down flooding map,hand_demang;svid_demp;hand_flow,tif,0,1,,https://w3id.org/wings/export/MINT#rasterDistancedown
 ,,,,,,,,
-hand_v1_simple_texas_input_dem,input-dem,Input digital elevation model of the Barton Springs region (Texas),hand_dem,tif,0,1,hand_sample_dem_texas,https://w3id.org/wings/export/MINT#rasterDem
+hand_v1_simple_texas_input_dem,input-dem,Input digital elevation model of the Barton Springs region (Texas),hand_dem,tif,0,1,hand_sample_dem_travis,https://w3id.org/wings/export/MINT#rasterDem
 hand_v1_simple_texas_distance_down,distance-down,Distance down flooding map,hand_demang;svid_demp;hand_flow,tif,0,1,,https://w3id.org/wings/export/MINT#rasterDistancedown
 hand_v1_simple_texas_distance_down_image,distance-down-image,Distance down flooding map image,hand_demang;svid_demp;hand_flow,png,0,2,,https://w3id.org/wings/export/MINT#distanceDownImage
 ,,,,,,,,
