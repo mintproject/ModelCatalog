@@ -642,6 +642,11 @@ cycles_outputs_cycles_outputs,cycles_outputs,Aggregated season and weather file,
 ,,,,,,,,
 hand_v1_simple_input_dem,input-dem,Input digital elevation model,hand_dem,tif,0,1,,https://w3id.org/wings/export/MINT#rasterDem
 hand_v1_simple_distance_down,distance-down,Distance down flooding map,hand_demang;svid_demp;hand_flow,tif,0,1,,https://w3id.org/wings/export/MINT#rasterDistancedown
+hand_v1_simple_distance_down_image,distance-down-image,Distance down flooding map image,hand_demang;svid_demp;hand_flow,png,0,2,,https://w3id.org/wings/export/MINT#distanceDownImage
+,,,,,,,,
+hand_v1_simple_noregion_input_dem,input-dem,Input digital elevation model,hand_dem,tif,0,1,,https://w3id.org/wings/export/MINT#rasterDem
+hand_v1_simple_noregion_distance_down,distance-down,Distance down flooding map,hand_demang;svid_demp;hand_flow,tif,0,1,,https://w3id.org/wings/export/MINT#rasterDistancedown
+hand_v1_simple_noregion_distance_down_image,distance-down-image,Distance down flooding map image,hand_demang;svid_demp;hand_flow,png,0,2,,https://w3id.org/wings/export/MINT#distanceDownImage
 ,,,,,,,,
 hand_v1_simple_texas_input_dem,input-dem,Input digital elevation model of the Barton Springs region (Texas),hand_dem,tif,0,1,hand_sample_dem_travis,https://w3id.org/wings/export/MINT#rasterDem
 hand_v1_simple_texas_distance_down,distance-down,Distance down flooding map,hand_demang;svid_demp;hand_flow,tif,0,1,,https://w3id.org/wings/export/MINT#rasterDistancedown
@@ -682,6 +687,21 @@ hand_v1_simple_ganale_distance_down_image,distance-down-image,Distance down floo
 hand_v1_simple_shebelle_input_dem,input-dem,Input digital elevation model for the Beko-Tippi basin in Ethiopia,hand_dem,tif,0,1,hand_dem_Shebelle,https://w3id.org/wings/export/MINT#rasterDem
 hand_v1_simple_shebelle_distance_down,distance-down,Distance down flooding map,hand_demang;svid_demp;hand_flow,tif,0,1,,https://w3id.org/wings/export/MINT#rasterDistancedown
 hand_v1_simple_shebelle_distance_down_image,distance-down-image,Distance down flooding map image,hand_demang;svid_demp;hand_flow,png,0,2,,https://w3id.org/wings/export/MINT#distanceDownImage
+,,,,,,,,
+hand_v2_input_dem,input-dem,Input digital elevation model for the Beko-Tippi basin in Ethiopia,hand_dem,tif,0,1,,https://w3id.org/wings/export/MINT#rasterDem
+hand_v2_distance_down,distance-down,Distance down flooding map,hand_demang;svid_demp;hand_flow,tif,0,1,,https://w3id.org/wings/export/MINT#rasterDistancedown
+hand_v2_shape,shape,Shape file,hand_demang;svid_demp;hand_flow,shp,0,2,,https://w3id.org/wings/export/MINT#Shape
+hand_v2_geojson,geojson,GeoJSON file,hand_demang;svid_demp;hand_flow,json,0,3,,https://w3id.org/wings/export/MINT#GeoJSON
+,,,,,,,,
+hand_v2_travis_input_dem,input-dem,Input digital elevation model for the Beko-Tippi basin in Ethiopia,hand_dem,tif,0,1,hand_sample_dem_travis,https://w3id.org/wings/export/MINT#rasterDem
+hand_v2_travis_distance_down,distance-down,Distance down flooding map,hand_demang;svid_demp;hand_flow,tif,0,1,,https://w3id.org/wings/export/MINT#rasterDistancedown
+hand_v2_travis_shape,shape,Shape file,hand_demang;svid_demp;hand_flow,shp,0,2,,https://w3id.org/wings/export/MINT#Shape
+hand_v2_travis_geojson,geojson,GeoJSON file,hand_demang;svid_demp;hand_flow,json,0,3,,https://w3id.org/wings/export/MINT#GeoJSON
+,,,,,,,,
+hand_v2_noregion_input_dem,input-dem,Input digital elevation model for the Beko-Tippi basin in Ethiopia,hand_dem,tif,0,1,,https://w3id.org/wings/export/MINT#rasterDem
+hand_v2_noregion_distance_down,distance-down,Distance down flooding map,hand_demang;svid_demp;hand_flow,tif,0,1,,https://w3id.org/wings/export/MINT#rasterDistancedown
+hand_v2_noregion_shape,shape,Shape file,hand_demang;svid_demp;hand_flow,shp,0,2,,https://w3id.org/wings/export/MINT#Shape
+hand_v2_noregion_geojson,geojson,GeoJSON file,hand_demang;svid_demp;hand_flow,json,0,3,,https://w3id.org/wings/export/MINT#GeoJSON
 ,,,,,,,,
 modflow_2005_Hfb,hfb6,Horizontal flow barrier file,,hf6,0,8,,https://w3id.org/wings/export/MINT#MODFLOWhfb6
 modflow_2005_Oc,oc,Output control file,,dat,0,4,,https://w3id.org/wings/export/MINT#MODFLOWoc
