@@ -521,108 +521,108 @@ DSSAT_weatherFile,DSSAT weather file,DSSAT weather file,DSSAT_LAT;DSSAT_LONG;DSS
 DSSAT_sol,DSSAT soil file,DSSAT soil file,DSSAT_SALB;DSSAT_SBDM;DSSAT_SDUL;DSSAT_SLB;DSSAT_SLCL;DSSAT_SLLL;DSSAT_SLOC;DSSAT_SLSI;DSSAT_SSAT;DSSAT_SSKS,sol,0,,,https://w3id.org/wings/export/MINT#Soil
 DSSAT_summary,DSSAT Summary file,DSSAT Summary file,DSSAT_hwam;DSSAT_cwam,csv,0,,,https://w3id.org/wings/export/MINT#Summary
 ,,,,,,,,
-topoflow_cfg_simple_aggregatedInput,aggregated-inputs,TopoFlow aggregated inputs,topo_albedo;topo_DEM;topo_slope_grid_file;topo_aspect_grid_file;topo_slope_file;topo_nval;topo_z0val;topo_width;topo_angle,zip,0,1,,https://w3id.org/wings/export/MINT#TopoflowAggregatedInput
-topoflow_cfg_simple-rainRates,precipitation-rates,Precipitation rates,topo_p,tar.gz,0,2,,https://w3id.org/wings/export/MINT#TopoflowPrecipitationRate
+topoflow_cfg_simple_aggregatedInput,aggregated-inputs,TopoFlow aggregated inputs for the target region,topo_albedo;topo_DEM;topo_slope_grid_file;topo_aspect_grid_file;topo_slope_file;topo_nval;topo_z0val;topo_width;topo_angle,zip,0,1,,https://w3id.org/wings/export/MINT#TopoflowAggregatedInput
+topoflow_cfg_simple-rainRates,precipitation-rates,Precipitation rates (compressed),topo_p,tar.gz,0,2,,https://w3id.org/wings/export/MINT#TopoflowPrecipitationRate
 topoflow_cfg_simple_aggregatedOutput,aggregated-outputs,TopoFlow aggregated outputs,topo_Q;topo_stream;topo_inundation,zip,0,1,,https://w3id.org/wings/export/MINT#TopoflowAggregatedOutputs
 ,,,,,,,,
 topoflow_cfg_simple_Baro_aggregatedInput,aggregated-inputs,Topoflow aggregated inputs for the Baro region,topo_p;topo_albedo;topo_DEM;topo_slope_grid_file;topo_aspect_grid_file;topo_slope_file;topo_nval;topo_z0val;topo_width;topo_angle,zip,0,1,topoflow_inputs_baro,https://w3id.org/wings/export/MINT#TopoflowAggregatedInput
-topoflow_cfg_simple_Baro_rainRates,precipitation-rates,Precipitation rates,topo_p,tar.gz,0,2,topoflow_precipitation_rates_baro,https://w3id.org/wings/export/MINT#TopoflowPrecipitationRate
+topoflow_cfg_simple_Baro_rainRates,precipitation-rates,Precipitation rates (compressed),topo_p,tar.gz,0,2,topoflow_precipitation_rates_baro,https://w3id.org/wings/export/MINT#TopoflowPrecipitationRate
 topoflow_cfg_simple_Baro_aggregatedOutput,aggregated-outputs,Topoflow aggregated outputs ,topo_Q;topo_stream;topo_inundation,zip,0,1,,https://w3id.org/wings/export/MINT#TopoflowAggregatedOutputs
 ,,,,,,,,
 topoflow_cfg_advanced_Baro_aggregatedInput,aggregated-inputs,Topoflow aggregated inputs for the Baro region,topo_p;topo_albedo;topo_DEM;topo_slope_grid_file;topo_aspect_grid_file;topo_slope_file;topo_nval;topo_z0val;topo_width;topo_angle,zip,0,1,topoflow_inputs_baro,https://w3id.org/wings/export/MINT#TopoflowAggregatedInput
-topoflow_cfg_advanced_Baro_rainRates,precipitation-rates,Precipitation rates,topo_p,tar.gz,0,2,,https://w3id.org/wings/export/MINT#TopoflowPrecipitationRate
+topoflow_cfg_advanced_Baro_rainRates,precipitation-rates,Precipitation rates (compressed),topo_p,tar.gz,0,2,,https://w3id.org/wings/export/MINT#TopoflowPrecipitationRate
 topoflow_cfg_advanced_Baro_aggregatedOutput,aggregated-outputs,Topoflow aggregated outputs ,topo_Q;topo_stream;topo_inundation,zip,0,1,,https://w3id.org/wings/export/MINT#TopoflowAggregatedOutputs
 ,,,,,,,,
-topoflow_cfg_simple_Muger_aggregatedInput,aggregated-inputs,Topoflow aggregated inputs for the Baro region,topo_p;topo_albedo;topo_DEM;topo_slope_grid_file;topo_aspect_grid_file;topo_slope_file;topo_nval;topo_z0val;topo_width;topo_angle,zip,0,1,topoflow_inputs_muger,https://w3id.org/wings/export/MINT#TopoflowAggregatedInput
-topoflow_cfg_simple_Muger_rainRates,precipitation-rates,Precipitation rates,topo_p,tar.gz,0,2,topoflow_precipitation_rates_muger,https://w3id.org/wings/export/MINT#TopoflowPrecipitationRate
+topoflow_cfg_simple_Muger_aggregatedInput,aggregated-inputs,Topoflow aggregated inputs for the Muger region,topo_p;topo_albedo;topo_DEM;topo_slope_grid_file;topo_aspect_grid_file;topo_slope_file;topo_nval;topo_z0val;topo_width;topo_angle,zip,0,1,topoflow_inputs_muger,https://w3id.org/wings/export/MINT#TopoflowAggregatedInput
+topoflow_cfg_simple_Muger_rainRates,precipitation-rates,Precipitation rates (compressed),topo_p,tar.gz,0,2,topoflow_precipitation_rates_muger,https://w3id.org/wings/export/MINT#TopoflowPrecipitationRate
 topoflow_cfg_simple_Muger_aggregatedOutput,aggregated-outputs,Topoflow aggregated outputs ,topo_Q;topo_stream;topo_inundation,zip,0,1,,https://w3id.org/wings/export/MINT#TopoflowAggregatedOutputs
 ,,,,,,,,
-topoflow_cfg_advanced_Muger_aggregatedInput,aggregated-inputs,Topoflow aggregated inputs for the Baro region,topo_p;topo_albedo;topo_DEM;topo_slope_grid_file;topo_aspect_grid_file;topo_slope_file;topo_nval;topo_z0val;topo_width;topo_angle,zip,0,1,topoflow_inputs_muger,https://w3id.org/wings/export/MINT#TopoflowAggregatedInput
-topoflow_cfg_advanced_Muger_rainRates,precipitation-rates,Precipitation rates,topo_p,tar.gz,0,2,,https://w3id.org/wings/export/MINT#TopoflowPrecipitationRate
+topoflow_cfg_advanced_Muger_aggregatedInput,aggregated-inputs,Topoflow aggregated inputs for the Muger region,topo_p;topo_albedo;topo_DEM;topo_slope_grid_file;topo_aspect_grid_file;topo_slope_file;topo_nval;topo_z0val;topo_width;topo_angle,zip,0,1,topoflow_inputs_muger,https://w3id.org/wings/export/MINT#TopoflowAggregatedInput
+topoflow_cfg_advanced_Muger_rainRates,precipitation-rates,Precipitation rates (compressed),topo_p,tar.gz,0,2,,https://w3id.org/wings/export/MINT#TopoflowPrecipitationRate
 topoflow_cfg_advanced_Muger_aggregatedOutput,aggregated-outputs,Topoflow aggregated outputs ,topo_Q;topo_stream;topo_inundation,zip,0,1,,https://w3id.org/wings/export/MINT#TopoflowAggregatedOutputs
 ,,,,,,,,
-topoflow_cfg_simple_Awash_aggregatedInput,aggregated-inputs,Topoflow aggregated inputs for the Baro region,topo_p;topo_albedo;topo_DEM;topo_slope_grid_file;topo_aspect_grid_file;topo_slope_file;topo_nval;topo_z0val;topo_width;topo_angle,zip,0,1,topoflow_inputs_awash,https://w3id.org/wings/export/MINT#TopoflowAggregatedInput
-topoflow_cfg_simple_Awash_rainRates,precipitation-rates,Precipitation rates,topo_p,tar.gz,0,2,topoflow_precipitation_rates_awash,https://w3id.org/wings/export/MINT#TopoflowPrecipitationRate
+topoflow_cfg_simple_Awash_aggregatedInput,aggregated-inputs,Topoflow aggregated inputs for the Awash region,topo_p;topo_albedo;topo_DEM;topo_slope_grid_file;topo_aspect_grid_file;topo_slope_file;topo_nval;topo_z0val;topo_width;topo_angle,zip,0,1,topoflow_inputs_awash,https://w3id.org/wings/export/MINT#TopoflowAggregatedInput
+topoflow_cfg_simple_Awash_rainRates,precipitation-rates,Precipitation rates (compressed),topo_p,tar.gz,0,2,topoflow_precipitation_rates_awash,https://w3id.org/wings/export/MINT#TopoflowPrecipitationRate
 topoflow_cfg_simple_Awash_aggregatedOutput,aggregated-outputs,Topoflow aggregated outputs ,topo_Q;topo_stream;topo_inundation,zip,0,1,,https://w3id.org/wings/export/MINT#TopoflowAggregatedOutputs
 ,,,,,,,,
-topoflow_cfg_advanced_Awash_aggregatedInput,aggregated-inputs,Topoflow aggregated inputs for the Baro region,topo_p;topo_albedo;topo_DEM;topo_slope_grid_file;topo_aspect_grid_file;topo_slope_file;topo_nval;topo_z0val;topo_width;topo_angle,zip,0,1,topoflow_inputs_awash,https://w3id.org/wings/export/MINT#TopoflowAggregatedInput
-topoflow_cfg_advanced_Awash_rainRates,precipitation-rates,Precipitation rates,topo_p,tar.gz,0,2,,https://w3id.org/wings/export/MINT#TopoflowPrecipitationRate
+topoflow_cfg_advanced_Awash_aggregatedInput,aggregated-inputs,Topoflow aggregated inputs for the Awash region,topo_p;topo_albedo;topo_DEM;topo_slope_grid_file;topo_aspect_grid_file;topo_slope_file;topo_nval;topo_z0val;topo_width;topo_angle,zip,0,1,topoflow_inputs_awash,https://w3id.org/wings/export/MINT#TopoflowAggregatedInput
+topoflow_cfg_advanced_Awash_rainRates,precipitation-rates,Precipitation rates (compressed),topo_p,tar.gz,0,2,,https://w3id.org/wings/export/MINT#TopoflowPrecipitationRate
 topoflow_cfg_advanced_Awash_aggregatedOutput,aggregated-outputs,Topoflow aggregated outputs ,topo_Q;topo_stream;topo_inundation,zip,0,1,,https://w3id.org/wings/export/MINT#TopoflowAggregatedOutputs
 ,,,,,,,,
-topoflow_cfg_simple_Ganale_aggregatedInput,aggregated-inputs,Topoflow aggregated inputs for the Baro region,topo_p;topo_albedo;topo_DEM;topo_slope_grid_file;topo_aspect_grid_file;topo_slope_file;topo_nval;topo_z0val;topo_width;topo_angle,zip,0,1,topoflow_inputs_ganale,https://w3id.org/wings/export/MINT#TopoflowAggregatedInput
-topoflow_cfg_simple_Ganale_rainRates,precipitation-rates,Precipitation rates,topo_p,tar.gz,0,2,topoflow_precipitation_rates_ganale,https://w3id.org/wings/export/MINT#TopoflowPrecipitationRate
+topoflow_cfg_simple_Ganale_aggregatedInput,aggregated-inputs,Topoflow aggregated inputs for the Ganale region,topo_p;topo_albedo;topo_DEM;topo_slope_grid_file;topo_aspect_grid_file;topo_slope_file;topo_nval;topo_z0val;topo_width;topo_angle,zip,0,1,topoflow_inputs_ganale,https://w3id.org/wings/export/MINT#TopoflowAggregatedInput
+topoflow_cfg_simple_Ganale_rainRates,precipitation-rates,Precipitation rates (compressed),topo_p,tar.gz,0,2,topoflow_precipitation_rates_ganale,https://w3id.org/wings/export/MINT#TopoflowPrecipitationRate
 topoflow_cfg_simple_Ganale_aggregatedOutput,aggregated-outputs,Topoflow aggregated outputs ,topo_Q;topo_stream;topo_inundation,zip,0,1,,https://w3id.org/wings/export/MINT#TopoflowAggregatedOutputs
 ,,,,,,,,
-topoflow_cfg_advanced_Ganale_aggregatedInput,aggregated-inputs,Topoflow aggregated inputs for the Baro region,topo_p;topo_albedo;topo_DEM;topo_slope_grid_file;topo_aspect_grid_file;topo_slope_file;topo_nval;topo_z0val;topo_width;topo_angle,zip,0,1,topoflow_inputs_ganale,https://w3id.org/wings/export/MINT#TopoflowAggregatedInput
-topoflow_cfg_advanced_Ganale_rainRates,precipitation-rates,Precipitation rates,topo_p,tar.gz,0,2,,https://w3id.org/wings/export/MINT#TopoflowPrecipitationRate
+topoflow_cfg_advanced_Ganale_aggregatedInput,aggregated-inputs,Topoflow aggregated inputs for the Ganale region,topo_p;topo_albedo;topo_DEM;topo_slope_grid_file;topo_aspect_grid_file;topo_slope_file;topo_nval;topo_z0val;topo_width;topo_angle,zip,0,1,topoflow_inputs_ganale,https://w3id.org/wings/export/MINT#TopoflowAggregatedInput
+topoflow_cfg_advanced_Ganale_rainRates,precipitation-rates,Precipitation rates (compressed),topo_p,tar.gz,0,2,,https://w3id.org/wings/export/MINT#TopoflowPrecipitationRate
 topoflow_cfg_advanced_Ganale_aggregatedOutput,aggregated-outputs,Topoflow aggregated outputs ,topo_Q;topo_stream;topo_inundation,zip,0,1,,https://w3id.org/wings/export/MINT#TopoflowAggregatedOutputs
 ,,,,,,,,
-topoflow_cfg_simple_Guder_aggregatedInput,aggregated-inputs,Topoflow aggregated inputs for the Baro region,topo_p;topo_albedo;topo_DEM;topo_slope_grid_file;topo_aspect_grid_file;topo_slope_file;topo_nval;topo_z0val;topo_width;topo_angle,zip,0,1,topoflow_inputs_guder,https://w3id.org/wings/export/MINT#TopoflowAggregatedInput
-topoflow_cfg_simple_Guder_rainRates,precipitation-rates,Precipitation rates,topo_p,tar.gz,0,2,topoflow_precipitation_rates_guder,https://w3id.org/wings/export/MINT#TopoflowPrecipitationRate
+topoflow_cfg_simple_Guder_aggregatedInput,aggregated-inputs,Topoflow aggregated inputs for the Guder region,topo_p;topo_albedo;topo_DEM;topo_slope_grid_file;topo_aspect_grid_file;topo_slope_file;topo_nval;topo_z0val;topo_width;topo_angle,zip,0,1,topoflow_inputs_guder,https://w3id.org/wings/export/MINT#TopoflowAggregatedInput
+topoflow_cfg_simple_Guder_rainRates,precipitation-rates,Precipitation rates (compressed),topo_p,tar.gz,0,2,topoflow_precipitation_rates_guder,https://w3id.org/wings/export/MINT#TopoflowPrecipitationRate
 topoflow_cfg_simple_Guder_aggregatedOutput,aggregated-outputs,Topoflow aggregated outputs ,topo_Q;topo_stream;topo_inundation,zip,0,1,,https://w3id.org/wings/export/MINT#TopoflowAggregatedOutputs
 ,,,,,,,,
-topoflow_cfg_advanced_Guder_aggregatedInput,aggregated-inputs,Topoflow aggregated inputs for the Baro region,topo_p;topo_albedo;topo_DEM;topo_slope_grid_file;topo_aspect_grid_file;topo_slope_file;topo_nval;topo_z0val;topo_width;topo_angle,zip,0,1,topoflow_inputs_guder,https://w3id.org/wings/export/MINT#TopoflowAggregatedInput
-topoflow_cfg_advanced_Guder_rainRates,precipitation-rates,Precipitation rates,topo_p,tar.gz,0,2,,https://w3id.org/wings/export/MINT#TopoflowPrecipitationRate
+topoflow_cfg_advanced_Guder_aggregatedInput,aggregated-inputs,Topoflow aggregated inputs for the Guder region,topo_p;topo_albedo;topo_DEM;topo_slope_grid_file;topo_aspect_grid_file;topo_slope_file;topo_nval;topo_z0val;topo_width;topo_angle,zip,0,1,topoflow_inputs_guder,https://w3id.org/wings/export/MINT#TopoflowAggregatedInput
+topoflow_cfg_advanced_Guder_rainRates,precipitation-rates,Precipitation rates (compressed),topo_p,tar.gz,0,2,,https://w3id.org/wings/export/MINT#TopoflowPrecipitationRate
 topoflow_cfg_advanced_Guder_aggregatedOutput,aggregated-outputs,Topoflow aggregated outputs ,topo_Q;topo_stream;topo_inundation,zip,0,1,,https://w3id.org/wings/export/MINT#TopoflowAggregatedOutputs
 ,,,,,,,,
-topoflow_cfg_simple_Shebelle_aggregatedInput,aggregated-inputs,Topoflow aggregated inputs for the Baro region,topo_p;topo_albedo;topo_DEM;topo_slope_grid_file;topo_aspect_grid_file;topo_slope_file;topo_nval;topo_z0val;topo_width;topo_angle,zip,0,1,topoflow_inputs_shebelle,https://w3id.org/wings/export/MINT#TopoflowAggregatedInput
-topoflow_cfg_simple_Shebelle_rainRates,precipitation-rates,Precipitation rates,topo_p,tar.gz,0,2,topoflow_precipitation_rates_shebelle,https://w3id.org/wings/export/MINT#TopoflowPrecipitationRate
+topoflow_cfg_simple_Shebelle_aggregatedInput,aggregated-inputs,Topoflow aggregated inputs for the Shebelle region,topo_p;topo_albedo;topo_DEM;topo_slope_grid_file;topo_aspect_grid_file;topo_slope_file;topo_nval;topo_z0val;topo_width;topo_angle,zip,0,1,topoflow_inputs_shebelle,https://w3id.org/wings/export/MINT#TopoflowAggregatedInput
+topoflow_cfg_simple_Shebelle_rainRates,precipitation-rates,Precipitation rates (compressed),topo_p,tar.gz,0,2,topoflow_precipitation_rates_shebelle,https://w3id.org/wings/export/MINT#TopoflowPrecipitationRate
 topoflow_cfg_simple_Shebelle_aggregatedOutput,aggregated-outputs,Topoflow aggregated outputs ,topo_Q;topo_stream;topo_inundation,zip,0,1,,https://w3id.org/wings/export/MINT#TopoflowAggregatedOutputs
 ,,,,,,,,
-topoflow_cfg_advanced_Shebelle_aggregatedInput,aggregated-inputs,Topoflow aggregated inputs for the Baro region,topo_p;topo_albedo;topo_DEM;topo_slope_grid_file;topo_aspect_grid_file;topo_slope_file;topo_nval;topo_z0val;topo_width;topo_angle,zip,0,1,topoflow_inputs_shebelle,https://w3id.org/wings/export/MINT#TopoflowAggregatedInput
-topoflow_cfg_advanced_Shebelle_rainRates,precipitation-rates,Precipitation rates,topo_p,tar.gz,0,2,,https://w3id.org/wings/export/MINT#TopoflowPrecipitationRate
+topoflow_cfg_advanced_Shebelle_aggregatedInput,aggregated-inputs,Topoflow aggregated inputs for the Shebelle region,topo_p;topo_albedo;topo_DEM;topo_slope_grid_file;topo_aspect_grid_file;topo_slope_file;topo_nval;topo_z0val;topo_width;topo_angle,zip,0,1,topoflow_inputs_shebelle,https://w3id.org/wings/export/MINT#TopoflowAggregatedInput
+topoflow_cfg_advanced_Shebelle_rainRates,precipitation-rates,Precipitation rates (compressed),topo_p,tar.gz,0,2,,https://w3id.org/wings/export/MINT#TopoflowPrecipitationRate
 topoflow_cfg_advanced_Shebelle_aggregatedOutput,aggregated-outputs,Topoflow aggregated outputs ,topo_Q;topo_stream;topo_inundation,zip,0,1,,https://w3id.org/wings/export/MINT#TopoflowAggregatedOutputs
 ,,,,,,,,
-topoflow36_2.1.0_aggregatedInput,aggregated-inputs,Topoflow aggregated inputs for the Baro region,topo_p;topo_albedo;topo_DEM;topo_slope_grid_file;topo_aspect_grid_file;topo_slope_file;topo_nval;topo_z0val;topo_width;topo_angle,zip,0,1,,https://w3id.org/wings/export/MINT#TopoflowAggregatedInput
-topoflow36_2.1.0_rainRates,precipitation-rates,Precipitation rates,topo_p,tar.gz,0,2,,https://w3id.org/wings/export/MINT#TopoflowPrecipitationRate
+topoflow36_2.1.0_aggregatedInput,aggregated-inputs,Topoflow aggregated inputs for the target region,topo_p;topo_albedo;topo_DEM;topo_slope_grid_file;topo_aspect_grid_file;topo_slope_file;topo_nval;topo_z0val;topo_width;topo_angle,zip,0,1,,https://w3id.org/wings/export/MINT#TopoflowAggregatedInput
+topoflow36_2.1.0_rainRates,precipitation-rates,Precipitation rates (compressed),topo_p,tar.gz,0,2,,https://w3id.org/wings/export/MINT#TopoflowPrecipitationRate
 topoflow36_2.1.0_aggregatedOutput,aggregated-outputs,Topoflow aggregated outputs ,topo_Q;topo_stream;topo_inundation,zip,0,1,,https://w3id.org/wings/export/MINT#TopoflowAggregatedOutputs
 ,,,,,,,,
 topoflow36_2.1.0_Baro_aggregatedInput,aggregated-inputs,Topoflow aggregated inputs for the Baro region,topo_p;topo_albedo;topo_DEM;topo_slope_grid_file;topo_aspect_grid_file;topo_slope_file;topo_nval;topo_z0val;topo_width;topo_angle,zip,0,1,topoflow_inputs_baro,https://w3id.org/wings/export/MINT#TopoflowAggregatedInput
-topoflow36_2.1.0_Baro_rainRates,precipitation-rates,Precipitation rates,topo_p,tar.gz,0,2,,https://w3id.org/wings/export/MINT#TopoflowPrecipitationRate
+topoflow36_2.1.0_Baro_rainRates,precipitation-rates,Precipitation rates (compressed),topo_p,tar.gz,0,2,,https://w3id.org/wings/export/MINT#TopoflowPrecipitationRate
 topoflow36_2.1.0_Baro_aggregatedOutput,aggregated-outputs,Topoflow aggregated outputs ,topo_Q;topo_stream;topo_inundation,zip,0,1,,https://w3id.org/wings/export/MINT#TopoflowAggregatedOutputs
 ,,,,,,,,
 topoflow36_2.1.0_infil_Baro_aggregatedInput,aggregated-inputs,Topoflow aggregated inputs for the Baro region,topo_p;topo_albedo;topo_DEM;topo_slope_grid_file;topo_aspect_grid_file;topo_slope_file;topo_nval;topo_z0val;topo_width;topo_angle,zip,0,1,topoflow_inputs_baro_infil,https://w3id.org/wings/export/MINT#TopoflowAggregatedInput
-topoflow36_2.1.0_infil_Baro_rainRates,precipitation-rates,Precipitation rates,topo_p,tar.gz,0,2,,https://w3id.org/wings/export/MINT#TopoflowPrecipitationRate
+topoflow36_2.1.0_infil_Baro_rainRates,precipitation-rates,Precipitation rates (compressed),topo_p,tar.gz,0,2,,https://w3id.org/wings/export/MINT#TopoflowPrecipitationRate
 topoflow36_2.1.0_infil_Baro_aggregatedOutput,aggregated-outputs,Topoflow aggregated outputs ,topo_Q;topo_stream;topo_inundation,zip,0,1,,https://w3id.org/wings/export/MINT#TopoflowAggregatedOutputs
 ,,,,,,,,
-topoflow36_2.1.0_Ganale_aggregatedInput,aggregated-inputs,Topoflow aggregated inputs for the Baro region,topo_p;topo_albedo;topo_DEM;topo_slope_grid_file;topo_aspect_grid_file;topo_slope_file;topo_nval;topo_z0val;topo_width;topo_angle,zip,0,1,topoflow_inputs_ganale,https://w3id.org/wings/export/MINT#TopoflowAggregatedInput
-topoflow36_2.1.0_Ganale_rainRates,precipitation-rates,Precipitation rates,topo_p,tar.gz,0,2,,https://w3id.org/wings/export/MINT#TopoflowPrecipitationRate
+topoflow36_2.1.0_Ganale_aggregatedInput,aggregated-inputs,Topoflow aggregated inputs for the Ganale region,topo_p;topo_albedo;topo_DEM;topo_slope_grid_file;topo_aspect_grid_file;topo_slope_file;topo_nval;topo_z0val;topo_width;topo_angle,zip,0,1,topoflow_inputs_ganale,https://w3id.org/wings/export/MINT#TopoflowAggregatedInput
+topoflow36_2.1.0_Ganale_rainRates,precipitation-rates,Precipitation rates (compressed),topo_p,tar.gz,0,2,,https://w3id.org/wings/export/MINT#TopoflowPrecipitationRate
 topoflow36_2.1.0_Ganale_aggregatedOutput,aggregated-outputs,Topoflow aggregated outputs ,topo_Q;topo_stream;topo_inundation,zip,0,1,,https://w3id.org/wings/export/MINT#TopoflowAggregatedOutputs
 ,,,,,,,,
-topoflow36_2.1.0_infil_Ganale_aggregatedInput,aggregated-inputs,Topoflow aggregated inputs for the Baro region,topo_p;topo_albedo;topo_DEM;topo_slope_grid_file;topo_aspect_grid_file;topo_slope_file;topo_nval;topo_z0val;topo_width;topo_angle,zip,0,1,topoflow_inputs_ganale_infil,https://w3id.org/wings/export/MINT#TopoflowAggregatedInput
-topoflow36_2.1.0_infil_Ganale_rainRates,precipitation-rates,Precipitation rates,topo_p,tar.gz,0,2,,https://w3id.org/wings/export/MINT#TopoflowPrecipitationRate
+topoflow36_2.1.0_infil_Ganale_aggregatedInput,aggregated-inputs,Topoflow aggregated inputs for the Ganale region,topo_p;topo_albedo;topo_DEM;topo_slope_grid_file;topo_aspect_grid_file;topo_slope_file;topo_nval;topo_z0val;topo_width;topo_angle,zip,0,1,topoflow_inputs_ganale_infil,https://w3id.org/wings/export/MINT#TopoflowAggregatedInput
+topoflow36_2.1.0_infil_Ganale_rainRates,precipitation-rates,Precipitation rates (compressed),topo_p,tar.gz,0,2,,https://w3id.org/wings/export/MINT#TopoflowPrecipitationRate
 topoflow36_2.1.0_infil_Ganale_aggregatedOutput,aggregated-outputs,Topoflow aggregated outputs ,topo_Q;topo_stream;topo_inundation,zip,0,1,,https://w3id.org/wings/export/MINT#TopoflowAggregatedOutputs
 ,,,,,,,,
-topoflow36_2.1.0_Awash_aggregatedInput,aggregated-inputs,Topoflow aggregated inputs for the Baro region,topo_p;topo_albedo;topo_DEM;topo_slope_grid_file;topo_aspect_grid_file;topo_slope_file;topo_nval;topo_z0val;topo_width;topo_angle,zip,0,1,topoflow_inputs_awash,https://w3id.org/wings/export/MINT#TopoflowAggregatedInput
-topoflow36_2.1.0_Awash_rainRates,precipitation-rates,Precipitation rates,topo_p,tar.gz,0,2,,https://w3id.org/wings/export/MINT#TopoflowPrecipitationRate
+topoflow36_2.1.0_Awash_aggregatedInput,aggregated-inputs,Topoflow aggregated inputs for the Awash region,topo_p;topo_albedo;topo_DEM;topo_slope_grid_file;topo_aspect_grid_file;topo_slope_file;topo_nval;topo_z0val;topo_width;topo_angle,zip,0,1,topoflow_inputs_awash,https://w3id.org/wings/export/MINT#TopoflowAggregatedInput
+topoflow36_2.1.0_Awash_rainRates,precipitation-rates,Precipitation rates (compressed),topo_p,tar.gz,0,2,,https://w3id.org/wings/export/MINT#TopoflowPrecipitationRate
 topoflow36_2.1.0_Awash_aggregatedOutput,aggregated-outputs,Topoflow aggregated outputs ,topo_Q;topo_stream;topo_inundation,zip,0,1,,https://w3id.org/wings/export/MINT#TopoflowAggregatedOutputs
 ,,,,,,,,
-topoflow36_2.1.0_infil_Awash_aggregatedInput,aggregated-inputs,Topoflow aggregated inputs for the Baro region,topo_p;topo_albedo;topo_DEM;topo_slope_grid_file;topo_aspect_grid_file;topo_slope_file;topo_nval;topo_z0val;topo_width;topo_angle,zip,0,1,topoflow_inputs_awash_infil,https://w3id.org/wings/export/MINT#TopoflowAggregatedInput
-topoflow36_2.1.0_infil_Awash_rainRates,precipitation-rates,Precipitation rates,topo_p,tar.gz,0,2,,https://w3id.org/wings/export/MINT#TopoflowPrecipitationRate
+topoflow36_2.1.0_infil_Awash_aggregatedInput,aggregated-inputs,Topoflow aggregated inputs for the Awash region,topo_p;topo_albedo;topo_DEM;topo_slope_grid_file;topo_aspect_grid_file;topo_slope_file;topo_nval;topo_z0val;topo_width;topo_angle,zip,0,1,topoflow_inputs_awash_infil,https://w3id.org/wings/export/MINT#TopoflowAggregatedInput
+topoflow36_2.1.0_infil_Awash_rainRates,precipitation-rates,Precipitation rates (compressed),topo_p,tar.gz,0,2,,https://w3id.org/wings/export/MINT#TopoflowPrecipitationRate
 topoflow36_2.1.0_infil_Awash_aggregatedOutput,aggregated-outputs,Topoflow aggregated outputs ,topo_Q;topo_stream;topo_inundation,zip,0,1,,https://w3id.org/wings/export/MINT#TopoflowAggregatedOutputs
 ,,,,,,,,
-topoflow36_2.1.0_Muger_aggregatedInput,aggregated-inputs,Topoflow aggregated inputs for the Baro region,topo_p;topo_albedo;topo_DEM;topo_slope_grid_file;topo_aspect_grid_file;topo_slope_file;topo_nval;topo_z0val;topo_width;topo_angle,zip,0,1,topoflow_inputs_muger,https://w3id.org/wings/export/MINT#TopoflowAggregatedInput
-topoflow36_2.1.0_Muger_rainRates,precipitation-rates,Precipitation rates,topo_p,tar.gz,0,2,,https://w3id.org/wings/export/MINT#TopoflowPrecipitationRate
+topoflow36_2.1.0_Muger_aggregatedInput,aggregated-inputs,Topoflow aggregated inputs for the Muger region,topo_p;topo_albedo;topo_DEM;topo_slope_grid_file;topo_aspect_grid_file;topo_slope_file;topo_nval;topo_z0val;topo_width;topo_angle,zip,0,1,topoflow_inputs_muger,https://w3id.org/wings/export/MINT#TopoflowAggregatedInput
+topoflow36_2.1.0_Muger_rainRates,precipitation-rates,Precipitation rates (compressed),topo_p,tar.gz,0,2,,https://w3id.org/wings/export/MINT#TopoflowPrecipitationRate
 topoflow36_2.1.0_Muger_aggregatedOutput,aggregated-outputs,Topoflow aggregated outputs ,topo_Q;topo_stream;topo_inundation,zip,0,1,,https://w3id.org/wings/export/MINT#TopoflowAggregatedOutputs
 ,,,,,,,,
-topoflow36_2.1.0_infil_Muger_aggregatedInput,aggregated-inputs,Topoflow aggregated inputs for the Baro region,topo_p;topo_albedo;topo_DEM;topo_slope_grid_file;topo_aspect_grid_file;topo_slope_file;topo_nval;topo_z0val;topo_width;topo_angle,zip,0,1,topoflow_inputs_muger_infil,https://w3id.org/wings/export/MINT#TopoflowAggregatedInput
-topoflow36_2.1.0_infil_Muger_rainRates,precipitation-rates,Precipitation rates,topo_p,tar.gz,0,2,,https://w3id.org/wings/export/MINT#TopoflowPrecipitationRate
+topoflow36_2.1.0_infil_Muger_aggregatedInput,aggregated-inputs,Topoflow aggregated inputs for the Muger region,topo_p;topo_albedo;topo_DEM;topo_slope_grid_file;topo_aspect_grid_file;topo_slope_file;topo_nval;topo_z0val;topo_width;topo_angle,zip,0,1,topoflow_inputs_muger_infil,https://w3id.org/wings/export/MINT#TopoflowAggregatedInput
+topoflow36_2.1.0_infil_Muger_rainRates,precipitation-rates,Precipitation rates (compressed),topo_p,tar.gz,0,2,,https://w3id.org/wings/export/MINT#TopoflowPrecipitationRate
 topoflow36_2.1.0_infil_Muger_aggregatedOutput,aggregated-outputs,Topoflow aggregated outputs ,topo_Q;topo_stream;topo_inundation,zip,0,1,,https://w3id.org/wings/export/MINT#TopoflowAggregatedOutputs
 ,,,,,,,,
-topoflow36_2.1.0_Guder_aggregatedInput,aggregated-inputs,Topoflow aggregated inputs for the Baro region,topo_p;topo_albedo;topo_DEM;topo_slope_grid_file;topo_aspect_grid_file;topo_slope_file;topo_nval;topo_z0val;topo_width;topo_angle,zip,0,1,topoflow_inputs_guder,https://w3id.org/wings/export/MINT#TopoflowAggregatedInput
-topoflow36_2.1.0_Guder_rainRates,precipitation-rates,Precipitation rates,topo_p,tar.gz,0,2,,https://w3id.org/wings/export/MINT#TopoflowPrecipitationRate
+topoflow36_2.1.0_Guder_aggregatedInput,aggregated-inputs,Topoflow aggregated inputs for the Guder region,topo_p;topo_albedo;topo_DEM;topo_slope_grid_file;topo_aspect_grid_file;topo_slope_file;topo_nval;topo_z0val;topo_width;topo_angle,zip,0,1,topoflow_inputs_guder,https://w3id.org/wings/export/MINT#TopoflowAggregatedInput
+topoflow36_2.1.0_Guder_rainRates,precipitation-rates,Precipitation rates (compressed),topo_p,tar.gz,0,2,,https://w3id.org/wings/export/MINT#TopoflowPrecipitationRate
 topoflow36_2.1.0_Guder_aggregatedOutput,aggregated-outputs,Topoflow aggregated outputs ,topo_Q;topo_stream;topo_inundation,zip,0,1,,https://w3id.org/wings/export/MINT#TopoflowAggregatedOutputs
 ,,,,,,,,
-topoflow36_2.1.0_infil_Guder_aggregatedInput,aggregated-inputs,Topoflow aggregated inputs for the Baro region,topo_p;topo_albedo;topo_DEM;topo_slope_grid_file;topo_aspect_grid_file;topo_slope_file;topo_nval;topo_z0val;topo_width;topo_angle,zip,0,1,topoflow_inputs_guder_infil,https://w3id.org/wings/export/MINT#TopoflowAggregatedInput
-topoflow36_2.1.0_infil_Guder_rainRates,precipitation-rates,Precipitation rates,topo_p,tar.gz,0,2,,https://w3id.org/wings/export/MINT#TopoflowPrecipitationRate
+topoflow36_2.1.0_infil_Guder_aggregatedInput,aggregated-inputs,Topoflow aggregated inputs for the Guder region,topo_p;topo_albedo;topo_DEM;topo_slope_grid_file;topo_aspect_grid_file;topo_slope_file;topo_nval;topo_z0val;topo_width;topo_angle,zip,0,1,topoflow_inputs_guder_infil,https://w3id.org/wings/export/MINT#TopoflowAggregatedInput
+topoflow36_2.1.0_infil_Guder_rainRates,precipitation-rates,Precipitation rates (compressed),topo_p,tar.gz,0,2,,https://w3id.org/wings/export/MINT#TopoflowPrecipitationRate
 topoflow36_2.1.0_infil_Guder_aggregatedOutput,aggregated-outputs,Topoflow aggregated outputs ,topo_Q;topo_stream;topo_inundation,zip,0,1,,https://w3id.org/wings/export/MINT#TopoflowAggregatedOutputs
 ,,,,,,,,
-topoflow36_2.1.0_Shebelle_aggregatedInput,aggregated-inputs,Topoflow aggregated inputs for the Baro region,topo_p;topo_albedo;topo_DEM;topo_slope_grid_file;topo_aspect_grid_file;topo_slope_file;topo_nval;topo_z0val;topo_width;topo_angle,zip,0,1,topoflow_inputs_shebelle,https://w3id.org/wings/export/MINT#TopoflowAggregatedInput
-topoflow36_2.1.0_Shebelle_rainRates,precipitation-rates,Precipitation rates,topo_p,tar.gz,0,2,,https://w3id.org/wings/export/MINT#TopoflowPrecipitationRate
+topoflow36_2.1.0_Shebelle_aggregatedInput,aggregated-inputs,Topoflow aggregated inputs for the Shebell region,topo_p;topo_albedo;topo_DEM;topo_slope_grid_file;topo_aspect_grid_file;topo_slope_file;topo_nval;topo_z0val;topo_width;topo_angle,zip,0,1,topoflow_inputs_shebelle,https://w3id.org/wings/export/MINT#TopoflowAggregatedInput
+topoflow36_2.1.0_Shebelle_rainRates,precipitation-rates,Precipitation rates (compressed),topo_p,tar.gz,0,2,,https://w3id.org/wings/export/MINT#TopoflowPrecipitationRate
 topoflow36_2.1.0_Shebelle_aggregatedOutput,aggregated-outputs,Topoflow aggregated outputs ,topo_Q;topo_stream;topo_inundation,zip,0,1,,https://w3id.org/wings/export/MINT#TopoflowAggregatedOutputs
 ,,,,,,,,
-topoflow36_2.1.0_infil_Shebelle_aggregatedInput,aggregated-inputs,Topoflow aggregated inputs for the Baro region,topo_p;topo_albedo;topo_DEM;topo_slope_grid_file;topo_aspect_grid_file;topo_slope_file;topo_nval;topo_z0val;topo_width;topo_angle,zip,0,1,topoflow_inputs_shebelle_infil,https://w3id.org/wings/export/MINT#TopoflowAggregatedInput
-topoflow36_2.1.0_infil_Shebelle_rainRates,precipitation-rates,Precipitation rates,topo_p,tar.gz,0,2,,https://w3id.org/wings/export/MINT#TopoflowPrecipitationRate
+topoflow36_2.1.0_infil_Shebelle_aggregatedInput,aggregated-inputs,Topoflow aggregated inputs for the Shebelle region,topo_p;topo_albedo;topo_DEM;topo_slope_grid_file;topo_aspect_grid_file;topo_slope_file;topo_nval;topo_z0val;topo_width;topo_angle,zip,0,1,topoflow_inputs_shebelle_infil,https://w3id.org/wings/export/MINT#TopoflowAggregatedInput
+topoflow36_2.1.0_infil_Shebelle_rainRates,precipitation-rates,Precipitation rates (compressed),topo_p,tar.gz,0,2,,https://w3id.org/wings/export/MINT#TopoflowPrecipitationRate
 topoflow36_2.1.0_infil_Shebelle_aggregatedOutput,aggregated-outputs,Topoflow aggregated outputs ,topo_Q;topo_stream;topo_inundation,zip,0,1,,https://w3id.org/wings/export/MINT#TopoflowAggregatedOutputs
 ,,,,,,,,
 river_depth_estimation_remote_sensing_data,remote_sensing_data,,,tar.gz,0,,,https://w3id.org/wings/export/MINT#RemoteSensingData
@@ -676,77 +676,77 @@ hand_v1_simple_beko-tippi_input_dem,input-dem,Input digital elevation model for 
 hand_v1_simple_beko-tippi_distance_down,distance-down,Distance down flooding map,hand_demang;svid_demp;hand_flow,tif,0,1,,https://w3id.org/wings/export/MINT#rasterDistancedown
 hand_v1_simple_beko-tippi_distance_down_image,distance-down-image,Distance down flooding map image,hand_demang;svid_demp;hand_flow,png,0,2,,https://w3id.org/wings/export/MINT#distanceDownImage
 ,,,,,,,,
-hand_v1_simple_awash_input_dem,input-dem,Input digital elevation model for the Beko-Tippi basin in Ethiopia,hand_dem,tif,0,1,hand_dem_Awash,https://w3id.org/wings/export/MINT#rasterDem
+hand_v1_simple_awash_input_dem,input-dem,Input digital elevation model for the Awash basin in Ethiopia,hand_dem,tif,0,1,hand_dem_Awash,https://w3id.org/wings/export/MINT#rasterDem
 hand_v1_simple_awash_distance_down,distance-down,Distance down flooding map,hand_demang;svid_demp;hand_flow,tif,0,1,,https://w3id.org/wings/export/MINT#rasterDistancedown
 hand_v1_simple_awash_distance_down_image,distance-down-image,Distance down flooding map image,hand_demang;svid_demp;hand_flow,png,0,2,,https://w3id.org/wings/export/MINT#distanceDownImage
 ,,,,,,,,
-hand_v1_simple_ganale_input_dem,input-dem,Input digital elevation model for the Beko-Tippi basin in Ethiopia,hand_dem,tif,0,1,hand_dem_Ganale,https://w3id.org/wings/export/MINT#rasterDem
+hand_v1_simple_ganale_input_dem,input-dem,Input digital elevation model for the Ganale basin in Ethiopia,hand_dem,tif,0,1,hand_dem_Ganale,https://w3id.org/wings/export/MINT#rasterDem
 hand_v1_simple_ganale_distance_down,distance-down,Distance down flooding map,hand_demang;svid_demp;hand_flow,tif,0,1,,https://w3id.org/wings/export/MINT#rasterDistancedown
 hand_v1_simple_ganale_distance_down_image,distance-down-image,Distance down flooding map image,hand_demang;svid_demp;hand_flow,png,0,2,,https://w3id.org/wings/export/MINT#distanceDownImage
 ,,,,,,,,
-hand_v1_simple_shebelle_input_dem,input-dem,Input digital elevation model for the Beko-Tippi basin in Ethiopia,hand_dem,tif,0,1,hand_dem_Shebelle,https://w3id.org/wings/export/MINT#rasterDem
+hand_v1_simple_shebelle_input_dem,input-dem,Input digital elevation model for the Shebelle basin in Ethiopia,hand_dem,tif,0,1,hand_dem_Shebelle,https://w3id.org/wings/export/MINT#rasterDem
 hand_v1_simple_shebelle_distance_down,distance-down,Distance down flooding map,hand_demang;svid_demp;hand_flow,tif,0,1,,https://w3id.org/wings/export/MINT#rasterDistancedown
 hand_v1_simple_shebelle_distance_down_image,distance-down-image,Distance down flooding map image,hand_demang;svid_demp;hand_flow,png,0,2,,https://w3id.org/wings/export/MINT#distanceDownImage
 ,,,,,,,,
-hand_v2_input_dem,input-dem,Input digital elevation model for the Beko-Tippi basin in Ethiopia,hand_dem,tif,0,1,,https://w3id.org/wings/export/MINT#rasterDem
+hand_v2_input_dem,input-dem,Input digital elevation model for the target basin,hand_dem,tif,0,1,,https://w3id.org/wings/export/MINT#rasterDem
 hand_v2_distance_down,distance-down,Distance down flooding map,hand_demang;svid_demp;hand_flow,tif,0,1,,https://w3id.org/wings/export/MINT#rasterDistancedown
-hand_v2_shape,shape,Shape file,hand_demang;svid_demp;hand_flow,shp,0,2,,https://w3id.org/wings/export/MINT#Shape
-hand_v2_geojson,geojson,GeoJSON file,hand_demang;svid_demp;hand_flow,json,0,3,,https://w3id.org/wings/export/MINT#GeoJSON
+hand_v2_shape,shape,Shape file corresponding to the distance down flooding map,hand_demang;svid_demp;hand_flow,shp,0,2,,https://w3id.org/wings/export/MINT#Shape
+hand_v2_geojson,geojson,GeoJSON file corresponding to the distance down flooding map,hand_demang;svid_demp;hand_flow,json,0,3,,https://w3id.org/wings/export/MINT#GeoJSON
 ,,,,,,,,
-hand_v2_travis_input_dem,input-dem,Input digital elevation model for the Beko-Tippi basin in Ethiopia,hand_dem,tif,0,1,hand_sample_dem_travis,https://w3id.org/wings/export/MINT#rasterDem
+hand_v2_travis_input_dem,input-dem,Input digital elevation model for the Travis basin in Texas,hand_dem,tif,0,1,hand_sample_dem_travis,https://w3id.org/wings/export/MINT#rasterDem
 hand_v2_travis_distance_down,distance-down,Distance down flooding map,hand_demang;svid_demp;hand_flow,tif,0,1,,https://w3id.org/wings/export/MINT#rasterDistancedown
-hand_v2_travis_shape,shape,Shape file,hand_demang;svid_demp;hand_flow,shp,0,2,,https://w3id.org/wings/export/MINT#Shape
-hand_v2_travis_geojson,geojson,GeoJSON file,hand_demang;svid_demp;hand_flow,json,0,3,,https://w3id.org/wings/export/MINT#GeoJSON
+hand_v2_travis_shape,shape,Shape file corresponding to the distance down flooding map,hand_demang;svid_demp;hand_flow,shp,0,2,,https://w3id.org/wings/export/MINT#Shape
+hand_v2_travis_geojson,geojson,GeoJSON file corresponding to the distance down flooding map,hand_demang;svid_demp;hand_flow,json,0,3,,https://w3id.org/wings/export/MINT#GeoJSON
 ,,,,,,,,
-hand_v2_baro_input_dem,input-dem,Input digital elevation model for the Beko-Tippi basin in Ethiopia,hand_dem,tif,0,1,hand_dem_Baro,https://w3id.org/wings/export/MINT#rasterDem
+hand_v2_baro_input_dem,input-dem,Input digital elevation model for the Baro basin in Ethiopia,hand_dem,tif,0,1,hand_dem_Baro,https://w3id.org/wings/export/MINT#rasterDem
 hand_v2_baro_distance_down,distance-down,Distance down flooding map,hand_demang;svid_demp;hand_flow,tif,0,1,,https://w3id.org/wings/export/MINT#rasterDistancedown
-hand_v2_baro_shape,shape,Shape file,hand_demang;svid_demp;hand_flow,shp,0,2,,https://w3id.org/wings/export/MINT#Shape
-hand_v2_baro_geojson,geojson,GeoJSON file,hand_demang;svid_demp;hand_flow,json,0,3,,https://w3id.org/wings/export/MINT#GeoJSON
+hand_v2_baro_shape,shape,Shape file corresponding to the distance down flooding map,hand_demang;svid_demp;hand_flow,shp,0,2,,https://w3id.org/wings/export/MINT#Shape
+hand_v2_baro_geojson,geojson,GeoJSON file corresponding to the distance down flooding map,hand_demang;svid_demp;hand_flow,json,0,3,,https://w3id.org/wings/export/MINT#GeoJSON
 ,,,,,,,,
-hand_v2_bashilo_input_dem,input-dem,Input digital elevation model for the Beko-Tippi basin in Ethiopia,hand_dem,tif,0,1,hand_dem_Bashilo,https://w3id.org/wings/export/MINT#rasterDem
+hand_v2_bashilo_input_dem,input-dem,Input digital elevation model for the Bashilo basin in Ethiopia,hand_dem,tif,0,1,hand_dem_Bashilo,https://w3id.org/wings/export/MINT#rasterDem
 hand_v2_bashilo_distance_down,distance-down,Distance down flooding map,hand_demang;svid_demp;hand_flow,tif,0,1,,https://w3id.org/wings/export/MINT#rasterDistancedown
-hand_v2_bashilo_shape,shape,Shape file,hand_demang;svid_demp;hand_flow,shp,0,2,,https://w3id.org/wings/export/MINT#Shape
-hand_v2_bashilo_geojson,geojson,GeoJSON file,hand_demang;svid_demp;hand_flow,json,0,3,,https://w3id.org/wings/export/MINT#GeoJSON
+hand_v2_bashilo_shape,shape,Shape file corresponding to the distance down flooding map,hand_demang;svid_demp;hand_flow,shp,0,2,,https://w3id.org/wings/export/MINT#Shape
+hand_v2_bashilo_geojson,geojson,GeoJSON file corresponding to the distance down flooding map,hand_demang;svid_demp;hand_flow,json,0,3,,https://w3id.org/wings/export/MINT#GeoJSON
 ,,,,,,,,
-hand_v2_muger_input_dem,input-dem,Input digital elevation model for the Beko-Tippi basin in Ethiopia,hand_dem,tif,0,1,hand_dem_Muger,https://w3id.org/wings/export/MINT#rasterDem
+hand_v2_muger_input_dem,input-dem,Input digital elevation model for the Muger basin in Ethiopia,hand_dem,tif,0,1,hand_dem_Muger,https://w3id.org/wings/export/MINT#rasterDem
 hand_v2_muger_distance_down,distance-down,Distance down flooding map,hand_demang;svid_demp;hand_flow,tif,0,1,,https://w3id.org/wings/export/MINT#rasterDistancedown
-hand_v2_muger_shape,shape,Shape file,hand_demang;svid_demp;hand_flow,shp,0,2,,https://w3id.org/wings/export/MINT#Shape
-hand_v2_muger_geojson,geojson,GeoJSON file,hand_demang;svid_demp;hand_flow,json,0,3,,https://w3id.org/wings/export/MINT#GeoJSON
+hand_v2_muger_shape,shape,Shape file corresponding to the distance down flooding map,hand_demang;svid_demp;hand_flow,shp,0,2,,https://w3id.org/wings/export/MINT#Shape
+hand_v2_muger_geojson,geojson,GeoJSON file corresponding to the distance down flooding map,hand_demang;svid_demp;hand_flow,json,0,3,,https://w3id.org/wings/export/MINT#GeoJSON
 ,,,,,,,,
-hand_v2_jamma_input_dem,input-dem,Input digital elevation model for the Beko-Tippi basin in Ethiopia,hand_dem,tif,0,1,hand_dem_Jamma,https://w3id.org/wings/export/MINT#rasterDem
+hand_v2_jamma_input_dem,input-dem,Input digital elevation model for the Jamma basin in Ethiopia,hand_dem,tif,0,1,hand_dem_Jamma,https://w3id.org/wings/export/MINT#rasterDem
 hand_v2_jamma_distance_down,distance-down,Distance down flooding map,hand_demang;svid_demp;hand_flow,tif,0,1,,https://w3id.org/wings/export/MINT#rasterDistancedown
-hand_v2_jamma_shape,shape,Shape file,hand_demang;svid_demp;hand_flow,shp,0,2,,https://w3id.org/wings/export/MINT#Shape
-hand_v2_jamma_geojson,geojson,GeoJSON file,hand_demang;svid_demp;hand_flow,json,0,3,,https://w3id.org/wings/export/MINT#GeoJSON
+hand_v2_jamma_shape,shape,Shape file corresponding to the distance down flooding map,hand_demang;svid_demp;hand_flow,shp,0,2,,https://w3id.org/wings/export/MINT#Shape
+hand_v2_jamma_geojson,geojson,GeoJSON file corresponding to the distance down flooding map,hand_demang;svid_demp;hand_flow,json,0,3,,https://w3id.org/wings/export/MINT#GeoJSON
 ,,,,,,,,
-hand_v2_guger_input_dem,input-dem,Input digital elevation model for the Beko-Tippi basin in Ethiopia,hand_dem,tif,0,1,hand_dem_Guder,https://w3id.org/wings/export/MINT#rasterDem
+hand_v2_guger_input_dem,input-dem,Input digital elevation model for the Guder basin in Ethiopia,hand_dem,tif,0,1,hand_dem_Guder,https://w3id.org/wings/export/MINT#rasterDem
 hand_v2_guder_distance_down,distance-down,Distance down flooding map,hand_demang;svid_demp;hand_flow,tif,0,1,,https://w3id.org/wings/export/MINT#rasterDistancedown
-hand_v2_guder_shape,shape,Shape file,hand_demang;svid_demp;hand_flow,shp,0,2,,https://w3id.org/wings/export/MINT#Shape
-hand_v2_guder_geojson,geojson,GeoJSON file,hand_demang;svid_demp;hand_flow,json,0,3,,https://w3id.org/wings/export/MINT#GeoJSON
+hand_v2_guder_shape,shape,Shape file corresponding to the distance down flooding map,hand_demang;svid_demp;hand_flow,shp,0,2,,https://w3id.org/wings/export/MINT#Shape
+hand_v2_guder_geojson,geojson,GeoJSON file corresponding to the distance down flooding map,hand_demang;svid_demp;hand_flow,json,0,3,,https://w3id.org/wings/export/MINT#GeoJSON
 ,,,,,,,,
 hand_v2_beko-tippi_input_dem,input-dem,Input digital elevation model for the Beko-Tippi basin in Ethiopia,hand_dem,tif,0,1,hand_dem_Beko-Tippi,https://w3id.org/wings/export/MINT#rasterDem
 hand_v2_beko-tippi_distance_down,distance-down,Distance down flooding map,hand_demang;svid_demp;hand_flow,tif,0,1,,https://w3id.org/wings/export/MINT#rasterDistancedown
-hand_v2_beko-tippi_shape,shape,Shape file,hand_demang;svid_demp;hand_flow,shp,0,2,,https://w3id.org/wings/export/MINT#Shape
-hand_v2_beko-tippi_geojson,geojson,GeoJSON file,hand_demang;svid_demp;hand_flow,json,0,3,,https://w3id.org/wings/export/MINT#GeoJSON
+hand_v2_beko-tippi_shape,shape,Shape file corresponding to the distance down flooding map,hand_demang;svid_demp;hand_flow,shp,0,2,,https://w3id.org/wings/export/MINT#Shape
+hand_v2_beko-tippi_geojson,geojson,GeoJSON file corresponding to the distance down flooding map,hand_demang;svid_demp;hand_flow,json,0,3,,https://w3id.org/wings/export/MINT#GeoJSON
 ,,,,,,,,
-hand_v2_awash_input_dem,input-dem,Input digital elevation model for the Beko-Tippi basin in Ethiopia,hand_dem,tif,0,1,hand_dem_Awash,https://w3id.org/wings/export/MINT#rasterDem
+hand_v2_awash_input_dem,input-dem,Input digital elevation model for the Awash basin in Ethiopia,hand_dem,tif,0,1,hand_dem_Awash,https://w3id.org/wings/export/MINT#rasterDem
 hand_v2_awash_distance_down,distance-down,Distance down flooding map,hand_demang;svid_demp;hand_flow,tif,0,1,,https://w3id.org/wings/export/MINT#rasterDistancedown
-hand_v2_awash_shape,shape,Shape file,hand_demang;svid_demp;hand_flow,shp,0,2,,https://w3id.org/wings/export/MINT#Shape
-hand_v2_awash_geojson,geojson,GeoJSON file,hand_demang;svid_demp;hand_flow,json,0,3,,https://w3id.org/wings/export/MINT#GeoJSON
+hand_v2_awash_shape,shape,Shape file corresponding to the distance down flooding map,hand_demang;svid_demp;hand_flow,shp,0,2,,https://w3id.org/wings/export/MINT#Shape
+hand_v2_awash_geojson,geojson,GeoJSON file corresponding to the distance down flooding map,hand_demang;svid_demp;hand_flow,json,0,3,,https://w3id.org/wings/export/MINT#GeoJSON
 ,,,,,,,,
-hand_v2_ganale_input_dem,input-dem,Input digital elevation model for the Beko-Tippi basin in Ethiopia,hand_dem,tif,0,1,hand_dem_Ganale,https://w3id.org/wings/export/MINT#rasterDem
+hand_v2_ganale_input_dem,input-dem,Input digital elevation model for the Ganale basin in Ethiopia,hand_dem,tif,0,1,hand_dem_Ganale,https://w3id.org/wings/export/MINT#rasterDem
 hand_v2_ganale_distance_down,distance-down,Distance down flooding map,hand_demang;svid_demp;hand_flow,tif,0,1,,https://w3id.org/wings/export/MINT#rasterDistancedown
-hand_v2_ganale_shape,shape,Shape file,hand_demang;svid_demp;hand_flow,shp,0,2,,https://w3id.org/wings/export/MINT#Shape
-hand_v2_ganale_geojson,geojson,GeoJSON file,hand_demang;svid_demp;hand_flow,json,0,3,,https://w3id.org/wings/export/MINT#GeoJSON
+hand_v2_ganale_shape,shape,Shape file corresponding to the distance down flooding map,hand_demang;svid_demp;hand_flow,shp,0,2,,https://w3id.org/wings/export/MINT#Shape
+hand_v2_ganale_geojson,geojson,GeoJSON file corresponding to the distance down flooding map,hand_demang;svid_demp;hand_flow,json,0,3,,https://w3id.org/wings/export/MINT#GeoJSON
 ,,,,,,,,
-hand_v2_shebelle_input_dem,input-dem,Input digital elevation model for the Beko-Tippi basin in Ethiopia,hand_dem,tif,0,1,hand_dem_Shebelle,https://w3id.org/wings/export/MINT#rasterDem
+hand_v2_shebelle_input_dem,input-dem,Input digital elevation model for the Shebelle basin in Ethiopia,hand_dem,tif,0,1,hand_dem_Shebelle,https://w3id.org/wings/export/MINT#rasterDem
 hand_v2_shebelle_distance_down,distance-down,Distance down flooding map,hand_demang;svid_demp;hand_flow,tif,0,1,,https://w3id.org/wings/export/MINT#rasterDistancedown
-hand_v2_shebelle_shape,shape,Shape file,hand_demang;svid_demp;hand_flow,shp,0,2,,https://w3id.org/wings/export/MINT#Shape
-hand_v2_shebelle_geojson,geojson,GeoJSON file,hand_demang;svid_demp;hand_flow,json,0,3,,https://w3id.org/wings/export/MINT#GeoJSON
+hand_v2_shebelle_shape,shape,Shape file corresponding to the distance down flooding map,hand_demang;svid_demp;hand_flow,shp,0,2,,https://w3id.org/wings/export/MINT#Shape
+hand_v2_shebelle_geojson,geojson,GeoJSON file corresponding to the distance down flooding map,hand_demang;svid_demp;hand_flow,json,0,3,,https://w3id.org/wings/export/MINT#GeoJSON
 ,,,,,,,,
-hand_v2_noregion_input_dem,input-dem,Input digital elevation model for the Beko-Tippi basin in Ethiopia,hand_dem,tif,0,1,,https://w3id.org/wings/export/MINT#rasterDem
+hand_v2_noregion_input_dem,input-dem,Input digital elevation model for the target basin to run the model,hand_dem,tif,0,1,,https://w3id.org/wings/export/MINT#rasterDem
 hand_v2_noregion_distance_down,distance-down,Distance down flooding map,hand_demang;svid_demp;hand_flow,tif,0,1,,https://w3id.org/wings/export/MINT#rasterDistancedown
-hand_v2_noregion_shape,shape,Shape file,hand_demang;svid_demp;hand_flow,shp,0,2,,https://w3id.org/wings/export/MINT#Shape
-hand_v2_noregion_geojson,geojson,GeoJSON file,hand_demang;svid_demp;hand_flow,json,0,3,,https://w3id.org/wings/export/MINT#GeoJSON
+hand_v2_noregion_shape,shape,Shape file corresponding to the distance down flooding map,hand_demang;svid_demp;hand_flow,shp,0,2,,https://w3id.org/wings/export/MINT#Shape
+hand_v2_noregion_geojson,geojson,GeoJSON file corresponding to the distance down flooding map,hand_demang;svid_demp;hand_flow,json,0,3,,https://w3id.org/wings/export/MINT#GeoJSON
 ,,,,,,,,
 modflow_2005_Hfb,hfb6,Horizontal flow barrier file,,hf6,0,8,,https://w3id.org/wings/export/MINT#MODFLOWhfb6
 modflow_2005_Oc,oc,Output control file,,dat,0,4,,https://w3id.org/wings/export/MINT#MODFLOWoc
