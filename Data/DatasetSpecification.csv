@@ -820,6 +820,6 @@ dsi_1.0_cfg_dataset,data,Data input,,nc,0,1,,https://w3id.org/wings/export/MINT#
 dsi_1.0_cfg_out,index,Output netcdf with the results,,nc,0,1,,https://w3id.org/wings/export/MINT#DroughtIndex
 dsi_1.0_cfg_movie,index_movie,Result movie,,mp4,0,2,,https://w3id.org/wings/export/MINT#Movie
 ,,,,,,,,
-dsi_1.0_cfg_spi_ethiopia_dataset,data,Data input,,nc,0,1,,https://w3id.org/wings/export/MINT#Data
-dsi_1.0_cfg_spi_ethiopia_out,index,Output netcdf with the results,,nc,0,1,,https://w3id.org/wings/export/MINT#DroughtIndex
-dsi_1.0_cfg_spi_ethiopia_movie,index_movie,Result movie,,mp4,0,2,,https://w3id.org/wings/export/MINT#Movie
+dsi_1.0_cfg_spi_ethiopia_dataset,data,Data input (GLDAS),dsi_Rainf_f_tavg;dsi_Tair_f_inst,nc,0,1,dsi_gldas_et,https://w3id.org/wings/export/MINT#Data
+dsi_1.0_cfg_spi_ethiopia_out,index,Output netcdf with the results,dsi_spi,nc,0,1,,https://w3id.org/wings/export/MINT#DroughtIndex
+dsi_1.0_cfg_spi_ethiopia_movie,index_movie,Result movie,dsi_spi,mp4,0,2,,https://w3id.org/wings/export/MINT#Movie

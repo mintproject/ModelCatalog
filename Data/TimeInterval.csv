@@ -8,4 +8,4 @@ dssat_cfg_simple_TI,Simple dssat time interval,Time interval used in the DSSAT s
 wgen_1.0.1_cfg_timeinterval,WGEN time interval,Time interval used in WGEN basic configuration,1,day
 climcomp_0.0.2_P_cfg_TI,ClimComp time interval,Time interval at which ClimComp outputs,1,year
 climcomp_0.0.2_T_cfg_TI,ClimComp time interval,Time interval at which ClimComp outputs,1,year
-modflow_general_TI,Modflow 2005 time iinterval,Time interval used in Modflow 2005 configuration,,variable
+modflow_general_TI,Modflow 2005 time interval,Time interval used in Modflow 2005 configuration,,variable

@@ -123,6 +123,8 @@ hand_dem_Shebelle,DEM fir Shebelle,Digital elevation model of the Shebelle basin
 ,,,,,
 glofas_data_Et_SS,GloFASv2.1 from 1981 to 2019 cut to Ethiopia and South Sudan,GloFASv2.1 from 1981 to 2019 cut to Ethiopia and South Sudan,https://data.mint.isi.edu/files/raw-data/GloFAS/flooding/GloFASv2.1_SS_ET_1981_2019.nc,FFF-3s5c113e-c7ae-4cda-ba23-2e4f2286glofas,
 ,,,,,
+dsi_gldas_et,GLDAS2.1 for Ethiopia (2000-2018),GLDAS2.1 LIS land surface model output monthly mean cropped for Ethiopia,https://data.mint.isi.edu/files/raw-data/GLDAS2.1_TP_2000_2018.nc,d76cc92f-60f3-4a72-b5f9-1381d2651fb9,
+,,,,,
 met6.62Nx34.88E.weather,Cycles weather file met6.62Nx34.88E.weather,Cycles weather file met6.62Nx34.88E.weather,https://raw.githubusercontent.com/pegasus-isi/pegasus-cycles/master/weather/met6.62Nx34.88E.weather,FFF-de5c1f9e-c7ae-4cda-ba23-2e4f2286a18o,
 met6.62Nx35.12E.weather,Cycles weather file met6.62Nx35.12E.weather,Cycles weather file met6.62Nx35.12E.weather,https://raw.githubusercontent.com/pegasus-isi/pegasus-cycles/master/weather/met6.62Nx35.12E.weather,FFF-de5c1f9e-c7ae-4cda-ba23-2e4f2286a18o,
 met6.88Nx34.62E.weather,Cycles weather file met6.88Nx34.62E.weather,Cycles weather file met6.88Nx34.62E.weather,https://raw.githubusercontent.com/pegasus-isi/pegasus-cycles/master/weather/met6.88Nx34.62E.weather,FFF-de5c1f9e-c7ae-4cda-ba23-2e4f2286a18o,

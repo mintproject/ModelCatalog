@@ -450,3 +450,7 @@ hand_flooding,flooding contour,flooding contour,,flooding contour,flooding_conto
 ,,,,,,,,,,,
 fsi_q,River discharge,Q,River discharge,"""Volume rate of water flow, including sediments, chemical and biological material, in the river channel averaged over a time step through a cross-section.""",channel_water__24-hour_simple_moving_average_of_volume_flow_rate,m^3/s,,,,,
 fsi_fsi,Flood severity index,FSI,Flood severity index,"""The index is a boolean corresponding to the severity of the flood: 0: None, 1: Medium (2-yr return period), 2: high (5-yr return period), 3: severe (20-yr return period)""",channel_water_flow__flood_volume-flux_severity_index,,,,,,
+,,,,,,,,,,,
+dsi_Rainf_f_tavg,Total precipitation rate,Rainf_f_tavg,Total precipitation rate,Total precipitation rate,atmosphere_water__precipitation_mass_flux,kg m-2 s-1,,,,,
+dsi_Tair_f_inst,Air temperature,Tair_f_inst,Air temperature,Air temperature,land_surface_air__temperature,K,,,,,
+dsi_spi,SPI,SPI,Standard precipitation index,Standard precipitation index,atmosphere_water__precipitation_standardized_index,,,,,,
