@@ -1160,7 +1160,7 @@ dsi_1.0_cfg_calibration_start_year,calibration_start_year, The start year for th
 dsi_1.0_cfg_calibration_end_year,calibration_end_year,The end year for the calibration.,2017,integer,https://w3id.org/wings/export/MINT#EndYear,,13,,,,,,,
 dsi_1.0_cfg_generate_visualization,generate_visualization,"If True, will generate a movie. PET visualization is not currently supported",TRUE,boolean,https://w3id.org/wings/export/MINT#GenerateImage,TRUE,14,,,,,,,
 ,,,,,,,,,,,,,,
-dsi_1.0_cfg_spi_ethiopia_data_type,data_type,"""The type of NetCDF files. Valid entries are GLDAS, FLDAS or CHIRPS""",GLDAS,string,https://w3id.org/wings/export/MINT#DataSelection,,1,,,,,,,
+dsi_1.0_cfg_spi_ethiopia_data_type,data_type,"""The type of NetCDF files. In this setup GLDAS has been pre-selected""",GLDAS,string,https://w3id.org/wings/export/MINT#DataSelection,GLDAS,1,,,,,,,
 dsi_1.0_cfg_spi_ethiopia_index,index,"""The index to be calculated.
 
     SPI: Standardized Precipitation Index, utilizing both gamma and Pearson Type III distributions
