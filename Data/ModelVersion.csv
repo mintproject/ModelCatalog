@@ -22,7 +22,7 @@ fsi_1.0,FSI v1,latest,1,Hydrology,fsi_1.0_simple,"""This Python routine calculat
 1: Medium (2-yr return period)
 2: high (5-yr return period)
 3: severe (20-yr return period)""",https://w3id.org/okn/o/sdm#EmpiricalModel,,,khider_deborah,,,11/21/2019,,,,,,,,,,,hydrology; flood; index,,,,,,,,,,,,,fsi_grid,,,
-dsi_1.0,DSI v1,latest,1,Hydrology,dsi_1.0_cfg,"""This Python routine calculates three climate indices based on NetCDF input data from CHIRPS, GLDAS, and FLDAS:
+dsi_1.0,DI v1,latest,1,Hydrology,dsi_1.0_cfg,"""This Python routine calculates three climate indices based on NetCDF input data from CHIRPS, GLDAS, and FLDAS:
 
     SPI: Standardized Precipitation Index, utilizing both gamma and Pearson Type III distributions. - CHIRPS, GLDAS, FLDAS
     SPEI: Standardized Precipitation Evapotranspiration Index, utilizing both gamma and Pearson Type III distributions. - GLDAS, FLDAS
