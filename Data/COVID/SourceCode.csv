@@ -1,0 +1,3 @@
+https://w3id.org/okn/o/sd#SourceCode,http://www.w3.org/2000/01/rdf-schema#label,https://w3id.org/okn/o/sd#description,https://w3id.org/okn/o/sd#license,https://w3id.org/okn/o/sd#programmingLanguage,https://w3id.org/okn/o/sd#codeRepository
+sir_code,SIR-Python-Yeghikyan,"""An implementation by Gevorg Yeghikyan based on this Nature article: https://doi.org/10.1038/s41467-017-02064-4""",,,https://towardsdatascience.com/modelling-the-coronavirus-epidemic-spreading-in-a-city-with-python-babd14d82fa2
+curvefit,CurveFit,"""An implementation of curve fitting by Aleksandr Aravkin (saravkin@uw.edu) Peng Zheng (zhengp@uw.edu) Marlena Bannick (mnorwood@uw.edu)""",,,https://github.com/ihmeuw-msca/CurveFit
