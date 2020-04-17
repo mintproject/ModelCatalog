@@ -15,7 +15,7 @@ modflow_2005,Modflow 2005,latest,1.12.00,Hydrology,modflow_2005_cfg,MODFLOW-2005
 wgen_1.0.1,wgen v1.0.1,latest,1.0.1,Weather,weather_generator,,,,https://w3id.org/okn/o/sdm#EmpiricalModel,,,khider_deborah,,,,,wgen_1.0.1_funding,,,,,,,,,,,,,,,,,,,,,,,,,
 ClimComp_0.0.2,climcompv0.0.2,latest,0.0.2,Weather,clim_comp_P;clim_comp_T,,,,https://w3id.org/okn/o/sdm#EmpiricalModel,,,khider_deborah,,,,,,,,,,,,,,hydrology;flood map,,,,,,,,,,,,,,,,
 HANDv1,HANDv1,,1,Hydrology,hand_v1_simple,,,,https://w3id.org/okn/o/sdm#EmpiricalModel,,,taborton_david,,,,,,,,,,,,,,hydrology;flood map,,,,,,,,,,,,,,,,
-HANDv2,HANDv2,latest,2.0.0,Hydrology,hand_v2,,,,https://w3id.org/okn/o/sdm#EmpiricalModel,,,hardesty_daniel,,,,,,,https://github.com/dhardestylewis/HAND-TauDEM,,,,,,,,,,,,,,,,,,,,,,,
+HANDv2,HANDv2,latest,2.0.0,Hydrology,hand_v2;hand_v2_raster,,,,https://w3id.org/okn/o/sdm#EmpiricalModel,,,hardesty_daniel,,,,,,,https://github.com/dhardestylewis/HAND-TauDEM,,,,,,,,,,,,,,,,,,,,,,,
 fsi_1.0,FSI v1,latest,1,Hydrology,fsi_1.0_simple,"""This Python routine calculates a flood severity index based on the annual maxima of volumetric flow for the period 1981-2017 obtained from the GloFAS data (http://www.globalfloods.eu/). The thresholds were estimated from a Gumbel distribution using the methods of L-moments. The severity is based on a 2-yr return period (medium), 5-yr return period (high), and 20-yr return period (severe).""",,"""The outputs are in netcdf format. The index is a boolean corresponding to the severity of the flood:
 0: None
 1: Medium (2-yr return period)
