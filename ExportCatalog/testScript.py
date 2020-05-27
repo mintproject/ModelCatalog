@@ -1,8 +1,8 @@
 import pandas as pd
 import os
 def testFiles(file_name, file_uri,row_list):
-    print ""
-    print "Starting "+file_name
+    print ("")
+    print ("Starting "+file_name)
     importData = pd.read_csv(file_name)
     storedData=pd.read_csv(os.path.join("../Data/"+file_name))
     existing_file=[]
@@ -14,8 +14,8 @@ def testFiles(file_name, file_uri,row_list):
 
     diff= list(set(existing_file) - set(exported_file))
     if len(diff)!=0:
-        print "Following colums are not present in one of the files."
-        print diff
+        print ("Following colums are not present in one of the files.")
+        print (diff)
     else:
         for i in range(len(row_list)):
             importData_sort=importData.sort_values(file_uri)
@@ -23,7 +23,7 @@ def testFiles(file_name, file_uri,row_list):
             exported_row= importData_sort.iloc[row_list[i],:]
             row2_df=storedData_sort.loc[storedData_sort[file_uri]==exported_row[file_uri]]
             if row2_df.size==0:
-                print "Data is not present for: "+ str(exported_row[file_uri])+" in existing file"
+                print ("Data is not present for: "+ str(exported_row[file_uri])+" in existing file")
             else:
                 existing_row=row2_df.iloc[0,:]
                 for col in storedData.columns:
@@ -41,13 +41,13 @@ def testFiles(file_name, file_uri,row_list):
                            arr2=second.split(";")
                            diff=list(set(arr1) - set(arr2))
                            if len(diff)!=0:
-                                print "Following values are in one of the files for "+col+" in "+exported_row[file_uri]
-                                print diff
+                                print ("Following values are in one of the files for "+col+" in "+exported_row[file_uri])
+                                print (diff)
                        else:
-                           print "Data did not match for "+col+" in "+ exported_row[file_uri] +" : "+ first+" , "+second
+                           print ("Data did not match for "+col+" in "+ exported_row[file_uri] +" : "+ first+" , "+second)
 
-    print "Finished "+file_name
-    print ""
+    print ("Finished "+file_name)
+    print ("")
 
 if __name__== "__main__":
 

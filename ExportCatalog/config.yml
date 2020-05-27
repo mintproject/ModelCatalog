@@ -1,0 +1,28 @@
+# Endpoint URL
+query_url: https://endpoint.mint.isi.edu/modelCatalog-1.3.0/query
+# URL of the graph within the endpoint
+graph:
+  - http://ontosoft.isi.edu:3030/modelCatalog-1.3.0/data/mint@isi.edu
+# Namespace prefix of the ontologies to load
+ontology:
+  - url: "https://w3id.org/okn/o/sd#"
+    exclude:
+      - SoftwareImage
+  - url: "https://w3id.org/okn/o/sdm#"
+    exclude:
+      - Theory-GuidedModel
+      - PointBasedGrid
+      - SpatiallyDistributedGrid
+      - StandardVariable
+      - Subsidy
+#Use labels instead of URIs for the following properties:
+useLabel:
+  - https://w3id.org/okn/o/sd#usesUnit
+  - https://w3id.org/okn/o/sd#hasSoftwareImage
+  - https://w3id.org/okn/o/sd#hasStandardVariable
+  - https://w3id.org/okn/o/sdm#usefulForCalculatingIndex
+  - https://w3id.org/okn/o/sdm#intervalUnit
+# Namespace prefix of the instances (to create shortcuts)
+instance_uri_prefix: https://w3id.org/okn/i/mint/
+# Export path folder
+outPath: "catalog_export"

@@ -718,7 +718,7 @@ hand_v2_jamma_distance_down,distance-down,Distance down flooding map,hand_demang
 hand_v2_jamma_shape,shape,Shape file corresponding to the distance down flooding map,hand_demang;svid_demp;hand_flow,shp,0,2,,https://w3id.org/wings/export/MINT#Shape
 hand_v2_jamma_geojson,geojson,GeoJSON file corresponding to the distance down flooding map,hand_demang;svid_demp;hand_flow,json,0,3,,https://w3id.org/wings/export/MINT#GeoJSON
 ,,,,,,,,
-hand_v2_guger_input_dem,input-dem,Input digital elevation model for the Guder basin in Ethiopia,hand_dem,tif,0,1,hand_dem_Guder,https://w3id.org/wings/export/MINT#rasterDem
+hand_v2_guder_input_dem,input-dem,Input digital elevation model for the Guder basin in Ethiopia,hand_dem,tif,0,1,hand_dem_Guder,https://w3id.org/wings/export/MINT#rasterDem
 hand_v2_guder_distance_down,distance-down,Distance down flooding map,hand_demang;svid_demp;hand_flow,tif,0,1,,https://w3id.org/wings/export/MINT#rasterDistancedown
 hand_v2_guder_shape,shape,Shape file corresponding to the distance down flooding map,hand_demang;svid_demp;hand_flow,shp,0,2,,https://w3id.org/wings/export/MINT#Shape
 hand_v2_guder_geojson,geojson,GeoJSON file corresponding to the distance down flooding map,hand_demang;svid_demp;hand_flow,json,0,3,,https://w3id.org/wings/export/MINT#GeoJSON
