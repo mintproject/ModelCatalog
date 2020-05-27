@@ -2,6 +2,7 @@ nbactions.xml
 .idea/
 
 Scripts/*
+catalog_export/*
 
 ### Intellij ###
 # Covers JetBrains IDEs: IntelliJ, RubyMine, PhpStorm, AppCode, PyCharm, CLion, Android Studio and WebStorm
