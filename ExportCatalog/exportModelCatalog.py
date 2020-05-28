@@ -57,7 +57,7 @@ def import_script(ontology_url, class_to_exclude, graph_uri, repository, instanc
                 header_arr.append(b)
             # replace URIs for local names. Special cases: Units, Variables and SoftwareImages (have just label)
             if b in use_label:
-                print('Detected to use with label: ' + label)
+                # print('Detected to use with label: ' + label)
                 c_value = label
             else:
                 c_value = c_value.replace(instance_uri, "")
@@ -101,12 +101,6 @@ if __name__ == "__main__":
     with open("config.yml", 'r') as ymlfile:
         cfg = yaml.safe_load(ymlfile)
     query_url = cfg['query_url']
-    excludedClassesSDM = ["Theory-GuidedModel","PointBasedGrid","SpatiallyDistributedGrid","StandardVariable","Subsidy"]
-    excludedClassesSD = ["SoftwareImage"] # We will create them in the import script
-    #import_script("https://w3id.org/okn/o/sd#", [], data_url, query_url)
-    #import_script("https://w3id.org/okn/o/sdm#",
-    #              ["CausalDiagram", "TimeInterval", "Model", "Region", "ModelConfiguration", "Grid", "Process"],
-    #              data_url, query_url)
     outPath = cfg['outPath']
     pathGraph = outPath
     if not os.path.exists(outPath):
@@ -115,10 +109,10 @@ if __name__ == "__main__":
     for graph in cfg['graph']:
         # print(graph)
         val = graph.split('/')[-1]
-        pathGraph = os.path.join(pathGraph, val)
-        if not os.path.exists(pathGraph):
-            os.mkdir(pathGraph)
+        graph_path = os.path.join(pathGraph, val)
+        if not os.path.exists(graph_path):
+            os.mkdir(graph_path)
         graph_url = "<" + graph + ">"
         for onto in cfg['ontology']:
             # print(onto)
-            import_script(onto['url'], onto['exclude'], graph_url, query_url, cfg['instance_uri_prefix'], pathGraph, cfg['useLabel'])
+            import_script(onto['url'], onto['exclude'], graph_url, query_url, cfg['instance_uri_prefix'], graph_path, cfg['useLabel'])

@@ -6,6 +6,7 @@ import com.google.gson.JsonParser;
 import com.google.gson.stream.JsonReader;
 import com.opencsv.CSVReader;
 import java.io.BufferedReader;
+import java.io.File;
 import java.io.FileNotFoundException;
 import java.io.FileOutputStream;
 import java.io.FileReader;
@@ -13,12 +14,10 @@ import java.io.IOException;
 import java.io.OutputStream;
 import java.net.URI;
 import java.net.URLEncoder;
-import java.util.Arrays;
 import org.apache.jena.ontology.Individual;
 import org.apache.jena.ontology.OntClass;
 import org.apache.jena.ontology.OntModel;
 import org.apache.jena.ontology.OntProperty;
-import org.apache.jena.ontology.OntResource;
 import org.apache.jena.query.Query;
 import org.apache.jena.query.QueryExecution;
 import org.apache.jena.query.QueryExecutionFactory;
@@ -45,11 +44,13 @@ public class CSV2RDF {
         //we read all the variables, as they will be part of the model catalog.
         instances.read(scientificVariableFile);
         mcOntology = ModelFactory.createOntologyModel();
-        mcOntology.read("https://w3id.org/okn/o/sdm");
-//        mcOntology.read("https://knowledgecaptureanddiscovery.github.io/Mint-ModelCatalog-Ontology/modelCatalog/release/0.2.0/ontology.xml");
+        mcOntology.read("https://w3id.org/okn/o/sdm#");
+        //for some reason it's not doing the right redirect
+//        mcOntology.read("https://mintproject.github.io/Mint-ModelCatalog-Ontology/release/1.4.0/ontology.xml");
 //        mcOntology.read("http://ontosoft.org/ontology/software/ontosoft-v1.0.owl");//for some reason, it doesn't do the negotiation rihgt.
 //        mcOntology.write(System.out);
         //read unit dictionary
+//        mcOntology.write(System.out);
         //
         JsonReader reader = new JsonReader(new FileReader(unitDictionaryFile));
         unitDictionary = new JsonParser().parse(reader).getAsJsonObject();
@@ -73,7 +74,7 @@ public class CSV2RDF {
                     if( values!=null && values.length>0){//empty line
                         for(int i =1; i<values.length;i++){
                             String property = colHeaders[i];
-                            System.out.println("Processing "+ property);
+                            //System.out.println("Processing "+ property);
                             OntProperty p = mcOntology.getOntProperty(property);
                             if(p==null){
                                 System.out.println("\tProblem in "+ property);
@@ -90,6 +91,39 @@ public class CSV2RDF {
                                 
     }
     
+    /**
+     * Bit of code that queries the svo file to check if a variable (entered as plain text) corresponds to an SVO.
+     * If not, creates a local URI.
+     * @param ind
+     * @param p
+     * @param rowValue 
+     */
+    private void processSVO(Individual ind, Property p, String rowValue, boolean index){
+        /**
+        read label, try to find one in the svo file (there should be).
+        * If found, then use that URI. IF not found, then create one.
+        **/
+       Query query = QueryFactory.create("select ?var where {"
+               + "?var <http://www.w3.org/2000/01/rdf-schema#label> \""+rowValue+"\"}");
+       // Execute the query and obtain results
+       QueryExecution qe = QueryExecutionFactory.create(query, instances);
+       ResultSet rs =  qe.execSelect();
+       if(rs.hasNext()){
+           ind.addProperty(p, rs.next().getResource("?var"));
+       }else{
+           //no variable found: create variable, add label
+           Individual userInstance;
+           //if(index){
+           // userInstance = instances.createClass("https://w3id.org/okn/o/sdm#NumericalIndex").createIndividual(instance_URI+encode(rowValue));   
+           //}else{
+            userInstance = instances.createClass("http://www.geoscienceontology.org/svo/svu#Variable").createIndividual(instance_URI+encode(rowValue));
+           //}
+           userInstance.addLabel(rowValue, null);
+           //assign the variable to target node.
+           ind.addProperty(p, userInstance);
+       }
+    }
+    
     private void processFile(String path){
         String[] colHeaders = null;
         String[] values;
@@ -101,13 +135,13 @@ public class CSV2RDF {
                     colHeaders = values;//first line
                 }else{
 //                    System.out.println("Values: "+Arrays.toString(values));
-                    if( values!=null && values.length>0){//empty line
+                    if( values!=null && values.length>0 && !values[0].equals("")){//empty line
                         Individual ind = instances.createClass(colHeaders[0]).createIndividual(instance_URI+values[0]);
                         for(int i =1; i<values.length;i++){
                             String rowValue = values[i].trim();
                             if(!rowValue.equals("")){
                                 String property = colHeaders[i];
-                                System.out.println("Processing "+ property);
+                                //System.out.println("Processing "+ property);
 //                                System.out.println(rowValue);
                                 OntProperty p;
                                 //this is a hack because this prop is not on the ontology
@@ -134,13 +168,13 @@ public class CSV2RDF {
                                         for(String a:valuesAux){
                                             if(!a.equals("")){
                                                 Individual targetIndividual= instances.getIndividual(instance_URI+a);
-                                                if(a.startsWith("http")){//already a URL, may happen for prov:hadPrimarySource
+                                                if(a.startsWith("http")){//already a URL, may happen for sd:hadPrimarySource
                                                     targetIndividual = instances.getIndividual(a);
                                                 }
                                                 if(targetIndividual == null){
                                                     //In unions we don't know which class is the correct one, hence "Thing"
                                                     if(range ==null||range.isUnionClass()){
-                                                        range = instances.getOntClass("<http://www.w3.org/2002/07/owl#Thing>");
+                                                        range = instances.getOntClass("http://www.w3.org/2002/07/owl#Thing");
                                                     }
                                                     targetIndividual = instances.createIndividual(instance_URI+a,range);
                                                 }
@@ -163,27 +197,12 @@ public class CSV2RDF {
                                                 emptyUnit.addLabel(rowValue, null);
                                                 ind.addProperty((Property) p, emptyUnit);
                                             }
-                                        }else if(p.toString().contains("hasStandardVariable") || p.toString().contains("usefulForCalculatingIndex")){
-                                            /**
-                                            read label, try to find one in the svo file (there should be).
-                                            * If found, then use that URI. IF not found, then create one.
-                                            **/
-                                           Query query = QueryFactory.create("select ?var where {"
-                                                   + "?var <http://www.w3.org/2000/01/rdf-schema#label> \""+rowValue+"\"}");
-                                           // Execute the query and obtain results
-                                           QueryExecution qe = QueryExecutionFactory.create(query, instances);
-                                           ResultSet rs =  qe.execSelect();
-                                           if(rs.hasNext()){
-                                               ind.addProperty(p, rs.next().getResource("?var"));
-                                           }else{
-                                               //no variable found: create variable, add label
-                                               Individual userInstance = instances.createClass("http://www.geoscienceontology.org/svo/svu#Variable").
-                                                       createIndividual(instance_URI+encode(rowValue));
-                                               userInstance.addLabel(rowValue, null);
-                                               //assign the variable to target node.
-                                               ind.addProperty(p, userInstance);
-                                           }
+                                        }else if(p.toString().contains("hasStandardVariable")){
+                                            processSVO(ind, p, rowValue,false);
                                         }
+                                        //else if(p.toString().contains("usefulForCalculatingIndex")){
+                                        //    processSVO(ind, p, rowValue,true);
+                                        //}
                                         else if(p.toString().contains("hasSoftwareImage")){
                                             //seaparated because here we will do the link to Dockerpedia when appropriate.
                                             //at the moment just create a URI and link with label
@@ -196,7 +215,7 @@ public class CSV2RDF {
                                             Individual targetIndividual = instances.getIndividual(instance_URI+rowValue);
                                             if(targetIndividual == null){
                                                 if(range == null || range.isUnionClass()){
-                                                    range = instances.getOntClass("<http://www.w3.org/2002/07/owl#Thing>");
+                                                    range = instances.getOntClass("http://www.w3.org/2002/07/owl#Thing");
                                                 }
                                                 String aux = rowValue;
                                                 if(!rowValue.startsWith("http")){//already a URL, may happen for prov:hadPrimarySource
@@ -215,7 +234,7 @@ public class CSV2RDF {
             }
 
         } catch (IOException e) {
-            System.err.println("Error"+e.getMessage());
+            System.err.println("Error (likely the property has not been recognized) "+e.getMessage());
         }
     }
     
@@ -264,77 +283,51 @@ public class CSV2RDF {
         }
     }
     
+    public static void processDataFolder(String path, boolean test, CSV2RDF instance){
+        File folderInstances = new File(path);
+        if(instance == null){
+            System.err.println("Not initialized");
+            return;
+        }
+        if(folderInstances.exists() && folderInstances.isDirectory()){
+            for (File f: folderInstances.listFiles()){
+                if (f.isDirectory()){
+                    processDataFolder(f.getAbsolutePath(), test, instance);
+                }else if(f.getName().endsWith("csv")){
+                    processFile(f.getAbsolutePath(), test, instance);
+                }
+            }
+        }
+    }
+    
+    public static void processFile(String path, boolean test, CSV2RDF instance){
+        if(test){
+            instance.checkFile(path); 
+        }else{
+            instance.processFile(path);
+        }
+        
+    }
+    
     public static void main(String[] args){
         try{
-            //TO DO: Read path to data folder from input. Assuming the structure.
-            String pathToInstancesDataFolder = "C:\\Users\\dgarijo\\Documents\\GitHub\\ModelCatalog\\Data";
-            String pathToTransformationsDataFolder = "C:\\Users\\dgarijo\\Documents\\GitHub\\ModelCatalog\\Data\\Transformations";
-            CSV2RDF test = new CSV2RDF(pathToInstancesDataFolder+"\\Units\\dict.json", pathToInstancesDataFolder+"\\SVO\\variable-3-10-2019.ttl");
-            
-            //TEST to see if all the properties are supported (consistency)
-//            test.checkFile(pathToInstancesDataFolder+"\\CAG.csv");
-//            test.checkFile(pathToInstancesDataFolder+"\\DatasetSpecification.csv");
-//            test.checkFile(pathToInstancesDataFolder+"\\Grid.csv");
-//            test.checkFile(pathToInstancesDataFolder+"\\Image.csv");
-//            test.checkFile(pathToInstancesDataFolder+"\\Model.csv");
-//            test.checkFile(pathToInstancesDataFolder+"\\ModelConfiguration.csv");
-//            test.checkFile(pathToInstancesDataFolder+"\\Organization.csv");
-//            test.checkFile(pathToInstancesDataFolder+"\\Parameter.csv");
-//            test.checkFile(pathToInstancesDataFolder+"\\Person.csv");
-//            test.checkFile(pathToInstancesDataFolder+"\\ModelVersion.csv");
-//            test.checkFile(pathToInstancesDataFolder+"\\Process.csv");
-//            test.checkFile(pathToInstancesDataFolder+"\\Region.csv");
-//            test.checkFile(pathToInstancesDataFolder+"\\SampleExecution.csv");
-//            test.checkFile(pathToInstancesDataFolder+"\\SampleResource.csv");
-//            test.checkFile(pathToInstancesDataFolder+"\\SourceCode.csv");
-//            test.checkFile(pathToInstancesDataFolder+"\\TimeInterval.csv");
-//            test.checkFile(pathToInstancesDataFolder+"\\VariablePresentation.csv");
-            
-            test.processFile(pathToInstancesDataFolder+"\\Image.csv");
-            test.processFile(pathToInstancesDataFolder+"\\Model.csv");
-            test.processFile(pathToInstancesDataFolder+"\\ModelVersion.csv");
-            test.processFile(pathToInstancesDataFolder+"\\ModelConfiguration.csv");
-            test.processFile(pathToInstancesDataFolder+"\\ModelConfigurationSetup.csv");
-            test.processFile(pathToInstancesDataFolder+"\\DatasetSpecification.csv");
-            test.processFile(pathToInstancesDataFolder+"\\Parameter.csv");
-            test.processFile(pathToInstancesDataFolder+"\\VariablePresentation.csv");
-            test.processFile(pathToInstancesDataFolder+"\\Process.csv");
-            test.processFile(pathToInstancesDataFolder+"\\Person.csv");
-            test.processFile(pathToInstancesDataFolder+"\\Organization.csv");
-            test.processFile(pathToInstancesDataFolder+"\\Region.csv");
-            test.processFile(pathToInstancesDataFolder+"\\Visualization.csv");
-            
-            test.processFile(pathToInstancesDataFolder+"\\TimeInterval.csv");
-            test.processFile(pathToInstancesDataFolder+"\\Grid.csv");
-            test.processFile(pathToInstancesDataFolder+"\\CAG.csv");
-            test.processFile(pathToInstancesDataFolder+"\\SampleResource.csv");
-            test.processFile(pathToInstancesDataFolder+"\\SampleExecution.csv");
-            test.processFile(pathToInstancesDataFolder+"\\SourceCode.csv");
-            test.processFile(pathToInstancesDataFolder+"\\FundingInformation.csv");
-            test.processFile(pathToInstancesDataFolder+"\\Intervention.csv");
-            test.processFile(pathToTransformationsDataFolder+"\\SoftwareScript.csv");
-            test.processFile(pathToTransformationsDataFolder+"\\SoftwareConfiguration.csv");
-            test.processFile(pathToTransformationsDataFolder+"\\SoftwareVersion.csv");
-            
-            exportRDFFile("modelCatalog.ttl", test.instances, "TTL");
+//            String pathToInstancesDataFolder = "C:\\Users\\dgarijo\\Documents\\GitHub\\ModelCatalog\\Data";
+            String pathToInstancesDataFolder = "C:\\Users\\dgarijo\\Documents\\GitHub\\ModelCatalog\\Data\\MINT";
+            //String graph = "mint@isi.edu";//graph folder to load
+            String graph = "texas@isi.edu";//graph folder to load
+//            String pathToTransformationsDataFolder = "C:\\Users\\dgarijo\\Documents\\GitHub\\ModelCatalog\\Data\\Transformations";
+            CSV2RDF catalog = new CSV2RDF("C:\\Users\\dgarijo\\Documents\\GitHub\\ModelCatalog\\Data\\Units\\dict.json", 
+                    "C:\\Users\\dgarijo\\Documents\\GitHub\\ModelCatalog\\Data\\SVO\\variable-23-10-2019.ttl");
+              //COVID models example
+//            pathToInstancesDataFolder = "C:\\Users\\dgarijo\\Documents\\GitHub\\ModelCatalog\\Data\\COVID";
+//              exportRDFFile("modelCatalogCovid.ttl", test.instances, "TTL");
+              //END COVID
+            processDataFolder(pathToInstancesDataFolder+"\\"+graph, false, catalog);
+            exportRDFFile("modelCatalog_"+graph+".ttl", catalog.instances, "TTL");
             //exportRDFFile("modelCatalog.json", test.instances, "JSON-LD");
         }catch (Exception e){
             System.err.println("Error: "+e);
         }
     }
-    
-//        try{
-//            CSVReader reader = new CSVReader(new FileReader("C:\\Users\\dgarijo\\Documents\\GitHub\\ModelCatalog\\Data\\ModelTest.csv"));
-//            String [] nextLine;
-//            while ((nextLine = reader.readNext()) != null) {
-//               // nextLine[] is an array of values from the line
-//               for (String s:nextLine){
-//                   System.out.println(s);
-//               }
-//               
-//            }
-//        }catch(Exception e){
-//            System.err.println(e);
-//        }
     
 }
