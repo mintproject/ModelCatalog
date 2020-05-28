@@ -4,13 +4,17 @@ This repository contains the resources necessary to populate and curate the mode
  * AutomaticLayoutDetection: Script that given a layout file extracted automatically from a dataset, it transforms it into the DataCubes representation from W3C. 
  * CSVToRDF: Scripts to transform all model contents in /Data to RDF.
  * Data: All CSV files containing information of the models, their metadata and variables. The data is organized so the columns represent properties and data properties of the ontology, while the rows are instances described and linked in the models (e.g., input types, variables, etc.)
+ * ExportCatalog: Scripts to extract the contents of the model catalogs as a series of CSVs.
  * GSNVariableImport: Scripts that query the current contents of the model catalog to extract GSNs (now SVOs) and bring the appropriate context into the model catalog. Additional links to Wikidata are created in the process. 
  * OtherTransformations: Legacy scripts to organize information about units.
  * UnitToRDF: Scripts designed to align unit labels provided by modelers (e.g., "m/day") to a semantic representation. 
- 
+
+## Process to export the model catalog. 
+Just execute `exportModelCatalog.py`. There is a config.yaml script to indicate the graphs desired to export (each user has a graph, right now it is configured to extract the mint and texas graphs). As a result, the script will write a series of CSVs, where the first column represents an instance, the header of each column represents the property and the cell rows represent the different values. 
+
 ## Process to populate the model catalog.
 
-1) Execute CSVToRDF. Compile and run the Java project, which will create an initial version of the turtle file with all contents from the Data folder integrated and linked.
+1) Execute CSVToRDF. Compile and run the Java project, which will create an initial version of the turtle file with all contents from the Data folder integrated and linked. You should point the folder produced by the export Python script.
 
 2) Extract units from labels and connect to WikiData: 
     
@@ -40,15 +44,6 @@ This repository contains the resources necessary to populate and curate the mode
     1. cd GSNVariableImport 
     2. python gsnvariableimport.py i
         The "i" option makes the process interactive. If "a" is entered instead, the system will always pick the first definition found.
-        
-## Ongoing work      
-    
- * Container descriptions: We will be adding container description files in RDF so one can explore the insights of a container (e.g., software dependencies, vulnerabilities, etc.)
- 
- * Layout description files: We are in the process of generating layout description files which contain a data cube of how we expect an input/output dataset to be. For example, in case of CSVs, the position of the columns in the described file.
- 
-## Future plans
- 
- * Automated CAG extraction: We plan to align our causal diagrams by extracting dependencies directly from the code. 
+
  
 
