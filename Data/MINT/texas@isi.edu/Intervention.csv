@@ -1,4 +1,4 @@
-https://w3id.org/okn/o/sdm#Intervention,http://www.w3.org/1999/02/22-rdf-syntax-ns#type,http://www.w3.org/2000/01/rdf-schema#label,https://w3id.org/okn/o/sd#description
-fertilizerSubsidy,https://w3id.org/okn/o/sdm#Subsidy,Fertilizer Subsidy,Interventions concerning fertilizer subsidies can be expressed in this model as a percentage of fertilizer prices.
-plantingWindows,https://w3id.org/okn/o/sdm#FarmingPractices,Planting Windows,Interventions that force specific target planting windows can be expressed in this model as a start or end planting date
-weedControl,https://w3id.org/okn/o/sdm#FarmingPractices,Weed Control,Interventions concerning weed control and weed management practices can be reflected in this model by indicating the fraction of weeds that will remain after the weed treatments applied by farmers
+https://w3id.org/okn/o/sdm#Intervention,http://www.w3.org/2000/01/rdf-schema#label,https://w3id.org/okn/o/sd#description
+fertilizerSubsidy,Fertilizer Subsidy,Interventions concerning fertilizer subsidies can be expressed in this model as a percentage of fertilizer prices.
+plantingWindows,Planting Windows,Interventions that force specific target planting windows can be expressed in this model as a start or end planting date
+weedControl,Weed Control,Interventions concerning weed control and weed management practices can be reflected in this model by indicating the fraction of weeds that will remain after the weed treatments applied by farmers
