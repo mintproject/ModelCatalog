@@ -1,4 +1,4 @@
-https://w3id.org/okn/o/sdm#CausalDiagram,http://www.w3.org/2000/01/rdf-schema#label,https://w3id.org/okn/o/sdm#hasPart
+https://w3id.org/okn/o/sdm#CausalDiagram,http://www.w3.org/2000/01/rdf-schema#label,https://w3id.org/okn/o/sdm#hasDiagramPart
 DSSAT_cfg_simple_CAG,,
 cycles_cfg_complex_CAG,CAG for Cycles representing a more complex version of the variables and processes of the model,cycles_grain_yield;cycles_soil_evapr;cycles_ws;cycles_pp;cycles_som;cycles_slope;cycles_hn;cycles_dz;cycles_rv;cycles_silt;cycles_bd;cycles_layer;cycles_clay;cycles_tn;cycles_smc;cycles_hx;cycles_tx;cycles_sr;cycles_cn;cycles_n_stress;cycles_cropGrowth;cycles_mineralization;cycles_transpiration;cycles_swc;cycles_percolation;cycles_infiltration;cycles_soil_evap;cycles_net_mineraliz
 cycles_cfg_simple_CAG,CAG for Cycles with the most important variables in the model,cycles_grain_yield;cycles_ws;cycles_pp;cycles_hn;cycles_tn;cycles_hx;cycles_tx;cycles_sr;cycles_cropGrowth;cycles_transpiration;cycles_swc
