@@ -41,10 +41,13 @@ public class CSV2RDF {
      */
     public CSV2RDF(String unitDictionaryFile, String scientificVariableFile) throws FileNotFoundException{
         instances = ModelFactory.createOntologyModel();
+        //create class 
+        instances.createClass("https://w3id.org/okn/o/sd/#SoftwareConfiguration");
         //we read all the variables, as they will be part of the model catalog.
         instances.read(scientificVariableFile);
         mcOntology = ModelFactory.createOntologyModel();
         mcOntology.read("https://w3id.org/okn/o/sdm#");
+        mcOntology.read("https://w3id.org/okn/o/sd#");
         //for some reason it's not doing the right redirect
 //        mcOntology.read("https://mintproject.github.io/Mint-ModelCatalog-Ontology/release/1.4.0/ontology.xml");
 //        mcOntology.read("http://ontosoft.org/ontology/software/ontosoft-v1.0.owl");//for some reason, it doesn't do the negotiation rihgt.
@@ -141,7 +144,7 @@ public class CSV2RDF {
                             String rowValue = values[i].trim();
                             if(!rowValue.equals("")){
                                 String property = colHeaders[i];
-                                //System.out.println("Processing "+ property);
+//                                System.out.println("Processing "+ property);
 //                                System.out.println(rowValue);
                                 OntProperty p;
                                 //this is a hack because this prop is not on the ontology
@@ -176,7 +179,11 @@ public class CSV2RDF {
                                                     if(range ==null||range.isUnionClass()){
                                                         range = instances.getOntClass("http://www.w3.org/2002/07/owl#Thing");
                                                     }
-                                                    targetIndividual = instances.createIndividual(instance_URI+a,range);
+                                                    String aux = a;
+                                                    if(!a.startsWith("http")){//already a URL, may happen for prov:hadPrimarySource
+                                                        aux = instance_URI+a;
+                                                    }
+                                                    targetIndividual = instances.createIndividual(aux,range);
                                                 }
                                                 ind.addProperty((Property) p, targetIndividual);
                                             }
@@ -253,6 +260,8 @@ public class CSV2RDF {
         nom = nom.replace("\b", "");
         nom = nom.replace("/","-");
         nom = nom.replace("=","-");
+        nom = nom.replace(":", "%3A");
+        nom = nom.replace(",", "%2C");
         nom = nom.trim();
         nom = nom.toUpperCase();
         try {
@@ -313,7 +322,7 @@ public class CSV2RDF {
         try{
 //            String pathToInstancesDataFolder = "C:\\Users\\dgarijo\\Documents\\GitHub\\ModelCatalog\\Data";
             String pathToInstancesDataFolder = "C:\\Users\\dgarijo\\Documents\\GitHub\\ModelCatalog\\Data\\MINT";
-            //String graph = "mint@isi.edu";//graph folder to load
+//            String graph = "mint@isi.edu";//graph folder to load
             String graph = "texas@isi.edu";//graph folder to load
 //            String pathToTransformationsDataFolder = "C:\\Users\\dgarijo\\Documents\\GitHub\\ModelCatalog\\Data\\Transformations";
             CSV2RDF catalog = new CSV2RDF("C:\\Users\\dgarijo\\Documents\\GitHub\\ModelCatalog\\Data\\Units\\dict.json", 
