@@ -14,10 +14,12 @@ import java.io.IOException;
 import java.io.OutputStream;
 import java.net.URI;
 import java.net.URLEncoder;
+import org.apache.jena.datatypes.xsd.XSDDatatype;
 import org.apache.jena.ontology.Individual;
 import org.apache.jena.ontology.OntClass;
 import org.apache.jena.ontology.OntModel;
 import org.apache.jena.ontology.OntProperty;
+import org.apache.jena.ontology.OntResource;
 import org.apache.jena.query.Query;
 import org.apache.jena.query.QueryExecution;
 import org.apache.jena.query.QueryExecutionFactory;
@@ -25,6 +27,7 @@ import org.apache.jena.query.QueryFactory;
 import org.apache.jena.query.ResultSet;
 import org.apache.jena.rdf.model.ModelFactory;
 import org.apache.jena.rdf.model.Property;
+import org.apache.jena.vocabulary.XSD;
 
 /**
  * @author dgarijo
@@ -159,7 +162,30 @@ public class CSV2RDF {
                                     if(rowValue.startsWith("\"")){
                                         rowValue = rowValue.substring(1, rowValue.length()-1);
                                     }
-                                    ind.addProperty(p, rowValue);
+                                    OntResource range = p.getRange();
+                                    if (range!=null && !range.isAnon()){
+                                        switch (range.getURI()){
+                                            case "http://www.w3.org/2001/XMLSchema#string":
+                                                ind.addProperty(p, rowValue,XSDDatatype.XSDstring);
+                                                break;
+                                            case "http://www.w3.org/2001/XMLSchema#anyURI":
+                                                ind.addProperty(p, rowValue,XSDDatatype.XSDanyURI);
+                                                break;
+                                            case "http://www.w3.org/2001/XMLSchema#int":
+                                                ind.addProperty(p, rowValue,XSDDatatype.XSDint);
+                                                break;
+                                            case "http://www.w3.org/2001/XMLSchema#float":
+                                                ind.addProperty(p, rowValue,XSDDatatype.XSDfloat);
+                                                break;
+                                            default:
+                                                //no xsd:string for labels, no needed.
+                                                ind.addProperty(p, rowValue);
+                                                break;
+                                        }
+                                    }else{
+                                        //range is a union of ranges or no range declared. For now, leave as literal
+                                        ind.addProperty(p, rowValue);
+                                    }
                                     
                                 }else{
                                     OntClass range = null;
