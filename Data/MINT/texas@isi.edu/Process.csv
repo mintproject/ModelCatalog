@@ -1,5 +1,4 @@
 https://w3id.org/okn/o/sdm#Process,http://www.w3.org/2000/01/rdf-schema#label,https://w3id.org/okn/o/sdm#influences
-357988c3-373d-4f9c-a80b-1084a6a29c56,Distance Down,
 constr_max_net_revenue_process,Constrained maximization of net revenue,
 crop_prices_process,Crop prices,fertilizer_use_process;land_use_process
 crop_supply_process,Crop supply,
@@ -18,10 +17,9 @@ cycles_respiration_process,Respiration,cycles_Nmineralizationandimmobalization_p
 cycles_solarradiation_process,Solar radiation,cycles_biomassgrowth_process;cycles_transpiration_process
 cycles_transpiration_process,Transpiration,cycles_biomassgrowth_process;cycles_Nuptake_process
 fertilizer_prices_process,Fertilizer prices,fertilizer_use_process;land_use_process
-fertilizer_use_process,Fertilizer use,crop_yield_process;land_use_process;0e70f420-a6df-489c-955e-c419b329a236;0ee5b408-19f8-4a59-a3ab-39bf3fd9ead9;1670a6c5-8641-4a27-af9f-b3275acbb0b1;381c3941-ff3f-42cc-a2e4-3b7b0c9d2621;4178f437-d099-4360-b666-bd1e33667c7f;4ac8701f-84b0-4391-a0d2-4f492dc5d587;5262cc13-5bcd-4058-839d-bfdeb511aeba;55213c12-24e5-487b-85ac-2ebccc2f4248;65ff494e-a45d-4df7-9108-26fe550f55bf;6839becd-40b6-4f68-b67b-3950f8487a8c;6ca11f1f-fffc-4210-8ba4-81563ec17bfd;79dc2643-bd26-4314-8479-f16dd2f24ad9;7a1334b5-33e5-4e44-b0c4-71dabce0d482;7a282e4e-269b-4f0b-8414-47c53541ceb0;7eced0eb-c27b-489d-a097-4ec5c5a1c70c;85cd227d-0bf8-4493-887b-041bc061c783;9bd88540-344d-49ef-bffc-eb3f31740de3;9e509c4d-34d9-4515-8df9-3d1c153a151d;9e6f1a30-a3a6-4a37-b8b8-a639050bb6db;aecc3b4b-0cc9-421b-9d46-87d47a57f9d0;bc0bf93a-0979-406d-992e-127ccd8b0f82;c3642ee2-b652-4c5f-ad9a-0f81f473e1b1;d2183c69-cda2-445c-bcef-6cec3b2feeaa;d5768f9e-4f3a-4d5f-a400-90a90be4fbf3;de9c809b-6ac3-47f6-9588-b541fd97e79a;e796e1de-8a14-4516-b45a-0ed80945fc5e;ea8991d1-88cc-4592-9888-b46731d823ef
-hand_dradown,Drawdown,
-hand_drawdown,Drawdown,
-land_use_process,Land use,crop_supply_process;crop_yield_process;fertilizer_use_process;0476fc42-9c69-45be-ab48-6115267de488;18706941-c254-4890-b961-e22098587998;28649777-606e-47c4-bf4a-2970a2a1b3fb;30daec09-60b8-4d2f-ba23-be32f55a7e45;33b4804d-023c-4bba-9f3d-1b874f8595e9;46fd7199-6b04-4193-9096-32635a4ddd25;56d18ef4-f063-4f5b-8c39-bcbe4881178f;5fc2f6af-4653-4714-b9ee-28e9013f26c3;61791c3d-291b-4189-ae57-f6134df66d0d;68bc0006-e013-4bff-a8e9-cf38fbdf48b4;6f21e5c2-69bf-48a0-82a3-d8103b3bf04d;75f0a475-6692-44c2-ae6c-ffc0955d4794;7ecde83f-bb7c-4e2e-959e-4effbe81073f;804e3fb8-fad7-47ba-9d23-23e71849f1a4;82038ee4-404d-4fcc-b856-8e89320f635d;99e5a900-d99c-4356-87d2-d3c8e9dedaff;9c30e299-eb77-4577-a6c0-30eb1bd9763f;a2feebec-896d-4b0d-be79-e35a111b9fd7;a546fdd6-0011-4956-b341-7b6c208af099;af049fe6-f71c-46be-bb16-d7aa531bae88;c8e0aeb9-e369-42df-873a-a216fdd36b7f;ce8550af-efd9-4354-adba-6e96c4325874;d9d8c536-083e-41a8-ad94-d337aa23ac64;e1133bfc-c830-402e-a091-e6a43798886a;f0652fb9-f850-4844-b280-60a493691dd9;f15579a7-676b-4f19-b23b-104d3caa0363;fe5b9305-5bb4-4e07-ba70-6724e8084559
+fertilizer_use_process,Fertilizer use,crop_yield_process;land_use_process
+hand_distance_down,Distance down,
+land_use_process,Land use,crop_supply_process;crop_yield_process;fertilizer_use_process
 modflow_gwf,Ground water flow,
 pihm_evaporation_process,Evaporation,pihm_infiltration_process;pihm_runoff_process
 pihm_infiltration_process,Infiltration,pihm_runoff_process
