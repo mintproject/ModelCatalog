@@ -1,7 +1,7 @@
 nbactions.xml
 .idea/
 
-Scripts/*
+env/*
 catalog_export/*
 
 ### Intellij ###
