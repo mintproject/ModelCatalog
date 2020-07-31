@@ -1,0 +1,33 @@
+https://w3id.org/okn/o/sdm#Process,http://www.w3.org/1999/02/22-rdf-syntax-ns#type,http://www.w3.org/2000/01/rdf-schema#label,https://w3id.org/okn/o/sdm#influences
+constr_max_net_revenue_process,,Constrained maximization of net revenue,
+crop_prices_process,http://www.w3.org/2002/07/owl#Thing,Crop prices,fertilizer_use_process;land_use_process
+crop_supply_process,http://www.w3.org/2002/07/owl#Thing,Crop supply,
+crop_yield_elasticity_process,http://www.w3.org/2002/07/owl#Thing,Crop yield elasticity,crop_yield_process;fertilizer_use_process;land_use_process
+crop_yield_process,http://www.w3.org/2002/07/owl#Thing,Crop yield,crop_supply_process
+cycles_Nmineralizationandimmobalization_process,http://www.w3.org/2002/07/owl#Thing,Nitrogen mineralization and immobalization,cycles_Ntransport_process
+cycles_Ntransport_process,http://www.w3.org/2002/07/owl#Thing,Nitrogen transport,
+cycles_Nuptake_process,http://www.w3.org/2002/07/owl#Thing,Nitrogen uptake,cycles_Ntransport_process
+cycles_biomassgrowth_process,http://www.w3.org/2002/07/owl#Thing,Biomass growth,cycles_transpiration_process;cycles_humification_process;cycles_respiration_process
+cycles_cropGrowth,http://www.w3.org/2002/07/owl#Thing,Crop growth,cycles_grain_yield
+cycles_humification_process,http://www.w3.org/2002/07/owl#Thing,Humification,cycles_Nmineralizationandimmobalization_process
+cycles_management_process,http://www.w3.org/2002/07/owl#Thing,Management,cycles_biomassgrowth_process
+cycles_percolation,http://www.w3.org/2002/07/owl#Thing,Percolation,cycles_avg_no3_leach;cycles_avg_nh4_leach;cycles_nh4_leaching;cycles_no3_leaching
+cycles_precipitation_process,http://www.w3.org/2002/07/owl#Thing,Precipitation,cycles_transpiration
+cycles_respiration_process,http://www.w3.org/2002/07/owl#Thing,Respiration,cycles_Nmineralizationandimmobalization_process
+cycles_solarradiation_process,http://www.w3.org/2002/07/owl#Thing,Solar radiation,cycles_biomassgrowth_process;cycles_transpiration_process
+cycles_transpiration_process,http://www.w3.org/2002/07/owl#Thing,Transpiration,cycles_biomassgrowth_process;cycles_Nuptake_process
+fertilizer_prices_process,http://www.w3.org/2002/07/owl#Thing,Fertilizer prices,fertilizer_use_process;land_use_process
+fertilizer_use_process,http://www.w3.org/2002/07/owl#Thing,Fertilizer use,crop_yield_process;land_use_process
+hand_drawdown,,Drawdown,
+land_use_process,http://www.w3.org/2002/07/owl#Thing,Land use,crop_supply_process;crop_yield_process;fertilizer_use_process
+modflow_gwf,,Ground water flow,
+pihm_evaporation_process,http://www.w3.org/2002/07/owl#Thing,Evaporation,pihm_infiltration_process;pihm_runoff_process
+pihm_infiltration_process,http://www.w3.org/2002/07/owl#Thing,Infiltration,pihm_runoff_process
+pihm_precipitation_process,http://www.w3.org/2002/07/owl#Thing,Precipitation,pihm_infiltration_process;pihm_runoff_process
+pihm_runoff_process,http://www.w3.org/2002/07/owl#Thing,Runoff,
+pihm_solarradiation_process,http://www.w3.org/2002/07/owl#Thing,Solar radiation,pihm_evaporation_process;pihm_transpiration_process
+pihm_transpiration_process,http://www.w3.org/2002/07/owl#Thing,Transpiration,pihm_infiltration_process;pihm_runoff_process
+topoflow_channel,,Channel flow,
+topoflow_evap,,Evapotranspiration,
+topoflow_precipitation,,Precipitation,
+topoflow_runoff,,Water runoff,

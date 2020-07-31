@@ -6,6 +6,9 @@ graph:
 #  - http://endpoint.mint.isi.edu/modelCatalog-1.4.0/data/mint@isi.edu
   - http://endpoint.mint.isi.edu/modelCatalog-1.4.0/data/mint@isi.edu
   - http://endpoint.mint.isi.edu/modelCatalog-1.4.0/data/texas@isi.edu
+  - http://endpoint.mint.isi.edu/modelCatalog-1.4.0/data/coertel@mitre.org
+  - http://endpoint.mint.isi.edu/modelCatalog-1.4.0/data/brandon@starsift.com
+  - http://endpoint.mint.isi.edu/modelCatalog-1.4.0/data/hvarg@isi.edu
 # Namespace prefix of the ontologies to load
 ontology:
   - url: "https://w3id.org/okn/o/sd#"
@@ -20,6 +23,7 @@ ontology:
       - StandardVariable
       - Subsidy
       - FarmingPractices
+      - Unit
 #Use labels instead of URIs for the following properties:
 useLabel:
   - https://w3id.org/okn/o/sd#usesUnit

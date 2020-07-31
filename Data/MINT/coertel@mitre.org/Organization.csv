@@ -1,0 +1,19 @@
+https://w3id.org/okn/o/sd#Organization,http://www.w3.org/2000/01/rdf-schema#label,https://w3id.org/okn/o/sd#name,https://w3id.org/okn/o/sd#website,https://w3id.org/okn/o/sd#identifier,http://www.w3.org/1999/02/22-rdf-syntax-ns#type
+colorado_university,University of Colorado-Boulder,University of Colorado-Boulder,https://www.colorado.edu/,https://www.wikidata.org/wiki/Q736674,http://www.w3.org/2002/07/owl#Thing
+darpa,Defense Advanced Research Projects Agency,Defense Advanced Research Projects Agency,https://www.darpa.mil/,https://www.wikidata.org/wiki/Q207361,
+dssat_foundation,DSSAT organization,DSSAT organization,https://dssat.net,,http://www.w3.org/2002/07/owl#Thing
+erc,European Research Council,European Research Council,https://erc.europa.eu/,,
+icasa,International Consortium for Agricultural Systems Applications (ICASA),International Consortium for Agricultural Systems Applications (ICASA),,https://uia.org/s/or/en/1100063154,
+kimetrica,Kimetrica,Kimetrica,https://kimetrica.com/,,
+nsf,National Science Foundation,National Science Foundation,https://www.nsf.gov/,https://www.wikidata.org/wiki/Q304878,
+penn_state_university,The Pennsylvania State University,The Pennsylvania State University,https://www.psu.edu/,https://www.wikidata.org/wiki/Q739627,http://www.w3.org/2002/07/owl#Thing
+snsf,Swiss National Science Foundation,Swiss National Science Foundation,http://www.snf.ch/en/Pages/default.aspx,,
+snwf,,,,,
+tamu_agrilife,Texas A&M AgriLife Research,Texas A&M AgriLife Research,https://agriliferesearch.tamu.edu/,,
+texas_university,Texas A&M University,Texas A&M University,https://www.tamu.edu/,https://www.wikidata.org/wiki/Q49212,http://www.w3.org/2002/07/owl#Thing
+usaid,,,,,
+usc,University of Southern California,University of Southern California,https://usc.edu/,https://www.wikidata.org/wiki/Q4614,http://www.w3.org/2002/07/owl#Thing
+usda,USDA Agricultural Research Service (USDA-ARS),USDA Agricultural Research Service (USDA-ARS),,,
+usgs,US Geological survey,US Geological survey,https://www.usgs.gov/s,,
+utah_university,University of Utah,University of Utah,https://www.utah.edu/,https://www.wikidata.org/wiki/Q168515,http://www.w3.org/2002/07/owl#Thing
+virginia_tech,Virginia Tech,Virginia Tech,https://vt.edu/,https://www.wikidata.org/wiki/Q65379,http://www.w3.org/2002/07/owl#Thing

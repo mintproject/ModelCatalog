@@ -1,0 +1,10 @@
+https://w3id.org/okn/o/sd#DatasetSpecification,http://www.w3.org/2000/01/rdf-schema#label,https://w3id.org/okn/o/sd#position,https://w3id.org/okn/o/sd#hasFormat
+152fa49d-313f-473b-9c14-0b35a5581506,accuracy_csv,2,csv
+1a6499a1-8496-4df0-8a27-d4c3211aaec4,migration_gtrends_csv,1,csv
+25d2dd84-6c38-4995-83b1-85d6a6b1844f,refugee_trends_file,1,csv
+2ca1f95c-0d0d-4283-b3be-6c077921a151,accuracy_csv,1,csv
+3006299a-f5ac-44a5-9a41-a69e3825b52d,rplots_pdf,1,pdf
+7dcbc34a-1618-414e-80b8-e9f9e24fbeb8,rplots_pdf,2,pdf
+980ec645-f16f-4f0f-a727-b91050a5d885,accuracy_csv,1,csv
+baceda4b-c7a9-4800-a5b9-cba613933cbb,rplots_pdf,2,pdf
+f2f5b85b-835f-4fdd-9396-b7da0c55b496,refugee_trend_file,1,csv
