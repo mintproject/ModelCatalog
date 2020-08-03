@@ -24,6 +24,10 @@ ontology:
       - Subsidy
       - FarmingPractices
       - Unit
+      - Variable
+      - Software
+      - SoftwareConfiguration
+      - ConfigurationSetup
 #Use labels instead of URIs for the following properties:
 useLabel:
   - https://w3id.org/okn/o/sd#usesUnit

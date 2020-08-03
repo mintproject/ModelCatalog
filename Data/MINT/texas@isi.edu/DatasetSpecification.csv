@@ -25,11 +25,13 @@ https://w3id.org/okn/o/sd#DatasetSpecification,http://www.w3.org/1999/02/22-rdf-
 4679ebf3-e084-4379-aa7c-b0fde6910d67,https://w3id.org/wings/export/MINT#MODFLOWwel,wel,Well file,5,0,,dat,modflow2005_q
 488fb027-d751-4fa8-922b-14555d1cc23c,https://w3id.org/wings/export/MINT#MODFLOWoc,oc,Output control file,4,0,,dat,
 4df9e283-4e94-4a8a-86ab-482fb8128f43,https://w3id.org/wings/export/MINT#FLDAS,daily-weather,Input to the weather generator (daily),2,0,30e2da24-5998-4383-8c53-3d7e99c6e3e8,tar.gz,wgen_stationid;wgen_prcp;wgen_year;wgen_cloudfraction;wgen_wetdays;wgen_minT;wgen_maxT;wgen_windspeed;wgen_month;wgen_lon;wgen_lat
-5421bc5d-cdf0-4fb7-8785-f6a22e26cc59,https://w3id.org/wings/export/MINT#rasterDem,input-dem,Input digital elevation model for the target basin to run the model,1,0,f06ed00b-6056-4430-b873-c9455a9dc9bd;f06ed00b-6056-4430-b873-c9455a9dc9bd,tif,hand_dem
+5421bc5d-cdf0-4fb7-8785-f6a22e26cc59,https://w3id.org/wings/export/MINT#rasterDem,input-dem,Input digital elevation model for the target basin to run the model,1,0,f06ed00b-6056-4430-b873-c9455a9dc9bd,tif,hand_dem
 61afb84f-dbdd-44b6-9b6a-24f68ea5ec52,https://w3id.org/wings/export/MINT#MODFLOWoc,oc,Output control file,4,0,,dat,
 6398a8d1-a45c-4d7f-b37d-bbff989acf5a,https://w3id.org/wings/export/MINT#MODFLOWrch,rch,Recharge file,7,0,,dat,modflow2005_rech
+6435e62e-1211-45fe-a48c-1a4e8b526ec8,https://w3id.org/wings/export/MINT#rasterDem,input-dem,Input digital elevation model for the target basin to run the model,1,0,af8db285-6b89-4112-8831-ca87ce3d17f8,tif,hand_dem
 6aa1eff0-3f80-4dea-936e-c775be974bfd,https://w3id.org/wings/export/MINT#MODFLOWdis,dis,Discretization file,2,0,,dis,modflow2005_ncol;modflow2005_nlay;modflow2005_perlen;modflow2005_nstp;modflow2005_tsmult;modflow2005_nrow;modflow2005_top;modflow2005_delr;modflow2005_delc;modflow2005_botm;modflow2005_nper
 70abcc33-f942-4c1e-a263-62aec588c8dd,https://w3id.org/wings/export/MINT#MODFLOWbcf6,bcf6,Block centered flow package file,3,0,,bc6,modflow2005_sf1;modflow2005_hy;modflow2005_sf2;modflow2005_vcont;modflow2005_tran;modflow2005_trpy
+71619e4f-fb9a-4da8-a427-a95ba612873a,https://w3id.org/wings/export/MINT#rasterDem,input-dem,Input digital elevation model for the target basin to run the model,1,0,d20feaaf-33e3-47de-b2a9-2ea0459345f1,tif,hand_dem
 7286ca0b-f1f3-47c2-a899-00bc44537dee,https://w3id.org/wings/export/MINT#MODFLOWwel,wel,Well file,5,0,,dat,modflow2005_q
 789d2c12-eb1a-4bb2-a8c0-45b9814bdc05,https://w3id.org/wings/export/MINT#MODFLOWbcf6,bcf6,Block centered flow package file,3,0,,bc6,modflow2005_sf1;modflow2005_hy;modflow2005_sf2;modflow2005_vcont;modflow2005_tran;modflow2005_trpy
 7b99e655-0efa-4846-8a84-b16bc10ee2fc,https://w3id.org/wings/export/MINT#Data,data,Data input,1,0,,nc,
@@ -47,6 +49,7 @@ https://w3id.org/okn/o/sd#DatasetSpecification,http://www.w3.org/1999/02/22-rdf-
 907f3224-cfe9-47ba-b678-489190d67f0d,https://w3id.org/wings/export/MINT#rasterDem,input-dem,Input digital elevation model for the target basin,1,0,c2cedb58-0913-469b-af9c-09328b1c8059,tif,hand_dem
 91ae6e24-f160-4625-893e-e735e061c255,https://w3id.org/wings/export/MINT#MODFLOWdis,dis,Discretization file,2,0,,dis,modflow2005_ncol;modflow2005_nlay;modflow2005_perlen;modflow2005_nstp;modflow2005_tsmult;modflow2005_nrow;modflow2005_top;modflow2005_delr;modflow2005_delc;modflow2005_botm;modflow2005_nper
 92345a9e-2ff4-488f-b274-09edc9c672b4,https://w3id.org/wings/export/MINT#MODFLOWbcf6,bcf6,Block centered flow package file,3,0,,bc6,modflow2005_sf1;modflow2005_hy;modflow2005_sf2;modflow2005_vcont;modflow2005_tran;modflow2005_trpy
+9609e070-1899-4775-9652-686415291873,https://w3id.org/wings/export/MINT#rasterDem,input-dem,Input digital elevation model for the target basin to run the model,1,0,,tif,hand_dem
 9c3cf039-9d5d-4e62-9844-129143da9d36,https://w3id.org/wings/export/MINT#MODFLOWhfb6,hfb6,Horizontal flow barrier file,8,0,,hf6,
 DSSAT_simulationFile,https://w3id.org/wings/export/MINT#DSSAT_SIMULATION,DSSAT simulation file,DSSAT simulation file,,0,,x,DSSAT_YCRD;DSSAT_CR;DSSAT_FDEP;DSSAT_SNO3;DSSAT_XCRD;DSSAT_PLDP;DSSAT_SNH4;DSSAT_ICBL;DSSAT_FDATE;DSSAT_SH2O;DSSAT_FAMN;DSSAT_PDATE;DSSAT_PPOP;DSSAT_INGENO;DSSAT_PLRS
 DSSAT_sol,https://w3id.org/wings/export/MINT#Soil,DSSAT soil file,DSSAT soil file,,0,,sol,DSSAT_SDUL;DSSAT_SSKS;DSSAT_SSAT;DSSAT_SLSI;DSSAT_SALB;DSSAT_SLLL;DSSAT_SLB;DSSAT_SBDM;DSSAT_SLOC;DSSAT_SLCL
@@ -59,6 +62,7 @@ a84635cb-05fd-4951-be74-6104372dac95,https://w3id.org/wings/export/MINT#rasterDe
 a99611bc-44ac-400d-9ad0-a30774e2c60d,https://w3id.org/wings/export/MINT#rasterDem,input-dem,Input digital elevation model for the target basin,1,0,,tif,hand_dem
 aea1ce0b-53d1-4721-bb2f-eff33b68697b,https://w3id.org/wings/export/MINT#MODFLOWoc,oc,Output control file,4,0,,dat,
 b1c0f5f4-1166-438d-b84c-18b716f62bee,https://w3id.org/wings/export/MINT#MODFLOWsip,sip,Strongly Implicit Procedure package file,9,0,,dat,
+b62696cb-c50d-43d3-a543-a73756149bea,https://w3id.org/wings/export/MINT#rasterDem,input-dem,Input digital elevation model for the target basin to run the model,1,0,5e2761bc-ad47-4c46-bffc-2c81743baf35,tif,hand_dem
 b7189deb-0603-4da8-be76-b1d1665f7cd9,https://w3id.org/wings/export/MINT#MODFLOWhfb6,hfb6,Horizontal flow barrier file,8,0,,hf6,
 b75c4576-cd80-438d-9bcf-79c47affb9f5,https://w3id.org/wings/export/MINT#rasterDem,input-dem,Input digital elevation model for the target basin to run the model,1,0,4595028d-4272-4bd8-a64e-c3b7065c18c8,tif,hand_dem
 b9fc83ca-c181-40d2-ac17-19d439a08c01,https://w3id.org/wings/export/MINT#rasterDem,input-dem,Input digital elevation model for the target basin,1,0,83a18ae9-ed5f-4ef9-8000-ca37a4a63ee3,tif,hand_dem
@@ -426,97 +430,97 @@ fsi_1.0_simple_et_ss_out,https://w3id.org/wings/export/MINT#FloodIndex,floodInde
 fsi_1.0_simple_glofas,https://w3id.org/wings/export/MINT#GloFas,glofas_data,Glofas data input,1,0,,nc,fsi_q
 fsi_1.0_simple_movie,https://w3id.org/wings/export/MINT#Movie,flood_index_movie,Result movie,2,0,,mp4,fsi_fsi
 fsi_1.0_simple_out,https://w3id.org/wings/export/MINT#FloodIndex,floodIndex,Output netcdf with the results,1,0,,nc,fsi_fsi
-hand_v1_simple_awash_distance_down,https://w3id.org/wings/export/MINT#rasterDistancedown,distance-down,Distance down flooding map,1,0,,tif,svid_demp;hand_demang;hand_flow
-hand_v1_simple_awash_distance_down_image,https://w3id.org/wings/export/MINT#distanceDownImage,distance-down-image,Distance down flooding map image,2,0,,png,svid_demp;hand_demang;hand_flow
+hand_v1_simple_awash_distance_down,https://w3id.org/wings/export/MINT#rasterDistancedown,distance-down,Distance down flooding map,1,0,,tif,hand_demang;hand_flow;svid_demp
+hand_v1_simple_awash_distance_down_image,https://w3id.org/wings/export/MINT#distanceDownImage,distance-down-image,Distance down flooding map image,2,0,,png,hand_demang;hand_flow;svid_demp
 hand_v1_simple_awash_input_dem,https://w3id.org/wings/export/MINT#rasterDem,input-dem,Input digital elevation model for the Awash basin in Ethiopia,1,0,hand_dem_Awash,tif,hand_dem
-hand_v1_simple_baro_distance_down,https://w3id.org/wings/export/MINT#rasterDistancedown,distance-down,Distance down flooding map,1,0,,tif,svid_demp;hand_demang;hand_flow
-hand_v1_simple_baro_distance_down_image,https://w3id.org/wings/export/MINT#distanceDownImage,distance-down-image,Distance down flooding map image,2,0,,png,svid_demp;hand_demang;hand_flow
+hand_v1_simple_baro_distance_down,https://w3id.org/wings/export/MINT#rasterDistancedown,distance-down,Distance down flooding map,1,0,,tif,hand_demang;hand_flow;svid_demp
+hand_v1_simple_baro_distance_down_image,https://w3id.org/wings/export/MINT#distanceDownImage,distance-down-image,Distance down flooding map image,2,0,,png,hand_demang;hand_flow;svid_demp
 hand_v1_simple_baro_input_dem,https://w3id.org/wings/export/MINT#rasterDem,input-dem,Input digital elevation model for the Baro basin in Ethiopia,1,0,hand_dem_Baro,tif,hand_dem
-hand_v1_simple_bashilo_distance_down,https://w3id.org/wings/export/MINT#rasterDistancedown,distance-down,Distance down flooding map,1,0,,tif,svid_demp;hand_demang;hand_flow
-hand_v1_simple_bashilo_distance_down_image,https://w3id.org/wings/export/MINT#distanceDownImage,distance-down-image,Distance down flooding map image,2,0,,png,svid_demp;hand_demang;hand_flow
+hand_v1_simple_bashilo_distance_down,https://w3id.org/wings/export/MINT#rasterDistancedown,distance-down,Distance down flooding map,1,0,,tif,hand_demang;hand_flow;svid_demp
+hand_v1_simple_bashilo_distance_down_image,https://w3id.org/wings/export/MINT#distanceDownImage,distance-down-image,Distance down flooding map image,2,0,,png,hand_demang;hand_flow;svid_demp
 hand_v1_simple_bashilo_input_dem,https://w3id.org/wings/export/MINT#rasterDem,input-dem,Input digital elevation model for the Bashilo basin in Ethiopia,1,0,hand_dem_Bashilo,tif,hand_dem
-hand_v1_simple_beko-tippi_distance_down,https://w3id.org/wings/export/MINT#rasterDistancedown,distance-down,Distance down flooding map,1,0,,tif,svid_demp;hand_demang;hand_flow
-hand_v1_simple_beko-tippi_distance_down_image,https://w3id.org/wings/export/MINT#distanceDownImage,distance-down-image,Distance down flooding map image,2,0,,png,svid_demp;hand_demang;hand_flow
+hand_v1_simple_beko-tippi_distance_down,https://w3id.org/wings/export/MINT#rasterDistancedown,distance-down,Distance down flooding map,1,0,,tif,hand_demang;hand_flow;svid_demp
+hand_v1_simple_beko-tippi_distance_down_image,https://w3id.org/wings/export/MINT#distanceDownImage,distance-down-image,Distance down flooding map image,2,0,,png,hand_demang;hand_flow;svid_demp
 hand_v1_simple_beko-tippi_input_dem,https://w3id.org/wings/export/MINT#rasterDem,input-dem,Input digital elevation model for the Beko-Tippi basin in Ethiopia,1,0,hand_dem_Beko-Tippi,tif,hand_dem
-hand_v1_simple_distance_down,https://w3id.org/wings/export/MINT#rasterDistancedown,distance-down,Distance down flooding map,1,0,,tif,svid_demp;hand_demang;hand_flow
-hand_v1_simple_distance_down_image,https://w3id.org/wings/export/MINT#distanceDownImage,distance-down-image,Distance down flooding map image,2,0,,png,svid_demp;hand_demang;hand_flow
-hand_v1_simple_ganale_distance_down,https://w3id.org/wings/export/MINT#rasterDistancedown,distance-down,Distance down flooding map,1,0,,tif,svid_demp;hand_demang;hand_flow
-hand_v1_simple_ganale_distance_down_image,https://w3id.org/wings/export/MINT#distanceDownImage,distance-down-image,Distance down flooding map image,2,0,,png,svid_demp;hand_demang;hand_flow
+hand_v1_simple_distance_down,https://w3id.org/wings/export/MINT#rasterDistancedown,distance-down,Distance down flooding map,1,0,,tif,hand_demang;hand_flow;svid_demp
+hand_v1_simple_distance_down_image,https://w3id.org/wings/export/MINT#distanceDownImage,distance-down-image,Distance down flooding map image,2,0,,png,hand_demang;hand_flow;svid_demp
+hand_v1_simple_ganale_distance_down,https://w3id.org/wings/export/MINT#rasterDistancedown,distance-down,Distance down flooding map,1,0,,tif,hand_demang;hand_flow;svid_demp
+hand_v1_simple_ganale_distance_down_image,https://w3id.org/wings/export/MINT#distanceDownImage,distance-down-image,Distance down flooding map image,2,0,,png,hand_demang;hand_flow;svid_demp
 hand_v1_simple_ganale_input_dem,https://w3id.org/wings/export/MINT#rasterDem,input-dem,Input digital elevation model for the Ganale basin in Ethiopia,1,0,hand_dem_Ganale,tif,hand_dem
-hand_v1_simple_guder_distance_down,https://w3id.org/wings/export/MINT#rasterDistancedown,distance-down,Distance down flooding map,1,0,,tif,svid_demp;hand_demang;hand_flow
-hand_v1_simple_guder_distance_down_image,https://w3id.org/wings/export/MINT#distanceDownImage,distance-down-image,Distance down flooding map image,2,0,,png,svid_demp;hand_demang;hand_flow
+hand_v1_simple_guder_distance_down,https://w3id.org/wings/export/MINT#rasterDistancedown,distance-down,Distance down flooding map,1,0,,tif,hand_demang;hand_flow;svid_demp
+hand_v1_simple_guder_distance_down_image,https://w3id.org/wings/export/MINT#distanceDownImage,distance-down-image,Distance down flooding map image,2,0,,png,hand_demang;hand_flow;svid_demp
 hand_v1_simple_guder_input_dem,https://w3id.org/wings/export/MINT#rasterDem,input-dem,Input digital elevation model for the Guder basin in Ethiopia,1,0,hand_dem_Guder,tif,hand_dem
 hand_v1_simple_input_dem,https://w3id.org/wings/export/MINT#rasterDem,input-dem,Input digital elevation model,1,0,,tif,hand_dem
-hand_v1_simple_jamma_distance_down,https://w3id.org/wings/export/MINT#rasterDistancedown,distance-down,Distance down flooding map,1,0,,tif,svid_demp;hand_demang;hand_flow
-hand_v1_simple_jamma_distance_down_image,https://w3id.org/wings/export/MINT#distanceDownImage,distance-down-image,Distance down flooding map image,2,0,,png,svid_demp;hand_demang;hand_flow
+hand_v1_simple_jamma_distance_down,https://w3id.org/wings/export/MINT#rasterDistancedown,distance-down,Distance down flooding map,1,0,,tif,hand_demang;hand_flow;svid_demp
+hand_v1_simple_jamma_distance_down_image,https://w3id.org/wings/export/MINT#distanceDownImage,distance-down-image,Distance down flooding map image,2,0,,png,hand_demang;hand_flow;svid_demp
 hand_v1_simple_jamma_input_dem,https://w3id.org/wings/export/MINT#rasterDem,input-dem,Input digital elevation model for the Jamma basin in Ethiopia,1,0,hand_dem_Jamma,tif,hand_dem
-hand_v1_simple_muger_distance_down,https://w3id.org/wings/export/MINT#rasterDistancedown,distance-down,Distance down flooding map,1,0,,tif,svid_demp;hand_demang;hand_flow
-hand_v1_simple_muger_distance_down_image,https://w3id.org/wings/export/MINT#distanceDownImage,distance-down-image,Distance down flooding map image,2,0,,png,svid_demp;hand_demang;hand_flow
+hand_v1_simple_muger_distance_down,https://w3id.org/wings/export/MINT#rasterDistancedown,distance-down,Distance down flooding map,1,0,,tif,hand_demang;hand_flow;svid_demp
+hand_v1_simple_muger_distance_down_image,https://w3id.org/wings/export/MINT#distanceDownImage,distance-down-image,Distance down flooding map image,2,0,,png,hand_demang;hand_flow;svid_demp
 hand_v1_simple_muger_input_dem,https://w3id.org/wings/export/MINT#rasterDem,input-dem,Input digital elevation model for the Muger basin in Ethiopia,1,0,hand_dem_Muger,tif,hand_dem
-hand_v1_simple_noregion_distance_down,https://w3id.org/wings/export/MINT#rasterDistancedown,distance-down,Distance down flooding map,1,0,,tif,svid_demp;hand_demang;hand_flow
-hand_v1_simple_noregion_distance_down_image,https://w3id.org/wings/export/MINT#distanceDownImage,distance-down-image,Distance down flooding map image,2,0,,png,svid_demp;hand_demang;hand_flow
+hand_v1_simple_noregion_distance_down,https://w3id.org/wings/export/MINT#rasterDistancedown,distance-down,Distance down flooding map,1,0,,tif,hand_demang;hand_flow;svid_demp
+hand_v1_simple_noregion_distance_down_image,https://w3id.org/wings/export/MINT#distanceDownImage,distance-down-image,Distance down flooding map image,2,0,,png,hand_demang;hand_flow;svid_demp
 hand_v1_simple_noregion_distance_downhand_v1_simple_noregion_distance_down_image,,,,,,,,
 hand_v1_simple_noregion_input_dem,https://w3id.org/wings/export/MINT#rasterDem,input-dem,Input digital elevation model,1,0,,tif,hand_dem
-hand_v1_simple_shebelle_distance_down,https://w3id.org/wings/export/MINT#rasterDistancedown,distance-down,Distance down flooding map,1,0,,tif,svid_demp;hand_demang;hand_flow
-hand_v1_simple_shebelle_distance_down_image,https://w3id.org/wings/export/MINT#distanceDownImage,distance-down-image,Distance down flooding map image,2,0,,png,svid_demp;hand_demang;hand_flow
+hand_v1_simple_shebelle_distance_down,https://w3id.org/wings/export/MINT#rasterDistancedown,distance-down,Distance down flooding map,1,0,,tif,hand_demang;hand_flow;svid_demp
+hand_v1_simple_shebelle_distance_down_image,https://w3id.org/wings/export/MINT#distanceDownImage,distance-down-image,Distance down flooding map image,2,0,,png,hand_demang;hand_flow;svid_demp
 hand_v1_simple_shebelle_input_dem,https://w3id.org/wings/export/MINT#rasterDem,input-dem,Input digital elevation model for the Shebelle basin in Ethiopia,1,0,hand_dem_Shebelle,tif,hand_dem
-hand_v1_simple_texas_distance_down,https://w3id.org/wings/export/MINT#rasterDistancedown,distance-down,Distance down flooding map,1,0,,tif,svid_demp;hand_demang;hand_flow
-hand_v1_simple_texas_distance_down_image,https://w3id.org/wings/export/MINT#distanceDownImage,distance-down-image,Distance down flooding map image,2,0,,png,svid_demp;hand_demang;hand_flow
+hand_v1_simple_texas_distance_down,https://w3id.org/wings/export/MINT#rasterDistancedown,distance-down,Distance down flooding map,1,0,,tif,hand_demang;hand_flow;svid_demp
+hand_v1_simple_texas_distance_down_image,https://w3id.org/wings/export/MINT#distanceDownImage,distance-down-image,Distance down flooding map image,2,0,,png,hand_demang;hand_flow;svid_demp
 hand_v1_simple_texas_input_dem,https://w3id.org/wings/export/MINT#rasterDem,input-dem,Input digital elevation model of the Barton Springs region (Texas),1,0,hand_sample_dem_travis,tif,hand_dem
-hand_v2_awash_distance_down,https://w3id.org/wings/export/MINT#rasterDistancedown,distance-down,Distance down flooding map,1,0,,tif,svid_demp;hand_demang;hand_flow
-hand_v2_awash_geojson,https://w3id.org/wings/export/MINT#GeoJSON,geojson,GeoJSON file corresponding to the distance down flooding map,3,0,,json,svid_demp;hand_demang;hand_flow
+hand_v2_awash_distance_down,https://w3id.org/wings/export/MINT#rasterDistancedown,distance-down,Distance down flooding map,1,0,,tif,hand_demang;hand_flow;svid_demp
+hand_v2_awash_geojson,https://w3id.org/wings/export/MINT#GeoJSON,geojson,GeoJSON file corresponding to the distance down flooding map,3,0,,json,hand_demang;hand_flow;svid_demp
 hand_v2_awash_input_dem,https://w3id.org/wings/export/MINT#rasterDem,input-dem,Input digital elevation model for the Awash basin in Ethiopia,1,0,hand_dem_Awash,tif,hand_dem
-hand_v2_awash_shape,https://w3id.org/wings/export/MINT#Shape,shape,Shape file corresponding to the distance down flooding map,2,0,,shp,svid_demp;hand_demang;hand_flow
-hand_v2_baro_distance_down,https://w3id.org/wings/export/MINT#rasterDistancedown,distance-down,Distance down flooding map,1,0,,tif,svid_demp;hand_demang;hand_flow
-hand_v2_baro_geojson,https://w3id.org/wings/export/MINT#GeoJSON,geojson,GeoJSON file corresponding to the distance down flooding map,3,0,,json,svid_demp;hand_demang;hand_flow
+hand_v2_awash_shape,https://w3id.org/wings/export/MINT#Shape,shape,Shape file corresponding to the distance down flooding map,2,0,,shp,hand_demang;hand_flow;svid_demp
+hand_v2_baro_distance_down,https://w3id.org/wings/export/MINT#rasterDistancedown,distance-down,Distance down flooding map,1,0,,tif,hand_demang;hand_flow;svid_demp
+hand_v2_baro_geojson,https://w3id.org/wings/export/MINT#GeoJSON,geojson,GeoJSON file corresponding to the distance down flooding map,3,0,,json,hand_demang;hand_flow;svid_demp
 hand_v2_baro_input_dem,https://w3id.org/wings/export/MINT#rasterDem,input-dem,Input digital elevation model for the Baro basin in Ethiopia,1,0,hand_dem_Baro,tif,hand_dem
-hand_v2_baro_shape,https://w3id.org/wings/export/MINT#Shape,shape,Shape file corresponding to the distance down flooding map,2,0,,shp,svid_demp;hand_demang;hand_flow
-hand_v2_bashilo_distance_down,https://w3id.org/wings/export/MINT#rasterDistancedown,distance-down,Distance down flooding map,1,0,,tif,svid_demp;hand_demang;hand_flow
-hand_v2_bashilo_geojson,https://w3id.org/wings/export/MINT#GeoJSON,geojson,GeoJSON file corresponding to the distance down flooding map,3,0,,json,svid_demp;hand_demang;hand_flow
+hand_v2_baro_shape,https://w3id.org/wings/export/MINT#Shape,shape,Shape file corresponding to the distance down flooding map,2,0,,shp,hand_demang;hand_flow;svid_demp
+hand_v2_bashilo_distance_down,https://w3id.org/wings/export/MINT#rasterDistancedown,distance-down,Distance down flooding map,1,0,,tif,hand_demang;hand_flow;svid_demp
+hand_v2_bashilo_geojson,https://w3id.org/wings/export/MINT#GeoJSON,geojson,GeoJSON file corresponding to the distance down flooding map,3,0,,json,hand_demang;hand_flow;svid_demp
 hand_v2_bashilo_input_dem,https://w3id.org/wings/export/MINT#rasterDem,input-dem,Input digital elevation model for the Bashilo basin in Ethiopia,1,0,hand_dem_Bashilo,tif,hand_dem
-hand_v2_bashilo_shape,https://w3id.org/wings/export/MINT#Shape,shape,Shape file corresponding to the distance down flooding map,2,0,,shp,svid_demp;hand_demang;hand_flow
-hand_v2_beko-tippi_distance_down,https://w3id.org/wings/export/MINT#rasterDistancedown,distance-down,Distance down flooding map,1,0,,tif,svid_demp;hand_demang;hand_flow
-hand_v2_beko-tippi_geojson,https://w3id.org/wings/export/MINT#GeoJSON,geojson,GeoJSON file corresponding to the distance down flooding map,3,0,,json,svid_demp;hand_demang;hand_flow
+hand_v2_bashilo_shape,https://w3id.org/wings/export/MINT#Shape,shape,Shape file corresponding to the distance down flooding map,2,0,,shp,hand_demang;hand_flow;svid_demp
+hand_v2_beko-tippi_distance_down,https://w3id.org/wings/export/MINT#rasterDistancedown,distance-down,Distance down flooding map,1,0,,tif,hand_demang;hand_flow;svid_demp
+hand_v2_beko-tippi_geojson,https://w3id.org/wings/export/MINT#GeoJSON,geojson,GeoJSON file corresponding to the distance down flooding map,3,0,,json,hand_demang;hand_flow;svid_demp
 hand_v2_beko-tippi_input_dem,https://w3id.org/wings/export/MINT#rasterDem,input-dem,Input digital elevation model for the Beko-Tippi basin in Ethiopia,1,0,hand_dem_Beko-Tippi,tif,hand_dem
-hand_v2_beko-tippi_shape,https://w3id.org/wings/export/MINT#Shape,shape,Shape file corresponding to the distance down flooding map,2,0,,shp,svid_demp;hand_demang;hand_flow
-hand_v2_distance_down,https://w3id.org/wings/export/MINT#rasterDistancedown,distance-down,Distance down flooding map,1,0,,tif,svid_demp;hand_demang;hand_flow
-hand_v2_ganale_distance_down,https://w3id.org/wings/export/MINT#rasterDistancedown,distance-down,Distance down flooding map,1,0,,tif,svid_demp;hand_demang;hand_flow
-hand_v2_ganale_geojson,https://w3id.org/wings/export/MINT#GeoJSON,geojson,GeoJSON file corresponding to the distance down flooding map,3,0,,json,svid_demp;hand_demang;hand_flow
+hand_v2_beko-tippi_shape,https://w3id.org/wings/export/MINT#Shape,shape,Shape file corresponding to the distance down flooding map,2,0,,shp,hand_demang;hand_flow;svid_demp
+hand_v2_distance_down,https://w3id.org/wings/export/MINT#rasterDistancedown,distance-down,Distance down flooding map,1,0,,tif,hand_demang;hand_flow;svid_demp
+hand_v2_ganale_distance_down,https://w3id.org/wings/export/MINT#rasterDistancedown,distance-down,Distance down flooding map,1,0,,tif,hand_demang;hand_flow;svid_demp
+hand_v2_ganale_geojson,https://w3id.org/wings/export/MINT#GeoJSON,geojson,GeoJSON file corresponding to the distance down flooding map,3,0,,json,hand_demang;hand_flow;svid_demp
 hand_v2_ganale_input_dem,https://w3id.org/wings/export/MINT#rasterDem,input-dem,Input digital elevation model for the Ganale basin in Ethiopia,1,0,hand_dem_Ganale,tif,hand_dem
-hand_v2_ganale_shape,https://w3id.org/wings/export/MINT#Shape,shape,Shape file corresponding to the distance down flooding map,2,0,,shp,svid_demp;hand_demang;hand_flow
-hand_v2_geojson,https://w3id.org/wings/export/MINT#GeoJSON,geojson,GeoJSON file corresponding to the distance down flooding map,3,0,,json,svid_demp;hand_demang;hand_flow
-hand_v2_guder_distance_down,https://w3id.org/wings/export/MINT#rasterDistancedown,distance-down,Distance down flooding map,1,0,,tif,svid_demp;hand_demang;hand_flow
-hand_v2_guder_geojson,https://w3id.org/wings/export/MINT#GeoJSON,geojson,GeoJSON file corresponding to the distance down flooding map,3,0,,json,svid_demp;hand_demang;hand_flow
+hand_v2_ganale_shape,https://w3id.org/wings/export/MINT#Shape,shape,Shape file corresponding to the distance down flooding map,2,0,,shp,hand_demang;hand_flow;svid_demp
+hand_v2_geojson,https://w3id.org/wings/export/MINT#GeoJSON,geojson,GeoJSON file corresponding to the distance down flooding map,3,0,,json,hand_demang;hand_flow;svid_demp
+hand_v2_guder_distance_down,https://w3id.org/wings/export/MINT#rasterDistancedown,distance-down,Distance down flooding map,1,0,,tif,hand_demang;hand_flow;svid_demp
+hand_v2_guder_geojson,https://w3id.org/wings/export/MINT#GeoJSON,geojson,GeoJSON file corresponding to the distance down flooding map,3,0,,json,hand_demang;hand_flow;svid_demp
 hand_v2_guder_input_dem,,,,,,,,
-hand_v2_guder_shape,https://w3id.org/wings/export/MINT#Shape,shape,Shape file corresponding to the distance down flooding map,2,0,,shp,svid_demp;hand_demang;hand_flow
+hand_v2_guder_shape,https://w3id.org/wings/export/MINT#Shape,shape,Shape file corresponding to the distance down flooding map,2,0,,shp,hand_demang;hand_flow;svid_demp
 hand_v2_guger_input_dem,https://w3id.org/wings/export/MINT#rasterDem,input-dem,Input digital elevation model for the Guder basin in Ethiopia,1,0,hand_dem_Guder,tif,hand_dem
 hand_v2_input_dem,https://w3id.org/wings/export/MINT#rasterDem,input-dem,Input digital elevation model for the target basin,1,0,,tif,hand_dem
-hand_v2_jamma_distance_down,https://w3id.org/wings/export/MINT#rasterDistancedown,distance-down,Distance down flooding map,1,0,,tif,svid_demp;hand_demang;hand_flow
-hand_v2_jamma_geojson,https://w3id.org/wings/export/MINT#GeoJSON,geojson,GeoJSON file corresponding to the distance down flooding map,3,0,,json,svid_demp;hand_demang;hand_flow
+hand_v2_jamma_distance_down,https://w3id.org/wings/export/MINT#rasterDistancedown,distance-down,Distance down flooding map,1,0,,tif,hand_demang;hand_flow;svid_demp
+hand_v2_jamma_geojson,https://w3id.org/wings/export/MINT#GeoJSON,geojson,GeoJSON file corresponding to the distance down flooding map,3,0,,json,hand_demang;hand_flow;svid_demp
 hand_v2_jamma_input_dem,https://w3id.org/wings/export/MINT#rasterDem,input-dem,Input digital elevation model for the Jamma basin in Ethiopia,1,0,hand_dem_Jamma,tif,hand_dem
-hand_v2_jamma_shape,https://w3id.org/wings/export/MINT#Shape,shape,Shape file corresponding to the distance down flooding map,2,0,,shp,svid_demp;hand_demang;hand_flow
-hand_v2_muger_distance_down,https://w3id.org/wings/export/MINT#rasterDistancedown,distance-down,Distance down flooding map,1,0,,tif,svid_demp;hand_demang;hand_flow
-hand_v2_muger_geojson,https://w3id.org/wings/export/MINT#GeoJSON,geojson,GeoJSON file corresponding to the distance down flooding map,3,0,,json,svid_demp;hand_demang;hand_flow
+hand_v2_jamma_shape,https://w3id.org/wings/export/MINT#Shape,shape,Shape file corresponding to the distance down flooding map,2,0,,shp,hand_demang;hand_flow;svid_demp
+hand_v2_muger_distance_down,https://w3id.org/wings/export/MINT#rasterDistancedown,distance-down,Distance down flooding map,1,0,,tif,hand_demang;hand_flow;svid_demp
+hand_v2_muger_geojson,https://w3id.org/wings/export/MINT#GeoJSON,geojson,GeoJSON file corresponding to the distance down flooding map,3,0,,json,hand_demang;hand_flow;svid_demp
 hand_v2_muger_input_dem,https://w3id.org/wings/export/MINT#rasterDem,input-dem,Input digital elevation model for the Muger basin in Ethiopia,1,0,hand_dem_Muger,tif,hand_dem
-hand_v2_muger_shape,https://w3id.org/wings/export/MINT#Shape,shape,Shape file corresponding to the distance down flooding map,2,0,,shp,svid_demp;hand_demang;hand_flow
-hand_v2_noregion_distance_down,https://w3id.org/wings/export/MINT#rasterDistancedown,distance-down,Distance down flooding map,1,0,,tif,svid_demp;hand_demang;hand_flow
-hand_v2_noregion_geojson,https://w3id.org/wings/export/MINT#GeoJSON,geojson,GeoJSON file corresponding to the distance down flooding map,3,0,,json,svid_demp;hand_demang;hand_flow
+hand_v2_muger_shape,https://w3id.org/wings/export/MINT#Shape,shape,Shape file corresponding to the distance down flooding map,2,0,,shp,hand_demang;hand_flow;svid_demp
+hand_v2_noregion_distance_down,https://w3id.org/wings/export/MINT#rasterDistancedown,distance-down,Distance down flooding map,1,0,,tif,hand_demang;hand_flow;svid_demp
+hand_v2_noregion_geojson,https://w3id.org/wings/export/MINT#GeoJSON,geojson,GeoJSON file corresponding to the distance down flooding map,3,0,,json,hand_demang;hand_flow;svid_demp
 hand_v2_noregion_input_dem,https://w3id.org/wings/export/MINT#rasterDem,input-dem,Input digital elevation model for the target basin to run the model,1,0,,tif,hand_dem
-hand_v2_noregion_shape,https://w3id.org/wings/export/MINT#Shape,shape,Shape file corresponding to the distance down flooding map,2,0,,shp,svid_demp;hand_demang;hand_flow
-hand_v2_raster_distance_down,https://w3id.org/wings/export/MINT#rasterDistancedown,distance-down,Distance down flooding map (raw),1,0,,tif,svid_demp;hand_demang;hand_flow
-hand_v2_raster_distance_down_raster,https://w3id.org/wings/export/MINT#rasterDistancedown,distance-down-raster,Distance down flooding map (simplified raster),2,0,,tif,svid_demp;hand_demang;hand_flow
-hand_v2_raster_geojson,https://w3id.org/wings/export/MINT#GeoJSON,geojson,GeoJSON file corresponding to the distance down flooding map,4,0,,json,svid_demp;hand_demang;hand_flow
-hand_v2_raster_input_dem,https://w3id.org/wings/export/MINT#rasterDem,input-dem,Input digital elevation model for the target basin to run the model,1,0,,tif,hand_dem
-hand_v2_raster_shape,https://w3id.org/wings/export/MINT#Shape,shape,Shape file corresponding to the distance down flooding map,3,0,,shp,svid_demp;hand_demang;hand_flow
-hand_v2_shape,https://w3id.org/wings/export/MINT#Shape,shape,Shape file corresponding to the distance down flooding map,2,0,,shp,svid_demp;hand_demang;hand_flow
-hand_v2_shebelle_distance_down,https://w3id.org/wings/export/MINT#rasterDistancedown,distance-down,Distance down flooding map,1,0,,tif,svid_demp;hand_demang;hand_flow
-hand_v2_shebelle_geojson,https://w3id.org/wings/export/MINT#GeoJSON,geojson,GeoJSON file corresponding to the distance down flooding map,3,0,,json,svid_demp;hand_demang;hand_flow
+hand_v2_noregion_shape,https://w3id.org/wings/export/MINT#Shape,shape,Shape file corresponding to the distance down flooding map,2,0,,shp,hand_demang;hand_flow;svid_demp
+hand_v2_raster_distance_down,https://w3id.org/wings/export/MINT#rasterDistancedown,distance-down,Distance down flooding map (raw),1;1,0;0,,tif,hand_demang;hand_flow;svid_demp
+hand_v2_raster_distance_down_raster,https://w3id.org/wings/export/MINT#rasterDistancedown,distance-down-raster,Distance down flooding map (simplified raster),2;2,0;0,,tif,hand_demang;hand_flow;svid_demp
+hand_v2_raster_geojson,,geojson,GeoJSON file corresponding to the distance down flooding map,5,0,,json,hand_demang;hand_flow;svid_demp
+hand_v2_raster_input_dem,https://w3id.org/wings/export/MINT#rasterDem,input-dem,Input digital elevation model for the target basin to run the model,1;1,0;0,,tif,hand_dem
+hand_v2_raster_shape,https://w3id.org/wings/export/MINT#Shape,shape,Shape file corresponding to the distance down flooding map,3;3,0;0,,shp,hand_demang;hand_flow;svid_demp
+hand_v2_shape,https://w3id.org/wings/export/MINT#Shape,shape,Shape file corresponding to the distance down flooding map,2,0,,shp,hand_demang;hand_flow;svid_demp
+hand_v2_shebelle_distance_down,https://w3id.org/wings/export/MINT#rasterDistancedown,distance-down,Distance down flooding map,1,0,,tif,hand_demang;hand_flow;svid_demp
+hand_v2_shebelle_geojson,https://w3id.org/wings/export/MINT#GeoJSON,geojson,GeoJSON file corresponding to the distance down flooding map,3,0,,json,hand_demang;hand_flow;svid_demp
 hand_v2_shebelle_input_dem,https://w3id.org/wings/export/MINT#rasterDem,input-dem,Input digital elevation model for the Shebelle basin in Ethiopia,1,0,hand_dem_Shebelle,tif,hand_dem
-hand_v2_shebelle_shape,https://w3id.org/wings/export/MINT#Shape,shape,Shape file corresponding to the distance down flooding map,2,0,,shp,svid_demp;hand_demang;hand_flow
-hand_v2_travis_distance_down,https://w3id.org/wings/export/MINT#rasterDistancedown,distance-down,Distance down flooding map,1,0,,tif,svid_demp;hand_demang;hand_flow
-hand_v2_travis_geojson,https://w3id.org/wings/export/MINT#GeoJSON,geojson,GeoJSON file corresponding to the distance down flooding map,3,0,,json,svid_demp;hand_demang;hand_flow
+hand_v2_shebelle_shape,https://w3id.org/wings/export/MINT#Shape,shape,Shape file corresponding to the distance down flooding map,2,0,,shp,hand_demang;hand_flow;svid_demp
+hand_v2_travis_distance_down,https://w3id.org/wings/export/MINT#rasterDistancedown,distance-down,Distance down flooding map,1,0,,tif,hand_demang;hand_flow;svid_demp
+hand_v2_travis_geojson,https://w3id.org/wings/export/MINT#GeoJSON,geojson,GeoJSON file corresponding to the distance down flooding map,3,0,,json,hand_demang;hand_flow;svid_demp
 hand_v2_travis_input_dem,https://w3id.org/wings/export/MINT#rasterDem,input-dem,Input digital elevation model for the Travis basin in Texas,1,0,hand_sample_dem_travis,tif,hand_dem
-hand_v2_travis_shape,https://w3id.org/wings/export/MINT#Shape,shape,Shape file corresponding to the distance down flooding map,2,0,,shp,svid_demp;hand_demang;hand_flow
+hand_v2_travis_shape,https://w3id.org/wings/export/MINT#Shape,shape,Shape file corresponding to the distance down flooding map,2,0,,shp,hand_demang;hand_flow;svid_demp
 limcomp_T_climatology,https://w3id.org/wings/export/MINT#ClimcompClimatology,climatology,temperature output to climcomp,2,0,,csv,climcomp_T
 modflow_2005_BartonSprings_advanced_Bas,https://w3id.org/wings/export/MINT#MODFLOWBas6,bas6,Basic Package Input for the Groundwater Flow Process Basic file,1,0,modflow_resource_BS_avg_bas,ba6,modflow2005_strt
 modflow_2005_BartonSprings_advanced_Bcf,https://w3id.org/wings/export/MINT#MODFLOWbcf6,bcf6,Block centered flow package file,3,0,modflow_resource_BS_avg_bcf,bc6,modflow2005_sf1;modflow2005_hy;modflow2005_sf2;modflow2005_vcont;modflow2005_tran;modflow2005_trpy
