@@ -14,6 +14,7 @@ import java.io.IOException;
 import java.io.OutputStream;
 import java.net.URI;
 import java.net.URLEncoder;
+import java.util.ArrayList;
 import org.apache.jena.datatypes.xsd.XSDDatatype;
 import org.apache.jena.ontology.Individual;
 import org.apache.jena.ontology.OntClass;
@@ -169,13 +170,27 @@ public class CSV2RDF {
                                                 ind.addProperty(p, rowValue,XSDDatatype.XSDstring);
                                                 break;
                                             case "http://www.w3.org/2001/XMLSchema#anyURI":
-                                                ind.addProperty(p, rowValue,XSDDatatype.XSDanyURI);
+                                                if(rowValue.contains("http://") || rowValue.contains("https://")){
+                                                    ind.addProperty(p, rowValue,XSDDatatype.XSDanyURI);
+                                                }else{
+                                                    System.err.println("ERROR: "+rowValue+" is not a URI. Ind: "+ind.getLocalName());
+                                                }
                                                 break;
                                             case "http://www.w3.org/2001/XMLSchema#int":
-                                                ind.addProperty(p, rowValue,XSDDatatype.XSDint);
+                                                try{
+                                                    Integer.parseInt(rowValue);
+                                                    ind.addProperty(p, rowValue,XSDDatatype.XSDint);
+                                                }catch (NumberFormatException e){
+                                                    System.err.println("ERROR: "+rowValue+" is not an Integer. Ind: "+ind.getLocalName());
+                                                }
                                                 break;
                                             case "http://www.w3.org/2001/XMLSchema#float":
-                                                ind.addProperty(p, rowValue,XSDDatatype.XSDfloat);
+                                                try{
+                                                    Float.parseFloat(rowValue);
+                                                    ind.addProperty(p, rowValue,XSDDatatype.XSDfloat);
+                                                }catch (NumberFormatException e){
+                                                    System.err.println("ERROR: "+rowValue+" is not an Integer. Ind: "+ind.getLocalName());
+                                                }
                                                 break;
                                             default:
                                                 //no xsd:string for labels, no needed.
@@ -347,19 +362,23 @@ public class CSV2RDF {
     public static void main(String[] args){
         try{
 //            String pathToInstancesDataFolder = "C:\\Users\\dgarijo\\Documents\\GitHub\\ModelCatalog\\Data";
-            String pathToInstancesDataFolder = "C:\\Users\\dgarijo\\Documents\\GitHub\\ModelCatalog\\Data\\MINT";
-//            String graph = "mint@isi.edu";//graph folder to load
-            String graph = "texas@isi.edu";//graph folder to load
 //            String pathToTransformationsDataFolder = "C:\\Users\\dgarijo\\Documents\\GitHub\\ModelCatalog\\Data\\Transformations";
-            CSV2RDF catalog = new CSV2RDF("C:\\Users\\dgarijo\\Documents\\GitHub\\ModelCatalog\\Data\\Units\\dict.json", 
-                    "C:\\Users\\dgarijo\\Documents\\GitHub\\ModelCatalog\\Data\\SVO\\variable-23-10-2019.ttl");
+
+            String pathToInstancesDataFolder = "C:\\Users\\dgarijo\\Documents\\GitHub\\ModelCatalog\\Data\\MINT";
+            String [] graphs = {"mint@isi.edu", "texas@isi.edu", "coertel@mitre.org", "brandon@starsift.com",
+            "hvarg@isi.edu"};
               //COVID models example
 //            pathToInstancesDataFolder = "C:\\Users\\dgarijo\\Documents\\GitHub\\ModelCatalog\\Data\\COVID";
-//              exportRDFFile("modelCatalogCovid.ttl", test.instances, "TTL");
+//            processDataFolder(pathToInstancesDataFolder, false, catalog);
+//              exportRDFFile("modelCatalogCovid.ttl", catalog.instances, "TTL");
               //END COVID
-            processDataFolder(pathToInstancesDataFolder+"\\"+graph, false, catalog);
-            exportRDFFile("modelCatalog_"+graph+".ttl", catalog.instances, "TTL");
-            //exportRDFFile("modelCatalog.json", test.instances, "JSON-LD");
+            for (String graph:graphs){
+                //a new catalog should be made per graph; otherwise graphs will be aggregated.
+                CSV2RDF catalog = new CSV2RDF("C:\\Users\\dgarijo\\Documents\\GitHub\\ModelCatalog\\Data\\Units\\dict.json", 
+                    "C:\\Users\\dgarijo\\Documents\\GitHub\\ModelCatalog\\Data\\SVO\\variable-23-10-2019.ttl");
+                processDataFolder(pathToInstancesDataFolder+"\\"+graph, false, catalog);
+                exportRDFFile("modelCatalog_"+graph+".ttl", catalog.instances, "TTL");
+            }
         }catch (Exception e){
             System.err.println("Error: "+e);
         }
