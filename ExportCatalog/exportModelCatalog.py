@@ -102,16 +102,16 @@ if __name__ == "__main__":
         cfg = yaml.safe_load(ymlfile)
     query_url = cfg['query_url']
     outPath = cfg['outPath']
-    pathGraph = outPath
-    if not os.path.exists(outPath):
-        os.mkdir(outPath)
+    version = cfg['exportVersion']
+    # We attach the version so we know for which model catalog we are exporting
+    pathGraph = os.path.join(outPath,version)
     # We may want to export multiple graphs between versions (e.g., texas, mint)
     for graph in cfg['graph']:
         # print(graph)
         val = graph.split('/')[-1]
         graph_path = os.path.join(pathGraph, val)
         if not os.path.exists(graph_path):
-            os.mkdir(graph_path)
+            os.makedirs(graph_path)
         graph_url = "<" + graph + ">"
         for onto in cfg['ontology']:
             # print(onto)
