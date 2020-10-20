@@ -131,7 +131,7 @@ public class CSV2RDF {
        }
     }
     
-    private void processFile(String path){
+    private void processFile(String path) throws Exception{
         String[] colHeaders = null;
         String[] values;
         System.out.println("\nProcessing: "+path);
@@ -281,8 +281,9 @@ public class CSV2RDF {
                 }
             }
 
-        } catch (IOException e) {
+        } catch (Exception e) {
             System.err.println("Error (likely the property has not been recognized) "+e.getMessage());
+            //throw e;
         }
     }
     
@@ -333,7 +334,7 @@ public class CSV2RDF {
         }
     }
     
-    public static void processDataFolder(String path, boolean test, CSV2RDF instance){
+    public static void processDataFolder(String path, boolean test, CSV2RDF instance)throws Exception{
         File folderInstances = new File(path);
         if(instance == null){
             System.err.println("Not initialized");
@@ -350,7 +351,7 @@ public class CSV2RDF {
         }
     }
     
-    public static void processFile(String path, boolean test, CSV2RDF instance){
+    public static void processFile(String path, boolean test, CSV2RDF instance)throws Exception{
         if(test){
             instance.checkFile(path); 
         }else{
@@ -364,14 +365,21 @@ public class CSV2RDF {
 //            String pathToInstancesDataFolder = "C:\\Users\\dgarijo\\Documents\\GitHub\\ModelCatalog\\Data";
 //            String pathToTransformationsDataFolder = "C:\\Users\\dgarijo\\Documents\\GitHub\\ModelCatalog\\Data\\Transformations";
 
-            String pathToInstancesDataFolder = "C:\\Users\\dgarijo\\Documents\\GitHub\\ModelCatalog\\Data\\MINT";
-            String [] graphs = {"mint@isi.edu", "texas@isi.edu", "coertel@mitre.org", "brandon@starsift.com",
-            "hvarg@isi.edu"};
+              //MINT
+            String version = "1.6.0";
+            String pathToInstancesDataFolder = "C:\\Users\\dgarijo\\Documents\\GitHub\\ModelCatalog\\Data\\MINT\\"+version;
+            String [] graphs = {"mint@isi.edu"};//, "texas@isi.edu", "coertel@mitre.org", "brandon@starsift.com","hvarg@isi.edu"};
+              //end mint
               //COVID models example
 //            pathToInstancesDataFolder = "C:\\Users\\dgarijo\\Documents\\GitHub\\ModelCatalog\\Data\\COVID";
 //            processDataFolder(pathToInstancesDataFolder, false, catalog);
 //              exportRDFFile("modelCatalogCovid.ttl", catalog.instances, "TTL");
               //END COVID
+              
+              //wifire
+//            String pathToInstancesDataFolder = "C:\\Users\\dgarijo\\Documents\\GitHub\\ModelCatalog\\Data\\Wifire";
+//            String [] graphs = {"wifire@isi.edu"};
+              //end wifire
             for (String graph:graphs){
                 //a new catalog should be made per graph; otherwise graphs will be aggregated.
                 CSV2RDF catalog = new CSV2RDF("C:\\Users\\dgarijo\\Documents\\GitHub\\ModelCatalog\\Data\\Units\\dict.json", 
