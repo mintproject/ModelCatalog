@@ -1,0 +1,13 @@
+https://w3id.org/okn/o/sdm#CausalDiagram,http://www.w3.org/2000/01/rdf-schema#label,https://w3id.org/okn/o/sdm#hasDiagramPart
+DSSAT_cfg_simple_CAG,,
+cycles_cfg_complex_CAG,CAG for Cycles representing a more complex version of the variables and processes of the model,cycles_grain_yield;cycles_soil_evapr;cycles_ws;cycles_pp;cycles_som;cycles_slope;cycles_hn;cycles_dz;cycles_rv;cycles_silt;cycles_bd;cycles_layer;cycles_clay;cycles_tn;cycles_smc;cycles_hx;cycles_tx;cycles_sr;cycles_cn;cycles_n_stress;cycles_cropGrowth;cycles_mineralization;cycles_transpiration;cycles_swc;cycles_percolation;cycles_infiltration;cycles_soil_evap;cycles_net_mineraliz
+cycles_cfg_simple_CAG,CAG for Cycles with the most important variables in the model,cycles_grain_yield;cycles_ws;cycles_pp;cycles_hn;cycles_tn;cycles_hx;cycles_tx;cycles_sr;cycles_cropGrowth;cycles_transpiration;cycles_swc
+cycles_cfg_simple_CAG_process,CAG for Cycles simple configuration with processes,cycles_biomassgrowth_process;cycles_transpiration_process;cycles_Nmineralizationandimmobalization_process;cycles_humification_process;cycles_Ntransport_process;cycles_respiration_process;cycles_Nuptake_process;cycles_solarradiation_process;cycles_precipitation_process;cycles_management_process
+dssat_cfg_fk_CAG,CAG for DSSAT with fake configuration to emulate Cycles,
+dssat_cfg_simple_CAG,CAG for DSSAT simple configuration with explicit outputs,
+economic_aggregate_crop_supply_CAG_process,CAG for Economic model for aggregate crop supply response model processes for the country of South Sudan configuration,crop_supply_process;fertilizer_prices_process;crop_prices_process;land_use_process;fertilizer_use_process;crop_yield_process;crop_yield_elasticity_process
+economic_aggregate_crop_supply_CAG_variables,CAG for Economic model for aggregate crop supply response model variables for the country of South Sudan configuration,econ_c1;econ_c2;econ_ybarN;econ_ybar;econ_xbar2;econ_xbar1;econ_p;econ_eta;econ_land_area;econ_obsyield;econ_production
+pihm_cfg_simple2_CAG,CAG for PIHM simple configuration with additional input variables,pihm_infiltration_process;pihm_evaporation_process;pihm_runoff_process;pihm_precipitation_process;pihm_solarradiation_process;pihm_transpiration_process
+pihm_cfg_simple_CAG,CAG for PIHM simple configuration,pihm_infiltration_process;pihm_evaporation_process;pihm_runoff_process;pihm_precipitation_process;pihm_solarradiation_process;pihm_transpiration_process
+topoflow_cfg_fk_CAG,CAG for TopoFlow with fake configuration to emulate PIHM,
+topoflow_cfg_simple_CAG,CAG forTopoFlow with basic configuration,

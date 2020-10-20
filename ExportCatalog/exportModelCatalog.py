@@ -81,8 +81,9 @@ def import_script(ontology_url, class_to_exclude, graph_uri, repository, instanc
 
             rows.append(row)
         # print(rows)
+        print("Processing " + c)
         rows = sorted(rows, key=lambda x: x[ontology_url + c])
-        with open(os.path.join(output_path, c+".csv"), 'w', newline='') as csvfile:
+        with open(os.path.join(output_path, c+".csv"), 'w', newline='',encoding="utf-8") as csvfile:
             csvwriter = csv.writer(csvfile, quoting=csv.QUOTE_MINIMAL, quotechar='"')
             csvwriter.writerow(header_arr)
             for r in rows:
@@ -92,7 +93,10 @@ def import_script(ontology_url, class_to_exclude, graph_uri, repository, instanc
                         temp.append(r[j]) #.encode('ascii', 'ignore')
                     else:
                         temp.append("")
-                csvwriter.writerow(temp)
+                try:
+                    csvwriter.writerow(temp)
+                except:
+                    print("ERROR processing line" + temp[0])
 
         print(c + " has been processed")
 

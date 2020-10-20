@@ -1,0 +1,11 @@
+https://w3id.org/okn/o/sd#StandardVariable,http://www.w3.org/2000/01/rdf-schema#label
+09904371-3ac7-49e7-bd1a-6bdedc199b6a,break_through_curve
+atmosphere_water__daily_time_integral_of_precipitation_leq_volume_flux,
+atmosphere_water__one-day_time_integral_of_precipitation_leq_volume_flux,
+atmosphere_water__precipitation_standardized_index,
+channel~river__stage_height,
+channel~river_water__stage_height,
+land_surface_soil_water__evaporation_volume_flux,
+land_surface_water__infiltration_volume_flux,
+soil_surface_water__evaporation_volume_flux,
+soil_surface_water__infiltration_volume_flux,
