@@ -1,6 +1,6 @@
 https://w3id.org/okn/o/sd#SoftwareVersion,http://www.w3.org/1999/02/22-rdf-syntax-ns#type,http://www.w3.org/2000/01/rdf-schema#label,https://w3id.org/okn/o/sd#description,https://w3id.org/okn/o/sd#author,https://w3id.org/okn/o/sd#hasSourceCode,https://w3id.org/okn/o/sd#keywords,https://w3id.org/okn/o/sdm#hasModelCategory,https://w3id.org/okn/o/sd#hasConfiguration,https://w3id.org/okn/o/sd#hasVersionId,https://w3id.org/okn/o/sd#dateCreated,https://w3id.org/okn/o/sd#hasUsageNotes,https://w3id.org/okn/o/sdm#hasGrid,https://w3id.org/okn/o/sd#tag,https://w3id.org/okn/o/sd#hasFunding,https://w3id.org/okn/o/sd#publisher,https://w3id.org/okn/o/sd#hasContactPerson,https://w3id.org/okn/o/sd#hasDocumentation,https://w3id.org/okn/o/sd#hasInstallationInstructions,https://w3id.org/okn/o/sd#hasDownloadURL,https://w3id.org/okn/o/sd#hasPurpose,https://w3id.org/okn/o/sd#citation,https://w3id.org/okn/o/sd#website,https://w3id.org/okn/o/sdm#hasExplanationDiagram
 02800fa1-327b-4db9-b8f3-49920b0cdbbc,,MODFLOW2005 WITH MT3Dv.1.1.0 06/28/2019,,,,,,e6becd2c-29d1-482e-b94b-388cdc584e3a,unknown,,,,latest,,,,,,,,,,
-453ac552-6de0-4172-8b7f-31dd3ab55b7d,,MODFLOW2005 WITH MT3Dv.1.1.0 06/28/2019,Coupled ModFlow-Mt3D model,,,groundwater; hydrology,,e6becd2c-29d1-482e-b94b-388cdc584e3a,06282019,,,,latest,,,,,,,,,,
+453ac552-6de0-4172-8b7f-31dd3ab55b7d,,MODFLOW2005 WITH MT3Dv.1.1.0 06/28/2019,Coupled ModFlow-Mt3D model,,,groundwater; hydrology,,e6becd2c-29d1-482e-b94b-388cdc584e3a,6282019,,,,latest,,,,,,,,,,
 49032802-8a68-4f6b-ac1b-5c0ce676e012,,Topoflow36 3.0.0,3.0.0 https://github.com/mintproject/topoflow36/releases/tag/3.0.0,,,,,57718a24-be82-4acd-9e07-bddba2f75738,Topoflow36 3.0.0,,,,latest,,,,,,,,,,
 4e7e42e4-df0f-4b55-88da-55e92dfd474e,,HLM Belle Plaine,,,,,,d87447b7-5290-450b-9f5e-fdc98de5875a,Belle Plaine,,,,latest,,,,,,,,,,
 5ca8f528-91bf-4001-a0dd-971a92c0d65e,,INFIL3.0 v1,,,,,,,v1,,,,latest,,,,,,,,,,
@@ -19,7 +19,7 @@ cd1e357a-534f-4e47-8bb9-8d7789663ebf,,MODFLOW 2000 with Farm Process and Texture
 cycles_v0.10.2_alpha,https://w3id.org/okn/o/sdm#Theory-GuidedModel,Cycles v0.10.2-alpha,Version 0.10.2 of Cycles allowing exposing multiple parameters,kemanian_armen;shi_yuning,,agriculture; cycles; crop growth; weather;soil;crop management,Agriculture,cycles-0.10.2-alpha-collection,0.10.2-alpha,,,,latest,,,,,,,,,,
 cycles_v0.9.3_alpha,https://w3id.org/okn/o/sdm#Theory-GuidedModel,Cycles v0.9.3 alpha,,kemanian_armen;shi_yuning,,agriculture; cycles; crop growth; weather;soil;crop management,Agriculture,cycles_multiple_points;cycles,0.9.3,,,,,,,,,,,,,,
 cycles_v0.9.4_alpha,https://w3id.org/okn/o/sdm#Theory-GuidedModel,Cycles v0.94-alpha,Version 0.9.4 of Cycles allowing exposing multiple parameters,kemanian_armen;shi_yuning,,agriculture; cycles; crop growth; weather;soil;crop management,Agriculture,cycles-0.9.4-alpha,0.9.4-alpha,,,,,,,,,,,,,,
-dsi_1.0,https://w3id.org/okn/o/sdm#EmpiricalModel,DI v1,"This Python routine calculates three climate indices based on NetCDF input data from CHIRPS, GLDAS, and FLDAS:
+dsi_1.0,https://w3id.org/okn/o/sdm#EmpiricalModel,DSI v1.0,"This Python routine calculates three climate indices based on NetCDF input data from CHIRPS, GLDAS, and FLDAS:
 
     SPI: Standardized Precipitation Index, utilizing both gamma and Pearson Type III distributions. - CHIRPS, GLDAS, FLDAS
     SPEI: Standardized Precipitation Evapotranspiration Index, utilizing both gamma and Pearson Type III distributions. - GLDAS, FLDAS
@@ -41,3 +41,12 @@ swat_1.2.0,,,,,,,,,,,,,,,,,,,,,,,
 topoflow_3.5,https://w3id.org/okn/o/sdm#Theory-GuidedModel,Topoflow v3.5,Topoflow 3.5,peckham_scott,topoflow_sourceCode_v3.6,snowmelt;precipitation;evapotranspiration;infiltration;channel/overland flow;shallow subsurface flow;flow diversions,Hydrology,topoflow_cfg_simple,3.5,,,,,,,,,,,,,,
 topoflow_3.6,https://w3id.org/okn/o/sdm#Theory-GuidedModel,Topoflow v3.6-2.1.0,Topoflow 3.6-2.1.0 tested with the infiltration package,peckham_scott,topoflow_sourceCode_v3.6,snowmelt;precipitation;evapotranspiration;infiltration;channel/overland flow;shallow subsurface flow;flow diversions,Hydrology,topoflow36_2.1.0,3.6-2.1.0,,,,,,,,,,,,,,
 wgen_1.0.1,https://w3id.org/okn/o/sdm#EmpiricalModel,wgen v1.0.1,,khider_deborah,,,Weather,weather_generator,1.0.1,,,,latest,wgen_1.0.1_funding,,,,,,,,,
+dsi_1.2.0,https://w3id.org/okn/o/sdm#EmpiricalModel,DSI v1.2.0,"This Python routine calculates three climate indices based on NetCDF input data from CHIRPS, GLDAS, and ECWMF:
+
+    SPI: Standardized Precipitation Index, utilizing both gamma and Pearson Type III distributions. - CHIRPS, GLDAS, FLDAS
+    SPEI: Standardized Precipitation Evapotranspiration Index, utilizing both gamma and Pearson Type III distributions. - GLDAS, FLDAS
+    PET: Potential Evapotranspiration, utilizing Thornthwaite equation. - GLDAS, FLDAS
+
+This package is based upon Climate Indices in Python. The Climate Indices in Python project contains implementations of various algorithms which provide a geographical and temporal picture of the severity of precipitation and temperature anomalies for climate monitoring and research.
+
+This project builds upon this software package to include additional sources of climate data, namely GLDAS and CHIRPS.",khider_deborah,,climate; drought index,Weather,dsi_1.2.0_cfg,1.2.0,1/30/2020,,,latest,,,,,,,,,,
