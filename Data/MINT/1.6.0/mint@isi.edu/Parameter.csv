@@ -1266,7 +1266,7 @@ dsi_1.2.0_cfg_ecmwf_ethiopia_calib_end_year,,https://w3id.org/wings/export/MINT#
 dsi_1.2.0_cfg_ecmwf_ethiopia_max_long,,https://w3id.org/wings/export/MINT#Adjustment,max_lon,maximum longitude,float,48,48,24,10,,,,,,
 dsi_1.2.0_cfg_ecmwf_ethiopia_min_lat,,https://w3id.org/wings/export/MINT#Adjustment,min_lat,minimum latitude,float,3,14,3,11,,,,,,
 dsi_1.2.0_cfg_ecmwf_ethiopia_max_lat,,https://w3id.org/wings/export/MINT#Adjustment,max_lat,maximum latitude,float,15,15,4,12,,,,,,
-dsi_1.2.0_cfg_ecmwf_ethiopia_dataset_type,,https://w3id.org/wings/export/MINT#DataSelection,dataset_type,"The type of NetCDF files. Valid entries are GLDAS, ECMWF or CHIRPS",string,GLDAS,,,13,,,,,,
+dsi_1.2.0_cfg_ecmwf_ethiopia_dataset_type,,https://w3id.org/wings/export/MINT#DataSelection,dataset_type,"The type of NetCDF files. Valid entries are GLDAS, ECMWF or CHIRPS",string,ECMWF,,,13,,,,,,
 dsi_1.2.0_cfg_chirps_ethiopia_index,,https://w3id.org/wings/export/MINT#IndexType,index,"The index to be calculated (SPI: Standardized Precipitation Index, utilizing both gamma and Pearson Type III distributions; SPEI: Standardized Precipitation Evapotranspiration Index, utilizing both gamma and Pearson Type III distributions)",string,SPI,,,1,,,,,,
 dsi_1.2.0_cfg_chirps_ethiopia_distribution,,https://w3id.org/wings/export/MINT#DistributionAdjustment,distribution,Either 'gamma' or 'pearson',string,gamma,,,2,,,,,,
 dsi_1.2.0_cfg_chirps_ethiopia_scales,,https://w3id.org/wings/export/MINT#ScalesAdjustment,scales,Either '6' or '12' month,integer,6,12,6,3,,,,,,
