@@ -1,9 +1,9 @@
 # Endpoint URL
 # query_url: https://endpoint.mint.isi.edu/modelCatalog-1.4.0/query
-query_url: https://endpoint.mint.isi.edu/modelCatalog-1.5.0/query
+query_url: https://endpoint.mint.isi.edu/modelCatalog-1.6.0/query
 # URL of the graph within the endpoint
 graph:
-  - http://endpoint.mint.isi.edu/modelCatalog-1.5.0/data/mint@isi.edu
+  - http://endpoint.mint.isi.edu/modelCatalog-1.6.0/data/mint@isi.edu
 #  - http://endpoint.mint.isi.edu/modelCatalog-1.4.0/data/texas@isi.edu
 #  - http://endpoint.mint.isi.edu/modelCatalog-1.4.0/data/coertel@mitre.org
 #  - http://endpoint.mint.isi.edu/modelCatalog-1.4.0/data/brandon@starsift.com
@@ -39,4 +39,4 @@ instance_uri_prefix: https://w3id.org/okn/i/mint/
 # Export path folder
 outPath: "catalog_export"
 #Everything will be exported to a folder with this name
-exportVersion: "1.6.0"
+exportVersion: "1.6.0-1"
