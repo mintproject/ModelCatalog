@@ -27,6 +27,8 @@ ontology:
       - Software
       - SoftwareConfiguration
       - ConfigurationSetup
+      - CatalogIdentifier
+      - CoupledModel
 #Use labels instead of URIs for the following properties:
 useLabel:
   - https://w3id.org/okn/o/sd#usesUnit
@@ -39,4 +41,4 @@ instance_uri_prefix: https://w3id.org/okn/i/mint/
 # Export path folder
 outPath: "catalog_export"
 #Everything will be exported to a folder with this name
-exportVersion: "1.6.0-1"
+exportVersion: "1.6_to_1.7"

@@ -1,0 +1,15 @@
+https://w3id.org/okn/o/sdm#Grid,http://www.w3.org/1999/02/22-rdf-syntax-ns#type,http://www.w3.org/2000/01/rdf-schema#label,https://w3id.org/okn/o/sd#description,https://w3id.org/okn/o/sdm#hasDimension,https://w3id.org/okn/o/sdm#hasSpatialResolution,https://w3id.org/okn/o/sdm#hasShape
+3bb63af6-9f57-4bca-8d02-863b53e4b1e1,https://w3id.org/okn/o/sdm#SpatiallyDistributedGrid,DroughtPredictv1.0.0 grid,Grid is the same as CESM control simulation,2D,1deg lat x 1.25 deg lon,
+8ae58b4c-aba2-4452-a091-8d6d0b19fd07,https://w3id.org/okn/o/sdm#SpatiallyDistributedGrid,MODFLOW with MT3D - idealized model,Grid for idealized model,3D,150x75x15pixels,Block structure
+cycles_grid,https://w3id.org/okn/o/sdm#PointBasedGrid,Grid from the Cycles agriculture model,Grid from the Cycles agriculture model,0D,Point,Point
+econ_grid,https://w3id.org/okn/o/sdm#PointBasedGrid,Grid from the economic crop supply model,Grid from the economic crop supply model,0D,Point,Point
+fsi_grid,https://w3id.org/okn/o/sdm#SpatiallyDistributedGrid,Grid from the flood severity index model,2D Grid - same as input data,2D,0.1deg x 0.1 deg,
+hand_grid,https://w3id.org/okn/o/sdm#SpatiallyDistributedGrid,Grid from the HAND model,Grid from the HAND model,2D,variable range,
+hand_grid_texas,https://w3id.org/okn/o/sdm#SpatiallyDistributedGrid,Grid from the HAND model,Grid from the HAND model,2D,10x10m,
+modflow_grid_general,https://w3id.org/okn/o/sdm#SpatiallyDistributedGrid,Grid from the Modflow2005 model,Grid from the Modflow2005 model,3D,variable range,Block structure
+pihm_grid_Ethiopia,https://w3id.org/okn/o/sdm#SpatiallyDistributedGrid,Grid from the PIHM hydrology model for the Baro region in Ethiopia,Grid from the PIHM hydrology model for the region of south Sudan,2D,50m-200m,Triangular
+pihm_grid_SS,https://w3id.org/okn/o/sdm#SpatiallyDistributedGrid,Grid from the PIHM hydrology model for the Pongo/South Sudan region,Grid from the PIHM hydrology model for the region of south Sudan,2D,50m-200m,Triangular
+pihm_grid_general,https://w3id.org/okn/o/sdm#SpatiallyDistributedGrid,Grid from the PIHM hydrology model,Grid from the PIHM hydrology model,2D,variable range,Triangular
+swat_grid,,Grid from the SWAT model,Grid from the SWAT model,,,
+topoflow_grid_Baro,https://w3id.org/okn/o/sdm#SpatiallyDistributedGrid,Grid from the TopoFlow hydrology model for the area of South Sudan,Grid from the TopoFlow hydrology model,2D,100x100m,
+topoflow_grid_general,https://w3id.org/okn/o/sdm#SpatiallyDistributedGrid,Grid from the TopoFlow hydrology model,Grid from the TopoFlow hydrology model,2D,variable range,

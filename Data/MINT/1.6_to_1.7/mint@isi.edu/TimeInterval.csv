@@ -1,0 +1,12 @@
+https://w3id.org/okn/o/sdm#TimeInterval,http://www.w3.org/2000/01/rdf-schema#label,https://w3id.org/okn/o/sd#description,https://w3id.org/okn/o/sdm#intervalUnit,https://w3id.org/okn/o/sdm#intervalValue
+c3af1de1-752b-40c9-a0d3-6da7c7ee2068,DroughtPredictv1.0.0 TimeInterval,monthly,month,
+climcomp_0.0.2_P_cfg_TI,ClimComp time interval,Time interval at which ClimComp outputs,year,1
+climcomp_0.0.2_T_cfg_TI,ClimComp time interval,Time interval at which ClimComp outputs,year,1
+cycles_cfg_simple_TI,Simple cycles time interval,Time interval used in the Cycles simple configuration,day,1
+dssat_cfg_simple_TI,Simple dssat time interval,Time interval used in the DSSAT simple configuration,day,1
+economic_aggregate_crop_supply_TI,Simple economic time interval,Time interval used in the aggregate crop supply response model for the country of South Sudan configuration,year,Harvest cycle
+modflow_general_TI,Modflow 2005 time interval,Time interval used in Modflow 2005 configuration,variable,
+pihm_cfg_TI_SS,Simple PIHM time interval,Time interval used in the PIHM simple configuration with additional input variables,hour,1
+pihm_cfg_TI_general,Simple PIHM time interval,Time interval used in the PIHM simple configuration,day,1
+topoflow_cfg_simple_TI,Topoflow time interval,Time interval used in the TopoFlow with basic configuration,min,1
+wgen_1.0.1_cfg_timeinterval,WGEN time interval,Time interval used in WGEN basic configuration,day,1

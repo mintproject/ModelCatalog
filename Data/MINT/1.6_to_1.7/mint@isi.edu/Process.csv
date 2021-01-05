@@ -1,0 +1,34 @@
+https://w3id.org/okn/o/sdm#Process,http://www.w3.org/2000/01/rdf-schema#label,https://w3id.org/okn/o/sdm#influences
+47f446d7-7dab-4bc3-97be-27224e9021f7,Contaminant tracing,
+constr_max_net_revenue_process,Constrained maximization of net revenue,
+crop_prices_process,Crop prices,fertilizer_use_process;land_use_process
+crop_supply_process,Crop supply,
+crop_yield_elasticity_process,Crop yield elasticity,crop_yield_process;fertilizer_use_process;land_use_process
+crop_yield_process,Crop yield,crop_supply_process
+cycles_Nmineralizationandimmobalization_process,Nitrogen mineralization and immobalization,cycles_Ntransport_process
+cycles_Ntransport_process,Nitrogen transport,
+cycles_Nuptake_process,Nitrogen uptake,cycles_Ntransport_process
+cycles_biomassgrowth_process,Biomass growth,cycles_transpiration_process;cycles_humification_process;cycles_respiration_process;b0;b1;b2;b3;b4;b5;b6;b7;b8;b9;b10;b11;b12;b13;b14;b15;b16;b17;b18;b19;b20;b21;b22;b23;b24;b25
+cycles_cropGrowth,Crop growth,cycles_grain_yield
+cycles_humification_process,Humification,cycles_Nmineralizationandimmobalization_process
+cycles_management_process,Management,cycles_biomassgrowth_process
+cycles_percolation,Percolation,cycles_avg_no3_leach;cycles_avg_nh4_leach;cycles_nh4_leaching;cycles_no3_leaching
+cycles_precipitation_process,Precipitation,cycles_transpiration
+cycles_respiration_process,Respiration,cycles_Nmineralizationandimmobalization_process
+cycles_solarradiation_process,Solar radiation,cycles_biomassgrowth_process;cycles_transpiration_process
+cycles_transpiration_process,Transpiration,cycles_biomassgrowth_process;cycles_Nuptake_process;b26;b27;b28;b29;b30;b31;b32;b33;b34;b35;b36;b37;b38;b39;b40;b41;b42;b43;b44;b45;b46;b47;b48;b49;b50;b51;b52;b53;b54;b55;b56;b57;b58;b59;b60;b61;b62;b63;b64
+fertilizer_prices_process,Fertilizer prices,fertilizer_use_process;land_use_process
+fertilizer_use_process,Fertilizer use,crop_yield_process;land_use_process
+hand_distance_down,Distance down,
+land_use_process,Land use,crop_supply_process;crop_yield_process;fertilizer_use_process
+modflow_gwf,Ground water flow,
+pihm_evaporation_process,Evaporation,pihm_infiltration_process;pihm_runoff_process
+pihm_infiltration_process,Infiltration,pihm_runoff_process
+pihm_precipitation_process,Precipitation,pihm_infiltration_process;pihm_runoff_process
+pihm_runoff_process,Runoff,
+pihm_solarradiation_process,Solar radiation,pihm_evaporation_process;pihm_transpiration_process
+pihm_transpiration_process,Transpiration,pihm_infiltration_process;pihm_runoff_process
+topoflow_channel,Channel flow,
+topoflow_evap,Evapotranspiration,
+topoflow_precipitation,Precipitation,
+topoflow_runoff,Water runoff,
