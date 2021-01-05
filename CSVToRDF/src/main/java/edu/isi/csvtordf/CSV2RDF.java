@@ -21,11 +21,8 @@ import org.apache.jena.ontology.OntClass;
 import org.apache.jena.ontology.OntModel;
 import org.apache.jena.ontology.OntProperty;
 import org.apache.jena.ontology.OntResource;
-import org.apache.jena.query.Query;
-import org.apache.jena.query.QueryExecution;
-import org.apache.jena.query.QueryExecutionFactory;
-import org.apache.jena.query.QueryFactory;
-import org.apache.jena.query.ResultSet;
+import org.apache.jena.query.*;
+import org.apache.jena.rdf.model.Literal;
 import org.apache.jena.rdf.model.ModelFactory;
 import org.apache.jena.rdf.model.Property;
 import org.apache.jena.vocabulary.XSD;
@@ -35,6 +32,7 @@ import org.apache.jena.vocabulary.XSD;
  */
 public class CSV2RDF {
     OntModel instances;
+    OntModel variables;
     OntModel mcOntology;
     String instance_URI = "https://w3id.org/okn/i/mint/";
     JsonObject unitDictionary;
@@ -45,13 +43,15 @@ public class CSV2RDF {
      */
     public CSV2RDF(String unitDictionaryFile, String scientificVariableFile) throws FileNotFoundException{
         instances = ModelFactory.createOntologyModel();
+        variables = ModelFactory.createOntologyModel();
         //create class 
         instances.createClass("https://w3id.org/okn/o/sd/#SoftwareConfiguration");
-        //we read all the variables, as they will be part of the model catalog.
-        instances.read(scientificVariableFile);
+        //we read all the variables separately, as we will use them to link contents.
+        variables.read(scientificVariableFile);
         mcOntology = ModelFactory.createOntologyModel();
         mcOntology.read("https://w3id.org/okn/o/sdm#");
         mcOntology.read("https://w3id.org/okn/o/sd#");
+        mcOntology.createObjectProperty("http://www.w3.org/2002/07/owl#sameAs");
         //for some reason it's not doing the right redirect
 //        mcOntology.read("https://mintproject.github.io/Mint-ModelCatalog-Ontology/release/1.4.0/ontology.xml");
 //        mcOntology.read("http://ontosoft.org/ontology/software/ontosoft-v1.0.owl");//for some reason, it doesn't do the negotiation rihgt.
@@ -106,29 +106,31 @@ public class CSV2RDF {
      * @param rowValue 
      */
     private void processSVO(Individual ind, Property p, String rowValue, boolean index){
+        Individual mint_svo = instances.createClass("https://w3id.org/okn/o/sd#StandardVariable").createIndividual(instance_URI+encode(rowValue));
+        mint_svo.addLabel(rowValue, null);
+        //assign the variable to target node.
+        ind.addProperty(p, mint_svo);
         /**
         read label, try to find one in the svo file (there should be).
-        * If found, then use that URI. IF not found, then create one.
+        * If found, then copy description and label into instance, and add owl:sameAs.
         **/
-       Query query = QueryFactory.create("select ?var where {"
-               + "?var <http://www.w3.org/2000/01/rdf-schema#label> \""+rowValue+"\"}");
-       // Execute the query and obtain results
-       QueryExecution qe = QueryExecutionFactory.create(query, instances);
-       ResultSet rs =  qe.execSelect();
-       if(rs.hasNext()){
-           ind.addProperty(p, rs.next().getResource("?var"));
-       }else{
-           //no variable found: create variable, add label
-           Individual userInstance;
-           //if(index){
-           // userInstance = instances.createClass("https://w3id.org/okn/o/sdm#NumericalIndex").createIndividual(instance_URI+encode(rowValue));   
-           //}else{
-            userInstance = instances.createClass("http://www.geoscienceontology.org/svo/svu#Variable").createIndividual(instance_URI+encode(rowValue));
-           //}
-           userInstance.addLabel(rowValue, null);
-           //assign the variable to target node.
-           ind.addProperty(p, userInstance);
-       }
+        Query query = QueryFactory.create("select ?var ?desc where {"
+               + "?var <http://www.w3.org/2000/01/rdf-schema#label> \""+rowValue+"\"" +
+               "optional {?var <https://schema.org/description> ?desc}}");
+        QueryExecution qe = QueryExecutionFactory.create(query, variables);
+        ResultSet rs =  qe.execSelect();
+        // if found in SVO, copy description and owl:sameAs
+        if(rs.hasNext()){
+            QuerySolution qs = rs.next();
+            OntProperty pSameAs = (OntProperty)mcOntology.getProperty("http://www.w3.org/2002/07/owl#sameAs");
+            mint_svo.addProperty(pSameAs, qs.getResource("?var"));
+            Literal desc = qs.getLiteral("?desc");
+            if (!"".equals(desc) && desc!= null){
+                //svo comes with html tags. remove them
+                mint_svo.addProperty(mcOntology.getOntProperty("https://w3id.org/okn/o/sd#description"),
+                        desc.getString().replace("<p>","\n").replaceAll("\\<[^>]*>",""));
+            }
+         }
     }
     
     private void processFile(String path) throws Exception{
@@ -176,10 +178,10 @@ public class CSV2RDF {
                                                     System.err.println("ERROR: "+rowValue+" is not a URI. Ind: "+ind.getLocalName());
                                                 }
                                                 break;
-                                            case "http://www.w3.org/2001/XMLSchema#int":
+                                            case "http://www.w3.org/2001/XMLSchema#integer":
                                                 try{
                                                     Integer.parseInt(rowValue);
-                                                    ind.addProperty(p, rowValue,XSDDatatype.XSDint);
+                                                    ind.addProperty(p, rowValue,XSDDatatype.XSDinteger);
                                                 }catch (NumberFormatException e){
                                                     System.err.println("ERROR: "+rowValue+" is not an Integer. Ind: "+ind.getLocalName());
                                                 }
@@ -189,7 +191,7 @@ public class CSV2RDF {
                                                     Float.parseFloat(rowValue);
                                                     ind.addProperty(p, rowValue,XSDDatatype.XSDfloat);
                                                 }catch (NumberFormatException e){
-                                                    System.err.println("ERROR: "+rowValue+" is not an Integer. Ind: "+ind.getLocalName());
+                                                    System.err.println("ERROR: "+rowValue+" is not a float. Ind: "+ind.getLocalName());
                                                 }
                                                 break;
                                             default:
@@ -248,9 +250,6 @@ public class CSV2RDF {
                                         }else if(p.toString().contains("hasStandardVariable")){
                                             processSVO(ind, p, rowValue,false);
                                         }
-                                        //else if(p.toString().contains("usefulForCalculatingIndex")){
-                                        //    processSVO(ind, p, rowValue,true);
-                                        //}
                                         else if(p.toString().contains("hasSoftwareImage")){
                                             //seaparated because here we will do the link to Dockerpedia when appropriate.
                                             //at the moment just create a URI and link with label
@@ -366,10 +365,16 @@ public class CSV2RDF {
 //            String pathToTransformationsDataFolder = "C:\\Users\\dgarijo\\Documents\\GitHub\\ModelCatalog\\Data\\Transformations";
 
               //MINT
-            String version = "1.6.0";
-            String pathToInstancesDataFolder = "C:\\Users\\dgarijo\\Documents\\GitHub\\ModelCatalog\\Data\\MINT\\"+version;
+            String version = "1.6_to_1.7";
+            // Unix
+            String pathToGitFolder = "/home/dgarijo/Documents/GitHub/ModelCatalog";
+
+            // WIN
+            // String pathToGitFolder = "C:\\Users\\dgarijo\\Documents\\GitHub";
+            String pathToInstancesDataFolder = pathToGitFolder+"/Data/MINT/"+version;
             String [] graphs = {"mint@isi.edu"};//, "texas@isi.edu", "coertel@mitre.org", "brandon@starsift.com","hvarg@isi.edu"};
-              //end mint
+              //end MINT
+
               //COVID models example
 //            pathToInstancesDataFolder = "C:\\Users\\dgarijo\\Documents\\GitHub\\ModelCatalog\\Data\\COVID";
 //            processDataFolder(pathToInstancesDataFolder, false, catalog);
@@ -382,11 +387,12 @@ public class CSV2RDF {
               //end wifire
             for (String graph:graphs){
                 //a new catalog should be made per graph; otherwise graphs will be aggregated.
-                CSV2RDF catalog = new CSV2RDF("C:\\Users\\dgarijo\\Documents\\GitHub\\ModelCatalog\\Data\\Units\\dict.json", 
-                    "C:\\Users\\dgarijo\\Documents\\GitHub\\ModelCatalog\\Data\\SVO\\variable-23-10-2019.ttl");
-                processDataFolder(pathToInstancesDataFolder+"\\"+graph, false, catalog);
-                exportRDFFile("modelCatalog_"+graph+".ttl", catalog.instances, "TTL");
+                CSV2RDF catalog = new CSV2RDF(pathToGitFolder+"/Data/Units/dict.json",
+                        pathToGitFolder+"/Data/SVO/variable-23-10-2019.ttl");
+                processDataFolder(pathToInstancesDataFolder+"/"+graph, false, catalog);
+                exportRDFFile("modelCatalog_"+graph+"_"+version+".ttl", catalog.instances, "TTL");
             }
+            System.out.println("Import process finished successfully");
         }catch (Exception e){
             System.err.println("Error: "+e);
         }
