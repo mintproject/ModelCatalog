@@ -25,7 +25,7 @@ def import_script(ontology_url, class_to_exclude, graph_uri, repository, instanc
     for c in range(len(data['results']['bindings'])):
         value = data['results']['bindings'][c]['class']['value']
         value = value.split('#')[-1]
-        if value not in class_to_exclude:
+        if class_to_exclude is None or value not in class_to_exclude:
             class_list.append(value)
         else:
             print('Skipping: '+value)

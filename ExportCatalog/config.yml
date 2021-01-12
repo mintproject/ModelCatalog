@@ -12,7 +12,7 @@ graph:
 ontology:
   - url: "https://w3id.org/okn/o/sd#"
     exclude:
-      - SoftwareImage
+#      - SoftwareImage
   - url: "https://w3id.org/okn/o/sdm#"
     exclude:
       - Theory-GuidedModel
@@ -32,10 +32,10 @@ ontology:
 #Use labels instead of URIs for the following properties:
 useLabel:
   - https://w3id.org/okn/o/sd#usesUnit
-  - https://w3id.org/okn/o/sd#hasSoftwareImage
   - https://w3id.org/okn/o/sd#hasStandardVariable
   - https://w3id.org/okn/o/sdm#intervalUnit
   - https://w3id.org/okn/o/sdm#usefulForCalculatingIndex
+# - https://w3id.org/okn/o/sd#hasSoftwareImage
 # Namespace prefix of the instances (to create shortcuts)
 instance_uri_prefix: https://w3id.org/okn/i/mint/
 # Export path folder
