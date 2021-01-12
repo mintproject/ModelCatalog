@@ -250,13 +250,13 @@ public class CSV2RDF {
                                         }else if(p.toString().contains("hasStandardVariable")){
                                             processSVO(ind, p, rowValue,false);
                                         }
-                                        else if(p.toString().contains("hasSoftwareImage")){
-                                            //seaparated because here we will do the link to Dockerpedia when appropriate.
-                                            //at the moment just create a URI and link with label
-                                            Individual softwareImage = instances.createIndividual(instance_URI+encode(rowValue),range);
-                                            softwareImage.addLabel(rowValue, null);
-                                            ind.addProperty(p, softwareImage);
-                                        }
+//                                        else if(p.toString().contains("hasSoftwareImage")){
+//                                            //seaparated because here we will do the link to Dockerpedia when appropriate.
+//                                            //at the moment just create a URI and link with label
+//                                            Individual softwareImage = instances.createIndividual(instance_URI+encode(rowValue),range);
+//                                            softwareImage.addLabel(rowValue, null);
+//                                            ind.addProperty(p, softwareImage);
+//                                        }
                                         else{
                                             //regular individual linking
                                             Individual targetIndividual = instances.getIndividual(instance_URI+rowValue);
@@ -371,6 +371,7 @@ public class CSV2RDF {
 
             // WIN
             // String pathToGitFolder = "C:\\Users\\dgarijo\\Documents\\GitHub";
+            // UNIX
             String pathToInstancesDataFolder = pathToGitFolder+"/Data/MINT/"+version;
             String [] graphs = {"mint@isi.edu"};//, "texas@isi.edu", "coertel@mitre.org", "brandon@starsift.com","hvarg@isi.edu"};
               //end MINT
