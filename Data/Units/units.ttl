@@ -6,21 +6,22 @@
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix xml: <http://www.w3.org/XML/1998/namespace> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix sd: <https://w3id.org/okn/o/sd#> .
 
-mint:Cs_Cx_1T a qudtp:Unit ;
+mint:Cs_Cx_1T a qudtp:Unit, sd:Unit ;
     rdfs:label "Cs Cx-1" ;
     qudtp:abbreviation "Cs Cx-1" ;
     ccut:hasDimension "T" ;
     ccut:hasPart mint:u_T_centi_secondtime_Cs,
         mint:u__1_Cx .
 
-mint:KTe a qudtp:Unit ;
+mint:KTe a qudtp:Unit, sd:Unit ;
     rdfs:label "K" ;
     qudtp:abbreviation "K" ;
     ccut:hasDimension "Te" ;
     ccut:hasPart mint:u_Te_kelvin_K .
 
-mint:MJ_m_2_d_1M_T_3 a qudtp:Unit ;
+mint:MJ_m_2_d_1M_T_3 a qudtp:Unit, sd:Unit ;
     rdfs:label "MJ m-2 d-1" ;
     qudtp:abbreviation "MJ m-2 d-1" ;
     ccut:hasDimension "M T-3" ;
@@ -28,7 +29,7 @@ mint:MJ_m_2_d_1M_T_3 a qudtp:Unit ;
         mint:u__1_T_day_d,
         mint:u__2_L_meter_m .
 
-mint:MJ_m_2_day_1M_T_3 a qudtp:Unit ;
+mint:MJ_m_2_day_1M_T_3 a qudtp:Unit, sd:Unit ;
     rdfs:label "MJ m-2 day-1" ;
     qudtp:abbreviation "MJ m-2 day-1" ;
     ccut:hasDimension "M T-3" ;
@@ -36,201 +37,201 @@ mint:MJ_m_2_day_1M_T_3 a qudtp:Unit ;
         mint:u__1_T_day_day,
         mint:u__2_L_meter_m .
 
-mint:MgM a qudtp:Unit ;
+mint:MgM a qudtp:Unit, sd:Unit ;
     rdfs:label "Mg" ;
     qudtp:abbreviation "Mg" ;
     ccut:hasDimension "M" ;
     ccut:hasPart mint:u_M_mega_gram_Mg .
 
-mint:Mg_Mg_1 a qudtp:Unit ;
+mint:Mg_Mg_1 a qudtp:Unit, sd:Unit ;
     rdfs:label "Mg Mg-1" ;
     qudtp:abbreviation "Mg Mg-1" ;
     ccut:hasPart mint:u_M_mega_gram_Mg,
         mint:u__1_M_mega_gram_Mg .
 
-mint:Mg_ha_1M_L_2 a qudtp:Unit ;
+mint:Mg_ha_1M_L_2 a qudtp:Unit, sd:Unit ;
     rdfs:label "Mg ha-1" ;
     qudtp:abbreviation "Mg ha-1" ;
     ccut:hasDimension "L-2 M" ;
     ccut:hasPart mint:u_M_mega_gram_Mg,
         mint:u__1_L2_hectare_ha .
 
-mint:Mg_m_3M_L_3 a qudtp:Unit ;
+mint:Mg_m_3M_L_3 a qudtp:Unit, sd:Unit ;
     rdfs:label "Mg m-3" ;
     qudtp:abbreviation "Mg m-3" ;
     ccut:hasDimension "L-3 M" ;
     ccut:hasPart mint:u_M_mega_gram_Mg,
         mint:u__3_L_meter_m .
 
-mint:Mg_year_1M_T_1 a qudtp:Unit ;
+mint:Mg_year_1M_T_1 a qudtp:Unit, sd:Unit ;
     rdfs:label "Mg year-1" ;
     qudtp:abbreviation "Mg year-1" ;
     ccut:hasDimension "M T-1" ;
     ccut:hasPart mint:u_M_mega_gram_Mg,
         mint:u__1_T_year365day_year .
 
-mint:PaM_L_1_T_2 a qudtp:Unit ;
+mint:PaM_L_1_T_2 a qudtp:Unit, sd:Unit ;
     rdfs:label "Pa" ;
     qudtp:abbreviation "Pa" ;
     ccut:hasDimension "L-1 M T-2" ;
     ccut:hasPart mint:u_M_L_1_T_2_pascal_Pa .
 
-mint:Pa_Pa_1_x_100 a qudtp:Unit ;
+mint:Pa_Pa_1_x_100 a qudtp:Unit, sd:Unit ;
     rdfs:label "Pa Pa-1 x-100" ;
     qudtp:abbreviation "Pa Pa-1 x-100" ;
     ccut:hasPart mint:u_M_L_1_T_2_pascal_Pa,
         mint:u__100_x,
         mint:u__1_M_L_1_T_2_pascal_Pa .
 
-mint:USD_ha_1L_2 a qudtp:Unit ;
+mint:USD_ha_1L_2 a qudtp:Unit, sd:Unit ;
     rdfs:label "USD ha-1" ;
     qudtp:abbreviation "USD ha-1" ;
     ccut:hasDimension "L-2" ;
     ccut:hasPart mint:u_USD,
         mint:u__1_L2_hectare_ha .
 
-mint:USD_kg_1M_1 a qudtp:Unit ;
+mint:USD_kg_1M_1 a qudtp:Unit, sd:Unit ;
     rdfs:label "USD kg-1" ;
     qudtp:abbreviation "USD kg-1" ;
     ccut:hasDimension "M-1" ;
     ccut:hasPart mint:u_USD,
         mint:u__1_M_kilo_gram_kg .
 
-mint:W_m_2M_T_3 a qudtp:Unit ;
+mint:W_m_2M_T_3 a qudtp:Unit, sd:Unit ;
     rdfs:label "W m-2" ;
     qudtp:abbreviation "W m-2" ;
     ccut:hasDimension "M T-3" ;
     ccut:hasPart mint:u_M_L2_T_3_watt_W,
         mint:u__2_L_meter_m .
 
-mint:YYYY a qudtp:Unit ;
+mint:YYYY a qudtp:Unit, sd:Unit ;
     rdfs:label "YYYY" ;
     qudtp:abbreviation "YYYY" ;
     ccut:hasPart mint:u_YYYY .
 
-mint:cm3_cm_3 a qudtp:Unit ;
+mint:cm3_cm_3 a qudtp:Unit, sd:Unit ;
     rdfs:label "cm3 cm-3" ;
     qudtp:abbreviation "cm3 cm-3" ;
     ccut:hasPart mint:u_3_L_centi_meter_cm,
         mint:u__3_L_centi_meter_cm .
 
-mint:cmL a qudtp:Unit ;
+mint:cmL a qudtp:Unit, sd:Unit ;
     rdfs:label "cm" ;
     qudtp:abbreviation "cm" ;
     ccut:hasDimension "L" ;
     ccut:hasPart mint:u_L_centi_meter_cm .
 
-mint:cm_h_1L a qudtp:Unit ;
+mint:cm_h_1L a qudtp:Unit, sd:Unit ;
     rdfs:label "cm h-1" ;
     qudtp:abbreviation "cm h-1" ;
     ccut:hasDimension "L" ;
     ccut:hasPart mint:u_L_centi_meter_cm,
         mint:u__1_h .
 
-mint:code a qudtp:Unit ;
+mint:code a qudtp:Unit, sd:Unit ;
     rdfs:label "code" ;
     qudtp:abbreviation "code" ;
     ccut:hasPart mint:u_code .
 
-mint:date a qudtp:Unit ;
+mint:date a qudtp:Unit, sd:Unit ;
     rdfs:label "date" ;
     qudtp:abbreviation "date" ;
     ccut:hasPart mint:u_date .
 
-mint:dayT a qudtp:Unit ;
+mint:dayT a qudtp:Unit, sd:Unit ;
     rdfs:label "day" ;
     qudtp:abbreviation "day" ;
     ccut:hasDimension "T" ;
     ccut:hasPart mint:u_T_day_day .
 
-mint:day_m_1L_1_T a qudtp:Unit ;
+mint:day_m_1L_1_T a qudtp:Unit, sd:Unit ;
     rdfs:label "day m-1" ;
     qudtp:abbreviation "day m-1" ;
     ccut:hasDimension "L-1 T" ;
     ccut:hasPart mint:u_T_day_day,
         mint:u__1_L_meter_m .
 
-mint:degCTe a qudtp:Unit ;
+mint:degCTe a qudtp:Unit, sd:Unit ;
     rdfs:label "degC" ;
     qudtp:abbreviation "degC" ;
     ccut:hasDimension "Te" ;
     ccut:hasPart mint:u_Te_degreecelsius_degC .
 
-mint:degC_day_1T_1_Te a qudtp:Unit ;
+mint:degC_day_1T_1_Te a qudtp:Unit, sd:Unit ;
     rdfs:label "degC day-1" ;
     qudtp:abbreviation "degC day-1" ;
     ccut:hasDimension "T-1 Te" ;
     ccut:hasPart mint:u_Te_degreecelsius_degC,
         mint:u__1_T_day_day .
 
-mint:degree a qudtp:Unit ;
+mint:degree a qudtp:Unit, sd:Unit ;
     rdfs:label "degree" ;
     qudtp:abbreviation "degree" ;
     ccut:hasPart mint:u_degree .
 
-mint:g99M99 a qudtp:Unit ;
+mint:g99M99 a qudtp:Unit, sd:Unit ;
     rdfs:label "g99" ;
     qudtp:abbreviation "g99" ;
     ccut:hasDimension "M99" ;
     ccut:hasPart mint:u_99_M_gram_g .
 
-mint:g_cm_3M_L_3 a qudtp:Unit ;
+mint:g_cm_3M_L_3 a qudtp:Unit, sd:Unit ;
     rdfs:label "g cm-3" ;
     qudtp:abbreviation "g cm-3" ;
     ccut:hasDimension "L-3 M" ;
     ccut:hasPart mint:u_M_gram_g,
         mint:u__3_L_centi_meter_cm .
 
-mint:g_kg_1 a qudtp:Unit ;
+mint:g_kg_1 a qudtp:Unit, sd:Unit ;
     rdfs:label "g kg-1" ;
     qudtp:abbreviation "g kg-1" ;
     ccut:hasPart mint:u_M_gram_g,
         mint:u__1_M_kilo_gram_kg .
 
-mint:h a qudtp:Unit ;
+mint:h a qudtp:Unit, sd:Unit ;
     rdfs:label "h" ;
     qudtp:abbreviation "h" ;
     ccut:hasPart mint:u_h .
 
-mint:haL2 a qudtp:Unit ;
+mint:haL2 a qudtp:Unit, sd:Unit ;
     rdfs:label "ha" ;
     qudtp:abbreviation "ha" ;
     ccut:hasDimension "L2" ;
     ccut:hasPart mint:u_L2_hectare_ha .
 
-mint:hourT a qudtp:Unit ;
+mint:hourT a qudtp:Unit, sd:Unit ;
     rdfs:label "hour" ;
     qudtp:abbreviation "hour" ;
     ccut:hasDimension "T" ;
     ccut:hasPart mint:u_T_hour_hour .
 
-mint:kgM a qudtp:Unit ;
+mint:kgM a qudtp:Unit, sd:Unit ;
     rdfs:label "kg" ;
     qudtp:abbreviation "kg" ;
     ccut:hasDimension "M" ;
     ccut:hasPart mint:u_M_kilo_gram_kg .
 
-mint:kg_ha_1M_L_2 a qudtp:Unit ;
+mint:kg_ha_1M_L_2 a qudtp:Unit, sd:Unit ;
     rdfs:label "kg ha-1" ;
     qudtp:abbreviation "kg ha-1" ;
     ccut:hasDimension "L-2 M" ;
     ccut:hasPart mint:u_M_kilo_gram_kg,
         mint:u__1_L2_hectare_ha .
 
-mint:kg_kg_1 a qudtp:Unit ;
+mint:kg_kg_1 a qudtp:Unit, sd:Unit ;
     rdfs:label "kg kg-1" ;
     qudtp:abbreviation "kg kg-1" ;
     ccut:hasPart mint:u_M_kilo_gram_kg,
         mint:u__1_M_kilo_gram_kg .
 
-mint:kg_kg_1_x_100 a qudtp:Unit ;
+mint:kg_kg_1_x_100 a qudtp:Unit, sd:Unit ;
     rdfs:label "kg kg-1 x-100" ;
     qudtp:abbreviation "kg kg-1 x-100" ;
     ccut:hasPart mint:u_M_kilo_gram_kg,
         mint:u__100_x,
         mint:u__1_M_kilo_gram_kg .
 
-mint:kg_m_2_s_1M_L_2_T_1 a qudtp:Unit ;
+mint:kg_m_2_s_1M_L_2_T_1 a qudtp:Unit, sd:Unit ;
     rdfs:label "kg m-2 s-1" ;
     qudtp:abbreviation "kg m-2 s-1" ;
     ccut:hasDimension "L-2 M T-1" ;
@@ -238,140 +239,140 @@ mint:kg_m_2_s_1M_L_2_T_1 a qudtp:Unit ;
         mint:u__1_T_secondtime_s,
         mint:u__2_L_meter_m .
 
-mint:kg_yr_1M_T_1 a qudtp:Unit ;
+mint:kg_yr_1M_T_1 a qudtp:Unit, sd:Unit ;
     rdfs:label "kg yr-1" ;
     qudtp:abbreviation "kg yr-1" ;
     ccut:hasDimension "M T-1" ;
     ccut:hasPart mint:u_M_kilo_gram_kg,
         mint:u__1_T_year365day_yr .
 
-mint:m0 a qudtp:Unit ;
+mint:m0 a qudtp:Unit, sd:Unit ;
     rdfs:label "m0" ;
     qudtp:abbreviation "m0" ;
     ccut:hasPart mint:u_0_L_meter_m .
 
-mint:m2L2 a qudtp:Unit ;
+mint:m2L2 a qudtp:Unit, sd:Unit ;
     rdfs:label "m2" ;
     qudtp:abbreviation "m2" ;
     ccut:hasDimension "L2" ;
     ccut:hasPart mint:u_2_L_meter_m .
 
-mint:m2_h_1L2 a qudtp:Unit ;
+mint:m2_h_1L2 a qudtp:Unit, sd:Unit ;
     rdfs:label "m2 h-1" ;
     qudtp:abbreviation "m2 h-1" ;
     ccut:hasDimension "L2" ;
     ccut:hasPart mint:u_2_L_meter_m,
         mint:u__1_h .
 
-mint:m2_m_2 a qudtp:Unit ;
+mint:m2_m_2 a qudtp:Unit, sd:Unit ;
     rdfs:label "m2 m-2" ;
     qudtp:abbreviation "m2 m-2" ;
     ccut:hasPart mint:u_2_L_meter_m,
         mint:u__2_L_meter_m .
 
-mint:m3L3 a qudtp:Unit ;
+mint:m3L3 a qudtp:Unit, sd:Unit ;
     rdfs:label "m3" ;
     qudtp:abbreviation "m3" ;
     ccut:hasDimension "L3" ;
     ccut:hasPart mint:u_3_L_meter_m .
 
-mint:m3_day_1L3_T_1 a qudtp:Unit ;
+mint:m3_day_1L3_T_1 a qudtp:Unit, sd:Unit ;
     rdfs:label "m3 day-1" ;
     qudtp:abbreviation "m3 day-1" ;
     ccut:hasDimension "L3 T-1" ;
     ccut:hasPart mint:u_3_L_meter_m,
         mint:u__1_T_day_day .
 
-mint:m3_m_3 a qudtp:Unit ;
+mint:m3_m_3 a qudtp:Unit, sd:Unit ;
     rdfs:label "m3 m-3" ;
     qudtp:abbreviation "m3 m-3" ;
     ccut:hasPart mint:u_3_L_meter_m,
         mint:u__3_L_meter_m .
 
-mint:mL a qudtp:Unit ;
+mint:mL a qudtp:Unit, sd:Unit ;
     rdfs:label "m" ;
     qudtp:abbreviation "m" ;
     ccut:hasDimension "L" ;
     ccut:hasPart mint:u_L_meter_m .
 
-mint:m_1L_1 a qudtp:Unit ;
+mint:m_1L_1 a qudtp:Unit, sd:Unit ;
     rdfs:label "m-1" ;
     qudtp:abbreviation "m-1" ;
     ccut:hasDimension "L-1" ;
     ccut:hasPart mint:u__1_L_meter_m .
 
-mint:m_2L_2 a qudtp:Unit ;
+mint:m_2L_2 a qudtp:Unit, sd:Unit ;
     rdfs:label "m-2" ;
     qudtp:abbreviation "m-2" ;
     ccut:hasDimension "L-2" ;
     ccut:hasPart mint:u__2_L_meter_m .
 
-mint:m_d_1L_T_1 a qudtp:Unit ;
+mint:m_d_1L_T_1 a qudtp:Unit, sd:Unit ;
     rdfs:label "m d-1" ;
     qudtp:abbreviation "m d-1" ;
     ccut:hasDimension "L T-1" ;
     ccut:hasPart mint:u_L_meter_m,
         mint:u__1_T_day_d .
 
-mint:m_day_1L_T_1 a qudtp:Unit ;
+mint:m_day_1L_T_1 a qudtp:Unit, sd:Unit ;
     rdfs:label "m day-1" ;
     qudtp:abbreviation "m day-1" ;
     ccut:hasDimension "L T-1" ;
     ccut:hasPart mint:u_L_meter_m,
         mint:u__1_T_day_day .
 
-mint:m_h_1L a qudtp:Unit ;
+mint:m_h_1L a qudtp:Unit, sd:Unit ;
     rdfs:label "m h-1" ;
     qudtp:abbreviation "m h-1" ;
     ccut:hasDimension "L" ;
     ccut:hasPart mint:u_L_meter_m,
         mint:u__1_h .
 
-mint:m_m_1 a qudtp:Unit ;
+mint:m_m_1 a qudtp:Unit, sd:Unit ;
     rdfs:label "m m-1" ;
     qudtp:abbreviation "m m-1" ;
     ccut:hasPart mint:u_L_meter_m,
         mint:u__1_L_meter_m .
 
-mint:m_s_1L_T_1 a qudtp:Unit ;
+mint:m_s_1L_T_1 a qudtp:Unit, sd:Unit ;
     rdfs:label "m s-1" ;
     qudtp:abbreviation "m s-1" ;
     ccut:hasDimension "L T-1" ;
     ccut:hasPart mint:u_L_meter_m,
         mint:u__1_T_secondtime_s .
 
-mint:minT a qudtp:Unit ;
+mint:minT a qudtp:Unit, sd:Unit ;
     rdfs:label "min" ;
     qudtp:abbreviation "min" ;
     ccut:hasDimension "T" ;
     ccut:hasPart mint:u_T_minutetime_min .
 
-mint:mmL a qudtp:Unit ;
+mint:mmL a qudtp:Unit, sd:Unit ;
     rdfs:label "mm" ;
     qudtp:abbreviation "mm" ;
     ccut:hasDimension "L" ;
     ccut:hasPart mint:u_L_milli_meter_mm .
 
-mint:mm_day_1L_T_1 a qudtp:Unit ;
+mint:mm_day_1L_T_1 a qudtp:Unit, sd:Unit ;
     rdfs:label "mm day-1" ;
     qudtp:abbreviation "mm day-1" ;
     ccut:hasDimension "L T-1" ;
     ccut:hasPart mint:u_L_milli_meter_mm,
         mint:u__1_T_day_day .
 
-mint:mm_h_1L a qudtp:Unit ;
+mint:mm_h_1L a qudtp:Unit, sd:Unit ;
     rdfs:label "mm h-1" ;
     qudtp:abbreviation "mm h-1" ;
     ccut:hasDimension "L" ;
     ccut:hasPart mint:u_L_milli_meter_mm,
         mint:u__1_h .
 
-mint:month a qudtp:Unit ;
+mint:month a qudtp:Unit, sd:Unit ;
     rdfs:label "month" ;
     qudtp:abbreviation "month" ;
     ccut:hasPart mint:u_month .
 
-mint:ppm a qudtp:Unit ;
+mint:ppm a qudtp:Unit, sd:Unit ;
     rdfs:label "ppm" ;
     qudtp:abbreviation "ppm" ;
     ccut:hasPart mint:u_ppm .
@@ -386,12 +387,12 @@ mint:u_0_M_mega_gram_Mg qudtp:quantityKind <http://www.wikidata.org/entity/Q1177
 
 mint:u__1_M_100_gram_g qudtp:quantityKind <http://www.wikidata.org/entity/Q41803> .
 
-mint:variable a qudtp:Unit ;
+mint:variable a qudtp:Unit, sd:Unit ;
     rdfs:label "variable" ;
     qudtp:abbreviation "variable" ;
     ccut:hasPart mint:u_variable .
 
-mint:yearT a qudtp:Unit ;
+mint:yearT a qudtp:Unit, sd:Unit ;
     rdfs:label "year" ;
     qudtp:abbreviation "year" ;
     ccut:hasDimension "T" ;
@@ -783,4 +784,3 @@ mint:u__2_L_meter_m rdfs:label "m^-2" ;
     qudtp:symbol "m" ;
     ccut:exponent "-2" ;
     ccut:hasDimension "L" .
-
